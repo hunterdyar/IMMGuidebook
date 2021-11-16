@@ -6,7 +6,7 @@ weight: 1
 ---
 # Basic Syntax: Variables and Functions
 
-## Variables 
+# Variables 
 
 ## Declaring Variables
 
@@ -25,7 +25,7 @@ C# requires that we  declare the variable type. We can't just say "let x be some
 
 Common data types are: *string*, *int*, *float*, *bool*, *char*. 
 
-### Declaring data variables:
+## Declaring data variables:
 
 {{< highlight csharp >}}
 public string weUseCamelCase;//Variable names uppercase every word except the first, and cannot start with numbers. We do not use snake_case.
@@ -33,7 +33,7 @@ private int someNumber = 4;//you set values during declaration
 bool isAwesome = true; //The scope is 'private' by default, so we don't have to type 'private'. 
 {{< / highlight >}}
 
-### Data Structures
+## Data Structures
 Declaring structs is very similar to regular variables. We just use the type of the struct for the type:
 {{< highlight csharp >}}
 private Vector3 someVelocity;
@@ -57,10 +57,10 @@ Vector3 otherDir = Vector3.right;//Here we copy a built-in variable, see below.
 Vector3.right is a [shorthand](https://docs.unity3d.com/ScriptReference/Vector3-right.html), its basically an already existing variable thats equal to Vector3(1,0,0). In the above example, we simply copied these values into our variable. Vector3.right (and the other short-hands) are much easier to type than "new Vector3(1,0,0)", and makes the code easier to understand when reading it..
 {{< /hint >}}
 
-### Declaring Classes
+## Declaring Classes
 The syntax for variables that store a class *(or a reference to an instance of a class)* is the same as structs. "private Thing something = new Thing();" There is just one notable exception: They do not have default values. When you declare a class, it will be null. We have to either set it equal to a new instance of the class. ( =new Thing() )
 
-## Functions
+# Functions
 
 The Syntax for a function is simple. Just like variables, we start with the scope (public/private), then the return type, and then the function name (CapitalizedCamelCase). What makes a function a function (syntactically speaking) is parenthesis. They follow the function name without a space.
 
@@ -77,7 +77,7 @@ private void Start()
 }
 {{< / highlight >}}
 
-### Creating Functions With Parameters
+## Creating Functions With Parameters
 To pass data into a function, we declare variables inside of the parenthesis. We declare them like a regular syntax for declaring a variable (without scope), inside of the parenthesis, separated by commas. They can only be used inside the function.
 
 {{< hint warning >}}
@@ -104,7 +104,15 @@ Functions with the same name but different parameters are allowed in C#. We woul
 
 Take a look at the [documentation for the Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) function built into Unity. Notice it has a number of different declarations. {{< /hint >}}
 
-### Indentation and spacing
+## Indentation and spacing
+While C# does not care about your indentation, and doesn't care about extra white-space, there are a set of standards that developers follow. It's important for everyone on the same team to follow the same conventions, also called "standards". Jetbrains Rider has a common set of standards built-into it, which are customizable. Setting up your IDE to use the same standard you follow makes it really easy.
+
+I recommend starting curly braces on a new line, and indenting code inside of curly braces. This way, one can draw a vertical line straight down from where a curly brace starts. If we see any other code at that indentation level, we can quickly identify that either 1) we need to indent it, or 2) we have messed something up. It makes seeing your code structure easy, which makes it easier to find bugs. 
+
+If statements do not _need_ curly braces. If they don't have one, they will automatically execute the single next line. This is a shorthand, and I do not recommend you follow it when you start coding. It is easier to make mistakes when you code isn't formatted consistently. You have to remember that just these one-liner if statements are special. I say: don't bother.
+
+Whatever standard you prefer, just remember to be **consistent**.
+
 {{< highlight csharp >}}
 //C# Does not care about line breaks.
 private void Start(){}
@@ -122,7 +130,7 @@ private void Start()
 }//the closing curly brace is at the same indentation as the first one, so we can tell which ones go with which.
 {{< / highlight >}}
 
-### Calling Functions
+## Calling Functions
 To execute a function, we just type the name of the function followed by parenthesis, and a semicolon. Just like any other statement in C#
 
 {{< highlight csharp >}}

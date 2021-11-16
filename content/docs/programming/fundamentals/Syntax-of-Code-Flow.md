@@ -15,5 +15,5 @@ Branches, which will likely never be referred to as "branches" again, are a way 
 
 ## The If Statement
 
-The If statement takes a conditional
+The If statement takes a [{{< reflink conditionals >}}](conditional)
 
