@@ -7,12 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://example.org/docs/programming/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A Simple State Machine</title>
-      <link>http://example.org/docs/programming/architecture/simplestatemachine/</link>
+      <title>The Architecture Lecture</title>
+      <link>http://example.org/docs/programming/architecture/the-architecture-lecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/programming/architecture/simplestatemachine/</guid>
-      <description>https://www.youtube.com/watch?v=Xgx7DKSt51M</description>
+      <guid>http://example.org/docs/programming/architecture/the-architecture-lecture/</guid>
+      <description>The Architecture Lecture
+  </description>
+    </item>
+    
+    <item>
+      <title>A Simple State Machine</title>
+      <link>http://example.org/docs/programming/architecture/simple-state-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/architecture/simple-state-machine/</guid>
+      <description>Creating a simple state machine in Unity#  Additional Resources# One Wheel Studio - The State Pattern Habrador - State Pattern Tutorial Game Programming Patterns Book. Chapter on State  </description>
+    </item>
+    
+    <item>
+      <title>Data-Oriented Design with Scriptable Objects</title>
+      <link>http://example.org/docs/programming/architecture/data-oriented-design-scriptable-objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/architecture/data-oriented-design-scriptable-objects/</guid>
+      <description>Data-oriented Design#I think one of the best introductions to pragmatic data-oriented design is the 2017 talk that Ryan Hipple gave at the Unity Connect conference. It also introduces the basics of ScriptableObjects.
+   After you have watched the above video, I recommend checking out the asset ScriptableObject-Architecture on the asset store. It&amp;rsquo;s an implementation of the ideas of the above talk, but really nicely done. It&amp;rsquo;s open source too.</description>
+    </item>
+    
+    <item>
+      <title>Event Systems</title>
+      <link>http://example.org/docs/programming/architecture/event-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/architecture/event-systems/</guid>
+      <description>Event Systems#  </description>
     </item>
     
   </channel>

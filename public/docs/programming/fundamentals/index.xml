@@ -7,12 +7,68 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://example.org/docs/programming/fundamentals/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Syntax of Variables and Functions</title>
+      <link>http://example.org/docs/programming/fundamentals/basic-syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/fundamentals/basic-syntax/</guid>
+      <description>Basic Syntax: Variables and Functions#Variables#Declaring Variables#The keywords to declare a variable are as follows:
+ [scope][space][type][space][variableName][semicolon]
+scope type variableName;
+ When naming our variables, we use lowercaseCamelCase. Also called pascalCase.
+You cannot start a variable with a number.
+C# requires that we declare the variable type. We can&amp;rsquo;t just say &amp;ldquo;let x be some variable. A number? A word? I dunno, you figure it out&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Conditionals</title>
+      <link>http://example.org/docs/programming/fundamentals/conditionals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/fundamentals/conditionals/</guid>
+      <description>Conditionals#A conditional is something that can be true or false.
+Boolean#The simplest conditional is a &amp;ldquo;boolean&amp;rdquo; data type. A boolean is a variable that can be equal to either &amp;ldquo;True&amp;rdquo; or &amp;ldquo;False&amp;rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
+In C#, and in most programming languages, this data type is called &amp;ldquo;bool&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Syntax of Code Flow</title>
+      <link>http://example.org/docs/programming/fundamentals/syntax-of-code-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/fundamentals/syntax-of-code-flow/</guid>
+      <description>Code Flow#Inside of functions, there are a number of different ways to change how code executes. Without messing with code flow, and just having a bunch of statements, code will execute top to bottom, left to right. Code flow is how we get more complicated.
+There are 2 main ways to manipulate code flow: Branches and Loops.
+Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdquo; again, are a way of executing functions only in some situations.</description>
+    </item>
+    
+    <item>
       <title>Arrays</title>
       <link>http://example.org/docs/programming/fundamentals/arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/docs/programming/fundamentals/arrays/</guid>
-      <description>Arrays #  </description>
+      <description>Arrays#  </description>
+    </item>
+    
+    <item>
+      <title>Classes and Components</title>
+      <link>http://example.org/docs/programming/fundamentals/classes-and-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/fundamentals/classes-and-components/</guid>
+      <description>Classes and Components#Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &amp;hellip; do everything with.
+Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let Unity handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component.</description>
+    </item>
+    
+    <item>
+      <title>Collapsing Code Exercise</title>
+      <link>http://example.org/docs/programming/fundamentals/collapsing-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/programming/fundamentals/collapsing-code/</guid>
+      <description>Collapsing Code#A basic exercise to help you think about code execution.
+  </description>
     </item>
     
   </channel>
