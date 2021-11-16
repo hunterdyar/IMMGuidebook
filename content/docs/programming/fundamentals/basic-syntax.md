@@ -61,6 +61,11 @@ Vector3.right is a [shorthand](https://docs.unity3d.com/ScriptReference/Vector3-
 The syntax for variables that store a class *(or a reference to an instance of a class)* is the same as structs. "private Thing something = new Thing();" There is just one notable exception: They do not have default values. When you declare a class, it will be null. We have to either set it equal to a new instance of the class. ( =new Thing() )
 
 # Functions
+Functions are also called [methods](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/program-building-blocks#methods) in C#. There are pedantic differences, and these pedantic differences can differ between languages. I don't want students to worry about it. We will use the terms "method" and "function" interchangably. 
+
+{{< hint warning >}}
+Some programmers will be mad at me for this, so I'll give you the 1 sentence version: In C#, 'Function' is a more broad term for 'things that include executable code', where methods are a type of function. [Other functions](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/program-building-blocks#other-function-members) that *aren't* methods include constructors, properties, indexers, events, and operators. 
+{{< /hint >}}
 
 The Syntax for a function is simple. Just like variables, we start with the scope (public/private), then the return type, and then the function name (CapitalizedCamelCase). What makes a function a function (syntactically speaking) is parenthesis. They follow the function name without a space.
 
