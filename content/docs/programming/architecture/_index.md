@@ -1,6 +1,7 @@
 ---
 bookCollapseSection: true
-weight: 20
+weight: 70
 ---
 
-Architecture.
+# Architecture
+Architecture is the big picture stuff. 

@@ -1,6 +1,7 @@
 ---
 title: Arrays
 type: docs
+weight: 4
 ---
 
 # Arrays
