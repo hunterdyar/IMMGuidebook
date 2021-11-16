@@ -1,5 +1,5 @@
 ---
-title: Data-Oriented design with Scriptable Objects
+title: Data-Oriented Design with Scriptable Objects
 ---
 
 # Data-oriented Design
@@ -7,4 +7,6 @@ I think one of the best introductions to pragmatic data-oriented design is the 2
 
 {{< youtube raQ3iHhE_Kk >}}
 
-After you have checked out t
+---
+
+After you have watched the above video, I recommend checking out the asset [ScriptableObject-Architecture](https://assetstore.unity.com/packages/tools/utilities/scriptableobject-architecture-131520) on the asset store. It's an implementation of the ideas of the above talk, but really nicely done. It's [open source too](https://github.com/DanielEverland/ScriptableObject-Architecture).
