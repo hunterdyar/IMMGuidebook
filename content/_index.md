@@ -1,6 +1,7 @@
 ---
 title: The IMM Tech Repo
 type: docs
+bookToC: false
 ---
 
 # IMM Resource Site
@@ -24,3 +25,8 @@ This site is IMM215's repository for programming lectures. The lectures are free
 ## Other Resources
 - Hunter's Photography guide: howtonotdropacamera.com
 - IMM Design notes and resources: impr.hdyar.com
+
+## This Site
+
+- This site was built with [Hugo](https://gohugo.io/).
+- It uses the theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/) by Alex Shpak.
