@@ -1,5 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://hdyar.com/IMMTechSite-Preview/'
 languageCode = 'en-us'
-title = 'IMM Technical Resource Site'
+title = 'IMM Technical Resource Site Preview'
 theme = 'book'
 BookComments = false
+publishDir = 'docs'

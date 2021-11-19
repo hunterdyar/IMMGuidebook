@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conditionals #  A conditional is something that can be true or false.
+Boolean #  The simplest conditional is a &ldquo;boolean&rdquo; data type. A boolean is a variable that can be equal to either &ldquo;True&rdquo; or &ldquo;False&rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
+In C#, and in most programming languages, this data type is called &ldquo;bool&rdquo;.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Conditionals" />
+<meta property="og:description" content="Conditionals #  A conditional is something that can be true or false.
+Boolean #  The simplest conditional is a &ldquo;boolean&rdquo; data type. A boolean is a variable that can be equal to either &ldquo;True&rdquo; or &ldquo;False&rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
+In C#, and in most programming languages, this data type is called &ldquo;bool&rdquo;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/conditionals/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Conditionals | IMM Technical Resource Site Preview</title>
+<link rel="manifest" href="/IMMTechSite-Preview/manifest.json">
+<link rel="icon" href="/IMMTechSite-Preview/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/IMMTechSite-Preview/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/IMMTechSite-Preview/flexsearch.min.js"></script>
+  <script defer src="/IMMTechSite-Preview/en.search.min.5198d117ba895d3aa63eb92f6a287cb42ec97f299cf78e42113d00281e2b2109.js" integrity="sha256-UZjRF7qJXTqmPrkvaih8tC7Jfymc945CET0AKB4rIQk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/IMMTechSite-Preview/"><span>IMM Technical Resource Site Preview</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle"  />
+    <label for="section-21cc7f86d77b52f288b1d547e8cb9bef" class="flex justify-between">
+      <a role="button" class="">Digital Media Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/digital-media-fundamentals/notes-on-file-management/" class="">Notes on File Management</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle"  />
+    <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/" class="">Unity Development</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle"  />
+    <label for="section-a3091d099fec882f5485ece4e6f64eb1" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/project-basics/" class="">Unity Project Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/assets/" class="">Assets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/builds/" class="">Creating Builds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/hierarchy/" class="">The Hierarchy Window</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-989493819aad2d14ceb835eeee351713" class="toggle"  />
+    <label for="section-989493819aad2d14ceb835eeee351713" class="flex justify-between">
+      <a role="button" class="">Interface</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-interface/layouts/" class="">Adjusting Layouts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-interface/scene-view/" class="">The Scene View</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f07d922fb865ab705335d67667049d43" class="toggle"  />
+    <label for="section-f07d922fb865ab705335d67667049d43" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/3d-models/" class="">3D Models</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/3d-models/from-sketchfab-to-unity/" class="">From Sketchfab To Unity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/3d-models/rig-with-mixamo/" class="">Setting up a Rig with Mixamo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea07a840a5b4a991a517a4629757fa50" class="toggle"  />
+    <label for="section-ea07a840a5b4a991a517a4629757fa50" class="flex justify-between">
+      <a role="button" class="">Virtual Reality</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle" checked />
+    <label for="section-57e58ca5aae968f4961a4036f314a5de" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/" class="">Programming in Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle" checked />
+    <label for="section-dddf50324cced418b45884f0b4af2983" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/basic-syntax/" class="">Syntax of Variables and Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/conditionals/" class=" active">Conditionals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/syntax-of-code-flow/" class="">Syntax of Code Flow</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/arrays/" class="">Arrays</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/classes-and-components/" class="">Classes and Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/collapsing-code/" class="">Collapsing Code Exercise</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
+    <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/advanced/" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/advanced/static-objects-and-unity/" class="">Static Objects in C# and Unity</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
+    <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/" class="">Architecture</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/the-architecture-lecture/" class="">The Architecture Lecture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/simple-state-machine/" class="">A Simple State Machine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/data-oriented-design-scriptable-objects/" class="">Data-Oriented Design with Scriptable Objects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/event-systems/" class="">Event Systems</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0ff8578a9ce2589fd9339b1e7ee15937" class="toggle"  />
+    <label for="section-0ff8578a9ce2589fd9339b1e7ee15937" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/unity/" class="">Code &amp; Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-81a14d8449a43fa75317a0013c930e62" class="toggle"  />
+    <label for="section-81a14d8449a43fa75317a0013c930e62" class="flex justify-between">
+      <a role="button" class="">Tips &amp; Tricks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/unity/tips-and-tricks/serialization-and-attributes/" class="">Serialization and Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/unity/tips-and-tricks/string-formatting/" class="">String Formatting</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/IMMTechSite-Preview/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Conditionals</strong>
+
+  <label for="toc-control">
+    
+    <img src="/IMMTechSite-Preview/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#boolean">Boolean</a></li>
+    <li><a href="#conditional-operators">Conditional Operators</a></li>
+    <li><a href="#logical-operators">Logical Operators</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#not">Not</a></li>
+    <li><a href="#bonus-exclusive-or">Bonus: Exclusive Or.</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="conditionals">
+  Conditionals
+  <a class="anchor" href="#conditionals">#</a>
+</h1>
+<p>A conditional is something that can be true or false.</p>
+<h2 id="boolean">
+  Boolean
+  <a class="anchor" href="#boolean">#</a>
+</h2>
+<p>The simplest conditional is a &ldquo;boolean&rdquo; data type. A boolean is a variable that can be equal to either &ldquo;True&rdquo; or &ldquo;False&rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they <em>literally,</em> can only be true or false.</p>
+<p>In C#, and in most programming languages, this data type is called &ldquo;bool&rdquo;.</p>
+<blockquote class="book-hint info">
+  The word &ldquo;Boolean&rdquo; comes from a mathematician named <a href="https://en.wikipedia.org/wiki/George_Boole">George Boole</a>.
+</blockquote>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">bool</span> trueOrFalse;<span style="color:#75715e">//false by default.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">bool</span> isAmazing = <span style="color:#66d9ef">true</span>;</code></pre></div>
+<blockquote class="book-hint warning">
+  We often use &ldquo;is&rdquo;, &ldquo;are&rdquo;, &ldquo;can&rdquo;, and similar prefixes in our variable names. (such as &ldquo;bool isCool;&quot;). This naming helps us read the code, it is grammatically easy to understand that this variable is something true or false.
+</blockquote>
+
+<h2 id="conditional-operators">
+  Conditional Operators
+  <a class="anchor" href="#conditional-operators">#</a>
+</h2>
+<p>Booleans are great for storing something that is true or false, but they don&rsquo;t help us <strong>dynamically</strong> determine if something is true or false (You know, the thing that makes computers more special than calculators). For that, we need operators.</p>
+<p>You are probably familiar with mathematical operators:</p>
+<ul>
+<li>plus: +</li>
+<li>minus: -</li>
+<li>multiplication: *</li>
+<li>division: \</li>
+</ul>
+<blockquote>
+<p>In programming, an operator is like shorthand syntax. It&rsquo;s a symbol with data on either side of it. It takes the <strong>left</strong> and <strong>right</strong> side of the operator, and then turns the whole thing into a new data value. The &ldquo;+&rdquo; operator takes two numbers to either side of it, mathematically adds them together, and returns the new single number of whatever their sum is.</p>
+</blockquote>
+<p>Conditional operators returns a bool. Common conditional operators:</p>
+<ul>
+<li>Greater Than: &gt;</li>
+<li>Less Than: &lt;</li>
+<li>Greater Than or Equal To: &gt;=</li>
+<li>Less Than or Equal To: &lt;=</li>
+<li>Is Equal To: ==</li>
+<li>Is Not Equal To: !=</li>
+</ul>
+<blockquote class="book-hint info">
+  Pay attention to the  &gt;= and &lt;= operators. We cannot flip around the greater than or equal to symbols. =&gt; and =&lt; are different symbols that mean something else. For example, =&gt; is a &lsquo;<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator">lambda operator</a>&rsquo;, and that would be gibberish to the compiler in the context of a conditional. So you&rsquo;ll end up with an error.
+</blockquote>
+
+<blockquote class="book-hint info">
+  <p>Also note the == operator. In C# programming, one equal sign (=) will very specifically take the right-hand value and <strong>assign</strong> it to the left hand side. Two equals signs (==) will compare the left-hand and right-hand sides, and then evaluate if they are equivalent or not. They are used in completely different ways.</p>
+<p>Unfortunately, in english, we say &ldquo;equals&rdquo; for both of these different things. I recommend you read &ldquo;==&rdquo; as &ldquo;Is Equal To?&rdquo; and &ldquo;=&rdquo; as &ldquo;is&rdquo;.</p>
+
+</blockquote>
+
+<h2 id="logical-operators">
+  Logical Operators
+  <a class="anchor" href="#logical-operators">#</a>
+</h2>
+<p>Logical Operators are used to connect multiple conditionals together to form another greater conditional. Like all operators, they consider the information to their left and their right (in this case bools), and they give us a new value, another bool.</p>
+<p>Logical Operators:</p>
+<ul>
+<li>And: &amp;&amp;</li>
+<li>Or: ||</li>
+<li>Not: !</li>
+</ul>
+<blockquote class="book-hint warning">
+  The | is the &lsquo;pipe symbol&rsquo;, it&rsquo;s often located above the enter key on keyboards. OR is two pipe symbols: ||.
+</blockquote>
+
+<p>The <strong>AND</strong> operator will return true if either side of it are both true. If one or both of them are false, then it will be false.</p>
+<ul>
+<li>true &amp;&amp; true == true</li>
+<li>true &amp;&amp; false == false</li>
+<li>false &amp;&amp; true == false</li>
+<li>false &amp;&amp; false == false</li>
+</ul>
+<p>The Or operator will return true if one or both of its sides are true.</p>
+<ul>
+<li>true || true == true</li>
+<li>true || false == true</li>
+<li>false || true == true</li>
+<li>false || false == false</li>
+</ul>
+<blockquote class="book-hint info">
+  <p>Why two ampersands? Or two pipe symbols? It turns out you can use single ones too.</p>
+<p>The operator evaluates either side of it. The code on the left evaluates first, then the code on the right. For an AND operator, if the left side is true, it doesn&rsquo;t matter what the right side is. The double &amp;&amp; and double || versions of the operator will <strong>not</strong> evaluate the right-hand side if it isn&rsquo;t needed. This is more efficient code, and considered good practice. As a rule of thumb, you should use it by default.</p>
+<p>Read about them in the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators">official documentation</a>.</p>
+<p><em>Knowing this, we can write conditionals in a way that evaluates simple parts before complicated ones. Like first checking if the right button is pressed (simple) before doing a physics/raycast calculation to see if the space is open to move into (complex). if(RightKeyIsPressed() &amp;&amp; ComplexFunctionToCheckIfWeCanMoveRight()){}. If the right key isn&rsquo;t pressed, the &amp;&amp; symbol means we won&rsquo;t bother even calling the complex function.</em></p>
+
+</blockquote>
+
+<hr>
+<h1 id="boolean-algebra">
+  Boolean Algebra
+  <a class="anchor" href="#boolean-algebra">#</a>
+</h1>
+<p>Of course, we can combine conditional operators and logical operators in complicated ways. When we do so, we can use parenthesis to disambiguate our order of operations, just like PEMDOS in algebra. We evaluate in parenthesis first, then left-to-right. See the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators#operator-precedence">official documentation</a> for operator precedence, but I recommend you default to using parenthesis to disambiguate, instead of relying on knowing the order of logical operations. It may technically be unnecessary, but if you err on the side of writing readable code over concise code, you&rsquo;ll have fewer bugs.</p>
+<p>See <a href="/IMMTechSite-Preview/docs/programming/fundamentals/syntax-of-code-flow/">Syntax of Code Flow</a> for an explainer of if statements, the most common use case for conditionals.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> a = <span style="color:#ae81ff">4</span>;
+<span style="color:#66d9ef">if</span>(a &lt; <span style="color:#ae81ff">5</span> &amp;&amp; a &gt; <span style="color:#ae81ff">0</span>)
+{
+	<span style="color:#75715e">//a must be 1,2,3,or 4 for this code to run.
+</span><span style="color:#75715e"></span>}</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> a = <span style="color:#ae81ff">4</span>;
+<span style="color:#66d9ef">int</span> b = <span style="color:#ae81ff">5</span>;
+<span style="color:#66d9ef">bool</span> runAnyway = <span style="color:#66d9ef">true</span>;
+<span style="color:#66d9ef">if</span>((a &lt; b &amp;&amp; b == <span style="color:#ae81ff">7</span>) || runAnyway)
+{
+	<span style="color:#75715e">//a must be less than b and b must be exactly 7, or runAnyway is equal to true.
+</span><span style="color:#75715e"></span>}</code></pre></div>
+<h2 id="not">
+  Not
+  <a class="anchor" href="#not">#</a>
+</h2>
+<p>Also called the &ldquo;<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators">Logical Negation Operator</a>&rdquo;. A ! placed before a conditional will negate it, flipping it from true to false and from false to true.</p>
+<p>! is not an operator in the way I described operators above, with a left and right side. It&rsquo;s more of a prefix. It&rsquo;s still called an operator in the programming syntax sense of a symbol that has a special purpose and function.</p>
+<ul>
+<li>!true == false</li>
+<li>!false == true</li>
+<li>!(a == b) and (a != b) evaluate the same</li>
+</ul>
+<blockquote class="book-hint warning">
+  The ! symbol is called &ldquo;bang&rdquo;, which is much easier to say than &ldquo;exclamation point&rdquo;.
+</blockquote>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//Hypothetical jump code for some game
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">bool</span> inTheAir = !CheckIfGrounded();
+<span style="color:#75715e">//We read this part as &#34;if JumpKeyIsPressed And Not inTheAir&#34;. 
+</span><span style="color:#75715e">//This is almost grammatically coherent. Naming variables and functions in this way can make your code easier to understand
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(JumpKeyIsPressed() &amp;&amp; !inTheAir)
+{
+	Jump();
+}</code></pre></div>
+<h2 id="bonus-exclusive-or">
+  Bonus: Exclusive Or.
+  <a class="anchor" href="#bonus-exclusive-or">#</a>
+</h2>
+<p>The or function is true if either value is true, but what about when we want <em>only one</em> value to be true? In english, we would still use the word &ldquo;or&rdquo;, in the world of logic, we need to be more specific and disambiguate. So: &ldquo;Exclusive Or&rdquo;. The exclusive or operator will be true so long as one and only one of the two values are true.</p>
+<p>The exclusive or operator is the ^ symbol.</p>
+<ul>
+<li>true ^ true == false</li>
+<li>true ^ false == true</li>
+<li>false ^ true == true</li>
+<li>false ^ false == false</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#boolean">Boolean</a></li>
+    <li><a href="#conditional-operators">Conditional Operators</a></li>
+    <li><a href="#logical-operators">Logical Operators</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#not">Not</a></li>
+    <li><a href="#bonus-exclusive-or">Bonus: Exclusive Or.</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

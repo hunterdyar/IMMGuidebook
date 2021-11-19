@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Unity Builds #  Scene Information #  Unity supports a number of &lsquo;Build Targets&rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
+I will use the terms &lsquo;Build Target&rsquo; and &lsquo;Platform&rsquo; interchangeably on this page.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Creating Builds" />
+<meta property="og:description" content="Unity Builds #  Scene Information #  Unity supports a number of &lsquo;Build Targets&rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
+I will use the terms &lsquo;Build Target&rsquo; and &lsquo;Platform&rsquo; interchangeably on this page." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/builds/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Creating Builds | IMM Technical Resource Site Preview</title>
+<link rel="manifest" href="/IMMTechSite-Preview/manifest.json">
+<link rel="icon" href="/IMMTechSite-Preview/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/IMMTechSite-Preview/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/IMMTechSite-Preview/flexsearch.min.js"></script>
+  <script defer src="/IMMTechSite-Preview/en.search.min.5198d117ba895d3aa63eb92f6a287cb42ec97f299cf78e42113d00281e2b2109.js" integrity="sha256-UZjRF7qJXTqmPrkvaih8tC7Jfymc945CET0AKB4rIQk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/IMMTechSite-Preview/"><span>IMM Technical Resource Site Preview</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle"  />
+    <label for="section-21cc7f86d77b52f288b1d547e8cb9bef" class="flex justify-between">
+      <a role="button" class="">Digital Media Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/digital-media-fundamentals/notes-on-file-management/" class="">Notes on File Management</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle" checked />
+    <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/" class="">Unity Development</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle" checked />
+    <label for="section-a3091d099fec882f5485ece4e6f64eb1" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/project-basics/" class="">Unity Project Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/assets/" class="">Assets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/builds/" class=" active">Creating Builds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-fundamentals/hierarchy/" class="">The Hierarchy Window</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-989493819aad2d14ceb835eeee351713" class="toggle"  />
+    <label for="section-989493819aad2d14ceb835eeee351713" class="flex justify-between">
+      <a role="button" class="">Interface</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-interface/layouts/" class="">Adjusting Layouts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/unity-interface/scene-view/" class="">The Scene View</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f07d922fb865ab705335d67667049d43" class="toggle"  />
+    <label for="section-f07d922fb865ab705335d67667049d43" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/3d-models/" class="">3D Models</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/3d-models/from-sketchfab-to-unity/" class="">From Sketchfab To Unity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/unity/3d-models/rig-with-mixamo/" class="">Setting up a Rig with Mixamo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea07a840a5b4a991a517a4629757fa50" class="toggle"  />
+    <label for="section-ea07a840a5b4a991a517a4629757fa50" class="flex justify-between">
+      <a role="button" class="">Virtual Reality</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle"  />
+    <label for="section-57e58ca5aae968f4961a4036f314a5de" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/" class="">Programming in Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle"  />
+    <label for="section-dddf50324cced418b45884f0b4af2983" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/basic-syntax/" class="">Syntax of Variables and Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/conditionals/" class="">Conditionals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/syntax-of-code-flow/" class="">Syntax of Code Flow</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/arrays/" class="">Arrays</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/classes-and-components/" class="">Classes and Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/fundamentals/collapsing-code/" class="">Collapsing Code Exercise</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
+    <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/advanced/" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/advanced/static-objects-and-unity/" class="">Static Objects in C# and Unity</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
+    <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/" class="">Architecture</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/the-architecture-lecture/" class="">The Architecture Lecture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/simple-state-machine/" class="">A Simple State Machine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/data-oriented-design-scriptable-objects/" class="">Data-Oriented Design with Scriptable Objects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/architecture/event-systems/" class="">Event Systems</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0ff8578a9ce2589fd9339b1e7ee15937" class="toggle"  />
+    <label for="section-0ff8578a9ce2589fd9339b1e7ee15937" class="flex justify-between">
+      <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/unity/" class="">Code &amp; Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-81a14d8449a43fa75317a0013c930e62" class="toggle"  />
+    <label for="section-81a14d8449a43fa75317a0013c930e62" class="flex justify-between">
+      <a role="button" class="">Tips &amp; Tricks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/unity/tips-and-tricks/serialization-and-attributes/" class="">Serialization and Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://hdyar.com/IMMTechSite-Preview/docs/programming/unity/tips-and-tricks/string-formatting/" class="">String Formatting</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/IMMTechSite-Preview/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Creating Builds</strong>
+
+  <label for="toc-control">
+    
+    <img src="/IMMTechSite-Preview/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#scene-information">Scene Information</a></li>
+    <li><a href="#switching-platforms">Switching Platforms</a></li>
+    <li><a href="#adding-build-targets">Adding Build Targets</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="unity-builds">
+  Unity Builds
+  <a class="anchor" href="#unity-builds">#</a>
+</h1>
+<h2 id="scene-information">
+  Scene Information
+  <a class="anchor" href="#scene-information">#</a>
+</h2>
+<p>Unity supports a number of &lsquo;Build Targets&rsquo;, or platforms that it can create executable files for. Desktop software for <strong>Windows</strong>, Mac, <strong>and</strong> <strong>Linux</strong> - of course, but also mobile platforms like <strong>Android</strong> and <strong>iOS</strong>, <strong>WebGL</strong> targets for playing games in the web browser on sites like itch.io, and game consoles like the <strong>Xbox</strong> or the <strong>Playstation</strong> .</p>
+<p><img src="/images/unity/builds/emptyBuildSettings.png" alt="Empty Build Settings Window" /></p>
+<blockquote class="book-hint warning">
+  I will use the terms &lsquo;Build Target&rsquo; and &lsquo;Platform&rsquo; interchangeably on this page.
+</blockquote>
+
+<p>The empty rectangle at the top is a list of all of the scenes that will be included in the build. If your scene isn&rsquo;t in this list, Unity will exclude it, and you can&rsquo;t load it. Unity will also do it&rsquo;s best to only include necessary assets in your project, and it uses the scene list to figure out what it does and doesn&rsquo;t need.</p>
+<p>Here is a full build scenes list for an actual game:</p>
+<p><img src="/images/unity/builds/fullBuildSettings.png" alt="Build Settings Window with many scenes added" /></p>
+<p>On the right, you can see the &lsquo;build index&rsquo; of each scene, and reorder the scenes. The scene at the top of the list - build index 0 - will be the first scene to be loaded when the project launches. After that, it&rsquo;s up to you to switch scenes and do what you need to do to play the game.</p>
+<blockquote class="book-hint info">
+  <p>Unity can load multiple scenes at a time. In the above example, the game first loads the &ldquo;init&rdquo; scene, which is a small scene that is in charge of loading all of the other scenes. This game has no main menu, the Init scene simply additively loads the UIHUD scene and the first scene of the game. At the end of each level, it unloads the level and loads the next one.</p>
+<p>This empty &ldquo;init&rdquo; manager scene is a common design pattern in Unity development.</p>
+
+</blockquote>
+
+<h2 id="switching-platforms">
+  Switching Platforms
+  <a class="anchor" href="#switching-platforms">#</a>
+</h2>
+<p>Unity needs to know what platform it is targeting while working internally. While you can build to multiple platforms, and switch at any time, the currently selected build target will determine how Unity imports assets. For example, Windows builds, Unity internally converts audio files to a .wav format, while on Android it uses .ogg.</p>
+<p>When you switch targets, Unity will need to reimport every single asset in your project. <strong>For large projects, this can take a long time.</strong> It&rsquo;s generally always best to have the appropriate build target selected, and switch to it early on in development.</p>
+<p>You can always test your app in play mode no matter what your build target is.</p>
+<p>You switch from the Build Settings menu, simply select the appropriate target and click &lsquo;Switch Platform&rsquo;</p>
+<h2 id="adding-build-targets">
+  Adding Build Targets
+  <a class="anchor" href="#adding-build-targets">#</a>
+</h2>
+<p>By default, Unity only supports building an executable file for the same operating system it is installed on. This is because they take up a lot of file space, and are often not needed. In order to build for other operating systems (building for windows from a mac computer, or vise-versa), we need to add more build targets.</p>
+<p>We add a build target from the Unity Hub. Close any open Unity projects, and go to the Installs section of the Hub. Click the three dots next to the appropriate unity version, and select &lsquo;add modules&rsquo;.</p>
+<p><img src="/images/unity/builds/addingBuildModules.gif" alt="Animated gif demonstrating the above steps" /></p>
+<p>You can see what build targets are installed via icons in the Hub.</p>
+<blockquote class="book-hint warning">
+  If you don&rsquo;t know better, <strong>choose the &ldquo;Mono&rdquo; versions</strong> instead of &ldquo;IL2CPP&rdquo;. For the curious, you can read more about IL2CPP from the <a href="https://docs.unity3d.com/Manual/IL2CPP.html">Unity documentation</a>.
+</blockquote>
+
+<details ><summary>Android Information</summary>
+  <div class="markdown-inner">
+    <p>For Android, you want to be sure to include the checkboxes for SDK, NDK, and JDK tools. These are necessary for android to work, and Unity can download and install them automatically.</p>
+<p><img src="/images/unity/builds/androidBuildSupport.png" alt="Android Build Support with Checked boxes for Android SDK &amp;amp; NDK Tools, and OpenJDK" /></p>
+<p>If you have done android development with other IDEs (like Android Studio or Unreal Engine), you already have the SDK, NDK, and JDK downloaded on your computer somewhere. If this is the case, you can uncheck these sub-check boxes, and not bother downloading it again, but leave &lsquo;Android Build Support&rsquo; Checked.</p>
+<p>You can set the locations of these tools manually in Unity (not the Unity Hub). Go to Preferences&hellip; &gt; External Tools.</p>
+<!-- raw HTML omitted -->
+
+  </div>
+</details>
+
+<details ><summary>Windows Executable Information</summary>
+  <div class="markdown-inner">
+    <p>When you make a build for windows, Unity will prompt you to select a folder. It&rsquo;s standard practice to create a &lsquo;Builds&rsquo; folder in your project, and then a folder for each build in this folder.</p>
+<p>Name the folder something appropriate (its smart to number or date your builds, so you never mess up and grab an out-of-date version).</p>
+<p><img src="/images/unity/builds/windowsBuildFiles.png" alt="The files Unity creates for Windows" /></p>
+<p>Unity creates the .exe file, a standalone file. This means we don&rsquo;t have to install the app. All of the information it needs to run is here. It also means you <strong>can&rsquo;t just send someone the .exe file.</strong> We need to have all of the files - the <strong>gameName_data</strong> folder, the <strong>MonoBleedingEdge</strong> folder, and <strong>UnityPlayer.dll</strong>.</p>
+<p>If any of these files or folders are missing, the game will throw an error.</p>
+<p>Further, the .exe filename and the _Data folder name <strong>need to match.</strong> If you rename one, you have to rename the other too. The executable file looks at its own name and searches for that+ &ldquo;_Data&rdquo; for a folder full of important game data.</p>
+<p>When sending this file to someone, or uploading to a site like itch.io, its best to put all the files in a compressed (zip) folder.</p>
+
+  </div>
+</details>
+
+<details ><summary>macOS Executable Information</summary>
+  <div class="markdown-inner">
+    <p>On the build settings menu, there is an&quot;Architecture&quot; drop-down. Choose between Intel, Apple silicon, or &lsquo;both&rsquo;. If you don&rsquo;t know better, select both. This creates a much larger file size than just selecting one or the other, so if you do know the architecture is running (apple silicon includes apple &ldquo;M1&rdquo; devices), you should select it. You can also make multiple builds. If you are hosting your game online for someone to download, you can let them choose the appropriate version for them.</p>
+<p>Mac creates a <em>.app</em> file. This single file is everything the game needs to run, no extra folders to worry about including.</p>
+<p>For someone to run the game, and you aren&rsquo;t worrying about <a href="https://docs.unity3d.com/2021.2/Documentation/Manual/macos-building.html">code signing or notarization</a>, they may need to &ldquo;Allow apps downloaded from anywhere&rdquo; in their security and privacy settings.  Read more about apple&rsquo;s security practices from <a href="https://support.apple.com/en-us/HT202491">apple support</a>.</p>
+
+  </div>
+</details>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#scene-information">Scene Information</a></li>
+    <li><a href="#switching-platforms">Switching Platforms</a></li>
+    <li><a href="#adding-build-targets">Adding Build Targets</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
