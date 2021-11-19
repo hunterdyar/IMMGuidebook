@@ -6,6 +6,8 @@
   </url><url>
     <loc>http://example.org/docs/unity/unity-fundamentals/</loc>
   </url><url>
+    <loc>http://example.org/docs/unity/unity-interface/</loc>
+  </url><url>
     <loc>http://example.org/docs/programming/fundamentals/basic-syntax/</loc>
   </url><url>
     <loc>http://example.org/docs/programming/architecture/the-architecture-lecture/</loc>
@@ -42,13 +44,15 @@
   </url><url>
     <loc>http://example.org/docs/programming/architecture/simple-state-machine/</loc>
   </url><url>
-    <loc>http://example.org/docs/unity/unity-fundamentals/layouts/</loc>
+    <loc>http://example.org/docs/unity/unity-interface/layouts/</loc>
   </url><url>
     <loc>http://example.org/docs/unity/unity-fundamentals/assets/</loc>
   </url><url>
     <loc>http://example.org/categories/</loc>
   </url><url>
     <loc>http://example.org/docs/programming/fundamentals/collapsing-code/</loc>
+  </url><url>
+    <loc>http://example.org/docs/unity/unity-fundamentals/builds/</loc>
   </url><url>
     <loc>http://example.org/docs/programming/architecture/data-oriented-design-scriptable-objects/</loc>
   </url><url>
@@ -71,6 +75,8 @@
     <loc>http://example.org/docs/unity/unity-fundamentals/hierarchy/</loc>
   </url><url>
     <loc>http://example.org/</loc>
+  </url><url>
+    <loc>http://example.org/docs/unity/unity-interface/scene-view/</loc>
   </url><url>
     <loc>http://example.org/docs/unity/virtual-reality/</loc>
   </url>

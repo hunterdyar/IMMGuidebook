@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interface on IMM Technical Resource Site</title>
+    <link>http://example.org/docs/unity/unity-interface/</link>
+    <description>Recent content in Interface on IMM Technical Resource Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/docs/unity/unity-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adjusting Layouts</title>
+      <link>http://example.org/docs/unity/unity-interface/layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/unity/unity-interface/layouts/</guid>
+      <description>Adjusting Layouts and Customizing Unity #    </description>
+    </item>
+    
+    <item>
+      <title>The Scene View</title>
+      <link>http://example.org/docs/unity/unity-interface/scene-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/unity/unity-interface/scene-view/</guid>
+      <description>The Scene View #  The Scene View, or Scene Window, is where we will spend the majority of our time in Unity. It allows us to see our scene, and edit and select objects.
+The scene View is most closely linked to the Hierarchy – they are both ways to edit a scene, and the Game View.
+Read the page in the Unity Manual on the Scene View, the Scene View Control Bar, and Gizmos.</description>
+    </item>
+    
+  </channel>
+</rss>

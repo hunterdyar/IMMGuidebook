@@ -12,16 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/docs/unity/unity-fundamentals/project-basics/</guid>
-      <description>Unity Project Basics#  </description>
-    </item>
-    
-    <item>
-      <title>Adjusting Layouts</title>
-      <link>http://example.org/docs/unity/unity-fundamentals/layouts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/unity/unity-fundamentals/layouts/</guid>
-      <description>Adjusting Layouts and Customizing Unity#  </description>
+      <description>Unity Project Basics #    </description>
     </item>
     
     <item>
@@ -30,8 +21,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/docs/unity/unity-fundamentals/assets/</guid>
-      <description>What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
+      <description>What are Assets? #  An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
 When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.</description>
+    </item>
+    
+    <item>
+      <title>Creating Builds</title>
+      <link>http://example.org/docs/unity/unity-fundamentals/builds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/unity/unity-fundamentals/builds/</guid>
+      <description>Unity Builds #  Scene Information #  Unity supports a number of &amp;lsquo;Build Targets&amp;rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
+I will use the terms &amp;lsquo;Build Target&amp;rsquo; and &amp;lsquo;Platform&amp;rsquo; interchangeably on this page.</description>
     </item>
     
     <item>
@@ -40,7 +41,7 @@ When we select an asset in the project window, the Inspector will show us it’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/docs/unity/unity-fundamentals/hierarchy/</guid>
-      <description>The Hierarchy#The hierarchy window shows us a list of all of our GameObjects in a scene. It&amp;rsquo;s a one-dimensional view of the scene, represented as a list.   It also is where we can group GameObjects together by dragging and dropping them. This is called “parenting”. It’s not just a visual organizational tool, it can have a major impact on how objects in the scene behave.</description>
+      <description>The Hierarchy #  The hierarchy window shows us a list of all of our GameObjects in a scene. It&amp;rsquo;s a one-dimensional view of the scene, represented as a list.   It also is where we can group GameObjects together by dragging and dropping them. This is called “parenting”. It’s not just a visual organizational tool, it can have a major impact on how objects in the scene behave.</description>
     </item>
     
   </channel>
