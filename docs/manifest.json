@@ -1,14 +1,14 @@
 {
   "name": "IMM Technical Resource Site Preview",
   "short_name": "IMM Technical Resource Site Preview",
-  "start_url": "/IMMTechSite-Preview/",
-  "scope": "/IMMTechSite-Preview/",
+  "start_url": "/IMMTechSite-Temporary/",
+  "scope": "/IMMTechSite-Temporary/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/IMMTechSite-Preview/favicon.svg",
+      "src": "/IMMTechSite-Temporary/favicon.svg",
       "sizes": "512x512"
     }
   ]
