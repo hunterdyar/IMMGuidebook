@@ -1,46 +1,84 @@
 ---
-title: Assets
+title: Components
 type: docs
 ---
-# What are Assets?
-An asset is an actual file on your computer. We store Assets in the &#8220;Assets&#8221; folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
+# What are Components?
+Components are where the real functionality of GameObjects gets implemented.
 
-When we select an asset in the project window, the Inspector will show us it&#8217;s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.
+The **[Transform](http://unity.hdyar.com/fundamentals/the-transform-component/)** [component](http://unity.hdyar.com/fundamentals/the-transform-component/) is part of every single [GameObject](http://unity.hdyar.com/fundamentals/what-are-gameobjects/) in Unity. You can’t delete it, because every gameObject **has** to have one. An Empty game object still has a position in the scene. It gives objects positions, rotations, and scales. It also handles how  objects can be “children” or “parents” of each other.
 
-It's easier to explain assets if we consider their uses.
+![Screenshot of Unity Main Camera](/images/unity/components/mainCamera.png)
+*The Default Main Camera in new scenes have three components: Transform, Camera, and Audio Listener.*
 
-## Common Asset Types
+####   Properties 
 
-#### Image Files
+It’s important to understand the main feature that Components give us:  properties. Components add behavior and functionality to GameObjects. Properties makes this useful. We can edit many properties of any GameObject’s component. The position, rotation, and scale values in the Transform component are it’s *properties*. 
 
-Images, like BMP or Jpeg&#8217;s, and even Photoshop documents directly (I haven&#8217;t utilized this new feature and still export all my sprites as PNG&#8217;s with transparency).
+There are two types of properties: *Values* and *References.* Basically, properties are either:
 
-#### 3D Models
+- **Values**: Data. Numbers. Variables in a script. Any direct value such as booleans, colors, strings, numbers, vectors, and so on. 
+- **References**: Telling us which *other* thing to use. Such as other GameObjects, other Components, or Assets.
 
-Unity supports FBX files for your 3D models. It also supports saving your native file format into the asset folder (ie: .max, .blend, .mb, .ma), and Unity turns them into .fbx&#8217;s when it runs and builds the game. This is useful if you are going back and forth a lot, but it&#8217;s still generally wise to export as FBX, especially if you are sharing/collaborating with others. Keep things from getting too messy.
+For Example, the **audio source** component has a volume property, which is a number (a *value*) telling unity how loud to play the audio, but it also has an AudioClip property. This property is a *reference.* We point it to an audio file in our assets folder.
 
-See the unity manual for information on [importing models](https://docs.unity3d.com/Manual/ImportingModelFiles.html), [Model File Formats.](https://docs.unity3d.com/Manual/3D-formats.html) Getting textures and animations to import with a model correctly (or to associate these things with models that have already been imported) can be tricky, and I won&#8217;t get into the details of this here.
+####   Editing Properties 
 
-#### Audio Files
+Many value properties are just numbers or letters, and editing them is as  simple as typing in whatever number we want. Some values, like colors,  would be annoying to edit as numbers (do you know the RGBa values for  all of the colors you want to use?). Unity gives us special editors for  many values. Colors, to continue the example, have a color picker that  will be familiar to you if you have used almost any graphics software.
 
-Unity supports a wide variety of audio, and will (by default) compress it to when it builds the game. Unity supports mp3, .ogg, .wac, .aif audio files, and  
-.mod, .it, .s3m, and .xm tracker modules files.
+For numerical properties, you can change the value by clicking and dragging left/right on the properties label. I find it especially useful to  click and drag on the “x”, “y” or “z” text to the left of the value in  the Transform component to quickly shuttle objects around the scene  without messing up my scene view.
 
-If you don&#8217;t know what tracker modules are, don&#8217;t worry. Think midi, they are sequence data and short audio samples to build out tracks. This helps create long songs without large file sizes.
+![animated gif of clicking and dragging on labels](/images/unity/components/draggingLabel.gif)
 
-#### Scripts
+*Clicking and dragging on labels can easily adjust numerical properties.*
 
-As we work in Unity, we will create lots of Scripts. These are C# or JavaScript files. You can make the files from within unity.
+Reference properties look like light grey rectangles and have a small circle to  the side of them. We can drag and drop files from our assets (ie: the  project window) into here to tell components what *thing* to use. Audio sources need to know what audio clip, sprite renderer’s need to  know what sprite to render, colliders often use physics materials, and  so on.
 
-{{< hint info >}}
 
-If you click the **Add Component **in the Inspector and create a **New Script **from here, it will put that script in the base assets folder. Before we open it up in our text editor, we should remember to move it to a Scripts folder, or wherever we want to move it. Unity will keep track of objects that we move around (from within Unity&#8217;s project window), but our IDE/text editors may not.
-{{< /hint >}}
 
-## File Structure
+![Dragging an asset into a property](/images/unity/components/draggingAndDroppingAssetToProperty.gif)
 
-Unity technically doesn&#8217;t care where in your project you store your assets. Technically you can have them all just sitting in your assets folder. Don&#8217;t do this. Create folders that categorize your asset. Generally based on type. Almost all of my projects have the following folders: &#8220;Scripts&#8221;, &#8220;Materials&#8221;, &#8220;Models&#8221;, &#8220;Images&#8221;, &#8220;Scenes&#8221;. Your&#8217;s probably should soon.
+*Dragging a Physics Material, from the Project  window, onto an appropriate property in the Inspector  window*
 
-This organization isn&#8217;t just to keep things pretty. Unity projects can get complicated quickly, and finding assets is going to be important.
+The little circle is the Object Picker, which basically lets us not have to drag and drop from  the project window, it opens a window with the possible things from our  game that the property could be referencing, and we can quickly select  them there without navigating around the project window.
 
-You should adopt a standard naming convention for your files, as well. But i won&#8217;t yell at you about that. At the very least, keep things descriptive.
+![img](/images/unity/components/UsingTheQuickSelector.gif)
+
+*Using the Object Picker to quickly grab the desired asset.*
+
+Read about how to edit many types of properties in the [Unity Manual](https://docs.unity3d.com/Manual/EditingValueProperties.html).
+
+####   Adding Components To GameObjects 
+
+With a GameObject selected (Click on it in the Hierarchy or in the Scene  view), it’s components are available to be edited in the Inspector  Window. In the [Inspector window](http://unity.hdyar.com/interface/the-inspector/), there is an “Add Component” button at the bottom you can use.
+
+![img](/images/unity/components/AddingAComponentInTheInspector.gif)
+
+*Adding the rigidbody component to a gameObject in the inspector.*
+
+Without using the inspector window, you can use the Component menu at the top  menu bar to add a component to a selected GameObject.
+
+A third way to add components to a GameObject is with code. Components can be added and removed during a games run-time.
+
+####   Making Our Own Components 
+
+When we make a script for Unity, most of the time that script will behave as a component. In fact, all components are written in C#, and we can even look at their code. Neat!
+
+####   Common Components 
+
+Other fundamental components we will see in most 3D projects include: [Camera](http://unity.hdyar.com/fundamentals/camera-component/), Light, Mesh Filter, Mesh Renderer, Collider Components, and [Rigidbody](http://unity.hdyar.com/fundamentals/rigidbody-component/). 2D games can use components for 3D games, but there are also components specific to 2D. Sprite Renderer’s are one example. There are also 2D  versions of many components (for performance reasons).
+
+Lets break down something fundamental into the components involved: A Cube.
+
+![The Cube](/images/unity/components/theCube.png)
+
+A cube has 3 Components.
+
+- Mesh Filter
+- Mesh Renderer
+- Box Collider
+
+You don’t need to worry about the **mesh filter**. It takes a mesh asset (the file on your computer) and make it usable by the mesh renderer. The specifics of this don’t matter to us. So much  that if you add a Mesh Renderer to a GameObject, Unity will  automatically add a mesh renderer.
+
+The **Mesh Renderer** makes the mesh visible to the cameras. Look at it’s properties: Cast  Shadows (on/off), Recieve Shadows, Materials, light probes, and other  graphics jargon. All of it affects how the mesh is seen by the camera,  in the scene. Useful!
+
+The third component is a **Box Collider**. This makes the cube *solid*. Without a collider, the box would just be visible, but unity’s physics  system would not be able to calculate if something is colliding with it  or not.
