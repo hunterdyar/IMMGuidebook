@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming in Unity on IMM Technical Resource Site Preview</title>
-    <link>http://hdyar.com/IMMTechSite-Temporary/docs/programming/</link>
-    <description>Recent content in Programming in Unity on IMM Technical Resource Site Preview</description>
+    <title>Programming in Unity on The Guidebook</title>
+    <link>http://guidebook.hdyar.com/docs/programming/</link>
+    <description>Recent content in Programming in Unity on The Guidebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://hdyar.com/IMMTechSite-Temporary/docs/programming/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://guidebook.hdyar.com/docs/programming/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

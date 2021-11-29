@@ -1,14 +1,14 @@
 {
-  "name": "IMM Technical Resource Site Preview",
-  "short_name": "IMM Technical Resource Site Preview",
-  "start_url": "/IMMTechSite-Temporary/",
-  "scope": "/IMMTechSite-Temporary/",
+  "name": "The Guidebook",
+  "short_name": "The Guidebook",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/IMMTechSite-Temporary/favicon.svg",
+      "src": "/favicon.svg",
       "sizes": "512x512"
     }
   ]
