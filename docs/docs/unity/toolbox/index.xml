@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toolbox on The Guidebook</title>
+    <link>http://guidebook.hdyar.com/docs/unity/toolbox/</link>
+    <description>Recent content in Toolbox on The Guidebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://guidebook.hdyar.com/docs/unity/toolbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clicking On Objects in 3D</title>
+      <link>http://guidebook.hdyar.com/docs/unity/toolbox/clicking-on-objects-in-3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/toolbox/clicking-on-objects-in-3d/</guid>
+      <description>Clicking On Objects in 3D #  Clicking on objects is a non-trivial task, despite how often we implement this behavior. Luckily, it&amp;rsquo;s not terribly difficult.
+There are two challenges:
+ The mouse is in screen-space, calculated in pixel-distance away from the top-left of the screen. Objects, on the other hand, are in world-space: they have a position in the scene. Objects in 3D can overlap each other visually. How do we know which one is &amp;ldquo;under&amp;rdquo; the mouse, and only select it?</description>
+    </item>
+    
+    <item>
+      <title>Simple LERP with Coroutines</title>
+      <link>http://guidebook.hdyar.com/docs/unity/toolbox/simple-lerp-with-coroutines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/toolbox/simple-lerp-with-coroutines/</guid>
+      <description>Simple Linear Interpolation with Coroutines #  Here is an example script that uses a coroutine to lerp between two provided positions.
+There is some extra code to allow the script to ping-pong back and forth between the positions.
+In a real-life usage, you probably don&amp;rsquo;t want to enter world-positions manually in the unity inspector. You might use offsets, calculating the real-world start and and position by adding them to the current position.</description>
+    </item>
+    
+  </channel>
+</rss>
