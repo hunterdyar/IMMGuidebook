@@ -1,6 +1,6 @@
-baseURL = 'http://hdyar.com/IMMTechSite-Temporary/'
+baseURL = 'http://guidebook.hdyar.com/'
 languageCode = 'en-us'
-title = 'IMM Technical Resource Site Preview'
+title = 'The Guidebook'
 theme = 'book'
 BookComments = false
 publishDir = 'docs'
