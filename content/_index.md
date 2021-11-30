@@ -4,7 +4,7 @@ type: docs
 bookToC: false
 ---
 
-# IMM Resource Site
+# The Guidebook
 
 # About
 
@@ -12,23 +12,22 @@ bookToC: false
 
 ## Welcome
 
-This site is an open repository for guides, videos, and general technical references related to crafting immersive digital experiences. This site is focused on technical how-to. It is not a repository for design notes or concepts. The exclusion of design concepts should not be taken as a remark on it's significance, but merely a focus of this repository.
-
+This site is an open repository for guides, videos, and general technical references related to crafting immersive digital experiences. It covers Unity Development, C# Programming, and more. This site is focused on technical how-to. 
 <--->
 
-## Lorum Ispem
+## Audience
 
-test test test test test multiple columns.test test test test test multiple columns.test test test test test multiple columns.test test test test test multiple columns.test test test test test multiple columns.test test test test test multiple columns.
+Much of the content for this site was written to be used supplementary to in-class material. In this world, there are often more complex ways to accomplish a task that has various benefits over a more accessible approach. I choose what I feel is appropriate for my beginner-to-intermediate audience. The tone and language of the website may reflect that much of it was written for an audience of specific students with a beginner skill level. I hope that despite all this, it is still helpful to a general audience.
+
 {{< /columns >}}
 
+---
 
-## Other Resources
-- links
-- to
-- other
-- resources
 
-## This Site
+## Contributing To This Site
 
-- This site was built with [Hugo](https://gohugo.io/).
-- It uses the theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/) by Alex Shpak.
+- The content for this site is written in [Markdown](https://www.markdownguide.org/).
+- This site was generated from the markdown content using [Hugo](https://gohugo.io/).
+- The generation process uses the theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/) by Alex Shpak.
+- The site is hosted on [GitHub Pages](https://pages.github.com/).
+- The github repository is [here](https://github.com/hunterdyar/IMMGuidebook). You can fork this repository and make changes, then submit a pull request.
