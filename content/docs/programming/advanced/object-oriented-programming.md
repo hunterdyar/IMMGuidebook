@@ -64,7 +64,10 @@ Component-based architecture is discussed in the [Architecture Lecture]({{< ref 
 
 {{< youtube Evkj2w0P5IM >}}
 
-## Next Steps
+## Syntax
+See the [Object Oriented Syntax]({{<ref "/docs/programming/advanced/object-oriented-syntax.md">}}) page.
+
+## Resources & Next Steps
 The next step will be to implement these concepts yourself in a project! In the meantime...
 
 ### Reinforce Concepts
