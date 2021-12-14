@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Unity Development.#This section covers non-programming related Unity content.">
+<meta name="description" content="Object-Oriented Syntax#Declaring Classes#The syntax for declaring a class is as demonstrated:
+public class ClassName { } public class ChildClassName : ParentClassName { } We almost always write one class per file. We tend to keep sibling classes as sibling files in our file structure, although this is not necessary. C# does not care where your files are located, so you have the freedom to organize them in a way that makes sense to you, your project, your team, and your source control system.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Unity Development" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Object Oriented Syntax" />
+<meta property="og:description" content="Object-Oriented Syntax#Declaring Classes#The syntax for declaring a class is as demonstrated:
+public class ClassName { } public class ChildClassName : ParentClassName { } We almost always write one class per file. We tend to keep sibling classes as sibling files in our file structure, although this is not necessary. C# does not care where your files are located, so you have the freedom to organize them in a way that makes sense to you, your project, your team, and your source control system." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/" /><meta property="article:section" content="docs" />
 
-<title>Unity Development | The Guidebook</title>
+
+
+<title>Object Oriented Syntax | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.936dc224b1f701db25c8c3167158ab9f961a3e770d836b3b12fb668601dae843.js" integrity="sha256-k23CJLH3AdslyMMWcVirn5YaPncNg2s7EvtmhgHa6EM=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="http://guidebook.hdyar.com/docs/unity/index.xml" title="The Guidebook" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -141,9 +144,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle" checked />
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle"  />
     <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
-      <a href="http://guidebook.hdyar.com/docs/unity/" class="active">Unity Development</a>
+      <a href="http://guidebook.hdyar.com/docs/unity/" class="">Unity Development</a>
     </label>
   
 
@@ -425,7 +428,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle"  />
+    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle" checked />
     <label for="section-57e58ca5aae968f4961a4036f314a5de" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/" class="">Programming in Unity</a>
     </label>
@@ -540,7 +543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle" checked />
     <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/advanced/" class="">Advanced</a>
     </label>
@@ -569,7 +572,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/" class="">Object Oriented Syntax</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/" class=" active">Object Oriented Syntax</a>
   
 
         </li>
@@ -775,7 +778,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Unity Development</strong>
+  <strong>Object Oriented Syntax</strong>
 
   <label for="toc-control">
     
@@ -789,7 +792,24 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#declaring-classes">Declaring Classes</a></li>
+    <li><a href="#overriding-members">Overriding Members</a>
+      <ul>
+        <li><a href="#virtual">Virtual</a></li>
+        <li><a href="#override">Override</a></li>
+      </ul>
+    </li>
+    <li><a href="#hiding">Hiding</a>
+      <ul>
+        <li><a href="#hiding-1">Hiding</a></li>
+        <li><a href="#hiding-in-a-nutshell">Hiding In A Nutshell</a></li>
+      </ul>
+    </li>
+    <li><a href="#event-functions">Event Functions</a></li>
+  </ul>
+</nav>
 
 
 
@@ -800,11 +820,113 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="unity-development">
-  Unity Development.
-  <a class="anchor" href="#unity-development">#</a>
+  <article class="markdown"><h1 id="object-oriented-syntax">
+  Object-Oriented Syntax
+  <a class="anchor" href="#object-oriented-syntax">#</a>
 </h1>
-<p>This section covers non-programming related Unity content.</p>
+<h2 id="declaring-classes">
+  Declaring Classes
+  <a class="anchor" href="#declaring-classes">#</a>
+</h2>
+<p>The syntax for declaring a class is as demonstrated:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassName</span>
+{
+
+}
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+{
+
+}</code></pre></div>
+<p>We almost always write one class per file. We tend to keep sibling classes as sibling files in our file structure, although this is not necessary. C# does not care where your files are located, so you have the freedom to organize them in a way that makes sense to you, your project, your team, and your source control system.</p>
+<blockquote class="book-hint warning">
+  It&rsquo;s not entirely true that C# doesn&rsquo;t care where our files are located. The exception comes with <a href="https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html">assembly definitions</a>.
+</blockquote>
+
+<h2 id="overriding-members">
+  Overriding Members
+  <a class="anchor" href="#overriding-members">#</a>
+</h2>
+<p>The two keywords we care about are <strong>virtual</strong> and <strong>override</strong>.</p>
+<h3 id="virtual">
+  Virtual
+  <a class="anchor" href="#virtual">#</a>
+</h3>
+<p>The virtual keyword modifies a member of a base class. It allows it to be overridden by child classes. You can override methods,properties, indexers, and event declarations. Most of the time we use it on methods (aka functions).</p>
+<p>The method being overridden cannot be private. How could it be overridden if the child classes cannot access it?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParentClassName</span>
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    {
+        <span style="color:#75715e">//stuff
+</span><span style="color:#75715e"></span>    }
+}</code></pre></div>
+<h3 id="override">
+  Override
+  <a class="anchor" href="#override">#</a>
+</h3>
+<p>The override keyword goes on a matching function on the children.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    {
+        <span style="color:#75715e">//stuff
+</span><span style="color:#75715e"></span>    }
+}</code></pre></div>
+<p>The function name, scope, and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods#method-signatures">method signature (properties)</a> all must match the parent.</p>
+<blockquote class="book-hint info">
+  If you are coming to this page from the OOP intro lesson, you can turn back now.
+</blockquote>
+
+<h2 id="hiding">
+  Hiding
+  <a class="anchor" href="#hiding">#</a>
+</h2>
+<h3 id="hiding-1">
+  Hiding
+  <a class="anchor" href="#hiding-1">#</a>
+</h3>
+<p>Instead of overriding a function, the other option that a child class can take is to hide the base function. The <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords">difference</a> is important, but it is only evident when the class is used polymorphically. I want my students to default to always overriding the parent class.</p>
+<p>For beginners still working to grasp polymorphism, code will behave more <strong>consistently</strong> and <strong>predictably</strong> if you default to using the override keyword. After we have been using polymorphic code for a while, we can come back and learn more about the differences between hiding and overriding functions.</p>
+<h3 id="hiding-in-a-nutshell">
+  Hiding In A Nutshell
+  <a class="anchor" href="#hiding-in-a-nutshell">#</a>
+</h3>
+<p>In many contexts, a hidden method and an overridden method will behave the same (executing the code in the child class), but in other contexts - dealing with polymorphism - they will not. For the curious, explore the above link and the docs on the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier">new</a> keyword.</p>
+<p>The difference appears when we create child objects that are the parent type. <em>That sentence is only not gibberish because of polymorphism.</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">ParentClassName someVariable = <span style="color:#66d9ef">new</span> ChildClassName();</code></pre></div>
+<p>In this case, the someVariable will execute the the function declared on the child if it is overridden, but if said function is merely hidden, it will execute the parents code - because it is types as the parent type, it can directly &ldquo;see&rdquo; the &ldquo;hidden&rdquo; parent classes functions.</p>
+<h2 id="event-functions">
+  Event Functions
+  <a class="anchor" href="#event-functions">#</a>
+</h2>
+<p>Whether you can hide or override them, Unity will still &ldquo;find&rdquo; the event function and the code should behave as expected - calling the child class functions. It will work.</p>
+<p>In general, I recommend you attempt to avoid situations where you override or hide Unity Event functions (like start or update), generally by writing the main logic in their own functions, and use event functions where appropriate. Often, only a parent, or only a child will need event functions.</p>
+<blockquote class="book-hint info">
+  For example, you can define the OnCollisionEnter function on the parent, and then have it call another function (TakeDamage, or whatever), and it&rsquo;s that function that gets overridden.
+</blockquote>
+
+<p>When I do use event functions in both parent and child classes, I prefer to set event functions as virtual and override them. I call the base class&rsquo;s function from the child basically every time I use an event function. 
+<blockquote class="book-hint info">
+  While this is more syntax than simply typing &ldquo;new&rdquo;, this forces me - when programming in the parent class - to understand that this function is getting overridden, as it has the virtual keyword. I prefer the extra verbose-ness as a bit of feedback, and I tend to make less mistakes when working this way.
+</blockquote>
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParentClassName</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> Start()
+    {
+        <span style="color:#75715e">//stuff
+</span><span style="color:#75715e"></span>    }
+}
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+{
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> Start()
+    {
+        <span style="color:#75715e">//Call whatever setup logic my parent class has.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">base</span>.Start();
+        <span style="color:#75715e">//Then additional logic here
+</span><span style="color:#75715e"></span>    }
+}</code></pre></div>
 </article>
  
       
@@ -844,7 +966,24 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#declaring-classes">Declaring Classes</a></li>
+    <li><a href="#overriding-members">Overriding Members</a>
+      <ul>
+        <li><a href="#virtual">Virtual</a></li>
+        <li><a href="#override">Override</a></li>
+      </ul>
+    </li>
+    <li><a href="#hiding">Hiding</a>
+      <ul>
+        <li><a href="#hiding-1">Hiding</a></li>
+        <li><a href="#hiding-in-a-nutshell">Hiding In A Nutshell</a></li>
+      </ul>
+    </li>
+    <li><a href="#event-functions">Event Functions</a></li>
+  </ul>
+</nav>
 
 
  

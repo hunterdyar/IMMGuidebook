@@ -18,6 +18,16 @@ There are three main &amp;ldquo;pillars&amp;rdquo; of object oriented programmin
     </item>
     
     <item>
+      <title>Object Oriented Syntax</title>
+      <link>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/</guid>
+      <description>Object-Oriented Syntax#Declaring Classes#The syntax for declaring a class is as demonstrated:
+public class ClassName { } public class ChildClassName : ParentClassName { } We almost always write one class per file. We tend to keep sibling classes as sibling files in our file structure, although this is not necessary. C# does not care where your files are located, so you have the freedom to organize them in a way that makes sense to you, your project, your team, and your source control system.</description>
+    </item>
+    
+    <item>
       <title>Static Objects in C# and Unity</title>
       <link>http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
