@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/</guid>
-      <description>Basic Syntax: Variables and Functions #  Variables #  Declaring Variables #  The keywords to declare a variable are as follows:
+      <description>Basic Syntax: Variables and Functions#Variables#Declaring Variables#The keywords to declare a variable are as follows:
  [scope][space][type][space][variableName][semicolon]
 scope type variableName;
  When naming our variables, we use lowercaseCamelCase. Also called pascalCase.
@@ -36,7 +36,7 @@ C# requires that we declare the variable type. We can&amp;rsquo;t just say &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/</guid>
-      <description>Unity Project Basics #    </description>
+      <description>Unity Project Basics#  </description>
     </item>
     
     <item>
@@ -45,8 +45,8 @@ C# requires that we declare the variable type. We can&amp;rsquo;t just say &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/conditionals/</guid>
-      <description>Conditionals #  A conditional is something that can be true or false.
-Boolean #  The simplest conditional is a &amp;ldquo;boolean&amp;rdquo; data type. A boolean is a variable that can be equal to either &amp;ldquo;True&amp;rdquo; or &amp;ldquo;False&amp;rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
+      <description>Conditionals#A conditional is something that can be true or false.
+Boolean#The simplest conditional is a &amp;ldquo;boolean&amp;rdquo; data type. A boolean is a variable that can be equal to either &amp;ldquo;True&amp;rdquo; or &amp;ldquo;False&amp;rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
 In C#, and in most programming languages, this data type is called &amp;ldquo;bool&amp;rdquo;.</description>
     </item>
     
@@ -56,7 +56,7 @@ In C#, and in most programming languages, this data type is called &amp;ldquo;bo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/</guid>
-      <description>Code Flow #  Inside of functions, there are a number of different ways to change how code executes. Without messing with code flow, and just having a bunch of statements, code will execute top to bottom, left to right. Code flow is how we get more complicated.
+      <description>Code Flow#Inside of functions, there are a number of different ways to change how code executes. Without messing with code flow, and just having a bunch of statements, code will execute top to bottom, left to right. Code flow is how we get more complicated.
 There are 2 main ways to manipulate code flow: Branches and Loops.
 Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdquo; again, are a way of executing functions only in some situations.</description>
     </item>
@@ -67,7 +67,7 @@ Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/arrays/</guid>
-      <description>Arrays #    </description>
+      <description>Arrays#  </description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/</guid>
-      <description>Classes and Components #  Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &amp;hellip; do everything with.
+      <description>Classes and Components#Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &amp;hellip; do everything with.
 Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let Unity handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component.</description>
     </item>
     
@@ -86,7 +86,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/serialization-and-attributes/</guid>
-      <description>Serialization and Attributes #    </description>
+      <description>Serialization and Attributes#  </description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/architecture/simple-state-machine/</guid>
-      <description>Creating a simple state machine in Unity #    Additional Resources #   One Wheel Studio - The State Pattern Habrador - State Pattern Tutorial Game Programming Patterns Book. Chapter on State  </description>
+      <description>Creating a simple state machine in Unity#  Additional Resources# One Wheel Studio - The State Pattern Habrador - State Pattern Tutorial Game Programming Patterns Book. Chapter on State  </description>
     </item>
     
     <item>
@@ -113,7 +113,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-interface/layouts/</guid>
-      <description>Adjusting Layouts and Customizing Unity #    </description>
+      <description>Adjusting Layouts and Customizing Unity#  </description>
     </item>
     
     <item>
@@ -122,7 +122,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</guid>
-      <description>What are Assets? #  An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
+      <description>What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
 When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.</description>
     </item>
     
@@ -132,7 +132,7 @@ When we select an asset in the project window, the Inspector will show us it’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/toolbox/clicking-on-objects-in-3d/</guid>
-      <description>Clicking On Objects in 3D #  Clicking on objects is a non-trivial task, despite how often we implement this behavior. Luckily, it&amp;rsquo;s not terribly difficult.
+      <description>Clicking On Objects in 3D#Clicking on objects is a non-trivial task, despite how often we implement this behavior. Luckily, it&amp;rsquo;s not terribly difficult.
 There are two challenges:
  The mouse is in screen-space, calculated in pixel-distance away from the top-left of the screen. Objects, on the other hand, are in world-space: they have a position in the scene. Objects in 3D can overlap each other visually. How do we know which one is &amp;ldquo;under&amp;rdquo; the mouse, and only select it?</description>
     </item>
@@ -143,7 +143,7 @@ There are two challenges:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/collapsing-code/</guid>
-      <description>Collapsing Code #  A basic exercise to help you think about code execution.
+      <description>Collapsing Code#A basic exercise to help you think about code execution.
   </description>
     </item>
     
@@ -153,9 +153,20 @@ There are two challenges:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/</guid>
-      <description>What are Components? #  Components are where the real functionality of GameObjects gets implemented.
+      <description>What are Components?#Components are where the real functionality of GameObjects gets implemented.
 The Transform component is part of every single GameObject in Unity. You can’t delete it, because every gameObject has to have one. An Empty game object still has a position in the scene. It gives objects positions, rotations, and scales. It also handles how objects can be “children” or “parents” of each other.
 The Default Main Camera in new scenes have three components: Transform, Camera, and Audio Listener.</description>
+    </item>
+    
+    <item>
+      <title>Confusion vs. Complexity</title>
+      <link>http://guidebook.hdyar.com/docs/digital-media-fundamentals/confusion-and-complexity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/confusion-and-complexity/</guid>
+      <description>Confusion vs. Complexity.#Learn the difference between confusion and complexity.
+Complexity is a status of a thing. Things can be complex. Confusion is a mental state. It is inside of you, a reflection of your relationship to the software.
+When you are confused, stop and figure out what it is that is confusing you. &amp;ldquo;Why did this person in this video tutorial choose to do it this way?&amp;rdquo;</description>
     </item>
     
     <item>
@@ -164,7 +175,7 @@ The Default Main Camera in new scenes have three components: Transform, Camera, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/builds/</guid>
-      <description>Unity Builds #  Scene Information #  Unity supports a number of &amp;lsquo;Build Targets&amp;rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
+      <description>Unity Builds#Scene Information#Unity supports a number of &amp;lsquo;Build Targets&amp;rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
 I will use the terms &amp;lsquo;Build Target&amp;rsquo; and &amp;lsquo;Platform&amp;rsquo; interchangeably on this page.</description>
     </item>
     
@@ -174,7 +185,7 @@ I will use the terms &amp;lsquo;Build Target&amp;rsquo; and &amp;lsquo;Platform&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/creative-vs-execution/</guid>
-      <description>Creative Level Work vs. Execution Level Work #  Let us identify different ways working, which might also call &amp;ldquo;styles of problem solving&amp;rdquo;, &amp;ldquo;types of work&amp;rdquo;, or &amp;ldquo;methods of creative engagement&amp;rdquo;.
+      <description>Creative Level Work vs. Execution Level Work#Let us identify different ways working, which might also call &amp;ldquo;styles of problem solving&amp;rdquo;, &amp;ldquo;types of work&amp;rdquo;, or &amp;ldquo;methods of creative engagement&amp;rdquo;.
 To start with an example, consider driving. When we all started learning how to drive, we had to think about every little mechanical action we took. Where do my hands go on the wheel. How hard do I press on the break.</description>
     </item>
     
@@ -184,7 +195,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/architecture/data-oriented-design-scriptable-objects/</guid>
-      <description>Data-oriented Design #  I think one of the best introductions to pragmatic data-oriented design is the 2017 talk that Ryan Hipple gave at the Unity Connect conference. It also introduces the basics of ScriptableObjects.
+      <description>Data-oriented Design#I think one of the best introductions to pragmatic data-oriented design is the 2017 talk that Ryan Hipple gave at the Unity Connect conference. It also introduces the basics of ScriptableObjects.
    After you have watched the above video, I recommend checking out the asset ScriptableObject-Architecture on the asset store. It&amp;rsquo;s an implementation of the ideas of the above talk, but really nicely done. It&amp;rsquo;s open source too.</description>
     </item>
     
@@ -194,7 +205,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/architecture/event-systems/</guid>
-      <description>Event Systems #    </description>
+      <description>Event Systems#  </description>
     </item>
     
     <item>
@@ -203,7 +214,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/3d-models/from-sketchfab-to-unity/</guid>
-      <description>From Sketchfab To Unity #  This video was recorded as review for the in-class lecture on the Exquisite museum project, posted here for future reference.
+      <description>From Sketchfab To Unity#This video was recorded as review for the in-class lecture on the Exquisite museum project, posted here for future reference.
   </description>
     </item>
     
@@ -213,7 +224,18 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/notes-on-file-management/</guid>
-      <description>Notes on File Management #    </description>
+      <description>Notes on File Management#  </description>
+    </item>
+    
+    <item>
+      <title>Object Oriented Programming</title>
+      <link>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/</guid>
+      <description>Object Oriented Programming#Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C++, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
+Object oriented programming is programming around data structures that contain variables and functions.
+There are three main &amp;ldquo;pillars&amp;rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. Depending on who you ask, there is a fourth pillar: Abstraction.</description>
     </item>
     
     <item>
@@ -222,7 +244,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/order-of-development/</guid>
-      <description>Order Of Development #  Work along your protects primary axis. Different projects require different workflows, and identifying this is often challenging for beginners.
+      <description>Order Of Development#Work along your protects primary axis. Different projects require different workflows, and identifying this is often challenging for beginners.
 Generally: work out a draft and refine. What constitutes draft? What elements are refinement? What is neccesary for understanding core, fundamental, parts of your project?
 In animation, One doesn&amp;rsquo;t animate Start to finish, timing is a key part or animation, so the animator starts with notable moment poses, and timings, and places key frames first, then they go add the ih between frames, after spending time tweaking the timing.</description>
     </item>
@@ -233,7 +255,7 @@ In animation, One doesn&amp;rsquo;t animate Start to finish, timing is a key par
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/3d-models/rig-with-mixamo/</guid>
-      <description>Setting up a Rig with Mixamo #  This is an older video, I promise some useful information is hidden in there somewhere.
+      <description>Setting up a Rig with Mixamo#This is an older video, I promise some useful information is hidden in there somewhere.
 The video got demonitized (it was never monitized) because of an automatic copywrite claim by Katy Perry. So that&amp;rsquo;s fun. You should be able to watch it on youtube.   </description>
     </item>
     
@@ -243,7 +265,7 @@ The video got demonitized (it was never monitized) because of an automatic copyw
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/toolbox/simple-lerp-with-coroutines/</guid>
-      <description>Simple Linear Interpolation with Coroutines #  Here is an example script that uses a coroutine to lerp between two provided positions.
+      <description>Simple Linear Interpolation with Coroutines#Here is an example script that uses a coroutine to lerp between two provided positions.
 There is some extra code to allow the script to ping-pong back and forth between the positions.
 In a real-life usage, you probably don&amp;rsquo;t want to enter world-positions manually in the unity inspector. You might use offsets, calculating the real-world start and and position by adding them to the current position.</description>
     </item>
@@ -254,7 +276,7 @@ In a real-life usage, you probably don&amp;rsquo;t want to enter world-positions
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/</guid>
-      <description>Static Objects #    </description>
+      <description>Static Objects#  </description>
     </item>
     
     <item>
@@ -263,7 +285,7 @@ In a real-life usage, you probably don&amp;rsquo;t want to enter world-positions
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/string-formatting/</guid>
-      <description>String Formatting and Debug.Log: Unity Nice-to-knows #    </description>
+      <description>String Formatting and Debug.Log: Unity Nice-to-knows#  </description>
     </item>
     
     <item>
@@ -272,7 +294,7 @@ In a real-life usage, you probably don&amp;rsquo;t want to enter world-positions
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-interface/game-view/</guid>
-      <description>The Game View #  The game view is where we run our games. See the unity manual on the Game View.
+      <description>The Game View#The game view is where we run our games. See the unity manual on the Game View.
 First, our scene view camera and our game view camera are two completely separate things. The scene view, and its &amp;lsquo;camera&amp;rsquo; that you control with the mouse, is an editor tool. The camera&amp;rsquo;s location has no impact on the final, finished, game. The game view, then, allows us to see the games current actual state, how it will be rendered.</description>
     </item>
     
@@ -282,7 +304,7 @@ First, our scene view camera and our game view camera are two completely separat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-interface/hierarchy/</guid>
-      <description>The Hierarchy #  The hierarchy window shows us a list of all of our GameObjects in a scene. It&amp;rsquo;s a one-dimensional view of the scene, represented as a list.   It also is where we can group GameObjects together by dragging and dropping them. This is called “parenting”. It’s not just a visual organizational tool, it can have a major impact on how objects in the scene behave.</description>
+      <description>The Hierarchy#The hierarchy window shows us a list of all of our GameObjects in a scene. It&amp;rsquo;s a one-dimensional view of the scene, represented as a list.   It also is where we can group GameObjects together by dragging and dropping them. This is called “parenting”. It’s not just a visual organizational tool, it can have a major impact on how objects in the scene behave.</description>
     </item>
     
     <item>
@@ -291,7 +313,7 @@ First, our scene view camera and our game view camera are two completely separat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/</guid>
-      <description>The Scene View #  The Scene View, or Scene Window, is where we will spend the majority of our time in Unity. It allows us to see our scene, and edit and select objects.
+      <description>The Scene View#The Scene View, or Scene Window, is where we will spend the majority of our time in Unity. It allows us to see our scene, and edit and select objects.
 The scene View is most closely linked to the Hierarchy – they are both ways to edit a scene, and the Game View.
 Read the page in the Unity Manual on the Scene View, the Scene View Control Bar, and Gizmos.</description>
     </item>

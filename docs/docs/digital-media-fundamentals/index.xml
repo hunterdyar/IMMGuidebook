@@ -7,12 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Confusion vs. Complexity</title>
+      <link>http://guidebook.hdyar.com/docs/digital-media-fundamentals/confusion-and-complexity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/confusion-and-complexity/</guid>
+      <description>Confusion vs. Complexity.#Learn the difference between confusion and complexity.
+Complexity is a status of a thing. Things can be complex. Confusion is a mental state. It is inside of you, a reflection of your relationship to the software.
+When you are confused, stop and figure out what it is that is confusing you. &amp;ldquo;Why did this person in this video tutorial choose to do it this way?&amp;rdquo;</description>
+    </item>
+    
+    <item>
       <title>Creativity vs. Execution</title>
       <link>http://guidebook.hdyar.com/docs/digital-media-fundamentals/creative-vs-execution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/creative-vs-execution/</guid>
-      <description>Creative Level Work vs. Execution Level Work #  Let us identify different ways working, which might also call &amp;ldquo;styles of problem solving&amp;rdquo;, &amp;ldquo;types of work&amp;rdquo;, or &amp;ldquo;methods of creative engagement&amp;rdquo;.
+      <description>Creative Level Work vs. Execution Level Work#Let us identify different ways working, which might also call &amp;ldquo;styles of problem solving&amp;rdquo;, &amp;ldquo;types of work&amp;rdquo;, or &amp;ldquo;methods of creative engagement&amp;rdquo;.
 To start with an example, consider driving. When we all started learning how to drive, we had to think about every little mechanical action we took. Where do my hands go on the wheel. How hard do I press on the break.</description>
     </item>
     
@@ -22,7 +33,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/notes-on-file-management/</guid>
-      <description>Notes on File Management #    </description>
+      <description>Notes on File Management#  </description>
     </item>
     
     <item>
@@ -31,7 +42,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/order-of-development/</guid>
-      <description>Order Of Development #  Work along your protects primary axis. Different projects require different workflows, and identifying this is often challenging for beginners.
+      <description>Order Of Development#Work along your protects primary axis. Different projects require different workflows, and identifying this is often challenging for beginners.
 Generally: work out a draft and refine. What constitutes draft? What elements are refinement? What is neccesary for understanding core, fundamental, parts of your project?
 In animation, One doesn&amp;rsquo;t animate Start to finish, timing is a key part or animation, so the animator starts with notable moment poses, and timings, and places key frames first, then they go add the ih between frames, after spending time tweaking the timing.</description>
     </item>
