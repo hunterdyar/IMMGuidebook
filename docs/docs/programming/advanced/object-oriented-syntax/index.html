@@ -19,7 +19,7 @@ public class ClassName { } public class ChildClassName : ParentClassName { } We 
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.936dc224b1f701db25c8c3167158ab9f961a3e770d836b3b12fb668601dae843.js" integrity="sha256-k23CJLH3AdslyMMWcVirn5YaPncNg2s7EvtmhgHa6EM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.0a94ce2c03702c4bdd90cf88e4e9acbc3351cb2f31297948e558ba6717337a2d.js" integrity="sha256-CpTOLANwLEvdkM&#43;I5OmsvDNRyy8xKXlI5Vi6Zxczei0=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -799,6 +799,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#virtual">Virtual</a></li>
         <li><a href="#override">Override</a></li>
+        <li><a href="#calling-the-base-function">Calling The Base Function</a></li>
       </ul>
     </li>
     <li><a href="#hiding">Hiding</a>
@@ -878,6 +879,27 @@ https://github.com/alex-shpak/hugo-book
   If you are coming to this page from the OOP intro lesson, you can turn back now.
 </blockquote>
 
+<h3 id="calling-the-base-function">
+  Calling The Base Function
+  <a class="anchor" href="#calling-the-base-function">#</a>
+</h3>
+<p>We can call functions on the base class from the child class using the <strong>base</strong> keyword as a reference to the base class. We can call the base class &ldquo;version&rdquo; of the function from the child class, which is a very common pattern.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParentClassName</span>
+{
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    {
+        <span style="color:#75715e">//Code that lives in the parent class
+</span><span style="color:#75715e"></span>    }
+}
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+{
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    {
+        <span style="color:#75715e">//Execute the code that lives in the parent class
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">base</span>.SomeFunction();
+        <span style="color:#75715e">//Often we follow that with our own additional logic
+</span><span style="color:#75715e"></span>    }
+}</code></pre></div>
 <h2 id="hiding">
   Hiding
   <a class="anchor" href="#hiding">#</a>
@@ -973,6 +995,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#virtual">Virtual</a></li>
         <li><a href="#override">Override</a></li>
+        <li><a href="#calling-the-base-function">Calling The Base Function</a></li>
       </ul>
     </li>
     <li><a href="#hiding">Hiding</a>
