@@ -62,6 +62,28 @@ The function name, scope, and [method signature (properties)](https://docs.micro
 If you are coming to this page from the OOP intro lesson, you can turn back now.
 {{< /hint >}}
 
+### Calling The Base Function
+We can call functions on the base class from the child class using the **base** keyword as a reference to the base class. We can call the base class "version" of the function from the child class, which is a very common pattern. 
+
+{{< highlight csharp >}}
+public class ParentClassName
+{
+    protected override void SomeFunction()
+    {
+        //Code that lives in the parent class
+    }
+}
+public class ChildClassName : ParentClassName
+{
+    protected override void SomeFunction()
+    {
+        //Execute the code that lives in the parent class
+        base.SomeFunction();
+        //Often we follow that with our own additional logic
+    }
+}
+{{< /highlight >}}
+
 ## Hiding
 ### Hiding
 Instead of overriding a function, the other option that a child class can take is to hide the base function. The [difference](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords) is important, but it is only evident when the class is used polymorphically. I want my students to default to always overriding the parent class.
