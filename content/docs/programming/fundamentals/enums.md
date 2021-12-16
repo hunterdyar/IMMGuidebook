@@ -22,7 +22,7 @@ enum Color
 You can write enums in their own files, just like classes. I often use enums as an 'embedded type', declaring it inside of a class, if more-or-less only that class will use the enum. In that case, you would access the enum from elsewhere with the same dot-access that you are used to: ClassName.EnumName.enumValue.
 {{< /hint >}}
 
-Behind the scenes, enums get treated as integers when the code gets compiled. Theyre just _some value_, and their use is in how we use them.
+Behind the scenes, enums get treated as integers when the code gets compiled. Theyre just _some value_, and their use is in how we use them. They mean whatever we want them to mean. Unlike numbers, they don't have baked-in relationships to their values. They're just sets of named values.
 
 > In fact, you can specify what the [underlying type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/enums) is. You can optimize your enums to be any integral (whole number) type, like bytes, uints, longs, or short. This is a rare use-case, don't worry about it. It's good to know that there is an underlying type because you can cast your enum into numbers easily. You can control that and manually set the values that the enums get represented as. Doing this lets you compare enum properties by casting enums to enum, and they can be "greater/less than" or "odd/even" or "non-zero" and so on. Neat.
 
@@ -46,7 +46,7 @@ public enum Suit
 }
 {{< /highlight>}}
 
-Consider the suit of a playing cards. You could store this as an integer, or even just a byte, but why not store it something that will be instantly and easily readable for what it is? Store it as a _suit_. It's a suit, so whats the perfect data type? Why not ... **Suit**. Make an enum and call it Suit, give it appropriate values, it's that easy.
+Consider the suit of a playing cards. You could store this as an integer, or even just a byte, but why not store it something that will be instantly and easily readable for what it is? Store it as a _suit_. It's a suit, so what's the perfect data type? Why not ... **Suit**. Make an enum and call it Suit, give it appropriate values, it's that easy.
 
 ## Enums in Unity
 One of the best things about enums is how Unity treats them. Much like tags and layers, Unity will give you a drop-down list to choose from when you have an Enum.
