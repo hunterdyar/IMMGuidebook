@@ -42,6 +42,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/setup/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/toolbox/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/virtual-reality/from-zero-to-oculus-quest/</loc>
@@ -74,6 +76,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/3d-models/from-sketchfab-to-unity/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/setup/installing-unity/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/digital-media-fundamentals/notes-on-file-management/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/</loc>
@@ -94,9 +98,9 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/game-view/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/hierarchy/</loc>
-  </url><url>
     <loc>http://guidebook.hdyar.com/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/hierarchy/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/</loc>
   </url>
