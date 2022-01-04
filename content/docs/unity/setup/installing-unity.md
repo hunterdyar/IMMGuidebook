@@ -76,13 +76,13 @@ Next, there are 3 official releases every year. They are released on a calendar 
 The first two releases (.1 and .2) are called "tech" releases. They introduce new features. The last release (.3) is called the **Long-Term Stable** (LTS) release. It introduces no new features. It is supported with bug fixes for two years. If you are using a tech release, it is assumed you will eventually switch to the LTS version of those tech releases in the future.
 
 {{< hint warning >}}
-Unity switched from 3 tech releases to 2 in 2020, so 2019.4 exists. They also switched from a traditional numbering scheme around 2017, so if you see unity version "5.6", or similar, that's basically the 2016/2017 version of Unity. 
+Unity switched from 3 tech releases to 2 in 2020, so 2019.4 (LTS) exists. They also switched from a traditional numbering scheme around 2017, so if you see unity version "5.6", or similar, that's basically the 2016/2017 version of Unity. 
 {{</hint>}}
 
 ### Which Version of Unity Do I Install?
 Unity recommends it's LTS release, which is currently 2020.3. I agree, this is almost always the version you want to install.
 
-Currently, You will also be fine to switch to the latest 2021 tech channel (.1 or .2). Unity 2021.1 Introduces some minor changes to the UI, so I will be switching to at-least-this-version to help future-proof screen captures and videos. If you want your version to look like how mine _currently_ looks, then do that. The changes aren't that significant, it's not a big deal.
+Currently, you will also be fine to switch to the latest 2021 tech channel (.1 or .2). Unity 2021.1 Introduces some minor changes to the UI, so I will be switching to at-least-this-version to help future-proof screen captures and videos. If you want your version to look like how mine _currently_ looks, then do that. The UI changes aren't that significant, it's not a big deal.
 
 ### Platform Modules
 After you choose the version, click **next**, and you will be asked when modules you want to install.

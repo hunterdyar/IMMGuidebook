@@ -47,6 +47,13 @@ Some of the things that vectors commonly represent in Unity:
 
 So vectors are pretty useful! Lets think about some common uses a bit more particularly.
 
+### Vectors Can Represent Anything
+If I want to use a Vector3 for "playerStats" and let the x be the players health, y be the players mana, and z be the players charge-o-meter, then sure. Why not?
+
+Well, because that's silly. If you want to store all these as 1 variable, you can make your own data structure to represent it. Your code data structures should represent what your data _is_. Don't just use a vector because it's there, and convenient. We want the functions that vectors come with to be useful to us. What would it mean to "normalize" a health/mana/charge-o-meter vector? It's an incoherent thought.
+
+But Vectors, as a data structure, are just a set of floats. They can represent whatever you want them to represent. We commonly use them in contexts that aren't _just_ 3 related values, but where vector-based math is useful. This includes forces, directions, and positions, the most common use cases for Vectors.
+
 ### Vectors for Position, Rotation, and Scale
 An objects position, rotation, and scale is called it's **transform**. We edit all of these properties via vectors inside of the transform component.
 
