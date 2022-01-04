@@ -17,7 +17,7 @@ This site is an open repository for guides, videos, and general technical refere
 
 ## Audience
 
-Much of the content for this site was written to be used supplementary to in-class material. In this world, there are often more complex ways to accomplish a task that has various benefits over a more accessible approach. I choose what I feel is appropriate for my beginner-to-intermediate audience. The tone and language of the website may reflect that much of it was written for an audience of specific students with a beginner skill level. I hope that despite all this, it is still helpful to a general audience.
+Much of the content for this site was written to be used supplementary to in-class material. There are often more complex ways to accomplish a task that has various benefits over a more accessible approach. I choose what I feel is appropriate for my beginner-to-intermediate audience. The tone and language of the website may reflect that much of it was written for an audience of specific students with a beginner skill level. I hope that it is still helpful to a general audience.
 
 {{< /columns >}}
 
