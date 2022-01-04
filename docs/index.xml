@@ -82,10 +82,10 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
     
     <item>
       <title>Serialization and Attributes</title>
-      <link>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/serialization-and-attributes/</link>
+      <link>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/serialization-and-attributes/</guid>
+      <guid>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/</guid>
       <description>Serialization and Attributes#  </description>
     </item>
     
@@ -302,10 +302,10 @@ In a real-life usage, you probably don&amp;rsquo;t want to enter world-positions
     
     <item>
       <title>String Formatting</title>
-      <link>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/string-formatting/</link>
+      <link>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/string-formatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/string-formatting/</guid>
+      <guid>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/string-formatting/</guid>
       <description>String Formatting and Debug.Log: Unity Nice-to-knows#  </description>
     </item>
     
@@ -337,6 +337,18 @@ First, our scene view camera and our game view camera are two completely separat
       <description>The Scene View#The Scene View, or Scene Window, is where we will spend the majority of our time in Unity. It allows us to see our scene, and edit and select objects.
 The scene View is most closely linked to the Hierarchy – they are both ways to edit a scene, and the Game View.
 Read the page in the Unity Manual on the Scene View, the Scene View Control Bar, and Gizmos.</description>
+    </item>
+    
+    <item>
+      <title>Vectors</title>
+      <link>http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/</guid>
+      <description>Vectors#Vectors are a simple data structure that contain a set of floats - numbers. They are incredibly useful!
+After looking through this high-level-overview page, I recommend reading this page on Vectors in the Unity manual.
+Vector Overview#  Types of Vectors in Unity#In Unity, we have a number of different &amp;lsquo;vector&amp;rsquo; data structures:
+ Vector2 Vector3 Vector4  The number refers to the number of floats that the vector contains.</description>
     </item>
     
   </channel>

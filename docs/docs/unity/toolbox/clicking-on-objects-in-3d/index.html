@@ -21,7 +21,7 @@ There are two challenges:
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e8ada6409906725ffa43790b144ccc5a6fb2e6f4809af7eb0eab993d90bad602.js" integrity="sha256-6K2mQJkGcl/6Q3kLFEzMWm&#43;y5vSAmvfrDquZPZC61gI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.964e87322549a6a4b42a04048dd41cd9d3f9087cba6ae7b76148f2edbaa50c21.js" integrity="sha256-lk6HMiVJpqS0KgQEjdQc2dP5CHy6aue3YUjy7bqlDCE=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -712,9 +712,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0ff8578a9ce2589fd9339b1e7ee15937" class="toggle"  />
-    <label for="section-0ff8578a9ce2589fd9339b1e7ee15937" class="flex justify-between">
-      <a href="http://guidebook.hdyar.com/docs/programming/unity/" class="">Unity Specific</a>
+    <input type="checkbox" id="section-8bb48feef647b1565f2ae8cf98155c0f" class="toggle"  />
+    <label for="section-8bb48feef647b1565f2ae8cf98155c0f" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/" class="">Unity Specific Programming</a>
     </label>
   
 
@@ -728,8 +728,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-81a14d8449a43fa75317a0013c930e62" class="toggle"  />
-    <label for="section-81a14d8449a43fa75317a0013c930e62" class="flex justify-between">
+    <input type="checkbox" id="section-d781a33d1971ab7a88804d986cf195e7" class="toggle"  />
+    <label for="section-d781a33d1971ab7a88804d986cf195e7" class="flex justify-between">
       <a role="button" class="">Tips &amp; Tricks</a>
     </label>
   
@@ -744,7 +744,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/serialization-and-attributes/" class="">Serialization and Attributes</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/" class="">Serialization and Attributes</a>
   
 
         </li>
@@ -757,13 +757,26 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/string-formatting/" class="">String Formatting</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/string-formatting/" class="">String Formatting</a>
   
 
         </li>
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/" class="">Vectors</a>
+  
 
         </li>
       
@@ -874,7 +887,7 @@ https://github.com/alex-shpak/hugo-book
 <p>We will use the cameras <a href="https://docs.unity3d.com/ScriptReference/Camera.ScreenPointToRay.html">ScreenPointToRay</a> function.</p>
 <p>We also don&rsquo;t really need to store the mousePosition as a temporary Vector3 variable, lets just skip that and plug in the &ldquo;Input.mousePosition&rdquo; directly to this camera function.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Ray ray = cam.ScreenPointToRay(Input.mousePosition);</code></pre></div>
-<p>Now we need to do a <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html">Raycast</a>. I advise you to research Raycasts more, starting with that above documentation page. It uses a C# feature called an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier">&ldquo;out&rdquo; parameter modifier</a>. &ldquo;Out&rdquo; (and &ldquo;ref&rdquo;) allow a function to modify variables that it takes as parameters. That means we have the return type from the function (in this case, a boolean: did we hit anything at all), it has <em>another</em> &ldquo;returned&rdquo; value - if we did hit something, the data about it is now available in this variable. The &lsquo;out&rsquo; keyword is how we know that this function is allowed to repalce the data in this variable.</p>
+<p>Now we need to do a <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html">Raycast</a>. I advise you to research Raycasts more, starting with that above documentation page. It uses a C# feature called an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier">&ldquo;out&rdquo; parameter modifier</a>. &ldquo;Out&rdquo; (and &ldquo;ref&rdquo;) allow a function to modify variables that it takes as parameters. That means we have the return type from the function (in this case, a boolean: did we hit anything at all), it has <em>another</em> &ldquo;returned&rdquo; value - if we did hit something, the data about it is now available in this variable. The &lsquo;out&rsquo; keyword is how we know that this function is allowed to replace the data in this variable.</p>
 <p>The RaycastHit datatype is a simple data structure used to get information from the hit. Check out the information it holds in the <a href="https://docs.unity3d.com/ScriptReference/RaycastHit.html">RaycastHit scriptingAPI documentation</a>.</p>
 <p>Let&rsquo;s put it all together.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Camera cam;

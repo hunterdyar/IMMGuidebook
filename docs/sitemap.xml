@@ -12,7 +12,7 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/the-architecture-lecture/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/</loc>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/</loc>
   </url><url>
@@ -34,13 +34,13 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/advanced/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/serialization-and-attributes/</loc>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/virtual-reality/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/programming/unity/</loc>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/setup/</loc>
   </url><url>
@@ -92,7 +92,7 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/string-formatting/</loc>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/string-formatting/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/tags/</loc>
   </url><url>
@@ -103,5 +103,7 @@
     <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/hierarchy/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/</loc>
   </url>
 </urlset>
