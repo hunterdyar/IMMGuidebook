@@ -31,8 +31,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/architecture/accessing-data/</guid>
-      <description>How to Access Data From Another Script in Unity#  Also see: Data-oriented design.
-Also see: Event Systems.</description>
+      <description>How to Access Data From Another Script in Unity#To access data that an object has, we need a reference to the appropriate instance of the object. The real challenge is, for the most part, getting the appropriate reference (&amp;ldquo;resolving&amp;rdquo; a &amp;ldquo;dependency&amp;rdquo;), and not actually accessing the data.
+Also see: Data-oriented design.
+Also see: Event Systems.
+Public and Serialized Fields#The simplest, easiest, minimum-viable option is to make a public field.</description>
     </item>
     
     <item>
@@ -52,6 +54,17 @@ Also see: Event Systems.</description>
       
       <guid>http://guidebook.hdyar.com/docs/programming/architecture/event-systems/</guid>
       <description>Event Systems#  </description>
+    </item>
+    
+    <item>
+      <title>Singletons</title>
+      <link>http://guidebook.hdyar.com/docs/programming/architecture/singleton-pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/architecture/singleton-pattern/</guid>
+      <description>Singletons#Prerequisites#Understanding Static Objects and having a solid grasp of object oriented principles is a prerequisite for being able to effectively use the Singleton pattern.
+In my opinion, singleton patters are great for single-scene games, but cause trouble once we start having to load, unload, or manage multiple scenes. I much prefer other approaches over singletons, like scriptableObjects.
+Overview Video#  </description>
     </item>
     
   </channel>

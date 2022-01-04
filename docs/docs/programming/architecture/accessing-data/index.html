@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="How to Access Data From Another Script in Unity#  Also see: Data-oriented design.
-Also see: Event Systems.">
+<meta name="description" content="How to Access Data From Another Script in Unity#To access data that an object has, we need a reference to the appropriate instance of the object. The real challenge is, for the most part, getting the appropriate reference (&ldquo;resolving&rdquo; a &ldquo;dependency&rdquo;), and not actually accessing the data.
+Also see: Data-oriented design.
+Also see: Event Systems.
+Public and Serialized Fields#The simplest, easiest, minimum-viable option is to make a public field.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Accessing Data (from elsewhere)" />
-<meta property="og:description" content="How to Access Data From Another Script in Unity#  Also see: Data-oriented design.
-Also see: Event Systems." />
+<meta property="og:description" content="How to Access Data From Another Script in Unity#To access data that an object has, we need a reference to the appropriate instance of the object. The real challenge is, for the most part, getting the appropriate reference (&ldquo;resolving&rdquo; a &ldquo;dependency&rdquo;), and not actually accessing the data.
+Also see: Data-oriented design.
+Also see: Event Systems.
+Public and Serialized Fields#The simplest, easiest, minimum-viable option is to make a public field." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/architecture/accessing-data/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +23,7 @@ Also see: Event Systems." />
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.41d1edddaa5bc0907a37476b10db58b39ef4ca7f2c050a19c356286ebde6bc8f.js" integrity="sha256-QdHt3apbwJB6N0drENtYs570yn8sBQoZw1Yobr3mvI8=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.f1695b747af9d0b7b5b83a14ad6659b4420272bf89c53a8f5b47c2e9b7361926.js" integrity="sha256-8WlbdHr50Le1uDoUrWZZtEICcr&#43;JxTqPW0fC6bc2GSY=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -711,6 +715,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/singleton-pattern/" class="">Singletons</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -852,7 +869,15 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#public-and-serialized-fields">Public and Serialized Fields</a></li>
+    <li><a href="#findobjectoftype">FindObjectOfType</a></li>
+    <li><a href="#event-systems">Event Systems</a></li>
+    <li><a href="#scriptableobjects">ScriptableObjects</a></li>
+    <li><a href="#static-properties">Static Properties</a></li>
+  </ul>
+</nav>
 
 
 
@@ -867,13 +892,105 @@ https://github.com/alex-shpak/hugo-book
   How to Access Data From Another Script in Unity
   <a class="anchor" href="#how-to-access-data-from-another-script-in-unity">#</a>
 </h1>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/-kd68uKt4jk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+<p>To access data that an object has, we need a reference to the appropriate instance of the object. The real challenge is, for the most part, getting the appropriate reference (&ldquo;resolving&rdquo; a &ldquo;dependency&rdquo;), and not actually accessing the data.</p>
 <p>Also see: <a href="http://guidebook.hdyar.com/docs/programming/architecture/data-oriented-design-scriptable-objects/">Data-oriented design</a>.</p>
 <p>Also see: <a href="http://guidebook.hdyar.com/docs/programming/architecture/event-systems/">Event Systems</a>.</p>
+<h2 id="public-and-serialized-fields">
+  Public and Serialized Fields
+  <a class="anchor" href="#public-and-serialized-fields">#</a>
+</h2>
+<p>The simplest, easiest, minimum-viable option is to make a public field. Then you just drag-and-drop the appropriate GameObject (with the component) or component into the slot.</p>
+<p>When you make a field public, or when you make it private with the [SerializeField] attribute (recommended), Unity gives you a little drag-and-drop-able slot you can manually assign your reference with.</p>
+<p>public fields:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Player</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">float</span> score;
+}
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ScoreManager</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">public</span> Player player;
+    
+    <span style="color:#66d9ef">void</span> DisplayScore()
+    {
+        <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">float</span> playerScore = player.score;
+    }
+}</code></pre></div></p>
+<p>Serialized fields:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ScoreManager</span> : MonoBehaviour
+{
+<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> Player player;
+    <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>}</code></pre></div>
+<p>Minimal setup, minimal overhead. Minimal setup has another positive, which is minimal refactoring when you want to replace it. It&rsquo;s Often the easiest solution to prototype with before replacing it with a more complicated solution later. 
+However, you have to set it up in the Unity Editor. This means it doesn&rsquo;t work well when using it on objects that get instantiated <em>while</em> the game is running, like enemies that spawn in, and may not work well for prefab workflows.</p>
+<p>It also can mean lots of manual work, and it can be annoying to have your inspector be for <em>setup</em> and not <em>configuration</em>. It&rsquo;s annoying to assign objects in the scene over and over again.</p>
+<h2 id="findobjectoftype">
+  FindObjectOfType
+  <a class="anchor" href="#findobjectoftype">#</a>
+</h2>
+<p>There are a number of different Find functions in Unity, all fairly notorious for being slow. You shouldn&rsquo;t use any of them in an Update loop. The only one I really recommend using is <a href="https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html">FindObjectOfType</a>. It will search in the scene for the first active object it can find of a certain type. This is useful when you are sure there is only one object of a certain type.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ScoreManager</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">private</span> Player player;
+    <span style="color:#66d9ef">void</span> Awake()
+    {
+        player = FindObjectOfType&lt;Player&gt;();
+        <span style="color:#66d9ef">if</span>(player == <span style="color:#66d9ef">null</span>)
+        {
+            Debug.LogError(<span style="color:#e6db74">&#34;Player not found&#34;</span>,gameObject);
+        }
+    }
+}</code></pre></div></p>
+<h2 id="event-systems">
+  Event Systems
+  <a class="anchor" href="#event-systems">#</a>
+</h2>
+<p>Another clever way to resolve dependencies is to change how we think about them. Instead of being dependent on <em>objects</em>, we could be dependent on <em>the event we care about</em>. See <a href="http://guidebook.hdyar.com/docs/programming/architecture/event-systems/">Event Systems</a> for more about this pattern.</p>
+<p>Often our dependency problems are caused by &ldquo;<a href="https://en.wikipedia.org/wiki/Race_condition">race conditions</a>&rdquo; when we are loading scenes, especially when working with multiple scenes. One unexpected benefit of event systems can move a some of our trouble outside of the race, to when the data actually starts getting used.</p>
+<h2 id="scriptableobjects">
+  ScriptableObjects
+  <a class="anchor" href="#scriptableobjects">#</a>
+</h2>
+<p>We can take the data we care about and move it outside of the entire scene loading game loop, and make it always exist in memory, and as an easily editable object in our file system that represents <em>data</em>. Sounds magical? We do this with a <a href="http://guidebook.hdyar.com/docs/programming/architecture/data-oriented-design-scriptable-objects/">data-oriented design</a> approach. See that page for more.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FloatData</span> : ScriptableObject
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">float</span> <span style="color:#66d9ef">value</span>;
+}
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Player</span> : MonoBehaviour
+{
+<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> FloatData playerScore;
+    <span style="color:#75715e">//update playerScore.value when appropriate.
+</span><span style="color:#75715e"></span>}
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ScoreManager</span> : MonoBehaviour
+{
+<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> FloatData playerScore;
+    <span style="color:#66d9ef">void</span> DisplayScore()
+    {
+        <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">float</span> playerScore = playerHealth.<span style="color:#66d9ef">value</span>;
+    }
+}</code></pre></div>
+<p>Instead of one object being dependent on another, both objects are dependent on a third data-object. This is more dependencies, but the dependency on a scriptableObject is a less troublesome one because its always hanging out in our project&rsquo;s memory, regardless of what order objects are loaded in.</p>
+<h2 id="static-properties">
+  Static Properties
+  <a class="anchor" href="#static-properties">#</a>
+</h2>
+<p>Making the data we care about static takes it outside of the need for a dependency on a specific instance. This can be great, but it tends to become a pain in the butt once projects get more complex. It leads to taking shortcuts that are difficult to refactor, as well as not having the flexibility such that the refactoring is likely necessary.</p>
+<p>Instead of having static data, one could have static instances&hellip; and now we are using a <a href="http://guidebook.hdyar.com/docs/programming/architecture/singleton-pattern/">singleton pattern</a>.</p>
+<p>See more about <a href="http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/">static</a> members.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Player</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">float</span> score;
+}
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ScoreManager</span> : MonoBehaviour
+{
+    <span style="color:#66d9ef">void</span> DisplayScore()
+    {
+        <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">float</span> playerScore = Player.score;
+    }
+}</code></pre></div>
 </article>
  
       
@@ -913,7 +1030,15 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#public-and-serialized-fields">Public and Serialized Fields</a></li>
+    <li><a href="#findobjectoftype">FindObjectOfType</a></li>
+    <li><a href="#event-systems">Event Systems</a></li>
+    <li><a href="#scriptableobjects">ScriptableObjects</a></li>
+    <li><a href="#static-properties">Static Properties</a></li>
+  </ul>
+</nav>
 
 
  
