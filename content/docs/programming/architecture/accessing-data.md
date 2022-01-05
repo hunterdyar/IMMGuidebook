@@ -52,6 +52,7 @@ However, you have to set it up in the Unity Editor. This means it doesn't work w
 
 It also can mean lots of manual work, and it can be annoying to have your inspector be for _setup_ and not _configuration_. It's annoying to assign objects in the scene over and over again.
 
+I highly recommend you use default to using the [SerializeField] attribute instead of simply making fields public, especially when working with data. If you try to access or read the field from another script, you should be aware that is what you are trying to do, and you can make it public then, if need be. This will save you from bugs and too-tightly-coupled code in the long run.
 
 ## FindObjectOfType
 There are a number of different Find functions in Unity, all fairly notorious for being slow. You shouldn't use any of them in an Update loop. The only one I really recommend using is [FindObjectOfType](https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html). It will search in the scene for the first active object it can find of a certain type. This is useful when you are sure there is only one object of a certain type.
