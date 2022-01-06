@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Object Oriented Programming#Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C&#43;&#43;, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
-Object oriented programming is programming around data structures that contain variables and functions.
-There are three main &ldquo;pillars&rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. Depending on who you ask, there is a fourth pillar: Abstraction.">
+<meta name="description" content="Types of Error Messages#Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
+As far as C# is concerned, there are two types of error messages: Compiler Errors and Runtime Errors.
+In terms of how you will encounter errors, I would like to add a third type: IDE Errors.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Object Oriented Programming" />
-<meta property="og:description" content="Object Oriented Programming#Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C&#43;&#43;, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
-Object oriented programming is programming around data structures that contain variables and functions.
-There are three main &ldquo;pillars&rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. Depending on who you ask, there is a fourth pillar: Abstraction." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Types of Error Messages" />
+<meta property="og:description" content="Types of Error Messages#Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
+As far as C# is concerned, there are two types of error messages: Compiler Errors and Runtime Errors.
+In terms of how you will encounter errors, I would like to add a third type: IDE Errors." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Object Oriented Programming | The Guidebook</title>
+<title>Types of Error Messages | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -493,7 +493,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle"  />
+    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle" checked />
     <label for="section-dddf50324cced418b45884f0b4af2983" class="flex justify-between">
       <a role="button" class="">Fundamentals</a>
     </label>
@@ -587,7 +587,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" class="">Types of Error Messages</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" class=" active">Types of Error Messages</a>
   
 
         </li>
@@ -605,7 +605,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle" checked />
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
     <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/advanced/" class="">Advanced</a>
     </label>
@@ -621,7 +621,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" class=" active">Object Oriented Programming</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" class="">Object Oriented Programming</a>
   
 
         </li>
@@ -892,7 +892,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Object Oriented Programming</strong>
+  <strong>Types of Error Messages</strong>
 
   <label for="toc-control">
     
@@ -908,33 +908,9 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#classes--objects">Classes &amp; Objects</a></li>
-        <li><a href="#inheritance">Inheritance</a></li>
-      </ul>
-    </li>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#prerequisite-concepts-review">Prerequisite Concepts Review</a>
-      <ul>
-        <li><a href="#data-structures">Data Structures</a></li>
-        <li><a href="#hierarchy">Hierarchy</a></li>
-        <li><a href="#taxonomy">Taxonomy</a></li>
-        <li><a href="#inheritance-1">Inheritance</a></li>
-        <li><a href="#members">Members</a></li>
-      </ul>
-    </li>
-    <li><a href="#component-systems">Component Systems</a></li>
-    <li><a href="#the-lesson">The Lesson</a></li>
-    <li><a href="#overriding-members--example">Overriding Members &amp; Example</a></li>
-    <li><a href="#syntax">Syntax</a></li>
-    <li><a href="#resources--next-steps">Resources &amp; Next Steps</a>
-      <ul>
-        <li><a href="#reinforce-concepts">Reinforce Concepts</a></li>
-        <li><a href="#further-concepts">Further Concepts</a></li>
-        <li><a href="#reviewing-docs">Reviewing Docs</a></li>
-      </ul>
-    </li>
+    <li><a href="#compiler-errors">Compiler Errors</a></li>
+    <li><a href="#runtime-errors">Runtime Errors</a></li>
+    <li><a href="#clearing-errors">Clearing Errors</a></li>
   </ul>
 </nav>
 
@@ -947,136 +923,63 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="object-oriented-programming">
-  Object Oriented Programming
-  <a class="anchor" href="#object-oriented-programming">#</a>
+  <article class="markdown"><h1 id="types-of-error-messages">
+  Types of Error Messages
+  <a class="anchor" href="#types-of-error-messages">#</a>
 </h1>
-<p>Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C++, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.</p>
-<p>Object oriented programming is programming around data structures that contain variables and functions.</p>
-<blockquote class="book-hint info">
-  <p>There are three main &ldquo;pillars&rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. 
-<em>Depending on who you ask, there is a fourth pillar: Abstraction.</em></p>
-<p>We will be introducing and discussing <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance">inheritance</a> here, but leaving <a href="https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29">encapsulation</a> and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism">polymorphism</a> to the side for now.</p>
-
-</blockquote>
-
-<p>This lesson is really about two main concepts: <strong>Classes &amp; Objects</strong>, and <strong>Object Inheritance</strong>.</p>
-<h3 id="classes--objects">
-  Classes &amp; Objects
-  <a class="anchor" href="#classes--objects">#</a>
-</h3>
-<p><strong>Classes</strong> are definitions of data structures and available functions (operations, methods) that one can do with the data. 
-<strong>Objects</strong> are instances of the class.</p>
-<h3 id="inheritance">
-  Inheritance
-  <a class="anchor" href="#inheritance">#</a>
-</h3>
-<p>Inheritance is the primary tool that allows for code flexibilty and code reuse. It allows data structures to share properties of one another, by having one class <em>inherit</em> or copy the various setup of another class as a starting point.</p>
-<p>All of the scripts we have been writing in Unity, so far, have been inheriting their properties from &ldquo;MonoBehaviour&rdquo;, which is the UnityEngine term for &ldquo;component&rdquo;. This inheritance is what has allowed us to drag and drop these behaviors onto GameObjects, and allowed Unity to find and execute their event functions like Start and Update.</p>
-<h2 id="introduction">
-  Introduction
-  <a class="anchor" href="#introduction">#</a>
+<p>Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.</p>
+<p>As far as C# is concerned, there are two types of error messages: <strong>Compiler</strong> Errors and <strong>Runtime</strong> Errors.</p>
+<p>In terms of how you will encounter errors, I would like to add a third type: <strong>IDE Errors</strong>.</p>
+<p>Lets go through them.</p>
+<h2 id="compiler-errors">
+  Compiler Errors
+  <a class="anchor" href="#compiler-errors">#</a>
 </h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/bHvjTkvd_vY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="prerequisite-concepts-review">
-  Prerequisite Concepts Review
-  <a class="anchor" href="#prerequisite-concepts-review">#</a>
+<p>When you compile code, it&rsquo;s the computers turn to try to read what you have written. It attempts to parse all of the symbols in all the files and turn them into machine code that it can deliver to the CPU. (This is a horrendously simplified summary).</p>
+<p>If it can&rsquo;t parse what you have written - it reaches a symbol it doesn&rsquo;t know what to do with, or it doesn&rsquo;t know what a keyword means, or <em>whatever</em>, it will throw a compiler error.</p>
+<p>Unity will not let you enter play mode when you have compiler errors. If you have been doing Unity development for any amount of time, you have probably seen this message before:</p>
+<p><img src="/images/programming/allCompilerErrorsMessage.png" alt="Unity: &amp;ldquo;All errors must be fixed before you can enter play mode&amp;rdquo;" /></p>
+<p>When this happens, head to the console:</p>
+<p><img src="/images/programming/errorsCompiler2.png" alt="Missing Semicolon" />
+The above errors are caused by a single missing semicolon. The compiler is smart enough to understand that a new expression began before the current one was terminated, so it gives us a fairly useful error message &ldquo;; expected&rdquo;. It&rsquo;s not going to fix it for us, C# makes no assumptions, it doesn&rsquo;t know what your code is on about. If you wrote the code wrong, it&rsquo;s just going to stop and tell you so you can fix it.</p>
+<p>The following errors are caused by removing the &ldquo;using UnityEngine;&rdquo; line at the top of the file. Suddenly all sorts of classes and functions that are defined in the UnityEngine library (like MonoBehaviour, Transform, Vector3) aren&rsquo;t defined anywhere, and the computer doesn&rsquo;t know what to do. 
+<img src="/images/programming/errorsCompiler1.png" alt="A Lot of errors from a single missing line of code" /></p>
+<h2 id="runtime-errors">
+  Runtime Errors
+  <a class="anchor" href="#runtime-errors">#</a>
 </h2>
-<p>First, be sure you have a strong grasp of <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/">Classes and Components</a>.</p>
-<h3 id="data-structures">
-  Data Structures
-  <a class="anchor" href="#data-structures">#</a>
-</h3>
-<p>A data structure is an organization of data. When we have a collection of information that is related, we can put it in a structure that allows easy access, use, comparison, and manipulation of that data. The <a href="https://en.wikipedia.org/wiki/List_of_data_structures">List of Data Structures</a> on Wikipedia is overwhelming but interesting. For a more fundamental introduction, check out this <a href="https://www.youtube.com/watch?v=DuDz6B4cqVc">Crash Course</a> video.</p>
-<h3 id="hierarchy">
-  Hierarchy
-  <a class="anchor" href="#hierarchy">#</a>
-</h3>
-<p>Hierarchy. Hierarchical relationships is a way of organizing things that places things on different related levels. Things can be related to each other as above an other thing, below an other thing, or at the same level as an other thing. Hierarchies are sometimes called &ldquo;tree structures&rdquo;.</p>
-<p>We will call the higher level things parents, the lower level things children, and things at the same level siblings. In programming, we also use the terms &ldquo;base&rdquo; to refer to an objects parent, and &ldquo;extending&rdquo; to the process of creating a child.</p>
-<h3 id="taxonomy">
-  Taxonomy
-  <a class="anchor" href="#taxonomy">#</a>
-</h3>
-<p>Taxonomy is not a programming concept, but knowing about taxonomies will be helpful. Taxonomy is a system of classification, and most taxonomies you have likely heard of are structured as hierarchies. In other words, Taxonomies are practical examples of hierarchies. Creating taxonomies - somebody has to decide how to organize the library (thanks Dewey). It is interesting (one might say &lsquo;productive procrastination&rsquo; to browse through lists of example taxonomy on <a href="https://en.wikipedia.org/wiki/Taxonomy">wikipedia</a>.)</p>
-<h3 id="inheritance-1">
-  Inheritance
-  <a class="anchor" href="#inheritance-1">#</a>
-</h3>
-<p>From the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/">MSDN C# Docs Overview Page</a> page:</p>
-<blockquote>
-<p><em>A class that derives from another class, called the base class, automatically contains all the public, protected, and internal members of the base class except its constructors and finalizers.</em></p>
-</blockquote>
-<p>From the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance">MSDN C# Docs Inheritance</a> page:</p>
-<blockquote>
-<p><em>Inheritance enables you to create new classes that reuse, extend, and modify the behavior defined in other classes. The class whose members are inherited is called the base class, and the class that inherits those members is called the derived class.</em></p>
-</blockquote>
-<h3 id="members">
-  Members
-  <a class="anchor" href="#members">#</a>
-</h3>
-<p>A member is all of the things that make an object what it is. An objects variables and functions are an objects members. Members is our new word for &lsquo;thing&rsquo; in the context of objects and classes. Objects can inherit members from other objects. From the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members">MSDN Docs</a>:</p>
-<blockquote>
-<p><em>Classes and structs have members that represent their data and behavior. A class&rsquo;s members include all the members declared in the class, along with all members (except constructors and finalizers) declared in all classes in its inheritance hierarchy.</em></p>
-</blockquote>
-<h2 id="component-systems">
-  Component Systems
-  <a class="anchor" href="#component-systems">#</a>
+<p>Runtime errors don&rsquo;t happen when the code is compiled. They happen when the game is actually running. The most common are &ldquo;Out of Bounds&rdquo; error, when using lists or arrays, and a &ldquo;Null Reference Exception&rdquo;. Both happen when we ask the computer to go look in memory for some variable, and there is no instance for it to find.</p>
+<p>For example, in a script that moves an object via a Rigidbody, we often store a reference to the rigidbody component in a variable.</p>
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Rigidbody2D <span style="color:#ae81ff">_</span>rigidbody;
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Awake()
+{
+    <span style="color:#ae81ff">_</span>rigidbody = GetComponent&lt;Rigidbody2D&gt;();
+}</code></pre></div>
+If we forget to type this GetComponent line, we will get the following error the first time the _<em>rigidbody</em> variable is used. There is no problem with the code&rsquo;s ability to compile. It only hits this error when the game is executing.</p>
+<p><img src="/images/programming/errorNullReference.png" alt="Screenshot of the famous Null Reference Exception error" /></p>
+<p>Depending on the runtime error, Unity will pause execution right then and there.</p>
+<h2 id="clearing-errors">
+  Clearing Errors
+  <a class="anchor" href="#clearing-errors">#</a>
 </h2>
-<p>Component-based architecture is discussed in the <a href="http://guidebook.hdyar.com/docs/programming/architecture/the-architecture-lecture/">Architecture Lecture</a>, and you can review the pattern on its own in the excellent <a href="https://gameprogrammingpatterns.com/component.html">Game Programming Patterns Book</a> (free, online).</p>
-<h2 id="the-lesson">
-  The Lesson
-  <a class="anchor" href="#the-lesson">#</a>
-</h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/xMD5UOwPcMk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="overriding-members--example">
-  Overriding Members &amp; Example
-  <a class="anchor" href="#overriding-members--example">#</a>
-</h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Evkj2w0P5IM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="syntax">
-  Syntax
-  <a class="anchor" href="#syntax">#</a>
-</h2>
-<p>See the <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/">Object Oriented Syntax</a> page.</p>
-<h2 id="resources--next-steps">
-  Resources &amp; Next Steps
-  <a class="anchor" href="#resources--next-steps">#</a>
-</h2>
-<p>The next step will be to implement these concepts yourself in a project! In the meantime&hellip;</p>
-<h3 id="reinforce-concepts">
-  Reinforce Concepts
-  <a class="anchor" href="#reinforce-concepts">#</a>
-</h3>
-<p>Reinforce your vocabulary by reviewing other object-oriented programming introductions, like <a href="https://www.youtube.com/watch?v=pTB0EiLXUC8">this video</a> and <a href="https://www.youtube.com/watch?v=YcbcfkLzgvs">this video</a>, which explain the same things, but are short and use different languages.</p>
-<h3 id="further-concepts">
-  Further Concepts
-  <a class="anchor" href="#further-concepts">#</a>
-</h3>
-<p>The next concepts we will be covering are <a href="http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/">static objects</a> and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract">abstract</a> classes, as well as learning a lot of the ins-and-outs of actually writing and using polymorphic (<a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism">new vocab word</a>) code.</p>
-<h3 id="reviewing-docs">
-  Reviewing Docs
-  <a class="anchor" href="#reviewing-docs">#</a>
-</h3>
-<p>A number of pages on the official MSDN C# Docs will be useful to read over. As we improve our vocabulary, these vocab-heavy pages will become more and more accessible, and will become a highly useful and pleasantly concise resource.</p>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/">MSDN Object-Oriented Programming</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords">Knowing When to Use Override and New Keywords</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method">How to override the ToString method</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects">Objects Overview</a></li>
-</ul>
+<p>Runtime errors happen when the game is running, and they stick around in the console so you can review them, double click them to jump to the problematic line of code, and so on. If you fix the error - the compiler has no idea. This is a runtime error, we are only going to hit it because of some way the code is executing. The computer won&rsquo;t know it&rsquo;s fixed. Because of this, the error is just going to hang out in the console until we <strong>clear</strong> it.</p>
+<p>We clear errors by clicking &ldquo;clear&rdquo; in the console. This wipes the slate for us. By default, there is &ldquo;Clear On Play&rdquo; enabled, which will clear previous errors before entering play mode again. I recommend you leave this on.</p>
+<p>A <strong>really easy</strong> mistake to make is to spend time trying to fix an error message, but no matter what you do, <em>it just wont go away</em>. It might already be fixed - but is a runtime error. So the code re-compiles without error, and you&rsquo;re good&hellip; but you still see a red X in the console. If an unfixable error is driving you mad, try just clicking the <strong>clear</strong> button and see if it simply goes away.</p>
+<p>Now, that doesn&rsquo;t guarantee that the actual problem is fixed, but at least you can run your game, maybe hit the problem again, and get back on the right track with debugging.</p>
+<h1 id="ide-errors">
+  IDE Errors
+  <a class="anchor" href="#ide-errors">#</a>
+</h1>
+<p>The Unity Console just reports what the Compiler says. You can receive errors from another source: Your IDE (text editor) analyzing your code for you, in order to help out.</p>
+<p>Remember the missing semicolon error?</p>
+<p><img src="/images/programming/errorsCompiler2.png" alt="A Lot of errors from a single missing line of code" /></p>
+<p>This is what it looks like in the IDE:</p>
+<p><img src="/images/programming/errorsIDE1.png" alt="A Lot of errors from a single missing line of code" /></p>
+<p>It gives me a red squiggly line under my code, and the message &ldquo;Unexpected Token&rdquo;. It also gives me a warning that my name is incorrect. It&rsquo;s not how I name functions! Well, it&rsquo;s a variable, not a function (method). The IDE can&rsquo;t tell because of the missing semicolon. So that warning is irrelevant. Sorry IDE, you were trying to be helpful, but aren&rsquo;t as smart as you&rsquo;d like to be.</p>
+<p>I want to stress that &ldquo;; expected&rdquo; and &ldquo;Unexpected Token&rdquo; are different errors, and the compiler error is more useful in it&rsquo;s reporting, but the IDE error is more useful since it&rsquo;s right in context, and can often offer helpful suggestions and fixes. Or completely wrong suggestions and fixes.</p>
+<p>The compiler error is the <strong>real</strong> error. It&rsquo;s the actual problem your code has. The IDE is analyzing your code and - before we attempt to compile it - trying to alert your of potential issues and problems. Jetbrains Rider is pretty good at this! Microsoft Visual Studio is also pretty good at it, calling it&rsquo;s solution &ldquo;<a href="https://docs.microsoft.com/en-US/visualstudio/ide/visual-csharp-intellisense?view=vs-2022">Intellisense</a>&rdquo; and it&rsquo;s these same code-analysis tools that give us our helpful - or unhelpful - autocompletions.</p>
+<p>These are just tools of the IDE. They&rsquo;re useful! But they aren&rsquo;t always accurate. Rider, by default, is pretty picky about your code style conventions (which is, to be fair, important and a good thing to be picky about), but it means students learning have lots of errors that <em>super don&rsquo;t matter right now</em>. Just be aware of what is a warning and an error, and make sure you are using a color scheme where it&rsquo;s clear to tell the difference.</p>
+<p>Don&rsquo;t let your IDE get in your way. When you&rsquo;re in the middle of fixing lots of errors, it can be helpful to jump over to Unity, let it attempt to compile, and give you new error messages. Compiler error messages are consistent and usually very helpful.</p>
 </article>
  
       
@@ -1118,33 +1021,9 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#classes--objects">Classes &amp; Objects</a></li>
-        <li><a href="#inheritance">Inheritance</a></li>
-      </ul>
-    </li>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#prerequisite-concepts-review">Prerequisite Concepts Review</a>
-      <ul>
-        <li><a href="#data-structures">Data Structures</a></li>
-        <li><a href="#hierarchy">Hierarchy</a></li>
-        <li><a href="#taxonomy">Taxonomy</a></li>
-        <li><a href="#inheritance-1">Inheritance</a></li>
-        <li><a href="#members">Members</a></li>
-      </ul>
-    </li>
-    <li><a href="#component-systems">Component Systems</a></li>
-    <li><a href="#the-lesson">The Lesson</a></li>
-    <li><a href="#overriding-members--example">Overriding Members &amp; Example</a></li>
-    <li><a href="#syntax">Syntax</a></li>
-    <li><a href="#resources--next-steps">Resources &amp; Next Steps</a>
-      <ul>
-        <li><a href="#reinforce-concepts">Reinforce Concepts</a></li>
-        <li><a href="#further-concepts">Further Concepts</a></li>
-        <li><a href="#reviewing-docs">Reviewing Docs</a></li>
-      </ul>
-    </li>
+    <li><a href="#compiler-errors">Compiler Errors</a></li>
+    <li><a href="#runtime-errors">Runtime Errors</a></li>
+    <li><a href="#clearing-errors">Clearing Errors</a></li>
   </ul>
 </nav>
 

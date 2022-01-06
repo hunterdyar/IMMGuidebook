@@ -71,5 +71,16 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
   </description>
     </item>
     
+    <item>
+      <title>Types of Error Messages</title>
+      <link>http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/</guid>
+      <description>Types of Error Messages#Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
+As far as C# is concerned, there are two types of error messages: Compiler Errors and Runtime Errors.
+In terms of how you will encounter errors, I would like to add a third type: IDE Errors.</description>
+    </item>
+    
   </channel>
 </rss>
