@@ -74,3 +74,6 @@ The compiler error is the **real** error. It's the actual problem your code has.
 These are just tools of the IDE. They're useful! But they aren't always accurate. Rider, by default, is pretty picky about your code style conventions (which is, to be fair, important and a good thing to be picky about), but it means students learning have lots of errors that *super don't matter right now*. Just be aware of what is a warning and an error, and make sure you are using a color scheme where it's clear to tell the difference. 
 
 Don't let your IDE get in your way. When you're in the middle of fixing lots of errors, it can be helpful to jump over to Unity, let it attempt to compile, and give you new error messages. Compiler error messages are consistent and usually very helpful.
+
+## Video Review
+{{< youtube xISgtKeLWQU >}}
