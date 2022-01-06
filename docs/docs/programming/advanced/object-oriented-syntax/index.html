@@ -19,7 +19,7 @@ public class ClassName { } public class ChildClassName : ParentClassName { } We 
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -942,12 +942,12 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#declaring-classes">#</a>
 </h2>
 <p>The syntax for declaring a class is as demonstrated:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassName</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ClassName</span>
 {
 
 }
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ChildClassName</span> : ParentClassName
 {
 
 }</code></pre></div>
@@ -967,24 +967,24 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <p>The virtual keyword modifies a member of a base class. It allows it to be overridden by child classes. You can override methods,properties, indexers, and event declarations. Most of the time we use it on methods (aka functions).</p>
 <p>The method being overridden cannot be private. How could it be overridden if the child classes cannot access it?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParentClassName</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ParentClassName</span>
 {
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    <span style="color:#ff79c6">public</span> <span style="color:#ff79c6">virtual</span> <span style="color:#ff79c6">void</span> SomeFunction()
     {
-        <span style="color:#75715e">//stuff
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//stuff
+</span><span style="color:#6272a4"></span>    }
 }</code></pre></div>
 <h3 id="override">
   Override
   <a class="anchor" href="#override">#</a>
 </h3>
 <p>The override keyword goes on a matching function on the children.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ChildClassName</span> : ParentClassName
 {
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    <span style="color:#ff79c6">public</span> <span style="color:#ff79c6">override</span> <span style="color:#ff79c6">void</span> SomeFunction()
     {
-        <span style="color:#75715e">//stuff
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//stuff
+</span><span style="color:#6272a4"></span>    }
 }</code></pre></div>
 <p>The function name, scope, and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods#method-signatures">method signature (properties)</a> all must match the parent.</p>
 <blockquote class="book-hint info">
@@ -996,21 +996,21 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#calling-the-base-function">#</a>
 </h3>
 <p>We can call functions on the base class from the child class using the <strong>base</strong> keyword as a reference to the base class. We can call the base class &ldquo;version&rdquo; of the function from the child class, which is a very common pattern.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParentClassName</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ParentClassName</span>
 {
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    <span style="color:#ff79c6">protected</span> <span style="color:#ff79c6">override</span> <span style="color:#ff79c6">void</span> SomeFunction()
     {
-        <span style="color:#75715e">//Code that lives in the parent class
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//Code that lives in the parent class
+</span><span style="color:#6272a4"></span>    }
 }
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ChildClassName</span> : ParentClassName
 {
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> SomeFunction()
+    <span style="color:#ff79c6">protected</span> <span style="color:#ff79c6">override</span> <span style="color:#ff79c6">void</span> SomeFunction()
     {
-        <span style="color:#75715e">//Execute the code that lives in the parent class
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">base</span>.SomeFunction();
-        <span style="color:#75715e">//Often we follow that with our own additional logic
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//Execute the code that lives in the parent class
+</span><span style="color:#6272a4"></span>        <span style="color:#ff79c6">base</span>.SomeFunction();
+        <span style="color:#6272a4">//Often we follow that with our own additional logic
+</span><span style="color:#6272a4"></span>    }
 }</code></pre></div>
 <h2 id="hiding">
   Hiding
@@ -1028,7 +1028,7 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <p>In many contexts, a hidden method and an overridden method will behave the same (executing the code in the child class), but in other contexts - dealing with polymorphism - they will not. For the curious, explore the above link and the docs on the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier">new</a> keyword.</p>
 <p>The difference appears when we create child objects that are the parent type. <em>That sentence is only not gibberish because of polymorphism.</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">ParentClassName someVariable = <span style="color:#66d9ef">new</span> ChildClassName();</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">ParentClassName someVariable = <span style="color:#ff79c6">new</span> ChildClassName();</code></pre></div>
 <p>In this case, the someVariable will execute the the function declared on the child if it is overridden, but if said function is merely hidden, it will execute the parents code - because it is types as the parent type, it can directly &ldquo;see&rdquo; the &ldquo;hidden&rdquo; parent classes functions.</p>
 <h2 id="event-functions">
   Event Functions
@@ -1045,21 +1045,21 @@ https://github.com/alex-shpak/hugo-book
   While this is more syntax than simply typing &ldquo;new&rdquo;, this forces me - when programming in the parent class - to understand that this function is getting overridden, as it has the virtual keyword. I prefer the extra verbose-ness as a bit of feedback, and I tend to make less mistakes when working this way.
 </blockquote>
 </p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParentClassName</span> : MonoBehaviour
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ParentClassName</span> : MonoBehaviour
 {
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> Start()
+    <span style="color:#ff79c6">protected</span> <span style="color:#ff79c6">override</span> <span style="color:#ff79c6">void</span> Start()
     {
-        <span style="color:#75715e">//stuff
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//stuff
+</span><span style="color:#6272a4"></span>    }
 }
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChildClassName</span> : ParentClassName
+<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ChildClassName</span> : ParentClassName
 {
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> Start()
+    <span style="color:#ff79c6">protected</span> <span style="color:#ff79c6">override</span> <span style="color:#ff79c6">void</span> Start()
     {
-        <span style="color:#75715e">//Call whatever setup logic my parent class has.
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">base</span>.Start();
-        <span style="color:#75715e">//Then additional logic here
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//Call whatever setup logic my parent class has.
+</span><span style="color:#6272a4"></span>        <span style="color:#ff79c6">base</span>.Start();
+        <span style="color:#6272a4">//Then additional logic here
+</span><span style="color:#6272a4"></span>    }
 }</code></pre></div>
 </article>
  

@@ -21,7 +21,7 @@ There are two challenges:
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -932,14 +932,14 @@ https://github.com/alex-shpak/hugo-book
 <li>Objects in 3D can overlap each other visually. How do we know which one is &ldquo;under&rdquo; the mouse, and only select it?</li>
 </ol>
 <p>To solve the first challenge, we need some kind of system to go from screen space to world space. Well, that&rsquo;s the <strong>camera.</strong> Camera&rsquo;s are basically devices to convert from world space to screen space, it&rsquo;s trivial for them to go the other way too! We will get a reference to the camera so we can use functions that the camera provides.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Camera cam;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> Camera cam;
 
-<span style="color:#66d9ef">void</span> Awake(){
+<span style="color:#ff79c6">void</span> Awake(){
 	cam = Camera.main;
 }</code></pre></div>
 <p>Now that we have that, we need to figure out when we click, and get the mouse coordinates in screen-space:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">void</span> Update(){
-	<span style="color:#66d9ef">if</span>(Input.GetMouseButtonDown(<span style="color:#ae81ff">0</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Update(){
+	<span style="color:#ff79c6">if</span>(Input.GetMouseButtonDown(<span style="color:#bd93f9">0</span>))
 	{
 		Vector3 mouseScreenPos = Input.mousePosition;
 	}
@@ -951,24 +951,24 @@ https://github.com/alex-shpak/hugo-book
 <p>In order to solve the second part of our challenge, we are going to use the physics system. With this solution, it means that objects we want to click on <strong>need colliders</strong>. We will create a ray that extends along the cameras point-of-view, from the mouse position, &ldquo;back&rdquo; into the scene. Using a raycast means that first thing it hits will be the closest thing to the camera.</p>
 <p>We will use the cameras <a href="https://docs.unity3d.com/ScriptReference/Camera.ScreenPointToRay.html">ScreenPointToRay</a> function.</p>
 <p>We also don&rsquo;t really need to store the mousePosition as a temporary Vector3 variable, lets just skip that and plug in the &ldquo;Input.mousePosition&rdquo; directly to this camera function.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Ray ray = cam.ScreenPointToRay(Input.mousePosition);</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Ray ray = cam.ScreenPointToRay(Input.mousePosition);</code></pre></div>
 <p>Now we need to do a <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html">Raycast</a>. I advise you to research Raycasts more, starting with that above documentation page. It uses a C# feature called an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier">&ldquo;out&rdquo; parameter modifier</a>. &ldquo;Out&rdquo; (and &ldquo;ref&rdquo;) allow a function to modify variables that it takes as parameters. That means we have the return type from the function (in this case, a boolean: did we hit anything at all), it has <em>another</em> &ldquo;returned&rdquo; value - if we did hit something, the data about it is now available in this variable. The &lsquo;out&rsquo; keyword is how we know that this function is allowed to replace the data in this variable.</p>
 <p>The RaycastHit datatype is a simple data structure used to get information from the hit. Check out the information it holds in the <a href="https://docs.unity3d.com/ScriptReference/RaycastHit.html">RaycastHit scriptingAPI documentation</a>.</p>
 <p>Let&rsquo;s put it all together.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Camera cam;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> Camera cam;
 
-<span style="color:#66d9ef">void</span> Awake(){
+<span style="color:#ff79c6">void</span> Awake(){
 	cam = Camera.main;
 }
 
-<span style="color:#66d9ef">void</span> Update(){
-	<span style="color:#66d9ef">if</span>(Input.GetMouseButtonDown(<span style="color:#ae81ff">0</span>))
+<span style="color:#ff79c6">void</span> Update(){
+	<span style="color:#ff79c6">if</span>(Input.GetMouseButtonDown(<span style="color:#bd93f9">0</span>))
 	{
 		Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
-		<span style="color:#66d9ef">if</span>(Physics.Raycast(ray, <span style="color:#66d9ef">out</span> hit, <span style="color:#ae81ff">100</span>))
+		<span style="color:#ff79c6">if</span>(Physics.Raycast(ray, <span style="color:#ff79c6">out</span> hit, <span style="color:#bd93f9">100</span>))
 		{
-        		Debug.Log(<span style="color:#e6db74">&#34;clicked on &#34;</span>+hit.collider.gameObject.name);
+        		Debug.Log(<span style="color:#f1fa8c">&#34;clicked on &#34;</span>+hit.collider.gameObject.name);
    		}
 	}
 }</code></pre></div>
@@ -978,30 +978,30 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>You can use a layer mask to dertermine what you can and cannot click on. LayerMasks are <a href="https://en.wikipedia.org/wiki/Mask_%28computing%29">bitmasks</a>, which are annoying to create by hand. If we make one that is serializable, however, it becomes trivially easy to edit in the unity inspector. The Physics.Raycast function takes a layer mask as an argument.</p>
 <p>Creating a layer mask:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#a6e22e">[SerializeField]</span> <span style="color:#66d9ef">private</span> clickableLayerMask;</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#50fa7b">[SerializeField]</span> <span style="color:#ff79c6">private</span> clickableLayerMask;</code></pre></div></p>
 <p>Allows us to use the Inspector to select our layer(s):
 <img src="/images/unity/toolbox/clickableLayerMask.png" alt="Layer Mask Property Inspector" /></p>
 <p>We need to be sure to put the objects we want to select on the layers here, and objects we don&rsquo;t want to select on a different layer.</p>
 <p>We can then pass this in as an argument in the Raycast funtion. The entire example code now looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> UnityEngine;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">using</span> UnityEngine;
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClickingThings</span> : MonoBehaviour
+<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">ClickingThings</span> : MonoBehaviour
 {
-	<span style="color:#66d9ef">private</span> Camera cam;
-<span style="color:#a6e22e">	[SerializeField]</span> <span style="color:#66d9ef">private</span> LayerMask clickableLayerMask;
-	<span style="color:#66d9ef">void</span> Awake()
+	<span style="color:#ff79c6">private</span> Camera cam;
+<span style="color:#50fa7b">	[SerializeField]</span> <span style="color:#ff79c6">private</span> LayerMask clickableLayerMask;
+	<span style="color:#ff79c6">void</span> Awake()
 	{
 		cam = Camera.main;
 	}
-	<span style="color:#66d9ef">void</span> Update()
+	<span style="color:#ff79c6">void</span> Update()
 	{
-		<span style="color:#66d9ef">if</span> (Input.GetMouseButtonDown(<span style="color:#ae81ff">0</span>))
+		<span style="color:#ff79c6">if</span> (Input.GetMouseButtonDown(<span style="color:#bd93f9">0</span>))
 		{
 			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
-			<span style="color:#66d9ef">if</span> (Physics.Raycast(ray, <span style="color:#66d9ef">out</span> hit, Mathf.Infinity, clickableLayerMask))
+			<span style="color:#ff79c6">if</span> (Physics.Raycast(ray, <span style="color:#ff79c6">out</span> hit, Mathf.Infinity, clickableLayerMask))
 			{
-				Debug.Log(<span style="color:#e6db74">&#34;clicked on &#34;</span> + hit.collider.gameObject.name);
+				Debug.Log(<span style="color:#f1fa8c">&#34;clicked on &#34;</span> + hit.collider.gameObject.name);
 			}
 		}
 	}

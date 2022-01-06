@@ -21,7 +21,7 @@ Creating Objects from Scratch.#To do that, one way is to simply create a new 
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -939,17 +939,17 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#creating-objects-from-scratch">#</a>
 </h2>
 <p>To do that, one way is to simply create a new GameObject like we would any instance of a class. Doing this creates an empty GameObject. From there, we can use the AddComponent functions to set it up.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//Create a GameObject. Store a reference to it in a GameObject variable called &#39;something&#39;.
-</span><span style="color:#75715e"></span>gameObject something = <span style="color:#66d9ef">new</span> GameObject();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#6272a4">//Create a GameObject. Store a reference to it in a GameObject variable called &#39;something&#39;.
+</span><span style="color:#6272a4"></span>gameObject something = <span style="color:#ff79c6">new</span> GameObject();
 
-<span style="color:#75715e">//Add a component to the gameObject.
-</span><span style="color:#75715e"></span>something.AddComponent&lt;Rigidbody2D&gt;();
+<span style="color:#6272a4">//Add a component to the gameObject.
+</span><span style="color:#6272a4"></span>something.AddComponent&lt;Rigidbody2D&gt;();
 
-<span style="color:#75715e">//Add a component via AddComponent and store a reference to the added component in a variable in one line of code.
-</span><span style="color:#75715e"></span>SpriteRenderer somethingSpriteRenderer = something.AddComponent&lt;SpriteRenderer&gt;();
+<span style="color:#6272a4">//Add a component via AddComponent and store a reference to the added component in a variable in one line of code.
+</span><span style="color:#6272a4"></span>SpriteRenderer somethingSpriteRenderer = something.AddComponent&lt;SpriteRenderer&gt;();
 
-<span style="color:#75715e">//With a reference to the component, we can start setting it up.
-</span><span style="color:#75715e"></span>somethingSpriteRenderer.sprite = someSprite;</code></pre></div>
+<span style="color:#6272a4">//With a reference to the component, we can start setting it up.
+</span><span style="color:#6272a4"></span>somethingSpriteRenderer.sprite = someSprite;</code></pre></div>
 <p>This will work, certainly. But it becomes pretty clear that this is a <strong>terrible</strong> solution. Setting up GameObjects via code is a pain in the butt, <em>especially</em> when Unity already has a great way to add and set up GameObjects: the unity editor.</p>
 <h2 id="cloning-objects">
   Cloning Objects
@@ -957,16 +957,16 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>To clone an object, instead of creating one from scratch, we can use the <a href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">Instantiate</a> function.</p>
 <p>Any script component can call it. We can give it a GameObject as a property, and it will clone that GameObject.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> GameObject objectToClone;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> GameObject objectToClone;
 
-<span style="color:#66d9ef">void</span> Start()
+<span style="color:#ff79c6">void</span> Start()
 {
     Instantiate(objectToClone);
 }</code></pre></div>
 <p>The most common use case is to assign a prefab to the public field.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#a6e22e">[SerializeField]</span> <span style="color:#66d9ef">private</span> GameObject explosionPrefab;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#50fa7b">[SerializeField]</span> <span style="color:#ff79c6">private</span> GameObject explosionPrefab;
 
-<span style="color:#66d9ef">void</span> MakeExplosion()
+<span style="color:#ff79c6">void</span> MakeExplosion()
 {
     Instantiate(explosionPrefab);
 }</code></pre></div>
@@ -988,11 +988,11 @@ https://github.com/alex-shpak/hugo-book
 </blockquote>
 </p>
 <p>So our Instantiate function needs a GameObject (or prefab) reference to clone, a Vector3 for position, and a Quaternion for rotation, in that order.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#a6e22e">[SerializeField]</span> <span style="color:#66d9ef">private</span> GameObject stampPrefab;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#50fa7b">[SerializeField]</span> <span style="color:#ff79c6">private</span> GameObject stampPrefab;
 
-<span style="color:#66d9ef">void</span> MakeExplosion()
+<span style="color:#ff79c6">void</span> MakeExplosion()
 {
-    Vector3 spawnPosition = <span style="color:#66d9ef">new</span> Vector3(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>);
+    Vector3 spawnPosition = <span style="color:#ff79c6">new</span> Vector3(<span style="color:#bd93f9">1</span>,<span style="color:#bd93f9">2</span>,<span style="color:#bd93f9">3</span>);
     Instantiate(stampPrefab, spawnPosition, Quaternion.identity);
 }</code></pre></div>
 <blockquote class="book-hint warning">
@@ -1004,14 +1004,14 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#storing-a-reference">#</a>
 </h2>
 <p>What&rsquo;s more, the Instantiate function will return a reference to the thing that we cloned. We can ignore it (as above), or store that returned value in a variable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#a6e22e">[SerializeField]</span> <span style="color:#66d9ef">private</span> GameObject bulletPrefab;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#50fa7b">[SerializeField]</span> <span style="color:#ff79c6">private</span> GameObject bulletPrefab;
 
-<span style="color:#75715e">//Create a bullet and set it&#39;s velocity to move forward.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> Shoot()
+<span style="color:#6272a4">//Create a bullet and set it&#39;s velocity to move forward.
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">void</span> Shoot()
 {
     GameObject bullet = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
     Rigidbody bulletRB = bullet.GetComponent&lt;Rigibody&gt;();
-    bulletRB.velocity = Vector3.forward*<span style="color:#ae81ff">10</span>;
+    bulletRB.velocity = Vector3.forward*<span style="color:#bd93f9">10</span>;
 }</code></pre></div>
 <p>When you write code like this, it&rsquo;s important to keep our <a href="https://docs.unity3d.com/Manual/ExecutionOrder.html">game loop</a> in mind. The GameObject gets created in the current game loop, and that objects Start and Awake functions don&rsquo;t run until the very beginning of the next game loop. Be careful not to override any changes you make while creating the object with code that happens in Start, it can be easy to get the order of things wrong.</p>
 <h2 id="example">
@@ -1022,40 +1022,80 @@ https://github.com/alex-shpak/hugo-book
 <p>I am rotating the bullet with the assumption that it&rsquo;s default rotation is visually facing right. I want to set the bullets orientation such that it visually faces the appropriate direction. I use using the Quaternion.FromToRotation function, because using the functions in the Quaternion class is much easier than figuring it out myself.</p>
 <p><img src="/images/unity/toolbox/playerWeaponHandler.png" alt="Screenshot of the Weapon Handler script" /></p>
 <p><em>This script uses <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/">Attributes</a> to pretty up the inspector.</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PlayerWeaponHandler</span> : MonoBehaviour
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">PlayerWeaponHandler</span> : MonoBehaviour
 {
-<span style="color:#a6e22e">    [Header(&#34;Player Config&#34;)]</span>
-<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> Transform bulletSpawnLocation;
-<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [Header(&#34;Weapon Config&#34;)]</span>
-<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> GameObject bulletPrefab;
-<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">float</span> bulletSpeed;
-<span style="color:#a6e22e">    [Min(0)]</span>
-<span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">float</span> maxFireFrequency;
+<span style="color:#50fa7b">    [Header(&#34;Player Config&#34;)]</span>
+<span style="color:#50fa7b">    [SerializeField]</span> <span style="color:#ff79c6">private</span> Transform bulletSpawnLocation;
+<span style="color:#50fa7b">
+</span><span style="color:#50fa7b">    [Header(&#34;Weapon Config&#34;)]</span>
+<span style="color:#50fa7b">    [SerializeField]</span> <span style="color:#ff79c6">private</span> GameObject bulletPrefab;
+<span style="color:#50fa7b">    [SerializeField]</span> <span style="color:#ff79c6">private</span> <span style="color:#8be9fd">float</span> bulletSpeed;
+<span style="color:#50fa7b">    [Min(0)]</span>
+<span style="color:#50fa7b">    [SerializeField]</span> <span style="color:#ff79c6">private</span> <span style="color:#8be9fd">float</span> maxFireFrequency;
     
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">float</span> fireTimer;
+    <span style="color:#ff79c6">private</span> <span style="color:#8be9fd">float</span> fireTimer;
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Start()
+    <span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Start()
     {
         fireTimer = maxFireFrequency;
     }
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Fire(Vector2 direction)
+    <span style="color:#ff79c6">public</span> <span style="color:#ff79c6">void</span> Fire(Vector2 direction)
     {
-        <span style="color:#66d9ef">if</span> (fireTimer &gt;= maxFireFrequency)
+        <span style="color:#ff79c6">if</span> (fireTimer &gt;= maxFireFrequency)
         {
             GameObject bulletGameObject = Instantiate(bulletPrefab, bulletSpawnLocation.position, Quaternion.FromToRotation(Vector2.right, direction));
             Rigidbody2D bulletRB = bulletGameObject.GetComponent&lt;Rigidbody2D&gt;();
             bulletRB.velocity = direction.normalized * bulletSpeed;
-            fireTimer = <span style="color:#ae81ff">0</span>;
+            fireTimer = <span style="color:#bd93f9">0</span>;
         }
     }
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Update()
+    <span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Update()
     {
         fireTimer = fireTimer + Time.deltaTime;
     }
-}</code></pre></div>
+}</code></pre></td></tr></table>
+</div>
+</div>
 </article>
  
       

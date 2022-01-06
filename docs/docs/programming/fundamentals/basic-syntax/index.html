@@ -27,7 +27,7 @@ C# requires that we declare the variable type. We can&rsquo;t just say &ldquo;le
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -964,27 +964,27 @@ https://github.com/alex-shpak/hugo-book
   Declaring data variables:
   <a class="anchor" href="#declaring-data-variables">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> weUseCamelCase;<span style="color:#75715e">//Variable names uppercase every word except the first, and cannot start with numbers. We do not use snake_case.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> someNumber = <span style="color:#ae81ff">4</span>;<span style="color:#75715e">//you set values during declaration
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">bool</span> isAwesome = <span style="color:#66d9ef">true</span>; <span style="color:#75715e">//The scope is &#39;private&#39; by default, so we don&#39;t have to type &#39;private&#39;. 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#8be9fd">string</span> weUseCamelCase;<span style="color:#6272a4">//Variable names uppercase every word except the first, and cannot start with numbers. We do not use snake_case.
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">private</span> <span style="color:#8be9fd">int</span> someNumber = <span style="color:#bd93f9">4</span>;<span style="color:#6272a4">//you set values during declaration
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd">bool</span> isAwesome = <span style="color:#ff79c6">true</span>; <span style="color:#6272a4">//The scope is &#39;private&#39; by default, so we don&#39;t have to type &#39;private&#39;. 
 </span></code></pre></div>
 <h2 id="data-structures">
   Data Structures
   <a class="anchor" href="#data-structures">#</a>
 </h2>
 <p>Declaring structs is very similar to regular variables. We just use the type of the struct for the type:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Vector3 someVelocity;
-<span style="color:#66d9ef">public</span> Quaternion rotationStorage;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> Vector3 someVelocity;
+<span style="color:#ff79c6">public</span> Quaternion rotationStorage;
 Vector2 inputDir;</code></pre></div></p>
 <p>Where it differs is how we create structs. Structs use the same constructor/deconstructor syntax as classes. We type &ldquo;new&rdquo; then the type name, followed by parenthesis, and then we put our appropriate values in the parenthesis like parameters to a function. 
 <blockquote class="book-hint info">
   Vector3, the most common struct we use in Unity, takes 3 float values for its x, y,and z values in that order.
 </blockquote>
 </p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Vector3 someVelocity = <span style="color:#66d9ef">new</span> Vector3(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">3</span>);<span style="color:#75715e">//0 on the x axis, 0 on the y axis, 3 on the z axis.
-</span><span style="color:#75715e"></span>Vector2 inputDir = <span style="color:#66d9ef">new</span> Vector2(-<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>);
-Vecto2 newInputDir = inputDir;<span style="color:#75715e">//We don&#39;t need to create new variables, we can copy other structs values.
-</span><span style="color:#75715e"></span>Vector3 otherDir = Vector3.right;<span style="color:#75715e">//Here we copy a built-in variable, see below.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> Vector3 someVelocity = <span style="color:#ff79c6">new</span> Vector3(<span style="color:#bd93f9">0</span>,<span style="color:#bd93f9">0</span>,<span style="color:#bd93f9">3</span>);<span style="color:#6272a4">//0 on the x axis, 0 on the y axis, 3 on the z axis.
+</span><span style="color:#6272a4"></span>Vector2 inputDir = <span style="color:#ff79c6">new</span> Vector2(-<span style="color:#bd93f9">1</span>,<span style="color:#bd93f9">0</span>);
+Vecto2 newInputDir = inputDir;<span style="color:#6272a4">//We don&#39;t need to create new variables, we can copy other structs values.
+</span><span style="color:#6272a4"></span>Vector3 otherDir = Vector3.right;<span style="color:#6272a4">//Here we copy a built-in variable, see below.
 </span></code></pre></div>
 <blockquote class="book-hint info">
   Vector3.right is a <a href="https://docs.unity3d.com/ScriptReference/Vector3-right.html">shorthand</a>, its basically an already existing variable thats equal to Vector3(1,0,0). In the above example, we simply copied these values into our variable. Vector3.right (and the other short-hands) are much easier to type than &ldquo;new Vector3(1,0,0)&rdquo;, and makes the code easier to understand when reading it..
@@ -1010,10 +1010,10 @@ Vecto2 newInputDir = inputDir;<span style="color:#75715e">//We don&#39;t need to
 <p>[<strong>scope</strong>][space][<strong>returnType</strong>][space][<strong>FunctionName</strong>][(parenthesis)][{curlyBraces}]</p>
 <p>scope returntype functionName(){}</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Start()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Start()
 {
-	<span style="color:#75715e">//Code here, indented.
-</span><span style="color:#75715e"></span>}</code></pre></div>
+	<span style="color:#6272a4">//Code here, indented.
+</span><span style="color:#6272a4"></span>}</code></pre></div>
 <h2 id="creating-functions-with-parameters">
   Creating Functions With Parameters
   <a class="anchor" href="#creating-functions-with-parameters">#</a>
@@ -1023,18 +1023,18 @@ Vecto2 newInputDir = inputDir;<span style="color:#75715e">//We don&#39;t need to
   Variables created this way are called &ldquo;parameters&rdquo; or &ldquo;arguments&rdquo;.
 </blockquote>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> GiveMeSomeNumbersToWorkWith(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> GiveMeSomeNumbersToWorkWith(<span style="color:#8be9fd">int</span> a, <span style="color:#8be9fd">int</span> b)
 {
-	<span style="color:#75715e">//This code now has two integer variables to work with, a and b.
-</span><span style="color:#75715e"></span>}
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> GiveMeOtherInformation(<span style="color:#66d9ef">string</span> words, <span style="color:#66d9ef">int</span> andANumber)
+	<span style="color:#6272a4">//This code now has two integer variables to work with, a and b.
+</span><span style="color:#6272a4"></span>}
+<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> GiveMeOtherInformation(<span style="color:#8be9fd">string</span> words, <span style="color:#8be9fd">int</span> andANumber)
 {
-	<span style="color:#75715e">//This function has been given a string variable and an integer variable.
-</span><span style="color:#75715e"></span>}
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> GiveMeOtherInformation(<span style="color:#66d9ef">float</span> someNumber)
+	<span style="color:#6272a4">//This function has been given a string variable and an integer variable.
+</span><span style="color:#6272a4"></span>}
+<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> GiveMeOtherInformation(<span style="color:#8be9fd">float</span> someNumber)
 {
-	<span style="color:#75715e">//This function has the same name as the above function. This is allowed so long as the paremeters are different.
-</span><span style="color:#75715e"></span>}</code></pre></div>
+	<span style="color:#6272a4">//This function has the same name as the above function. This is allowed so long as the paremeters are different.
+</span><span style="color:#6272a4"></span>}</code></pre></div>
 <blockquote class="book-hint info">
   <p>Functions with the same name but different parameters are allowed in C#. We would say it has a different &ldquo;method signature&rdquo;. One would expect the functions to do the same thing. This is a way of writing the same function multiple times, except to allow for different types of input from the parameters. We have seen this with the &ldquo;Instantiate&rdquo; function from the intro roll-a-ball lesson.</p>
 <p>Take a look at the <a href="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html">documentation for the Instantiate</a> function built into Unity. Notice it has a number of different declarations.</p>
@@ -1049,50 +1049,50 @@ Vecto2 newInputDir = inputDir;<span style="color:#75715e">//We don&#39;t need to
 <p>I recommend starting curly braces on a new line, and indenting code inside of curly braces. This way, one can draw a vertical line straight down from where a curly brace starts. If we see any other code at that indentation level, we can quickly identify that either 1) we need to indent it, or 2) we have messed something up. It makes seeing your code structure easy, which makes it easier to find bugs.</p>
 <p>If statements do not <em>need</em> curly braces. If they don&rsquo;t have one, they will automatically execute the single next line. This is a shorthand, and I do not recommend you follow it when you start coding. It is easier to make mistakes when you code isn&rsquo;t formatted consistently. You have to remember that just these one-liner if statements are special. I say: don&rsquo;t bother.</p>
 <p>Whatever standard you prefer, just remember to be <strong>consistent</strong>.</p>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//C# Does not care about line breaks.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Start(){}</code></pre></div>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//C# Does not care about line breaks.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Start()
-{<span style="color:#75715e">//We put the first curly brace on a new line
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">//we indent every line of code inside of the curly braces
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span>(something == <span style="color:#66d9ef">true</span>)
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#6272a4">//C# Does not care about line breaks.
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Start(){}</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#6272a4">//C# Does not care about line breaks.
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Start()
+{<span style="color:#6272a4">//We put the first curly brace on a new line
+</span><span style="color:#6272a4"></span>	<span style="color:#6272a4">//we indent every line of code inside of the curly braces
+</span><span style="color:#6272a4"></span>	<span style="color:#ff79c6">if</span>(something == <span style="color:#ff79c6">true</span>)
 	{
-		<span style="color:#75715e">//Some other code inside curly braces, indented again.
-</span><span style="color:#75715e"></span>		Debug.Log(<span style="color:#e6db74">&#34;something is true.&#34;</span>);
+		<span style="color:#6272a4">//Some other code inside curly braces, indented again.
+</span><span style="color:#6272a4"></span>		Debug.Log(<span style="color:#f1fa8c">&#34;something is true.&#34;</span>);
 	}
-}<span style="color:#75715e">//the closing curly brace is at the same indentation as the first one, so we can tell which ones go with which.
+}<span style="color:#6272a4">//the closing curly brace is at the same indentation as the first one, so we can tell which ones go with which.
 </span></code></pre></div></p>
 <h2 id="calling-functions">
   Calling Functions
   <a class="anchor" href="#calling-functions">#</a>
 </h2>
 <p>To execute a function, we just type the name of the function followed by parenthesis, and a semicolon. Just like any other statement in C#</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Start()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Start()
 {
 	SayHelloWorld();
 }
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> SayHelloWorld()
+<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> SayHelloWorld()
 {
-	Debug.Log(<span style="color:#e6db74">&#34;Hello, World&#34;</span>);
+	Debug.Log(<span style="color:#f1fa8c">&#34;Hello, World&#34;</span>);
 }</code></pre></div>
 <blockquote class="book-hint warning">
   &ldquo;Executing&rdquo;, &ldquo;Running&rdquo; and &ldquo;Calling&rdquo; functions are all perfectly fine ways to refer to the same thing: make it do it&rsquo;s thing.
 </blockquote>
 
 <p>If the function has parameters, we pass those in, in order, separated by commas. We can type the values directly, or use a different variable whose value or reference will be passed along.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Start()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Start()
 {
-	SayHelloToMe(<span style="color:#e6db74">&#34;World&#34;</span>);<span style="color:#75715e">//prints &#34;Hello, World&#34;
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">string</span> myName = <span style="color:#e6db74">&#34;Abby&#34;</span>;
-    SayHelloToUs(myName,<span style="color:#e6db74">&#34;Ben&#34;</span>,<span style="color:#e6db74">&#34;Chris&#34;</span>)<span style="color:#75715e">//prints &#34;Hello Abby, Ben, and Chris.&#34;
-</span><span style="color:#75715e"></span>}
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> SayHelloToMe(<span style="color:#66d9ef">string</span> yourName)
+	SayHelloToMe(<span style="color:#f1fa8c">&#34;World&#34;</span>);<span style="color:#6272a4">//prints &#34;Hello, World&#34;
+</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd">string</span> myName = <span style="color:#f1fa8c">&#34;Abby&#34;</span>;
+    SayHelloToUs(myName,<span style="color:#f1fa8c">&#34;Ben&#34;</span>,<span style="color:#f1fa8c">&#34;Chris&#34;</span>)<span style="color:#6272a4">//prints &#34;Hello Abby, Ben, and Chris.&#34;
+</span><span style="color:#6272a4"></span>}
+<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> SayHelloToMe(<span style="color:#8be9fd">string</span> yourName)
 {
-	Debug.Log(<span style="color:#e6db74">&#34;Hello, &#34;</span> + yourName);
+	Debug.Log(<span style="color:#f1fa8c">&#34;Hello, &#34;</span> + yourName);
 }
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> SayHelloToUs(<span style="color:#66d9ef">string</span> a, <span style="color:#66d9ef">string</span> b, <span style="color:#66d9ef">string</span> c)
+<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> SayHelloToUs(<span style="color:#8be9fd">string</span> a, <span style="color:#8be9fd">string</span> b, <span style="color:#8be9fd">string</span> c)
 {
-	Debug.Log(<span style="color:#e6db74">&#34;Hello &#34;</span>+a+<span style="color:#e6db74">&#34;, &#34;</span>+b+<span style="color:#e6db74">&#34;, and &#34;</span>+c+<span style="color:#e6db74">&#34;.&#34;</span>);
+	Debug.Log(<span style="color:#f1fa8c">&#34;Hello &#34;</span>+a+<span style="color:#f1fa8c">&#34;, &#34;</span>+b+<span style="color:#f1fa8c">&#34;, and &#34;</span>+c+<span style="color:#f1fa8c">&#34;.&#34;</span>);
 }</code></pre></div>
 </article>
  

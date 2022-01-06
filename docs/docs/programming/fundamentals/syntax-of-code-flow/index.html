@@ -21,7 +21,7 @@ Branches, which will likely never be referred to as &ldquo;branches&rdquo; again
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -952,11 +952,11 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>The If statement takes a <a href="/docs/programming/fundamentals/conditionals/">conditional</a> and will only execute statment if the conditional is true.</p>
 <p>The syntax is: the word if, followed immediately by parenthesis that contain a conditional. The code will execute or not execute the statement that follows it depending on the conditional.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span>(conditional == <span style="color:#66d9ef">true</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">if</span>(conditional == <span style="color:#ff79c6">true</span>)
     DoSomething();</code></pre></div></p>
 <p>Except, you should basically never write your if statements without using a statment block &ndash; curly braces. We use a curly braces basically 100% of the time. The above is valid, and considered a shorthand, but we want our code to be consistent and readable. So, in practice, the syntax of an if statement is:</p>
 <p>The keyword &lsquo;if&rsquo;, followed by parenthesis that contain a conditional, immediately followed by curly braces.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span>(conditional == <span style="color:#66d9ef">true</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">if</span>(conditional == <span style="color:#ff79c6">true</span>)
 {
     DoSomething();
 }</code></pre></div>
@@ -965,38 +965,38 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#the-if-else-statement">#</a>
 </h2>
 <p>The &lsquo;else&rsquo; keyword can be added to after the if statement to provide some code that will only happen if the conditional is false. It&rsquo;s like an &ldquo;otherwise&rdquo; clause.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span>(conditional == <span style="color:#66d9ef">true</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">if</span>(conditional == <span style="color:#ff79c6">true</span>)
 {
     DoSomething();
 }
-<span style="color:#66d9ef">else</span>
+<span style="color:#ff79c6">else</span>
 {
     DoADifferentThing();
 }
 
-<span style="color:#66d9ef">if</span>(conditional == <span style="color:#66d9ef">true</span>)
+<span style="color:#ff79c6">if</span>(conditional == <span style="color:#ff79c6">true</span>)
 {
     DoSomething();
-} <span style="color:#66d9ef">else</span> <span style="color:#75715e">//programmers will fight over the appropriate line spacing of the else statement. I have no strong opinions. 
-</span><span style="color:#75715e"></span>{
+} <span style="color:#ff79c6">else</span> <span style="color:#6272a4">//programmers will fight over the appropriate line spacing of the else statement. I have no strong opinions. 
+</span><span style="color:#6272a4"></span>{
     DoADifferentThing();
 }</code></pre></div>
 <p>You can chain if-else statements together
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span>(inputDir == Vector2.left)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">if</span>(inputDir == Vector2.left)
 {
     MoveInDir(Vector2.left);
 }
-<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(inputDir == Vector2.right)
+<span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span>(inputDir == Vector2.right)
 {
     MoveInDir(Vector2.right);
-}<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(inputDir == Vector2.up)
+}<span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span>(inputDir == Vector2.up)
 {
     MoveInDir(Vector2.up);
 }
-<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(inputDir == Vector2.down)
+<span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span>(inputDir == Vector2.down)
 {
     MoveInDir(Vector2.down);
-}<span style="color:#66d9ef">else</span>
+}<span style="color:#ff79c6">else</span>
 {
     StopMoving();
 }</code></pre></div></p>
@@ -1012,20 +1012,20 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>It&rsquo;s basically the same syntax as a simple if statement, but with the keyword while.</p>
 <p>So long as the conditional is true, the code in the blocks will execute.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">while</span>(<span style="color:#66d9ef">true</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">while</span>(<span style="color:#ff79c6">true</span>)
 {
-    <span style="color:#75715e">//The word &#39;true&#39; is always true, so this code will run over and over again forever and crash your computer.
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">//This is called an infinite loop, and every programmer has made this mistake at least once.
-</span><span style="color:#75715e"></span>}</code></pre></div>
+    <span style="color:#6272a4">//The word &#39;true&#39; is always true, so this code will run over and over again forever and crash your computer.
+</span><span style="color:#6272a4"></span>    <span style="color:#6272a4">//This is called an infinite loop, and every programmer has made this mistake at least once.
+</span><span style="color:#6272a4"></span>}</code></pre></div>
 <p>We can use a while loop and an integer to build a simple counter.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>;<span style="color:#75715e">//A
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span>(i &lt; <span style="color:#ae81ff">10</span>)<span style="color:#75715e">//B
-</span><span style="color:#75715e"></span>{
-    <span style="color:#75715e">//Some code we want to run multiple times.
-</span><span style="color:#75715e"></span>    Debug.Log(i);
-    i = i + <span style="color:#ae81ff">1</span>;<span style="color:#75715e">//C
-</span><span style="color:#75715e"></span>}
-<span style="color:#75715e">//This will spit out 0 - 9 in the console. 10 numbers, starting at 0, and going to 9 - not including 10.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#8be9fd">int</span> i = <span style="color:#bd93f9">0</span>;<span style="color:#6272a4">//A
+</span><span style="color:#6272a4"></span><span style="color:#ff79c6">while</span>(i &lt; <span style="color:#bd93f9">10</span>)<span style="color:#6272a4">//B
+</span><span style="color:#6272a4"></span>{
+    <span style="color:#6272a4">//Some code we want to run multiple times.
+</span><span style="color:#6272a4"></span>    Debug.Log(i);
+    i = i + <span style="color:#bd93f9">1</span>;<span style="color:#6272a4">//C
+</span><span style="color:#6272a4"></span>}
+<span style="color:#6272a4">//This will spit out 0 - 9 in the console. 10 numbers, starting at 0, and going to 9 - not including 10.
 </span></code></pre></div></p>
 <p>It turns out this little pattern is really common. We have some code that happens before the while loop (labeled A, above). Then some conditional we check every loop (i&lt;10, labeled B). Then some code we run every single time in the loop (labeled C).</p>
 <p>This pattern is so common, that the programming deities gave us a nicer way to type it out: the <strong>for loop</strong>.</p>
@@ -1039,7 +1039,7 @@ https://github.com/alex-shpak/hugo-book
 
 <p>The for loop is simple loop that is much less prone to accidentally writing infinite loops. It&rsquo;s syntax is:</p>
 <p>The keyword for, followed by three statements inside of the parenthesis, seperated by commas. Then a curly brace containing our loop.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">for</span>(A;B;C){}</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">for</span>(A;B;C){}</code></pre></div>
 <p>The A,B,and C&rsquo;s here match the functionality of the code labeled A,B, and C in the while loop example above.</p>
 <p>The statements are:</p>
 <ul>
@@ -1053,10 +1053,10 @@ https://github.com/alex-shpak/hugo-book
 <li>B: Compare it to something. A &lt; 10;</li>
 <li>C: Increment it: i++;</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>;i&lt;<span style="color:#ae81ff">10</span>;i++)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">for</span>(<span style="color:#8be9fd">int</span> i = <span style="color:#bd93f9">0</span>;i&lt;<span style="color:#bd93f9">10</span>;i++)
 {
-    <span style="color:#75715e">//do something 10 times, with access to the variable i.
-</span><span style="color:#75715e"></span>    Debug.Log(i);
+    <span style="color:#6272a4">//do something 10 times, with access to the variable i.
+</span><span style="color:#6272a4"></span>    Debug.Log(i);
 }</code></pre></div>
 <blockquote class="book-hint info">
   We always use the variable &ldquo;i&rdquo; for a counter integer. i for iterator.

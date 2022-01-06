@@ -118,7 +118,7 @@ I am rotating the bullet with the assumption that it's default rotation is visua
 
 *This script uses [Attributes]({{< ref "docs\programming\unity-and-programming\tips-and-tricks\serialization-and-attributes.md">}}) to pretty up the inspector.*
 
-{{< highlight csharp >}}
+{{< highlight csharp "linenos=true">}}
 public class PlayerWeaponHandler : MonoBehaviour
 {
     [Header("Player Config")]

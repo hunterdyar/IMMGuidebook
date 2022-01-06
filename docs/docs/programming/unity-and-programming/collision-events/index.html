@@ -23,7 +23,7 @@ void OnCollisionEnter(Collision other) { if (other." />
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -945,19 +945,19 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>A really common pattern when using collision events is to check if the thing we hit has a certain tag, or has a certain component.</p>
 <p>GetComponent is slower than using CompareTag, so we prefer that - however, it can quickly become impractical.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">void</span> OnCollisionEnter(Collision other)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> OnCollisionEnter(Collision other)
 {
-    <span style="color:#66d9ef">if</span> (other.gameObject.CompareTag(<span style="color:#e6db74">&#34;Player&#34;</span>))
+    <span style="color:#ff79c6">if</span> (other.gameObject.CompareTag(<span style="color:#f1fa8c">&#34;Player&#34;</span>))
     {
-        <span style="color:#75715e">//code for if I hit the player
-</span><span style="color:#75715e"></span>    }
-    <span style="color:#75715e">//
-</span><span style="color:#75715e"></span>    Enemy hitEnemy = other.gameObject.GetComponent&lt;Enemy&gt;();
-    <span style="color:#66d9ef">if</span> (hitEnemy != <span style="color:#66d9ef">null</span>)
+        <span style="color:#6272a4">//code for if I hit the player
+</span><span style="color:#6272a4"></span>    }
+    <span style="color:#6272a4">//
+</span><span style="color:#6272a4"></span>    Enemy hitEnemy = other.gameObject.GetComponent&lt;Enemy&gt;();
+    <span style="color:#ff79c6">if</span> (hitEnemy != <span style="color:#ff79c6">null</span>)
     {
-        <span style="color:#75715e">//code for if I hit a gameObject with an Enemy component.
-</span><span style="color:#75715e"></span>        <span style="color:#75715e">//We should basically always check for null. 
-</span><span style="color:#75715e"></span>    }
+        <span style="color:#6272a4">//code for if I hit a gameObject with an Enemy component.
+</span><span style="color:#6272a4"></span>        <span style="color:#6272a4">//We should basically always check for null. 
+</span><span style="color:#6272a4"></span>    }
 }</code></pre></div>
 <h2 id="split-up-the-logic">
   Split Up The Logic

@@ -23,7 +23,7 @@ Vector Overview#  Types of Vectors in Unity#In Unity, we have a number of 
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -1069,9 +1069,9 @@ https://github.com/alex-shpak/hugo-book
 <p>Which direction is up again? Y, right?</p>
 <p>It can be easy to forget this, and then one ends up applying the wrong operation to it.</p>
 <p>When you create a vector, consider adding a comment that describes the vector and reminds you of its context and units.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Vector2 piecePos;<span style="color:#75715e">//Chess Pieces position on the chess grid. 0,0 is always A1, bottom left for white.
-</span><span style="color:#75715e"></span>Vector2 playerInput;<span style="color:#75715e">//Input axis. From arrow keys or joystick, x and y should be in the -1 to 1 range and 0 means no input.
-</span><span style="color:#75715e"></span>Vector3 aimDirection;<span style="color:#75715e">//World direction the player is aiming in.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Vector2 piecePos;<span style="color:#6272a4">//Chess Pieces position on the chess grid. 0,0 is always A1, bottom left for white.
+</span><span style="color:#6272a4"></span>Vector2 playerInput;<span style="color:#6272a4">//Input axis. From arrow keys or joystick, x and y should be in the -1 to 1 range and 0 means no input.
+</span><span style="color:#6272a4"></span>Vector3 aimDirection;<span style="color:#6272a4">//World direction the player is aiming in.
 </span></code></pre></div>
 <h3 id="casting-a-vector-incorrectly">
   Casting A Vector Incorrectly
@@ -1102,10 +1102,10 @@ transform.up may <strong>not</strong> be equal to Vector3.up. Vector3.up will be
   <a class="anchor" href="#normalizing">#</a>
 </h3>
 <p>In Unity, there are two functions to normalize a vector. One will normalize the vector (Normalize()). The other will give you the normalized vector without changing the values of the original vector (.normalized).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Vector2 someVector;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Vector2 someVector;
 
-someVector.Normalize();<span style="color:#75715e">//changes someVector to now be normalized.
-</span><span style="color:#75715e"></span>someVector.normalized;<span style="color:#75715e">//returns a new vector that is the normalized vector of someVector. Does not modify someVEctor.
+someVector.Normalize();<span style="color:#6272a4">//changes someVector to now be normalized.
+</span><span style="color:#6272a4"></span>someVector.normalized;<span style="color:#6272a4">//returns a new vector that is the normalized vector of someVector. Does not modify someVEctor.
 </span></code></pre></div>
 <h3 id="dot-product">
   Dot Product

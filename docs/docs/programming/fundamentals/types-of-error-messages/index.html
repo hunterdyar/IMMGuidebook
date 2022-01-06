@@ -21,7 +21,7 @@ In terms of how you will encounter errors, I would like to add a third type: IDE
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -950,10 +950,10 @@ The above errors are caused by a single missing semicolon. The compiler is smart
 </h2>
 <p>Runtime errors don&rsquo;t happen when the code is compiled. They happen when the game is actually running. The most common are &ldquo;Out of Bounds&rdquo; error, when using lists or arrays, and a &ldquo;Null Reference Exception&rdquo;. Both happen when we ask the computer to go look in memory for some variable, and there is no instance for it to find.</p>
 <p>For example, in a script that moves an object via a Rigidbody, we often store a reference to the rigidbody component in a variable.</p>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> Rigidbody2D <span style="color:#ae81ff">_</span>rigidbody;
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Awake()
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> Rigidbody2D <span style="color:#bd93f9">_</span>rigidbody;
+<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Awake()
 {
-    <span style="color:#ae81ff">_</span>rigidbody = GetComponent&lt;Rigidbody2D&gt;();
+    <span style="color:#bd93f9">_</span>rigidbody = GetComponent&lt;Rigidbody2D&gt;();
 }</code></pre></div>
 If we forget to type this GetComponent line, we will get the following error the first time the _<em>rigidbody</em> variable is used. There is no problem with the code&rsquo;s ability to compile. It only hits this error when the game is executing.</p>
 <p><img src="/images/programming/errorNullReference.png" alt="Screenshot of the famous Null Reference Exception error" /></p>

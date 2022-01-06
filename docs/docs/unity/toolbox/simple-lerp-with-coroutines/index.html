@@ -21,7 +21,7 @@ In a real-life usage, you probably don&rsquo;t want to enter world-positions man
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ae079bfa282ae21b7ede7d507d89fc2d46c557de319cd43f6324af0261f15fd8.js" integrity="sha256-rgeb&#43;igq4ht&#43;3n1QfYn8LUbFV94xnNQ/YySvAmHxX9g=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.304c4be75de6f762307e75bf303115fdc82dc17b1916a710e9293cbf4fccb7b8.js" integrity="sha256-MExL513m92IwfnW/MDEV/cgtwXsZFqcQ6Sk8v0/Mt7g=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -924,50 +924,50 @@ https://github.com/alex-shpak/hugo-book
 <p>Here is an example script that uses a coroutine to <a href="https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html">lerp</a> between two provided positions.</p>
 <p>There is some extra code to allow the script to ping-pong back and forth between the positions.</p>
 <p>In a real-life usage, you probably don&rsquo;t want to enter world-positions manually in the unity inspector. You might use offsets, calculating the real-world start and and position by adding them to the current position. You also could use empty gameObjects that you position in the scene. Use public Transform properties, drop them in, and reference their .position property.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> System.Collections;
-<span style="color:#66d9ef">using</span> System.Collections.Generic;
-<span style="color:#66d9ef">using</span> UnityEngine;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">using</span> System.Collections;
+<span style="color:#ff79c6">using</span> System.Collections.Generic;
+<span style="color:#ff79c6">using</span> UnityEngine;
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LerpPositionSimple</span> : MonoBehaviour
+<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">LerpPositionSimple</span> : MonoBehaviour
 {
-	<span style="color:#66d9ef">public</span> Vector3 startPosition;
-	<span style="color:#66d9ef">public</span> Vector3 endPosition;
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">float</span> timeToMove;
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">bool</span> pingPong;
-	<span style="color:#66d9ef">void</span> Start()
+	<span style="color:#ff79c6">public</span> Vector3 startPosition;
+	<span style="color:#ff79c6">public</span> Vector3 endPosition;
+	<span style="color:#ff79c6">public</span> <span style="color:#8be9fd">float</span> timeToMove;
+	<span style="color:#ff79c6">public</span> <span style="color:#8be9fd">bool</span> pingPong;
+	<span style="color:#ff79c6">void</span> Start()
 	{
 		Move();
 	}
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Move()
+	<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">void</span> Move()
         {
 		StartCoroutine(LerpPos(startPosition,endPosition,timeToMove));
 	}
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> MoveFinished()
+	<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">void</span> MoveFinished()
 	{
-		<span style="color:#66d9ef">if</span>(pingPong)
+		<span style="color:#ff79c6">if</span>(pingPong)
 		{
-			<span style="color:#75715e">//Swap thestart/end position
-</span><span style="color:#75715e"></span>			Vector3 temp = startPosition;
+			<span style="color:#6272a4">//Swap thestart/end position
+</span><span style="color:#6272a4"></span>			Vector3 temp = startPosition;
 			startPosition = endPosition;
 			endPosition = temp;
-			<span style="color:#75715e">//restart the move
-</span><span style="color:#75715e"></span>			Move();
+			<span style="color:#6272a4">//restart the move
+</span><span style="color:#6272a4"></span>			Move();
 		}
 	}
     
-	IEnumerator LerpPos(Vector3 start, Vector3 end, <span style="color:#66d9ef">float</span> timeToMove)
+	IEnumerator LerpPos(Vector3 start, Vector3 end, <span style="color:#8be9fd">float</span> timeToMove)
 	{
-		<span style="color:#66d9ef">float</span> t = <span style="color:#ae81ff">0</span>;
-		<span style="color:#66d9ef">while</span>(t &lt; <span style="color:#ae81ff">1</span>)
+		<span style="color:#8be9fd">float</span> t = <span style="color:#bd93f9">0</span>;
+		<span style="color:#ff79c6">while</span>(t &lt; <span style="color:#bd93f9">1</span>)
 		{
 			transform.position = Vector3.Lerp(start,end,t);
 			t = t + Time.deltaTime / timeToMove;
-			<span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;<span style="color:#75715e">//Stops here until right after the next update loop, then continues
-</span><span style="color:#75715e"></span>		}
-		<span style="color:#75715e">//t won&#39;t end up exactly at 1, so let&#39;s snap it to be precisely where we want.
-</span><span style="color:#75715e"></span>		transform.position = end;
-		<span style="color:#75715e">//MoveFinished will start the coroutine again if ping-ponging is turned on
-</span><span style="color:#75715e"></span>		MoveFinished();
+			<span style="color:#ff79c6">yield</span> <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">null</span>;<span style="color:#6272a4">//Stops here until right after the next update loop, then continues
+</span><span style="color:#6272a4"></span>		}
+		<span style="color:#6272a4">//t won&#39;t end up exactly at 1, so let&#39;s snap it to be precisely where we want.
+</span><span style="color:#6272a4"></span>		transform.position = end;
+		<span style="color:#6272a4">//MoveFinished will start the coroutine again if ping-ponging is turned on
+</span><span style="color:#6272a4"></span>		MoveFinished();
 	}
 }</code></pre></div>
 <hr>
@@ -976,22 +976,22 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#using-speed-instead-of-timetomove">#</a>
 </h1>
 <p>speed is a more useful property than total time to move, because it allows us to adjust our path and not have to re-adjust the total time afterwards. Given a speed, we can calculate a timeToMove value at the start of the coroutine:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">//&#39;speed&#39; is some float value we need to create.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">float</span> timeToMove = Vector3.Distance(startPosition,endPosition)/speed;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#6272a4">//&#39;speed&#39; is some float value we need to create.
+</span><span style="color:#6272a4"></span><span style="color:#8be9fd">float</span> timeToMove = Vector3.Distance(startPosition,endPosition)/speed;</code></pre></div>
 <blockquote class="book-hint info">
   distance is in &lsquo;meters&rsquo;, speed is &lsquo;meters per second&rsquo;.  meters divided by (meters divided by second) is seconds. Nice.
 </blockquote>
 </p>
 <p>Here is the coroutine function with speed being passed in, instead of timeToMove. It&rsquo;s otherwise the same.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">IEnumerator LerpPos(Vector3 start, Vector3 end, <span style="color:#66d9ef">float</span> speed)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">IEnumerator LerpPos(Vector3 start, Vector3 end, <span style="color:#8be9fd">float</span> speed)
 {
-	<span style="color:#66d9ef">float</span> t = <span style="color:#ae81ff">0</span>;
-	<span style="color:#66d9ef">float</span> timeToMove = Vector3.Distance(startPosition,endPosition)/speed;
-	<span style="color:#66d9ef">while</span>(t &lt; <span style="color:#ae81ff">1</span>)
+	<span style="color:#8be9fd">float</span> t = <span style="color:#bd93f9">0</span>;
+	<span style="color:#8be9fd">float</span> timeToMove = Vector3.Distance(startPosition,endPosition)/speed;
+	<span style="color:#ff79c6">while</span>(t &lt; <span style="color:#bd93f9">1</span>)
 	{
 		transform.position = Vector3.Lerp(start,end,t);
 		t = t + Time.deltaTime / timeToMove;
-		<span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
+		<span style="color:#ff79c6">yield</span> <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">null</span>;
 	}
 	transform.position = end;
 	MoveFinished();
