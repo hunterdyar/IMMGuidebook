@@ -130,10 +130,10 @@ Public and Serialized Fields#The simplest, easiest, minimum-viable option is 
     
     <item>
       <title>Assets</title>
-      <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</link>
+      <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</guid>
+      <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/</guid>
       <description>What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
 When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.</description>
     </item>
@@ -173,10 +173,10 @@ void OnCollisionEnter(Collision other) { if (other.</description>
     
     <item>
       <title>Components</title>
-      <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/</link>
+      <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/</guid>
+      <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</guid>
       <description>What are Components?#Components are where the real functionality of GameObjects gets implemented.
 The Transform component is part of every single GameObject in Unity. You can’t delete it, because every gameObject has to have one. An Empty game object still has a position in the scene. It gives objects positions, rotations, and scales. It also handles how objects can be “children” or “parents” of each other.
 The Default Main Camera in new scenes have three components: Transform, Camera, and Audio Listener.</description>
@@ -381,8 +381,7 @@ First, our scene view camera and our game view camera are two completely separat
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/</guid>
       <description>The Scene View#The Scene View, or Scene Window, is where we will spend the majority of our time in Unity. It allows us to see our scene, and edit and select objects.
-The scene View is most closely linked to the Hierarchy – they are both ways to edit a scene, and the Game View.
-Read the page in the Unity Manual on the Scene View, the Scene View Control Bar, and Gizmos.</description>
+While the scene view has been updated twice since these screenshots have been taken, in different versions of Unity, the buttons have moved around. In 2021.1 most of the tools are now inside of, or along the top of, the scene window itself.</description>
     </item>
     
     <item>
