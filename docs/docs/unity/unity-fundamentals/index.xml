@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Intro Lectures</title>
+      <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/the-intro-lectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/the-intro-lectures/</guid>
+      <description>The Intro Lectures#These are recordings of in-class lectures I give about Unity. I hope most of this website will get to the point where Unity information is not hidden in these hour-long videos to reference, but It is still important for me to have the lectures proper recorded and online. They are not about a &amp;ldquo;easy win&amp;rdquo; or first &amp;ldquo;fun&amp;rdquo; project, and you won&amp;rsquo;t necessarily have the confidence to do much afterwards, but I am working on building out a solid foundation of knowledge to build on top of, so to speak.</description>
+    </item>
+    
+    <item>
       <title>Unity Project Basics</title>
       <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
