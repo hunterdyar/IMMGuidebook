@@ -17,7 +17,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.e395dd0ad5ad1d4234ca6b07af55c9b8aeaae7fc806f3bffeaa221b477f9a105.js" integrity="sha256-45XdCtWtHUI0ymsHr1XJuK6q5/yAbzv/6qIhtHf5oQU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.768c08211e4f54559d24c2aad02cb5f2a5c949a35ea3337043d5c8977242177b.js" integrity="sha256-dowIIR5PVFWdJMKq0Cy18qXJSaNeozNwQ9XIl3JCF3s=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -920,6 +920,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#the-intro-lesson">The Intro Lesson</a></li>
     <li><a href="#the-roll-a-ball-project">The Roll-a-Ball Project</a></li>
     <li><a href="#your-first-assignment">Your First Assignment</a></li>
+    <li><a href="#a-camera-follow-script">A Camera Follow Script</a></li>
   </ul>
 </nav>
 
@@ -965,6 +966,18 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>The next step is to step away from long videos, and just poke around in Unity. Here is your first assignment: Make a level for your roll-a-ball.</p>
 <p>Practice creating and moving GameObjects, manipulating the scene view, and creating assets (materials). Enter play mode and try rolling the ball through the level, then go back and change things. Try changing the balls mass, angular drag, or other physics settings.</p>
+<h2 id="a-camera-follow-script">
+  A Camera Follow Script
+  <a class="anchor" href="#a-camera-follow-script">#</a>
+</h2>
+<p>The next step, after we did the above assignment practice, is to create another script - a behavior that lets the camera object follow along with the player.</p>
+<p>Programming and Game Design can be thought of as being two discreet roles. When we write our code, we are creating a set of tools with which we use to create the game. When we design the game, we use and manipulate these tools. This distinction may seem trivial when we are, alone, creating games (or whatever the project may be). It&rsquo;s important because it helps guide us to writing nice clean, reusable, editable code. Things that we might want to change - like the players movement speed - should be accessible in the Inspector, we should not have to go into code to change <em>design</em> elements of the project.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/pzTFJyW9ap8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Now we have created a nice, compartmentalized little script that we can use in many places that adds a simple behavior to whatever our GameObjects we want. A lot of Unity development is doing this. We create systems that exist without us having to go in and edit it. For example: Physics. You don&rsquo;t have to extend Unity classes to use the physics system. You just use the components, and use public functions (like &ldquo;AddForce&rdquo;). We should aim to create our systems with the same independent philosophy.</p>
 </article>
  
       
@@ -1009,6 +1022,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#the-intro-lesson">The Intro Lesson</a></li>
     <li><a href="#the-roll-a-ball-project">The Roll-a-Ball Project</a></li>
     <li><a href="#your-first-assignment">Your First Assignment</a></li>
+    <li><a href="#a-camera-follow-script">A Camera Follow Script</a></li>
   </ul>
 </nav>
 
