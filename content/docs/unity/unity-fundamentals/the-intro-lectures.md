@@ -24,3 +24,12 @@ A slow introduction to writing your first component. Follow along with this one.
 The next step is to step away from long videos, and just poke around in Unity. Here is your first assignment: Make a level for your roll-a-ball.
 
 Practice creating and moving GameObjects, manipulating the scene view, and creating assets (materials). Enter play mode and try rolling the ball through the level, then go back and change things. Try changing the balls mass, angular drag, or other physics settings.
+
+## A Camera Follow Script
+The next step, after we did the above assignment practice, is to create another script - a behavior that lets the camera object follow along with the player.
+
+Programming and Game Design can be thought of as being two discreet roles. When we write our code, we are creating a set of tools with which we use to create the game. When we design the game, we use and manipulate these tools. This distinction may seem trivial when we are, alone, creating games (or whatever the project may be). It's important because it helps guide us to writing nice clean, reusable, editable code. Things that we might want to change - like the players movement speed - should be accessible in the Inspector, we should not have to go into code to change _design_ elements of the project. 
+
+{{< youtube pzTFJyW9ap8 >}}
+
+Now we have created a nice, compartmentalized little script that we can use in many places that adds a simple behavior to whatever our GameObjects we want. A lot of Unity development is doing this. We create systems that exist without us having to go in and edit it. For example: Physics. You don't have to extend Unity classes to use the physics system. You just use the components, and use public functions (like "AddForce"). We should aim to create our systems with the same independent philosophy.
