@@ -5,7 +5,7 @@ title: Order Of Development
 
 Work along your protects primary axis. Different projects require different workflows, and identifying this is often challenging for beginners. 
 
-Generally: work out a draft and refine. What constitutes draft? What elements are refinement? What is neccesary for understanding core, fundamental, parts of your project? 
+Generally: work out a draft and refine. What constitutes draft? What elements are refinement? What is necessary for understanding core, fundamental, parts of your project? 
 
 In animation, One doesn't animate Start to finish, timing is a key part or animation, so the animator starts with notable moment poses, and timings, and places key frames first, then they go add the ih between frames, after spending time tweaking the timing. *You need to find the "key frames" of your project, and get those down before worrying about the metaphorical "in-betweens".*
 
@@ -13,7 +13,7 @@ A digital painter does not paint element by element. They block out the composit
 
 For whatever tool or workflow, the goals involve minimizing work and maximizing iteration and feedback.
 
-When a sculpter makes a statue out of marble, it would be rediculous for them to go top-down, such that they never go back to a previous area twice. This is obvious! Yet for whatever reason, programmers never seemed to think this applies to them. "Refinining a script? That just means you didn't write it well enough the first time!". This thinking is absurd. Hey programmers: stop implementing subsystems before you have your core gameplay working.
+When a sculpter makes a statue out of marble, it would be ridiculous for them to go top-down, such that they never go back to a previous area twice. This is obvious! Yet for whatever reason, programmers never seemed to think this applies to them. "Refining a script? That just means you didn't write it well enough the first time!". This thinking is absurd. Hey programmers: stop implementing subsystems before you have your core gameplay working.
 
 ## Determining What Goes First
 Have some kind of plan or concept in mind. I can't believe I need to say this, but that's where it starts. Don't just open the software and start clicking.

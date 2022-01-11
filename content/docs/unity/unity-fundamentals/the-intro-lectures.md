@@ -25,6 +25,11 @@ The next step is to step away from long videos, and just poke around in Unity. H
 
 Practice creating and moving GameObjects, manipulating the scene view, and creating assets (materials). Enter play mode and try rolling the ball through the level, then go back and change things. Try changing the balls mass, angular drag, or other physics settings.
 
+## Parent-Child Relationships
+Next, read [this page]({{< ref "docs/unity/unity-fundamentals/parent-child-relationships.md" >}}) on Parent/Child relationships in Unity.
+
+Before continuing, I also recommend reading overviews of some of the Unity windows the Unity Interface section.
+
 ## A Camera Follow Script
 The next step, after we did the above assignment practice, is to create another script - a behavior that lets the camera object follow along with the player.
 
