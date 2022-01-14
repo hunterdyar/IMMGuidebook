@@ -57,6 +57,15 @@ Public and Serialized Fields#The simplest, easiest, minimum-viable option is 
     </item>
     
     <item>
+      <title>Namespaces</title>
+      <link>http://guidebook.hdyar.com/docs/programming/architecture/namespaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/architecture/namespaces/</guid>
+      <description>Namespaces#  </description>
+    </item>
+    
+    <item>
       <title>Refactoring a Basic Script Example</title>
       <link>http://guidebook.hdyar.com/docs/programming/architecture/refactoring-a-basic-script-example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
