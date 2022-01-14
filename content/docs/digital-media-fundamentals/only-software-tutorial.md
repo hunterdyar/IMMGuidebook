@@ -7,7 +7,7 @@ As I have improved at many giant pieces of creative software, there are some com
 I want to say this is about "creative" software, because it is. I am mostly focused on creative software. Big tools used to make and export stuff. A lot of this isn't even software-dependent, but applicable for working with any tool. I imagine that many engineers will find common ground.
 	
 # Change one thing to change one thing
-If we change one thing and multiple things get affected, that's bad. If we need to change multiple things in order to make one change, that's also bad. 
+If we change one thing and multiple things get affected, that's bad. How many inputs affect how many outputs? If we need to change multiple things in order to make one change, that's also bad. Please stay with me through the generalities.
 
 The issue could stem from dependencies, from data structures, or from our workflow. It's usually how we choose to structure or assemble our project. It also can come from how different parts of the project are - or are not - linked to each other. 
 
@@ -24,14 +24,14 @@ Compartmentalization: Keep my edits from touching other things.
 
 Automation: Let the other things edit themselves in response.
 
-So compartmentalization is not needing to edit multiple things, automation is having our tool do these chained/dependancy/systematic edits for us. Often they are exactly the kind of repetative and systemetizable edits that tools are very good at doing.
+So compartmentalization prevents us from needing to edit multiple things. Automation, on the other hand, is having our tool do chained/dependency/systematic edits for us. Often they are exactly the kind of repetitive, predictable edits that tools are very good at doing.
 
-Many IDE's, like visual studio code or JetBrains Rider, have refactor options, and one of these options is renaming a variable. Let the IDE go find all and replace. Don't do that by hand. You are doing one thing: renaming a variable. Don't go finding and re-typing it 30 times, that's stupid. Change one thing to change one thing. 
+Many IDE's, like visual studio code or JetBrains Rider, have refactor code options. One of these options is renaming a variable. Let the IDE go find all and replace. Don't do that by hand. You are doing one thing: renaming a variable. Don't go finding and re-typing it 30 times, that's stupid. Change one thing to change one thing. 
 
 # Isolate Unlinked Elements
-Yes, this is repeating "compartmentalize" above. But that section is about the workflow, which and you use this structure to acheive. I want to elaborate futher on the structure.
+This point is repeating "compartmentalize". But that section is about the workflow. I want to elaborate further on the structure.
 
-Try to separate elements from each other when they are not inheirently linked. Separate layers for your stencils, colors, and inks in that digital painting. Separate buses/groups for your different audio sections in your DAW (I don't do music, but I edit radio. Separating background, voice over, foley, etc) from each other so I can edit them more coherently. 
+Try to separate elements from each other when they are not inherently linked. Separate layers for your stencils, colors, and inks in that digital painting. Separate buses/groups for your different audio sections in your DAW (I don't do music, but I edit radio. Separating background, voice over, foley, etc) from each other so I can edit them more coherently. 
 
 Separate your input systems and your animation systems. Separate your player input code from your player movement code. Even when they always go together, it's nice to edit and work with this *very different* problems in *different locations*. This way you can apply different solutions to them without everything getting tied up in a big mess.
 
