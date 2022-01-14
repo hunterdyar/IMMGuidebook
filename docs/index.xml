@@ -252,6 +252,15 @@ To start with an example, consider driving. When we all started learning how to 
     </item>
     
     <item>
+      <title>Input System</title>
+      <link>http://guidebook.hdyar.com/docs/programming/unity-and-programming/input-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/unity-and-programming/input-system/</guid>
+      <description>Unity has multiple Input Systems, which is confusing for beginners. Built into Unity by default is access to the &amp;ldquo;old&amp;rdquo; input system, which this page will detail. The &amp;ldquo;old&amp;rdquo; system is simpler and easier to use for beginners. Unity also has a &amp;ldquo;new&amp;rdquo; input system that you can switch to, which is far more advanced and capable, but requires a bit of setup before you can use, and utilizes more advanced c# features.</description>
+    </item>
+    
+    <item>
       <title>Installing Unity and an IDE</title>
       <link>http://guidebook.hdyar.com/docs/unity/setup/installing-unity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

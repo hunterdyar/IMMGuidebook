@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Unity has multiple Input Systems, which is confusing for beginners. Built into Unity by default is access to the &ldquo;old&rdquo; input system, which this page will detail. The &ldquo;old&rdquo; system is simpler and easier to use for beginners. Unity also has a &ldquo;new&rdquo; input system that you can switch to, which is far more advanced and capable, but requires a bit of setup before you can use, and utilizes more advanced c# features.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Input System" />
+<meta property="og:description" content="Unity has multiple Input Systems, which is confusing for beginners. Built into Unity by default is access to the &ldquo;old&rdquo; input system, which this page will detail. The &ldquo;old&rdquo; system is simpler and easier to use for beginners. Unity also has a &ldquo;new&rdquo; input system that you can switch to, which is far more advanced and capable, but requires a bit of setup before you can use, and utilizes more advanced c# features." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/unity-and-programming/input-system/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Input System | The Guidebook</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.e7303094ab24f287ae60082da17414442ef708247269bb766475e5d3c2187e63.js" integrity="sha256-5zAwlKsk8oeuYAgtoXQURC73CCRyabt2ZHXl08IYfmM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>The Guidebook</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle"  />
+    <label for="section-21cc7f86d77b52f288b1d547e8cb9bef" class="flex justify-between">
+      <a role="button" class="">Digital Media Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/confusion-and-complexity/" class="">Confusion vs. Complexity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/creative-vs-execution/" class="">Creativity vs. Execution</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/notes-on-file-management/" class="">Notes on File Management</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/order-of-development/" class="">Order Of Development</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-66ec1d3f591a5234d78b26bb390aa62f" class="toggle"  />
+    <label for="section-66ec1d3f591a5234d78b26bb390aa62f" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/unity/" class="">Unity Development</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle"  />
+    <label for="section-a3091d099fec882f5485ece4e6f64eb1" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/the-intro-lectures/" class="">The Intro Lectures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/" class="">Unity Project Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" class="">Assets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/" class="">Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/builds/" class="">Creating Builds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/parent-child-relationships/" class="">Parent-Child Relationships</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-989493819aad2d14ceb835eeee351713" class="toggle"  />
+    <label for="section-989493819aad2d14ceb835eeee351713" class="flex justify-between">
+      <a role="button" class="">Interface</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-interface/layouts/" class="">Adjusting Layouts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-interface/game-view/" class="">The Game View</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-interface/hierarchy/" class="">The Hierarchy Window</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/" class="">The Scene View</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f07d922fb865ab705335d67667049d43" class="toggle"  />
+    <label for="section-f07d922fb865ab705335d67667049d43" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/unity/3d-models/" class="">3D Models</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/3d-models/from-sketchfab-to-unity/" class="">From Sketchfab To Unity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/3d-models/rig-with-mixamo/" class="">Setting up a Rig with Mixamo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea07a840a5b4a991a517a4629757fa50" class="toggle"  />
+    <label for="section-ea07a840a5b4a991a517a4629757fa50" class="flex justify-between">
+      <a role="button" class="">Virtual Reality</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0658dc3c29d418e551148f18b7f9510b" class="toggle"  />
+    <label for="section-0658dc3c29d418e551148f18b7f9510b" class="flex justify-between">
+      <a role="button" class="">Setup</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/setup/installing-unity/" class="">Installing Unity and an IDE</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d55ff003c3945e025f9dcf7dab6d9fa" class="toggle"  />
+    <label for="section-4d55ff003c3945e025f9dcf7dab6d9fa" class="flex justify-between">
+      <a role="button" class="">Toolbox</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/toolbox/clicking-on-objects-in-3d/" class="">Clicking On Objects in 3D</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/toolbox/instantiating/" class="">Instantiating GameObjects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/unity/toolbox/simple-lerp-with-coroutines/" class="">Simple LERP with Coroutines</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle" checked />
+    <label for="section-57e58ca5aae968f4961a4036f314a5de" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/programming/" class="">Programming in Unity</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle"  />
+    <label for="section-dddf50324cced418b45884f0b4af2983" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/" class="">Syntax of Variables and Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/conditionals/" class="">Conditionals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/" class="">Syntax of Code Flow</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/arrays/" class="">Arrays</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/" class="">Classes and Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/collapsing-code/" class="">Collapsing Code Exercise</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" class="">Types of Error Messages</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
+    <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/programming/advanced/" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" class="">Object Oriented Programming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/" class="">Object Oriented Syntax</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/" class="">Static Objects in C# and Unity</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
+    <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/programming/architecture/" class="">Architecture</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/the-architecture-lecture/" class="">The Architecture Lecture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/simple-state-machine/" class="">A Simple State Machine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/accessing-data/" class="">Accessing Data (from elsewhere)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/data-oriented-design-scriptable-objects/" class="">Data-Oriented Design with Scriptable Objects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/event-systems/" class="">Event Systems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/singleton-pattern/" class="">Singletons</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8bb48feef647b1565f2ae8cf98155c0f" class="toggle" checked />
+    <label for="section-8bb48feef647b1565f2ae8cf98155c0f" class="flex justify-between">
+      <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/" class="">Unity Specific Programming</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d781a33d1971ab7a88804d986cf195e7" class="toggle"  />
+    <label for="section-d781a33d1971ab7a88804d986cf195e7" class="flex justify-between">
+      <a role="button" class="">Tips &amp; Tricks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/" class="">Serialization and Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/string-formatting/" class="">String Formatting</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/collision-events/" class="">Collision Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/input-system/" class=" active">Input System</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/" class="">Vectors</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Input System</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#input-systems">Input Systems</a></li>
+    <li><a href="#using-the-old-input-system">Using The Old Input System</a></li>
+    <li><a href="#axis-and-buttons">Axis and Buttons</a></li>
+    <li><a href="#reading-state-vs-events">Reading State vs Events</a></li>
+    <li><a href="#getaxis">GetAxis</a></li>
+    <li><a href="#getbutton">GetButton</a></li>
+    <li><a href="#input-isolation-in-code">Input Isolation In Code</a></li>
+    <li><a href="#editing-the-input-axis">Editing The Input Axis</a></li>
+    <li><a href="#getaxis-vs-getaxisraw">GetAxis vs. GetAxisRaw</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>Unity has multiple Input Systems, which is confusing for beginners. Built into Unity by default is access to the &ldquo;old&rdquo; input system, which this page will detail. The &ldquo;old&rdquo; system is simpler and easier to use for beginners. Unity also has a &ldquo;new&rdquo; input system that you can switch to, which is far more advanced and capable, but requires a bit of setup before you can use, and utilizes more advanced c# features.</p>
+<blockquote class="book-hint ">
+  In &ldquo;real&rdquo; projects, particularly those targeting multiple platforms, multiple devices, and for VR, I much prefer the &ldquo;new&rdquo; input system. The &ldquo;old&rdquo; system is much faster to get started with.
+</blockquote>
+
+<h2 id="input-systems">
+  Input Systems
+  <a class="anchor" href="#input-systems">#</a>
+</h2>
+<p>An input system handles one of the hardest parts of game development: Supporting multiple devices. The input that comes from devices into your game can come from a near infinite incredible number of sources:</p>
+<ul>
+<li>Keyboards (of various types, of various layouts, with regional differences)</li>
+<li>Mice events (that may or may not have various buttons)</li>
+<li>Audio Devices</li>
+<li>Gamepads (from microsoft, sony, logitech, and others which all behave slightly differently)</li>
+<li>Joysticks/Flight Control Devices</li>
+<li>Racing Sim Devices (wheels, pedals)</li>
+<li>Accelerometer Information in Phones</li>
+<li>Multi-touch supporting screens</li>
+<li>GPS coordinates</li>
+<li>VR Input Devices (Including arbitrary tracking pucks)</li>
+<li>Alt-controller input Systems (wiimote, donkey-kong bongos, TV blaster guns)</li>
+<li>Musical Instruments</li>
+<li>Fake Musical Instruments (rock band/guitar hero)</li>
+<li>MIDI devices</li>
+</ul>
+<p>Many of these devices &ldquo;pretend&rdquo; to be other devices (often behaving like an xbox controller), which can help or hurt us in variety of contexts.</p>
+<p>An Input System takes all of these real-world devices and maps their inputs into one or more fake virtual devices or fake virtual inputs. The fake inputs by different names in different input systems. The old system calls them &ldquo;axis&rdquo; and &ldquo;buttons&rdquo;, the new system calls them &ldquo;actions&rdquo;. Our code can look at the fake virtual devices as if they are real. Fake-Input device says jump? Jump. It doesn&rsquo;t need to know if you pressed the space key on your keyboard or the x button on your gamepad.</p>
+<p>The input system handles all of the real-world complexity of devices, and allows our code to pretend that the world of devices isn&rsquo;t actually complicated (it is), and it can receive nice clean input events and statuses.</p>
+<h2 id="using-the-old-input-system">
+  Using The Old Input System
+  <a class="anchor" href="#using-the-old-input-system">#</a>
+</h2>
+<p>In Unity, we use the <strong>Input</strong> class. Simply type &ldquo;Input.&rdquo; in our code to access all sorts of functions. The most common are &ldquo;GetAxis&rdquo; and &ldquo;GetButton&rdquo;.</p>
+<p>You almost always want to capture player input inside of the Update function. 
+<blockquote class="book-hint ">
+  Do not capture input inside of FixedUpdate - your input will be broken. What&rsquo;s worse, it will be broken in an inconsistent and hard to debug way.
+</blockquote>
+</p>
+<h2 id="axis-and-buttons">
+  Axis and Buttons
+  <a class="anchor" href="#axis-and-buttons">#</a>
+</h2>
+<p>Every input one our fake input device is given a name. We don&rsquo;t need to name our input &ldquo;space&rdquo;, we can call it something useful and descriptive, like &ldquo;Jump&rdquo; or &ldquo;Shoot&rdquo;. It can be either an Axis, which will return a value between -1 and 1, or a button, which can either be pressed (true) or unpressed (false). A joystick is two axis, a horizontal one and a vertical one: mapped to pushing left/right and up/down with the joystick. If the joystick is &ldquo;centered&rdquo; and not being touched, both the horizontal and vertical axis will be 0. If I hold down on the joystick, the vertical axis will be -1 and the horizontal axis will be 0. If I push to the right, the horizontal axis will be 1 and the vertical axis will be 0.</p>
+<p>Unity, by default, sets up two axis, named &ldquo;Horizontal&rdquo; and &ldquo;Vertical&rdquo;. It is mapped to the left stick of a gamepad, the arrow keys of a keyboard, and the WASD keys of a keyboard.</p>
+<p>Buttons are like axis but simpler, they can be pressed or not pressed. Unity sets up one called &ldquo;Jump&rdquo; that is mapped to the space bar of the keyboard and the &ldquo;south&rdquo; button of gamepads.</p>
+<h2 id="reading-state-vs-events">
+  Reading State vs Events
+  <a class="anchor" href="#reading-state-vs-events">#</a>
+</h2>
+<p>It&rsquo;s important to remember that, with the &lsquo;old&rsquo; system we are generally reading values continuously, and not responding to &ldquo;events&rdquo;. We are looking at a variable&rsquo;s value every frame, and if that value is something we care about, or past a certain threshold, we THEN can call a function or even fire off an &lsquo;event&rsquo; ourselves.</p>
+<p>The plan, now, becomes to look at all the input values we care about every single frame we care about them. ie: in the Update loop.</p>
+<p>Remember we are using a game loop. During every loop, our input is set to whatever state was read from the devices by the input system. Input won&rsquo;t change for any given frame of Update. Luckily, our games update loop is fast enough that input feels very responsive and fluid - the update loops is usually faster than the frame-rate of the monitor your are looking at a game on, so your game can visually respond to input within a 60th or 144th of a second.</p>
+<p>When you push a button, its probably true for a number of frames in the game, not just &lsquo;one&rsquo; frame.</p>
+<h2 id="getaxis">
+  GetAxis
+  <a class="anchor" href="#getaxis">#</a>
+</h2>
+<p>To get the value of an axis, the code might like this:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Update()
+{
+    <span style="color:#6272a4">//See below note on GetAxis vs. GetAxisRaw before using this code. 
+</span><span style="color:#6272a4"></span>    <span style="color:#8be9fd">float</span> horizontal = Input.GetAxis(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>);
+    <span style="color:#ff79c6">if</span>(horizontal &gt; <span style="color:#bd93f9">0.1</span>)
+    {
+        <span style="color:#6272a4">//pushing to the right
+</span><span style="color:#6272a4"></span>    }
+    <span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span>(horizontal &lt; -<span style="color:#bd93f9">0.1</span>)
+    {
+        <span style="color:#6272a4">//pushing to the left
+</span><span style="color:#6272a4"></span>    }
+}</code></pre></div></p>
+<p>We might want to combine the input into a Vector2.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Update()
+{
+    <span style="color:#8be9fd">float</span> horizontal = Input.GetAxis(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>);
+    <span style="color:#8be9fd">float</span> vertical = Input.GetAxis(<span style="color:#f1fa8c">&#34;Vertical&#34;</span>);
+    Vector2 inputDir = <span style="color:#ff79c6">new</span> Vector2(horizontal, vertical);
+
+    <span style="color:#6272a4">//We can do the above three lines of code in one line of code:
+</span><span style="color:#6272a4"></span>    Vector2 inputDir = <span style="color:#ff79c6">new</span> Vector2(Input.GetAxis(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>), Input.GetAxis(<span style="color:#f1fa8c">&#34;Vertical&#34;</span>));
+
+}</code></pre></div>
+Now we have a variable we can check and compare values with.</p>
+<h2 id="getbutton">
+  GetButton
+  <a class="anchor" href="#getbutton">#</a>
+</h2>
+<p>Get button is just one of three useful functions. They are GetButton, GetButtonDown, and GetButtonUp. All of these functions will return a boolean - true or false - for any given button name.</p>
+<p>GetButton will return true when a button is pressed, and false when it is not pressed.</p>
+<p>GetButtonDown will return true for <strong>the first</strong> frame a button is pressed. It will then read as false until the button is released and pressed again.</p>
+<p>GetButtonUp will return false until the <strong>the first</strong> frame a button is released. It will then read as false until the button is pressed and released again.</p>
+<p><img src="/images/programming/inputGetButtons.png" alt="A table demonstrating the differences between the three functions" />
+<em>Pardon my whiteboard scratchings.</em></p>
+<p>Here, the x-axis of the chart is time, each column being a new Update loop. T and F are if the function will return True or False, and the line to the right of button is like a side-view of the buttons height, either up or pressed down.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Update()
+{
+    <span style="color:#ff79c6">if</span>(Input.GetButtonDown(<span style="color:#f1fa8c">&#34;Jump&#34;</span>))
+    {
+        Jump();
+    }
+}
+<span style="color:#ff79c6">void</span> Jump()
+{
+    <span style="color:#6272a4">//code to jump here
+</span><span style="color:#6272a4"></span>}</code></pre></div>
+<h2 id="input-isolation-in-code">
+  Input Isolation In Code
+  <a class="anchor" href="#input-isolation-in-code">#</a>
+</h2>
+<p>Note in the example above that I created a <em>Jump()</em> function. It&rsquo;s a good idea to keep the code that reacts to input, and the code that examines for input, in two separate, compartmentalized places. I almost always put &ldquo;PlayerInput&rdquo; on a unique script from, say, &ldquo;PlayerMovement&rdquo;. This way I can rewrite or change my input handling (a common and messy task) without messing up any of the logic of my game. The above example is simply moving the logic to a new function - not a new monoBehavior - but it&rsquo;s still a smart thing to do.</p>
+<h2 id="editing-the-input-axis">
+  Editing The Input Axis
+  <a class="anchor" href="#editing-the-input-axis">#</a>
+</h2>
+<p>Editing the input axis is simple: Go to <strong>Edit &gt; Project Settings&hellip;</strong> and choose &lsquo;Input Manager&rsquo;. See the <a href="https://docs.unity3d.com/Manual/class-InputManager.html">Unity Documentation Page</a> for details.</p>
+<p><img src="/images/programming/inputManager.png" alt="Input Manager Window" /></p>
+<h2 id="getaxis-vs-getaxisraw">
+  GetAxis vs. GetAxisRaw
+  <a class="anchor" href="#getaxis-vs-getaxisraw">#</a>
+</h2>
+<p>If you are using two-directional keyboard input, you have likely noticed that your game might feel sluggish or behave oddly. Perhaps you tried the following type of setup:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Update()
+{
+    <span style="color:#ff79c6">if</span>(Input.GetAxis(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>) &gt; <span style="color:#bd93f9">0</span>)
+    {
+        <span style="color:#6272a4">//move right
+</span><span style="color:#6272a4"></span>    }
+    <span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span>(Input.GetAxis(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>) &lt; <span style="color:#bd93f9">0</span>)
+    {
+        <span style="color:#6272a4">//move left
+</span><span style="color:#6272a4"></span>    }
+}</code></pre></div>
+<p>The problem isn&rsquo;t with our code (although, to note, we still may want to change 0 to small numbers as a &lsquo;deadzone&rsquo;).</p>
+<p>The real problem is with how Unity treats axis. If the input that Unity reads jumps from a value to 0, Unity wont have the value jump to 0, instead it fades back. It does this when handling keyboard input as axis input. Unity is, to some degree, simulating a joystick, and simulating the amount of time it takes for the joystick to move from the edge back to the center.</p>
+<p>When using keyboard input, this may or may not be what we want. In some types of movement, we like it. In other types, it just gets in our way.
+To avoid it, use the &ldquo;GetAxisRaw&rdquo; function instead of &ldquo;GetAxis&rdquo;.</p>
+<blockquote class="book-hint warning">
+  Some online resources will tell you to just set the <em>gravity</em> or <em>snap</em> settings in the input manager really high, so it falls back to 0 quickly. And, sure, that would work. But it&rsquo;s a silly way to solve a straightforward problem. Instead of changing the parameters of the smoothing filter to make it negligible (in what we hope is all conditions), lets actually just turn it off.
+</blockquote>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Update()
+{
+    <span style="color:#6272a4">//GetAxisRaw would appropriately handle keyboard input in this situation.
+</span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">if</span>(Input.GetAxisRaw(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>) &gt; <span style="color:#bd93f9">0</span>)
+    {
+        <span style="color:#6272a4">//move right
+</span><span style="color:#6272a4"></span>    }
+    <span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span>(Input.GetAxisRaw(<span style="color:#f1fa8c">&#34;Horizontal&#34;</span>) &lt; <span style="color:#bd93f9">0</span>)
+    {
+        <span style="color:#6272a4">//move left
+</span><span style="color:#6272a4"></span>    }
+}</code></pre></div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#input-systems">Input Systems</a></li>
+    <li><a href="#using-the-old-input-system">Using The Old Input System</a></li>
+    <li><a href="#axis-and-buttons">Axis and Buttons</a></li>
+    <li><a href="#reading-state-vs-events">Reading State vs Events</a></li>
+    <li><a href="#getaxis">GetAxis</a></li>
+    <li><a href="#getbutton">GetButton</a></li>
+    <li><a href="#input-isolation-in-code">Input Isolation In Code</a></li>
+    <li><a href="#editing-the-input-axis">Editing The Input Axis</a></li>
+    <li><a href="#getaxis-vs-getaxisraw">GetAxis vs. GetAxisRaw</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
