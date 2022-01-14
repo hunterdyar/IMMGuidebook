@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Object Oriented Programming#Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C&#43;&#43;, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
-Object oriented programming is programming around data structures that contain variables and functions.
-There are three main &ldquo;pillars&rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. Depending on who you ask, there is a fourth pillar: Abstraction.">
+<meta name="description" content="Refactoring a Basic Script#  ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Object Oriented Programming" />
-<meta property="og:description" content="Object Oriented Programming#Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C&#43;&#43;, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
-Object oriented programming is programming around data structures that contain variables and functions.
-There are three main &ldquo;pillars&rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. Depending on who you ask, there is a fourth pillar: Abstraction." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Refactoring a Basic Script Example" />
+<meta property="og:description" content="Refactoring a Basic Script#  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/architecture/refactoring-a-basic-script-example/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Object Oriented Programming | The Guidebook</title>
+<title>Refactoring a Basic Script Example | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -631,7 +627,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle" checked />
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
     <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/advanced/" class="">Advanced</a>
     </label>
@@ -647,7 +643,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" class=" active">Object Oriented Programming</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/" class="">Object Oriented Programming</a>
   
 
         </li>
@@ -691,7 +687,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle" checked />
     <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/architecture/" class="">Architecture</a>
     </label>
@@ -772,7 +768,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/architecture/refactoring-a-basic-script-example/" class="">Refactoring a Basic Script Example</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/refactoring-a-basic-script-example/" class=" active">Refactoring a Basic Script Example</a>
   
 
         </li>
@@ -944,7 +940,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Object Oriented Programming</strong>
+  <strong>Refactoring a Basic Script Example</strong>
 
   <label for="toc-control">
     
@@ -958,37 +954,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#classes--objects">Classes &amp; Objects</a></li>
-        <li><a href="#inheritance">Inheritance</a></li>
-      </ul>
-    </li>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#prerequisite-concepts-review">Prerequisite Concepts Review</a>
-      <ul>
-        <li><a href="#data-structures">Data Structures</a></li>
-        <li><a href="#hierarchy">Hierarchy</a></li>
-        <li><a href="#taxonomy">Taxonomy</a></li>
-        <li><a href="#inheritance-1">Inheritance</a></li>
-        <li><a href="#members">Members</a></li>
-      </ul>
-    </li>
-    <li><a href="#component-systems">Component Systems</a></li>
-    <li><a href="#the-lesson">The Lesson</a></li>
-    <li><a href="#overriding-members--example">Overriding Members &amp; Example</a></li>
-    <li><a href="#syntax">Syntax</a></li>
-    <li><a href="#resources--next-steps">Resources &amp; Next Steps</a>
-      <ul>
-        <li><a href="#reinforce-concepts">Reinforce Concepts</a></li>
-        <li><a href="#further-concepts">Further Concepts</a></li>
-        <li><a href="#reviewing-docs">Reviewing Docs</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -999,136 +965,15 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="object-oriented-programming">
-  Object Oriented Programming
-  <a class="anchor" href="#object-oriented-programming">#</a>
+  <article class="markdown"><h1 id="refactoring-a-basic-script">
+  Refactoring a Basic Script
+  <a class="anchor" href="#refactoring-a-basic-script">#</a>
 </h1>
-<p>Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C++, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.</p>
-<p>Object oriented programming is programming around data structures that contain variables and functions.</p>
-<blockquote class="book-hint info">
-  <p>There are three main &ldquo;pillars&rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. 
-<em>Depending on who you ask, there is a fourth pillar: Abstraction.</em></p>
-<p>We will be introducing and discussing <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance">inheritance</a> here, but leaving <a href="https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29">encapsulation</a> and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism">polymorphism</a> to the side for now.</p>
-
-</blockquote>
-
-<p>This lesson is really about two main concepts: <strong>Classes &amp; Objects</strong>, and <strong>Object Inheritance</strong>.</p>
-<h3 id="classes--objects">
-  Classes &amp; Objects
-  <a class="anchor" href="#classes--objects">#</a>
-</h3>
-<p><strong>Classes</strong> are definitions of data structures and available functions (operations, methods) that one can do with the data. 
-<strong>Objects</strong> are instances of the class.</p>
-<h3 id="inheritance">
-  Inheritance
-  <a class="anchor" href="#inheritance">#</a>
-</h3>
-<p>Inheritance is the primary tool that allows for code flexibilty and code reuse. It allows data structures to share properties of one another, by having one class <em>inherit</em> or copy the various setup of another class as a starting point.</p>
-<p>All of the scripts we have been writing in Unity, so far, have been inheriting their properties from &ldquo;MonoBehaviour&rdquo;, which is the UnityEngine term for &ldquo;component&rdquo;. This inheritance is what has allowed us to drag and drop these behaviors onto GameObjects, and allowed Unity to find and execute their event functions like Start and Update.</p>
-<h2 id="introduction">
-  Introduction
-  <a class="anchor" href="#introduction">#</a>
-</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/bHvjTkvd_vY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/9YsQM7jboDs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="prerequisite-concepts-review">
-  Prerequisite Concepts Review
-  <a class="anchor" href="#prerequisite-concepts-review">#</a>
-</h2>
-<p>First, be sure you have a strong grasp of <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/">Classes and Components</a>.</p>
-<h3 id="data-structures">
-  Data Structures
-  <a class="anchor" href="#data-structures">#</a>
-</h3>
-<p>A data structure is an organization of data. When we have a collection of information that is related, we can put it in a structure that allows easy access, use, comparison, and manipulation of that data. The <a href="https://en.wikipedia.org/wiki/List_of_data_structures">List of Data Structures</a> on Wikipedia is overwhelming but interesting. For a more fundamental introduction, check out this <a href="https://www.youtube.com/watch?v=DuDz6B4cqVc">Crash Course</a> video.</p>
-<h3 id="hierarchy">
-  Hierarchy
-  <a class="anchor" href="#hierarchy">#</a>
-</h3>
-<p>Hierarchy. Hierarchical relationships is a way of organizing things that places things on different related levels. Things can be related to each other as above an other thing, below an other thing, or at the same level as an other thing. Hierarchies are sometimes called &ldquo;tree structures&rdquo;.</p>
-<p>We will call the higher level things parents, the lower level things children, and things at the same level siblings. In programming, we also use the terms &ldquo;base&rdquo; to refer to an objects parent, and &ldquo;extending&rdquo; to the process of creating a child.</p>
-<h3 id="taxonomy">
-  Taxonomy
-  <a class="anchor" href="#taxonomy">#</a>
-</h3>
-<p>Taxonomy is not a programming concept, but knowing about taxonomies will be helpful. Taxonomy is a system of classification, and most taxonomies you have likely heard of are structured as hierarchies. In other words, Taxonomies are practical examples of hierarchies. Creating taxonomies - somebody has to decide how to organize the library (thanks Dewey). It is interesting (one might say &lsquo;productive procrastination&rsquo; to browse through lists of example taxonomy on <a href="https://en.wikipedia.org/wiki/Taxonomy">wikipedia</a>.)</p>
-<h3 id="inheritance-1">
-  Inheritance
-  <a class="anchor" href="#inheritance-1">#</a>
-</h3>
-<p>From the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/">MSDN C# Docs Overview Page</a> page:</p>
-<blockquote>
-<p><em>A class that derives from another class, called the base class, automatically contains all the public, protected, and internal members of the base class except its constructors and finalizers.</em></p>
-</blockquote>
-<p>From the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance">MSDN C# Docs Inheritance</a> page:</p>
-<blockquote>
-<p><em>Inheritance enables you to create new classes that reuse, extend, and modify the behavior defined in other classes. The class whose members are inherited is called the base class, and the class that inherits those members is called the derived class.</em></p>
-</blockquote>
-<h3 id="members">
-  Members
-  <a class="anchor" href="#members">#</a>
-</h3>
-<p>A member is all of the things that make an object what it is. An objects variables and functions are an objects members. Members is our new word for &lsquo;thing&rsquo; in the context of objects and classes. Objects can inherit members from other objects. From the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members">MSDN Docs</a>:</p>
-<blockquote>
-<p><em>Classes and structs have members that represent their data and behavior. A class&rsquo;s members include all the members declared in the class, along with all members (except constructors and finalizers) declared in all classes in its inheritance hierarchy.</em></p>
-</blockquote>
-<h2 id="component-systems">
-  Component Systems
-  <a class="anchor" href="#component-systems">#</a>
-</h2>
-<p>Component-based architecture is discussed in the <a href="http://guidebook.hdyar.com/docs/programming/architecture/the-architecture-lecture/">Architecture Lecture</a>, and you can review the pattern on its own in the excellent <a href="https://gameprogrammingpatterns.com/component.html">Game Programming Patterns Book</a> (free, online).</p>
-<h2 id="the-lesson">
-  The Lesson
-  <a class="anchor" href="#the-lesson">#</a>
-</h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/xMD5UOwPcMk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="overriding-members--example">
-  Overriding Members &amp; Example
-  <a class="anchor" href="#overriding-members--example">#</a>
-</h2>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Evkj2w0P5IM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="syntax">
-  Syntax
-  <a class="anchor" href="#syntax">#</a>
-</h2>
-<p>See the <a href="http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/">Object Oriented Syntax</a> page.</p>
-<h2 id="resources--next-steps">
-  Resources &amp; Next Steps
-  <a class="anchor" href="#resources--next-steps">#</a>
-</h2>
-<p>The next step will be to implement these concepts yourself in a project! In the meantime&hellip;</p>
-<h3 id="reinforce-concepts">
-  Reinforce Concepts
-  <a class="anchor" href="#reinforce-concepts">#</a>
-</h3>
-<p>Reinforce your vocabulary by reviewing other object-oriented programming introductions, like <a href="https://www.youtube.com/watch?v=pTB0EiLXUC8">this video</a> and <a href="https://www.youtube.com/watch?v=YcbcfkLzgvs">this video</a>, which explain the same things, but are short and use different languages.</p>
-<h3 id="further-concepts">
-  Further Concepts
-  <a class="anchor" href="#further-concepts">#</a>
-</h3>
-<p>The next concepts we will be covering are <a href="http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/">static objects</a> and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract">abstract</a> classes, as well as learning a lot of the ins-and-outs of actually writing and using polymorphic (<a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism">new vocab word</a>) code.</p>
-<h3 id="reviewing-docs">
-  Reviewing Docs
-  <a class="anchor" href="#reviewing-docs">#</a>
-</h3>
-<p>A number of pages on the official MSDN C# Docs will be useful to read over. As we improve our vocabulary, these vocab-heavy pages will become more and more accessible, and will become a highly useful and pleasantly concise resource.</p>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/">MSDN Object-Oriented Programming</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords">Knowing When to Use Override and New Keywords</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method">How to override the ToString method</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects">Objects Overview</a></li>
-</ul>
 </article>
  
       
@@ -1168,37 +1013,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#classes--objects">Classes &amp; Objects</a></li>
-        <li><a href="#inheritance">Inheritance</a></li>
-      </ul>
-    </li>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#prerequisite-concepts-review">Prerequisite Concepts Review</a>
-      <ul>
-        <li><a href="#data-structures">Data Structures</a></li>
-        <li><a href="#hierarchy">Hierarchy</a></li>
-        <li><a href="#taxonomy">Taxonomy</a></li>
-        <li><a href="#inheritance-1">Inheritance</a></li>
-        <li><a href="#members">Members</a></li>
-      </ul>
-    </li>
-    <li><a href="#component-systems">Component Systems</a></li>
-    <li><a href="#the-lesson">The Lesson</a></li>
-    <li><a href="#overriding-members--example">Overriding Members &amp; Example</a></li>
-    <li><a href="#syntax">Syntax</a></li>
-    <li><a href="#resources--next-steps">Resources &amp; Next Steps</a>
-      <ul>
-        <li><a href="#reinforce-concepts">Reinforce Concepts</a></li>
-        <li><a href="#further-concepts">Further Concepts</a></li>
-        <li><a href="#reviewing-docs">Reviewing Docs</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  
