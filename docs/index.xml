@@ -343,6 +343,15 @@ If we remember that scenes are cartesian coordinate systems, we can define any p
     </item>
     
     <item>
+      <title>Prefabs</title>
+      <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/prefabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/prefabs/</guid>
+      <description>Prefabs#  </description>
+    </item>
+    
+    <item>
       <title>Refactoring a Basic Script Example</title>
       <link>http://guidebook.hdyar.com/docs/programming/architecture/refactoring-a-basic-script-example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
