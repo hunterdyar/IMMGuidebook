@@ -12,3 +12,4 @@ This section covers non-programming related Unity content.
 ## Resources
 - [Cyanilux's Resource Repository](https://www.cyanilux.com/resources/) - Collection of largely shader related Unity resources.
 - [Jason Weimann](https://www.youtube.com/c/Unity3dCollege) - Youtube channel with programming focus
+- [Tough Nut To Crack](https://www.youtube.com/channel/UCTR740iIPwfu7Pz_BoCEJ-g) - Unity Youtube Channel, solving interesting challenges and devlogs.
