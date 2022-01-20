@@ -8,7 +8,7 @@ title: Binary
 
 A video I recorded on Binary:
 
-{{< youtube OC5VBESB_dE >}}
+{{< youtube OC5VBESB_dE >}} 
 
 The youtube channel 'Computerphile' has a number of good videos on the topic:
 

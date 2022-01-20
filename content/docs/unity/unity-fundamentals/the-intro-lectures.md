@@ -38,3 +38,11 @@ Programming and Game Design can be thought of as being two discreet roles. When 
 {{< youtube pzTFJyW9ap8 >}}
 
 Now we have created a nice, compartmentalized little script that we can use in many places that adds a simple behavior to whatever our GameObjects we want. A lot of Unity development is doing this. We create systems that exist without us having to go in and edit it. For example: Physics. You don't have to extend Unity classes to use the physics system. You just use the components, and use public functions (like "AddForce"). We should aim to create our systems with the same independent philosophy.
+
+## Prefabs
+Next, head over to [this page]({{< ref "docs/unity/unity-fundamentals/prefabs.md" >}}) on Prefabs and watch the video there.
+
+## Part 4
+Part 4: GameObject properties, Instantiating Objects, Unity Event Systems, Collision Events, Basic Loops, and some other miscellaneous things.
+
+{{< youtube uQETtbRB-DA >}}
