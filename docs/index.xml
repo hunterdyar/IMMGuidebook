@@ -148,6 +148,18 @@ When we select an asset in the project window, the Inspector will show us it’s
     </item>
     
     <item>
+      <title>Binary</title>
+      <link>http://guidebook.hdyar.com/docs/digital-media-fundamentals/binary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/digital-media-fundamentals/binary/</guid>
+      <description>Binary#&amp;lsquo;binary&amp;rsquo; Refers either to binary numbers or binary code, both of which are base 2 representations of information. We can do math with binary numbers, and store data (inclding numbers) with binary code, also called binary encoding.
+Binary Numbers Basics#A video I recorded on Binary:
+  The youtube channel &amp;lsquo;Computerphile&amp;rsquo; has a number of good videos on the topic:
+Why Use Binary?#  Floating Point Numbers#  </description>
+    </item>
+    
+    <item>
       <title>Clicking On Objects in 3D</title>
       <link>http://guidebook.hdyar.com/docs/unity/toolbox/clicking-on-objects-in-3d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

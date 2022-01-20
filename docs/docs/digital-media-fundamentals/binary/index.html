@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Namespaces#  ">
+<meta name="description" content="Binary#&lsquo;binary&rsquo; Refers either to binary numbers or binary code, both of which are base 2 representations of information. We can do math with binary numbers, and store data (inclding numbers) with binary code, also called binary encoding.
+Binary Numbers Basics#A video I recorded on Binary:
+  The youtube channel &lsquo;Computerphile&rsquo; has a number of good videos on the topic:
+Why Use Binary?#  Floating Point Numbers#  ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Namespaces" />
-<meta property="og:description" content="Namespaces#  " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Binary" />
+<meta property="og:description" content="Binary#&lsquo;binary&rsquo; Refers either to binary numbers or binary code, both of which are base 2 representations of information. We can do math with binary numbers, and store data (inclding numbers) with binary code, also called binary encoding.
+Binary Numbers Basics#A video I recorded on Binary:
+  The youtube channel &lsquo;Computerphile&rsquo; has a number of good videos on the topic:
+Why Use Binary?#  Floating Point Numbers#  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/architecture/namespaces/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/digital-media-fundamentals/binary/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Namespaces | The Guidebook</title>
+<title>Binary | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -69,7 +75,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle"  />
+    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle" checked />
     <label for="section-21cc7f86d77b52f288b1d547e8cb9bef" class="flex justify-between">
       <a role="button" class="">Digital Media Fundamentals</a>
     </label>
@@ -85,7 +91,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/binary/" class="">Binary</a>
+    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/binary/" class=" active">Binary</a>
   
 
         </li>
@@ -525,7 +531,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle" checked />
+    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle"  />
     <label for="section-57e58ca5aae968f4961a4036f314a5de" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/" class="">Programming in Unity</a>
     </label>
@@ -713,7 +719,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle" checked />
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
     <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/architecture/" class="">Architecture</a>
     </label>
@@ -794,7 +800,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/architecture/namespaces/" class=" active">Namespaces</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/namespaces/" class="">Namespaces</a>
   
 
         </li>
@@ -979,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Namespaces</strong>
+  <strong>Binary</strong>
 
   <label for="toc-control">
     
@@ -993,7 +999,16 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#binary-numbers-basics">Binary Numbers Basics</a>
+      <ul>
+        <li><a href="#why-use-binary">Why Use Binary?</a></li>
+        <li><a href="#floating-point-numbers">Floating Point Numbers</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -1004,13 +1019,38 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="namespaces">
-  Namespaces
-  <a class="anchor" href="#namespaces">#</a>
+  <article class="markdown"><h1 id="binary">
+  Binary
+  <a class="anchor" href="#binary">#</a>
 </h1>
+<p>&lsquo;binary&rsquo; Refers either to <a href="https://en.wikipedia.org/wiki/Binary_number">binary numbers</a> or <a href="https://en.wikipedia.org/wiki/Binary_code">binary code</a>, both of which are base 2 representations of information. We can do math with binary numbers, and store data (inclding numbers) with binary code, also called binary encoding.</p>
+<h2 id="binary-numbers-basics">
+  Binary Numbers Basics
+  <a class="anchor" href="#binary-numbers-basics">#</a>
+</h2>
+<p>A video I recorded on Binary:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/LtQs5FzdQ2k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/OC5VBESB_dE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>The youtube channel &lsquo;Computerphile&rsquo; has a number of good videos on the topic:</p>
+<h3 id="why-use-binary">
+  Why Use Binary?
+  <a class="anchor" href="#why-use-binary">#</a>
+</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/thrx3SBEpL8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="floating-point-numbers">
+  Floating Point Numbers
+  <a class="anchor" href="#floating-point-numbers">#</a>
+</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/PZRI1IfStY0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 </article>
@@ -1052,7 +1092,16 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#binary-numbers-basics">Binary Numbers Basics</a>
+      <ul>
+        <li><a href="#why-use-binary">Why Use Binary?</a></li>
+        <li><a href="#floating-point-numbers">Floating Point Numbers</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  
