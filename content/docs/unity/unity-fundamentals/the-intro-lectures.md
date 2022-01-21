@@ -43,6 +43,6 @@ Now we have created a nice, compartmentalized little script that we can use in m
 Next, head over to [this page]({{< ref "docs/unity/unity-fundamentals/prefabs.md" >}}) on Prefabs and watch the video there.
 
 ## Part 4
-Part 4: GameObject properties, Instantiating Objects, Unity Event Systems, Collision Events, Basic Loops, and some other miscellaneous things.
+Part 4: GameObject properties, Instantiating Objects, The Unity Event System, Collision Events, Basic Loops, and some other miscellaneous things. 
 
 {{< youtube uQETtbRB-DA >}}
