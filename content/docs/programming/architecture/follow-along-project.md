@@ -81,3 +81,5 @@ I think of this video really as more for reference than following along.
 
 The project is done, but (as mentioned in previous videos) it's in need of some refactoring using some more advanced topics. We improve the interactable system with inheritance, we improve the state system with events, we improve the flippant use of FindGameObjectOfType with more usable implementation of the singleton pattern, in this case a static instance variable. Also abstract classes I guess.
 
+## The Finished Project
+The entire finished project is available on github: [https://github.com/hunterdyar/WellSlammerEscape](https://github.com/hunterdyar/WellSlammerEscape)
