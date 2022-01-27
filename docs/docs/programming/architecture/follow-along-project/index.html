@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Serialization and Attributes#  ">
+<meta name="description" content="The following project is for students to follow along with and create a project with me, one that focuses on actually making an entire thing that has multiple levels and a game state.
+Playlist of videos.
+Part 1#  This part we think of our game, make a todo list, use Unity&rsquo;s tilemap system to create a level, and create a player movement system. We write our first recursive function, and we manage picking up items as we move.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Serialization and Attributes" />
-<meta property="og:description" content="Serialization and Attributes#  " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Follow-Along Project" />
+<meta property="og:description" content="The following project is for students to follow along with and create a project with me, one that focuses on actually making an entire thing that has multiple levels and a game state.
+Playlist of videos.
+Part 1#  This part we think of our game, make a todo list, use Unity&rsquo;s tilemap system to create a level, and create a player movement system. We write our first recursive function, and we manage picking up items as we move." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/architecture/follow-along-project/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Serialization and Attributes | The Guidebook</title>
+<title>Follow-Along Project | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -713,7 +717,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle" checked />
     <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/architecture/" class="">Architecture</a>
     </label>
@@ -794,7 +798,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/architecture/follow-along-project/" class="">Follow-Along Project</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/follow-along-project/" class=" active">Follow-Along Project</a>
   
 
         </li>
@@ -851,7 +855,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-8bb48feef647b1565f2ae8cf98155c0f" class="toggle" checked />
+    <input type="checkbox" id="section-8bb48feef647b1565f2ae8cf98155c0f" class="toggle"  />
     <label for="section-8bb48feef647b1565f2ae8cf98155c0f" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/" class="">Unity Specific Programming</a>
     </label>
@@ -867,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-d781a33d1971ab7a88804d986cf195e7" class="toggle" checked />
+    <input type="checkbox" id="section-d781a33d1971ab7a88804d986cf195e7" class="toggle"  />
     <label for="section-d781a33d1971ab7a88804d986cf195e7" class="flex justify-between">
       <a role="button" class="">Tips &amp; Tricks</a>
     </label>
@@ -883,7 +887,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/" class=" active">Serialization and Attributes</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/" class="">Serialization and Attributes</a>
   
 
         </li>
@@ -992,7 +996,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Serialization and Attributes</strong>
+  <strong>Follow-Along Project</strong>
 
   <label for="toc-control">
     
@@ -1006,7 +1010,15 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#part-1">Part 1</a></li>
+    <li><a href="#part-2">Part 2</a></li>
+    <li><a href="#part-3">Part 3</a></li>
+    <li><a href="#part-4">Part 4</a></li>
+    <li><a href="#refactoring">Refactoring</a></li>
+  </ul>
+</nav>
 
 
 
@@ -1017,15 +1029,108 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="serialization-and-attributes">
-  Serialization and Attributes
-  <a class="anchor" href="#serialization-and-attributes">#</a>
-</h1>
+  <article class="markdown"><p>The following project is for students to follow along with and create a project with me, one that focuses on actually making an entire thing that has multiple levels and a game state.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLK7QSPwGqmFt6wA-jCUdawcYA1WYPZQ5p">Playlist of videos</a>.</p>
+<h2 id="part-1">
+  Part 1
+  <a class="anchor" href="#part-1">#</a>
+</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/JilGhlxY_G0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/XtRe7eF-cZU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<p>This part we think of our game, make a todo list, use Unity&rsquo;s tilemap system to create a level, and create a player movement system. We write our first recursive function, and we manage picking up items as we move. We also flounder about with particles.</p>
+<p>Additional Resources:</p>
+<ul>
+<li><a href="https://docs.unity3d.com/Manual/class-Tilemap.html">Unity Tilemap</a> in the manual.</li>
+<li><a href="https://learn.unity.com/tutorial/introduction-to-tilemaps">Intro to Tilemaps</a> at Unity Learn.</li>
+<li><a href="https://blog.unity.com/technology/2d-tilemap-asset-workflow-from-image-to-level">2D Tilemap asset workflow</a> on Unity&rsquo;s Blog.</li>
+<li><a href="https://blog.unity.com/technology/a-lightning-round-of-great-tips-for-2d-games">A lightning round of great tips for 2D Games</a> on Unity&rsquo;s blog.</li>
+<li><a href="http://matthewmeye.rs/obsidian-kanban/">Kanban plugin</a> for <a href="https://obsidian.md/">Obsidian</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=Mv9NEXX1VHc">What on Earth is Recursion</a> video from Computerphile.</li>
+<li><a href="https://www.youtube.com/watch?v=HXNhEYqFo0o">Programming Loops vs Recursion</a> video from Computerphile.</li>
+<li><a href="https://docs.unity3d.com/ScriptReference/Physics2D.OverlapPoint.html">Physics2D.OverlapPoint</a> in the Unity Scripting API.</li>
+<li><a href="https://learn.unity.com/tutorial/introduction-to-particle-systems">Introduction to Particle Systems</a> at Unity Learn.</li>
+<li><a href="https://docs.unity3d.com/Manual/ParticleSystems.html">Particle Systems</a> in the Unity Manual.</li>
+</ul>
+<h2 id="part-2">
+  Part 2
+  <a class="anchor" href="#part-2">#</a>
+</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4puABQLJJMU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>This is the real meat of this assignment, so to speak.</p>
+<p>This part we create a game manager which keeps track of the state of the game, which other systems listen to. We make an interactable component that helps compartmentalize functionality (and a future use-case of OOP), We also set up a basic UI to demonstrate this things. I struggle with variable names.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>I also said at the beginning that we would not use ScriptableObjects, but I changed my mind when I got to part 3.</li>
+<li>I forgot to move all my code to it&rsquo;s own namespace(s), but we should do that. Rider can do it automatically with it&rsquo;s refactor options.
+In this part, I was wrong about the gear manager icon, and the reasons are interesting but <a href="https://stackoverflow.com/questions/48965981/special-icon-when-naming-a-monobehaviour-class-gamemanager">not really worth getting into right now.</a>.</li>
+</ul>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum">Enums</a> in the MSDN docs.</li>
+<li><a href="https://learn.unity.com/tutorial/enumerations#">Enumerations</a> at Unity Learn</li>
+<li><a href="https://www.youtube.com/watch?v=L2E2aB1CMYw">C# Enumerations in Unity!</a> Unity official beginner scripting tutorial.</li>
+<li><a href="https://docs.unity3d.com/ScriptReference/Object.FindObjectOfType.html">FindObjectOfType</a> in Unity Manual. (Note, the following line from this official documentation: <em>&ldquo;Please note that this function is very slow. It is not recommended to use this function every frame. In most cases you can use the singleton pattern instead.&quot;</em>).</li>
+<li><a href="https://learn.unity.com/tutorial/working-with-ui-in-unity">Working with UI in Unity</a></li>
+</ul>
+<h2 id="part-3">
+  Part 3
+  <a class="anchor" href="#part-3">#</a>
+</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OgcODNIQbi0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>This part we create a Level manager, first explaining a prefab approach, and getting it completely working. Then changing it to a ScriptableObject approach. The last part of this is code-cleanup. If you are following along, be aware that I write and refactor code on this part, which is an honest explanation of how programming actually works - it&rsquo;s never really true that we just type everything right through from the start.</p>
+<p>After the level manager I even remembered to finish pickups.</p>
+<p>Here we switch from &lsquo;we&rsquo; to &lsquo;I&rsquo;, as the &ldquo;follow-along&rdquo; part is no longer required. I fixed a bug (the hard way) where you lose lives when you push a direction you can&rsquo;t move. After that I refactored the particle system to it&rsquo;s own script. I got confused about particle systems again, and stared at a working project thinking it might be broken. Apparently they do play On Enable if Play On Awake is selected.</p>
+<p><strong>Additional Resources</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=zObWVOv1GlE">How to work with multiple scenes in Unity</a> - Unity Tutorial</li>
+<li><a href="https://www.youtube.com/watch?v=PVOVIxNxxeQ">Better Data with Scriptable Objects in Unity! (Tutorial)</a> Official Unity tutorial video.</li>
+<li><a href="https://www.youtube.com/watch?v=lRBKN7msVnY">Pros and Cons of Using Scriptable Objects in Unity</a></li>
+<li><a href="https://www.youtube.com/watch?v=aPXvoWVabPY">SCRIPTABLE OBJECTS in Unity</a> by Brackeys.</li>
+</ul>
+<h2 id="part-4">
+  Part 4
+  <a class="anchor" href="#part-4">#</a>
+</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8FqGGiG71ys" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>This video is less of a follow-along, but I took the less programming-centric parts of putting it together and lumped them into one video. It would be a shame not to show these parts of the process.</p>
+<p>I use:</p>
+<ul>
+<li>Sprite Import Settings</li>
+<li>Sprite Sheets</li>
+<li>Unity&rsquo;s Animation system (Animator Controller and Animations)</li>
+<li>Cinemachine (with Impulse and Confiner2D controller)</li>
+<li>Turn the Main Menu into an actual menu screen.</li>
+</ul>
+<p>Additional Resources:</p>
+<ul>
+<li><a href="https://www.aseprite.org/">Aseprite</a></li>
+</ul>
+<h2 id="refactoring">
+  Refactoring
+  <a class="anchor" href="#refactoring">#</a>
+</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/QZXk6_KqS1E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I think of this video really as more for reference than following along.</p>
+<p>The project is done, but (as mentioned in previous videos) it&rsquo;s in need of some refactoring using some more advanced topics. We improve the interactable system with inheritance, we improve the state system with events, we improve the flippant use of FindGameObjectOfType with more usable implementation of the singleton pattern, in this case a static instance variable. Also abstract classes I guess.</p>
 </article>
  
       
@@ -1065,7 +1170,15 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#part-1">Part 1</a></li>
+    <li><a href="#part-2">Part 2</a></li>
+    <li><a href="#part-3">Part 3</a></li>
+    <li><a href="#part-4">Part 4</a></li>
+    <li><a href="#refactoring">Refactoring</a></li>
+  </ul>
+</nav>
 
 
  

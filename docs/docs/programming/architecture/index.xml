@@ -57,6 +57,17 @@ Public and Serialized Fields#The simplest, easiest, minimum-viable option is 
     </item>
     
     <item>
+      <title>Follow-Along Project</title>
+      <link>http://guidebook.hdyar.com/docs/programming/architecture/follow-along-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/architecture/follow-along-project/</guid>
+      <description>The following project is for students to follow along with and create a project with me, one that focuses on actually making an entire thing that has multiple levels and a game state.
+Playlist of videos.
+Part 1#  This part we think of our game, make a todo list, use Unity&amp;rsquo;s tilemap system to create a level, and create a player movement system. We write our first recursive function, and we manage picking up items as we move.</description>
+    </item>
+    
+    <item>
       <title>Namespaces</title>
       <link>http://guidebook.hdyar.com/docs/programming/architecture/namespaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
