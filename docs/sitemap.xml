@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://guidebook.hdyar.com/docs/programming/architecture/patterns/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/digital-media-fundamentals/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/</loc>
@@ -67,6 +69,8 @@
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/collapsing-code/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/collision-events/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/architecture/patterns/command-pattern/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</loc>
   </url><url>

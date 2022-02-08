@@ -3,23 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Classes and Components#Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &hellip; do everything with.
-Oddly enough, in Unity programming, we don&rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let Unity handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component.">
+<meta name="description" content="Patterns#Code Patterns are common solutions to common problems in programming. Programmers tend to talk about them in extremes, but they&rsquo;re just strategies. Keep in mind that you will always be making various concessions and affordances for your project, and you can&rsquo;t shouldn&rsquo;t simply apply patterns because you like them.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Classes and Components" />
-<meta property="og:description" content="Classes and Components#Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &hellip; do everything with.
-Oddly enough, in Unity programming, we don&rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let Unity handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/" /><meta property="article:section" content="docs" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/architecture/patterns/" />
 
-
-
-<title>Classes and Components | The Guidebook</title>
+<title>Patterns | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.cad6a8fce25489eb9ba4af85942e0202fcf7df4d0fff0d849930d8ac2008ce3b.js" integrity="sha256-ytao/OJUieubpK&#43;FlC4CAvz3300P/w2EmTDYrCAIzjs=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://guidebook.hdyar.com/docs/programming/architecture/patterns/index.xml" title="The Guidebook" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -543,7 +540,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle" checked />
+    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle"  />
     <label for="section-dddf50324cced418b45884f0b4af2983" class="flex justify-between">
       <a role="button" class="">Fundamentals</a>
     </label>
@@ -611,7 +608,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/" class=" active">Classes and Components</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/" class="">Classes and Components</a>
   
 
         </li>
@@ -715,7 +712,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle" checked />
     <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/architecture/" class="">Architecture</a>
     </label>
@@ -731,9 +728,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-bd3ebea13f558bebc376ba578ac0077c" class="toggle"  />
+    <input type="checkbox" id="section-bd3ebea13f558bebc376ba578ac0077c" class="toggle" checked />
     <label for="section-bd3ebea13f558bebc376ba578ac0077c" class="flex justify-between">
-      <a href="http://guidebook.hdyar.com/docs/programming/architecture/patterns/" class="">Patterns</a>
+      <a href="http://guidebook.hdyar.com/docs/programming/architecture/patterns/" class="active">Patterns</a>
     </label>
   
 
@@ -1028,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Classes and Components</strong>
+  <strong>Patterns</strong>
 
   <label for="toc-control">
     
@@ -1053,23 +1050,11 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="classes-and-components">
-  Classes and Components
-  <a class="anchor" href="#classes-and-components">#</a>
+  <article class="markdown"><h1 id="patterns">
+  Patterns
+  <a class="anchor" href="#patterns">#</a>
 </h1>
-<p>Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &hellip; do everything with.</p>
-<p>Oddly enough, in Unity programming, we don&rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let <strong>Unity</strong> handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component.</p>
-<p>A basic Unity Script has the following line of code.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">AgentMovement</span> : MonoBehaviour
-{
-    <span style="color:#6272a4">//everything goes in here
-</span><span style="color:#6272a4"></span>}</code></pre></div></p>
-<p>When we create a component, we are creating a public <strong>class</strong> that extends &ldquo;MonoBehaviour&rdquo;. We will learn more about extending classes and creating our own special classes in the future. Let&rsquo;s focus on components for now.</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/K--SiP8xM6I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+<p>Code Patterns are common solutions to common problems in programming. Programmers tend to talk about them in extremes, but they&rsquo;re just strategies. Keep in mind that you will always be making various concessions and affordances for your project, and you can&rsquo;t shouldn&rsquo;t simply apply patterns because you like them.</p>
 </article>
  
       

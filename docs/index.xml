@@ -193,6 +193,16 @@ void OnCollisionEnter(Collision other) { if (other.</description>
     </item>
     
     <item>
+      <title>Command Pattern</title>
+      <link>http://guidebook.hdyar.com/docs/programming/architecture/patterns/command-pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/architecture/patterns/command-pattern/</guid>
+      <description>Implementing a Command Pattern in Unity#  The code can be found here: https://github.com/hunterdyar/UnitySimpleSokabon.
+Command Pattern video by Infallible Code#  </description>
+    </item>
+    
+    <item>
       <title>Components</title>
       <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -250,7 +260,7 @@ To start with an example, consider driving. When we all started learning how to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/architecture/event-systems/</guid>
-      <description>Event Systems#  </description>
+      <description>Event Systems#  A &amp;lsquo;Real Life&amp;rsquo; Example#   The code for this example is part of this project.</description>
     </item>
     
     <item>
