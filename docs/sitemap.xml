@@ -26,6 +26,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/user-interface/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/arrays/</loc>
@@ -133,6 +135,8 @@
     <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/user-interface/ugui-basics/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/</loc>
   </url>
