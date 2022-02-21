@@ -1,5 +1,5 @@
 ---
-title: Unity UI Basics
+title: UI System Basics
 ---
 
 # Unity UI Basics Overview
