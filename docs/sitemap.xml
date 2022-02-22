@@ -8,8 +8,6 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/</loc>
-  </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/the-architecture-lecture/</loc>
@@ -18,15 +16,17 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/conditionals/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/unity/</loc>
-  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/user-interface/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/</loc>
   </url><url>
@@ -107,6 +107,8 @@
     <loc>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/digital-media-fundamentals/order-of-development/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/parent-child-relationships/</loc>
   </url><url>

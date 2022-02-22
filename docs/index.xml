@@ -366,6 +366,15 @@ In animation, One doesn&amp;rsquo;t animate Start to finish, timing is a key par
     </item>
     
     <item>
+      <title>Packages, Assets, and Modules</title>
+      <link>http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/</guid>
+      <description>Unity Package Manager, Importing Assets, and Adding Modules#  </description>
+    </item>
+    
+    <item>
       <title>Parent-Child Relationships</title>
       <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/parent-child-relationships/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -484,12 +493,12 @@ In terms of how you will encounter errors, I would like to add a third type: IDE
     </item>
     
     <item>
-      <title>Unity UI Basics</title>
+      <title>UI System Basics</title>
       <link>http://guidebook.hdyar.com/docs/unity/user-interface/ugui-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/user-interface/ugui-basics/</guid>
-      <description>Unity UI Basics Overview#  </description>
+      <description>Unity UI Basics Overview#  Resources# Comparison Page Unity UGUI Manual  </description>
     </item>
     
     <item>

@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The Game View#The game view is where we run our games. See the unity manual on the Game View.
-First, our scene view camera and our game view camera are two completely separate things. The scene view, and its &lsquo;camera&rsquo; that you control with the mouse, is an editor tool. The camera&rsquo;s location has no impact on the final, finished, game. The game view, then, allows us to see the games current actual state, how it will be rendered.">
+<meta name="description" content="Unity Package Manager, Importing Assets, and Adding Modules#  ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="The Game View" />
-<meta property="og:description" content="The Game View#The game view is where we run our games. See the unity manual on the Game View.
-First, our scene view camera and our game view camera are two completely separate things. The scene view, and its &lsquo;camera&rsquo; that you control with the mouse, is an editor tool. The camera&rsquo;s location has no impact on the final, finished, game. The game view, then, allows us to see the games current actual state, how it will be rendered." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Packages, Assets, and Modules" />
+<meta property="og:description" content="Unity Package Manager, Importing Assets, and Adding Modules#  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/unity-interface/game-view/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/" /><meta property="article:section" content="docs" />
 
 
 
-<title>The Game View | The Guidebook</title>
+<title>Packages, Assets, and Modules | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -285,7 +283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-989493819aad2d14ceb835eeee351713" class="toggle" checked />
+    <input type="checkbox" id="section-989493819aad2d14ceb835eeee351713" class="toggle"  />
     <label for="section-989493819aad2d14ceb835eeee351713" class="flex justify-between">
       <a role="button" class="">Unity Editor Interface</a>
     </label>
@@ -314,7 +312,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/unity/unity-interface/game-view/" class=" active">The Game View</a>
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-interface/game-view/" class="">The Game View</a>
   
 
         </li>
@@ -462,7 +460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0658dc3c29d418e551148f18b7f9510b" class="toggle"  />
+    <input type="checkbox" id="section-0658dc3c29d418e551148f18b7f9510b" class="toggle" checked />
     <label for="section-0658dc3c29d418e551148f18b7f9510b" class="flex justify-between">
       <a role="button" class="">Setup</a>
     </label>
@@ -491,7 +489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/" class="">Packages, Assets, and Modules</a>
+    <a href="http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/" class=" active">Packages, Assets, and Modules</a>
   
 
         </li>
@@ -1075,7 +1073,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>The Game View</strong>
+  <strong>Packages, Assets, and Modules</strong>
 
   <label for="toc-control">
     
@@ -1089,11 +1087,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#unity-official-video-on-the-game-view">Unity Official video on the Game View</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -1104,24 +1098,13 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="the-game-view">
-  The Game View
-  <a class="anchor" href="#the-game-view">#</a>
+  <article class="markdown"><h1 id="unity-package-manager-importing-assets-and-adding-modules">
+  Unity Package Manager, Importing Assets, and Adding Modules
+  <a class="anchor" href="#unity-package-manager-importing-assets-and-adding-modules">#</a>
 </h1>
-<p>The game view is where we run our games. See the unity manual on the <a href="https://docs.unity3d.com/Manual/GameView.html">Game View</a>.</p>
-<p>First, our scene view camera and our game view camera are two completely separate things. The scene view, and its &lsquo;camera&rsquo; that you control with the mouse, is an editor tool. The camera&rsquo;s location has no impact on the final, finished, game. The game view, then, allows us to see the games current <em>actual</em> state, how it will be rendered.</p>
-<p>When you are in <strong>play mode</strong>, the game view is where we play and test the game. When we are not in play mode, we can get a preview of the active cameras current view, which is helpful for setting up the camera, UI, and other things.</p>
-<p>In the game view we get to see what actually happens in the game when we test it. It shows us what players will ultimately see.</p>
-<p>It’s very important to know that while the game is running, <strong>any changes we make will not be saved</strong>.  At first, this can seem frustrating, but it’s for a good reason: The  game is running!</p>
-<p>Players playing the game are also making changes to properties (like the position of a main character), and it would be  really annoying if we had to move them back to the start of a level  after every time we tested it.</p>
-<p>Every beginner will start  adjusting settings and forget that Unity is “in play mode” (running the  game), and then they will lose their changes. It happens to all of us.  One way to help prevent this is with a play mode overlay tint.</p>
-<h2 id="unity-official-video-on-the-game-view">
-  Unity Official video on the Game View
-  <a class="anchor" href="#unity-official-video-on-the-game-view">#</a>
-</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/w7RLUM9TBXY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/cyL9HwRs8Sk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 </article>
@@ -1163,11 +1146,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#unity-official-video-on-the-game-view">Unity Official video on the Game View</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

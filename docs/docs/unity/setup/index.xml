@@ -17,5 +17,14 @@ To develop games in Unity, you need to do the following:
  Create a Unity Account Install the Unity Hub Activate a license for Unity (this is free) Install a version of Unity via the Hub Install an IDE (A fancy text editor) Tell Unity to use your IDE  The Unity Hub manages installing other versions of Unity for us.</description>
     </item>
     
+    <item>
+      <title>Packages, Assets, and Modules</title>
+      <link>http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/setup/packages-assets-modules/</guid>
+      <description>Unity Package Manager, Importing Assets, and Adding Modules#  </description>
+    </item>
+    
   </channel>
 </rss>
