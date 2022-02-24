@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Event Systems#  A &lsquo;Real Life&rsquo; Example#   The code for this example is part of this project.">
+<meta name="description" content="Aspect Ratios#What is an Aspect Ratio?#Aspect ratios are proportional relationships of the length and width of an image or video. It is expressed as a number compared to another number (a:b).
+They can also be written as a decimal number (1.78), which is just the two ratio divided. If one side is length 1, or a, the other side is length b, or the ratio.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Event Systems" />
-<meta property="og:description" content="Event Systems#  A &lsquo;Real Life&rsquo; Example#   The code for this example is part of this project." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Aspect Ratios" />
+<meta property="og:description" content="Aspect Ratios#What is an Aspect Ratio?#Aspect ratios are proportional relationships of the length and width of an image or video. It is expressed as a number compared to another number (a:b).
+They can also be written as a decimal number (1.78), which is just the two ratio divided. If one side is length 1, or a, the other side is length b, or the ratio." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/architecture/event-systems/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/digital-media-fundamentals/aspect-ratios/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Event Systems | The Guidebook</title>
+<title>Aspect Ratios | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -69,7 +71,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle"  />
+    <input type="checkbox" id="section-21cc7f86d77b52f288b1d547e8cb9bef" class="toggle" checked />
     <label for="section-21cc7f86d77b52f288b1d547e8cb9bef" class="flex justify-between">
       <a role="button" class="">Digital Media Fundamentals</a>
     </label>
@@ -85,7 +87,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/aspect-ratios/" class="">Aspect Ratios</a>
+    <a href="http://guidebook.hdyar.com/docs/digital-media-fundamentals/aspect-ratios/" class=" active">Aspect Ratios</a>
   
 
         </li>
@@ -632,7 +634,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle" checked />
+    <input type="checkbox" id="section-57e58ca5aae968f4961a4036f314a5de" class="toggle"  />
     <label for="section-57e58ca5aae968f4961a4036f314a5de" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/" class="">Programming in Unity</a>
     </label>
@@ -820,7 +822,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle" checked />
+    <input type="checkbox" id="section-6f685ca7a2fc32b73a60dd7286e62710" class="toggle"  />
     <label for="section-6f685ca7a2fc32b73a60dd7286e62710" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/architecture/" class="">Architecture</a>
     </label>
@@ -922,7 +924,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/architecture/event-systems/" class=" active">Event Systems</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/architecture/event-systems/" class="">Event Systems</a>
   
 
         </li>
@@ -1133,7 +1135,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Event Systems</strong>
+  <strong>Aspect Ratios</strong>
 
   <label for="toc-control">
     
@@ -1149,7 +1151,12 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-real-life-example">A &lsquo;Real Life&rsquo; Example</a></li>
+    <li><a href="#what-is-an-aspect-ratio">What is an Aspect Ratio?</a></li>
+    <li><a href="#what-are-they-used-for">What are they used for?</a></li>
+    <li><a href="#what-do-they-look-like">What do they look like?</a></li>
+    <li><a href="#what-does-it-mean">What does it mean?</a></li>
+    <li><a href="#letterboxing">Letterboxing</a></li>
+    <li><a href="#other-ways-to-put-content-on-a-mismatched-display">Other Ways to put Content on a Mismatched Display</a></li>
   </ul>
 </nav>
 
@@ -1162,25 +1169,53 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="event-systems">
-  Event Systems
-  <a class="anchor" href="#event-systems">#</a>
+  <article class="markdown"><h1 id="aspect-ratios">
+  Aspect Ratios
+  <a class="anchor" href="#aspect-ratios">#</a>
 </h1>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/CdguzXPdneA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="a-real-life-example">
-  A &lsquo;Real Life&rsquo; Example
-  <a class="anchor" href="#a-real-life-example">#</a>
+<h2 id="what-is-an-aspect-ratio">
+  What is an Aspect Ratio?
+  <a class="anchor" href="#what-is-an-aspect-ratio">#</a>
 </h2>
-<p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/VeHr3MK7lCc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-The code for this example is part of <a href="https://github.com/hunterdyar/UnitySimpleSokabon">this</a> project.</p>
+<p>Aspect ratios are proportional relationships of the length and width of an image or video. It is expressed as a number compared to another number (a:b).</p>
+<p>They can also be written as a decimal number (1.78), which is just the two ratio divided. If one side is length 1, or a, the other side is length b, or the ratio.</p>
+<h2 id="what-are-they-used-for">
+  What are they used for?
+  <a class="anchor" href="#what-are-they-used-for">#</a>
+</h2>
+<p>Aspect ratios are used to determine the proper proportions of media, without setting a fixed length or width. A movie on television can be scaled down to be watched on your phone, without distortion: without stretching or shrinking one side of the media.</p>
+<h2 id="what-do-they-look-like">
+  What do they look like?
+  <a class="anchor" href="#what-do-they-look-like">#</a>
+</h2>
+<p>Most videos watched from your phone, TV, or computer are in 16:9 ratio. If you record a video on your phone horizontally, or landscape, it be 16:9 or 4:3, but if you record it vertically, or portrait, the aspect ratio becomes 9:16 or 3:4. A square Instagram post would be a 1:1 ratio. No matter how big you look at this photo, it will still be a square.</p>
+<h2 id="what-does-it-mean">
+  What does it mean?
+  <a class="anchor" href="#what-does-it-mean">#</a>
+</h2>
+<p>Essentially, it is a fraction that the length and width can be divided to show. For example, a normal 16:9 display is 1920px by 1080px. 1920 divided by 1080 is or 1.78. 16 divided by 9 is 1.78 as well. This shows that it is in a 16:9 aspect ratio and that its proportions are the same.</p>
+<p>The crop tool in any photo editing software demonstrates aspect ratios neatly. The crop tool is set to a 4:3 aspect ratio, while the image is in a &ldquo;3:2&rdquo;, or &ldquo;vertical 2:3&rdquo; ratio.</p>
+<p><img src="/images/digital-media/cropToolAspectRatio.png" alt="Cropping an image" /></p>
+<h2 id="letterboxing">
+  Letterboxing
+  <a class="anchor" href="#letterboxing">#</a>
+</h2>
+<p>When you try to view content that was created at one aspect ratio (like 4:3), on a display that has a different aspect ratio (like 16:9), there is going to be a problem. There are a number of different solutions to this. The most common is letterboxing - you show the content as large as you can in it&rsquo;s entirely, centered in the display, and then fill the remaining bars with a solid black color. This is called <a href="https://en.wikipedia.org/wiki/Letterboxing_%28filming%29">letterboxing</a>.</p>
+<blockquote>
+<p>Depending on who you ask, the top/bottom bars are letterbox bars, and left/right bars is called pillowboxing. The term letterboxing is colloquially used to refer to both.</p>
+</blockquote>
+<h2 id="other-ways-to-put-content-on-a-mismatched-display">
+  Other Ways to put Content on a Mismatched Display
+  <a class="anchor" href="#other-ways-to-put-content-on-a-mismatched-display">#</a>
+</h2>
+<p>In Windows, you can choose an image as your desktop background. Windows needs to determine how to display content of different aspect ratio than your display. Windows 11 gives you the following list of options:</p>
+<p><img src="/images/digital-media/windowsPersonalizationBackgroundFills.png" alt="Fill Options in Windows 11 Personalization menu" /></p>
+<p>The options are Fill, Stretch, Tile, Center, and Span.</p>
+<p><strong>Fill</strong> Will scale up the image until it fits the display completely, not showing you the entirety of the image.<br>
+<strong>Stretch</strong> will stretch the image to fit the display.<br>
+<strong>Tile</strong> will repeat the image again.<br>
+<strong>Center</strong> will letterbox the image.<br>
+<strong>Span</strong> is used for multiple monitors, filling the image across all connected displays.</p>
 </article>
  
       
@@ -1222,7 +1257,12 @@ The code for this example is part of <a href="https://github.com/hunterdyar/Unit
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-real-life-example">A &lsquo;Real Life&rsquo; Example</a></li>
+    <li><a href="#what-is-an-aspect-ratio">What is an Aspect Ratio?</a></li>
+    <li><a href="#what-are-they-used-for">What are they used for?</a></li>
+    <li><a href="#what-do-they-look-like">What do they look like?</a></li>
+    <li><a href="#what-does-it-mean">What does it mean?</a></li>
+    <li><a href="#letterboxing">Letterboxing</a></li>
+    <li><a href="#other-ways-to-put-content-on-a-mismatched-display">Other Ways to put Content on a Mismatched Display</a></li>
   </ul>
 </nav>
 
