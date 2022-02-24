@@ -3,23 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
-When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.">
+<meta name="description" content="Systems &amp; Techniques#What comes after &lsquo;fundamentals&rsquo;? Depends on the kinds of things you want to make&hellip; but many projects will use the systems and features of Unity in this section.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Assets" />
-<meta property="og:description" content="What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
-When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" /><meta property="article:section" content="docs" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Systems &amp; Techniques" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/unity-102/" />
 
-
-
-<title>Assets | The Guidebook</title>
+<title>Systems &amp; Techniques | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.93eefb6652c44491bbdc98f2db61a4ffb78d5d5ad04d05ec0d038fd8da611585.js" integrity="sha256-k&#43;77ZlLERJG73Jjy22Gk/7eNXVrQTQXsDQOP2NphFYU=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://guidebook.hdyar.com/docs/unity/unity-102/index.xml" title="The Guidebook" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -173,7 +170,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle" checked />
+    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle"  />
     <label for="section-a3091d099fec882f5485ece4e6f64eb1" class="flex justify-between">
       <a role="button" class="">Fundamentals</a>
     </label>
@@ -215,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" class=" active">Assets</a>
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" class="">Assets</a>
   
 
         </li>
@@ -509,9 +506,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b67ff94c2834e40ea119b18d6570658d" class="toggle"  />
+    <input type="checkbox" id="section-b67ff94c2834e40ea119b18d6570658d" class="toggle" checked />
     <label for="section-b67ff94c2834e40ea119b18d6570658d" class="flex justify-between">
-      <a href="http://guidebook.hdyar.com/docs/unity/unity-102/" class="">Systems &amp; Techniques</a>
+      <a href="http://guidebook.hdyar.com/docs/unity/unity-102/" class="active">Systems &amp; Techniques</a>
     </label>
   
 
@@ -1122,7 +1119,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Assets</strong>
+  <strong>Systems &amp; Techniques</strong>
 
   <label for="toc-control">
     
@@ -1136,16 +1133,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#common-asset-types">Common Asset Types</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#file-structure">File Structure</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -1156,51 +1144,11 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="what-are-assets">
-  What are Assets?
-  <a class="anchor" href="#what-are-assets">#</a>
+  <article class="markdown"><h1 id="systems--techniques">
+  Systems &amp; Techniques
+  <a class="anchor" href="#systems--techniques">#</a>
 </h1>
-<p>An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.</p>
-<p>When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.</p>
-<p>It&rsquo;s easier to explain assets if we consider their uses.</p>
-<h2 id="common-asset-types">
-  Common Asset Types
-  <a class="anchor" href="#common-asset-types">#</a>
-</h2>
-<h4 id="image-files">
-  Image Files
-  <a class="anchor" href="#image-files">#</a>
-</h4>
-<p>Images, like BMP or Jpeg’s, and even Photoshop documents directly (I haven’t utilized this new feature and still export all my sprites as PNG’s with transparency).</p>
-<h4 id="3d-models">
-  3D Models
-  <a class="anchor" href="#3d-models">#</a>
-</h4>
-<p>Unity supports FBX files for your 3D models. It also supports saving your native file format into the asset folder (ie: .max, .blend, .mb, .ma), and Unity turns them into .fbx’s when it runs and builds the game. This is useful if you are going back and forth a lot, but it’s still generally wise to export as FBX, especially if you are sharing/collaborating with others. Keep things from getting too messy.</p>
-<p>See the unity manual for information on <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html">importing models</a>, <a href="https://docs.unity3d.com/Manual/3D-formats.html">Model File Formats.</a> Getting textures and animations to import with a model correctly (or to associate these things with models that have already been imported) can be tricky, and I won’t get into the details of this here.</p>
-<h4 id="audio-files">
-  Audio Files
-  <a class="anchor" href="#audio-files">#</a>
-</h4>
-<p>Unity supports a wide variety of audio, and will (by default) compress it to when it builds the game. Unity supports mp3, .ogg, .wac, .aif audio files, and<br>
-.mod, .it, .s3m, and .xm tracker modules files.</p>
-<p>If you don’t know what tracker modules are, don’t worry. Think midi, they are sequence data and short audio samples to build out tracks. This helps create long songs without large file sizes.</p>
-<h4 id="scripts">
-  Scripts
-  <a class="anchor" href="#scripts">#</a>
-</h4>
-<p>As we work in Unity, we will create lots of Scripts. These are C# or JavaScript files. You can make the files from within unity.</p>
-<blockquote class="book-hint info">
-  If you click the **Add Component **in the Inspector and create a **New Script **from here, it will put that script in the base assets folder. Before we open it up in our text editor, we should remember to move it to a Scripts folder, or wherever we want to move it. Unity will keep track of objects that we move around (from within Unity’s project window), but our IDE/text editors may not.
-</blockquote>
-
-<h2 id="file-structure">
-  File Structure
-  <a class="anchor" href="#file-structure">#</a>
-</h2>
-<p>Unity technically doesn’t care where in your project you store your assets. Technically you can have them all just sitting in your assets folder. Don’t do this. Create folders that categorize your asset. Generally based on type. Almost all of my projects have the following folders: “Scripts”, “Materials”, “Models”, “Images”, “Scenes”. Your’s probably should soon.</p>
-<p>This organization isn’t just to keep things pretty. Unity projects can get complicated quickly, and finding assets is going to be important.</p>
-<p>You should adopt a standard naming convention for your files, as well. But i won’t yell at you about that. At the very least, keep things descriptive.</p>
+<p>What comes after &lsquo;fundamentals&rsquo;? Depends on the kinds of things you want to make&hellip; but <em>many</em> projects will use the systems and features of Unity in this section.</p>
 </article>
  
       
@@ -1240,16 +1188,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#common-asset-types">Common Asset Types</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#file-structure">File Structure</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

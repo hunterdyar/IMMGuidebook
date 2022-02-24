@@ -50,9 +50,13 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/setup/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/unity-102/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/toolbox/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/virtual-reality/from-zero-to-oculus-quest/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/toolbox/basic-level-manager/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/simple-state-machine/</loc>
   </url><url>
@@ -115,6 +119,8 @@
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/prefabs/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/refactoring-a-basic-script-example/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/unity/unity-102/scene-switching/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/3d-models/rig-with-mixamo/</loc>
   </url><url>

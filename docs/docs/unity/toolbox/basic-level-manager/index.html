@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
-When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.">
+<meta name="description" content="A Basic Level Manager#For an explanation of this code, see this video on scene switching, where the code is written and explained.
+LevelManager.cs#using UnityEngine; using UnityEngine.SceneManagement; public class LevelManager : MonoBehaviour { public void RestartLevel() { SceneManager.LoadScene(SceneManager.GetActiveScene().name); } public void GoToNextScene() { //Get the current level build Index  int current = SceneManager.GetActiveScene().buildIndex; //increase it by one  int next = current &#43; 1; int total = SceneManager.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Assets" />
-<meta property="og:description" content="What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
-When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="A Basic Level Manager" />
+<meta property="og:description" content="A Basic Level Manager#For an explanation of this code, see this video on scene switching, where the code is written and explained.
+LevelManager.cs#using UnityEngine; using UnityEngine.SceneManagement; public class LevelManager : MonoBehaviour { public void RestartLevel() { SceneManager.LoadScene(SceneManager.GetActiveScene().name); } public void GoToNextScene() { //Get the current level build Index  int current = SceneManager.GetActiveScene().buildIndex; //increase it by one  int next = current &#43; 1; int total = SceneManager." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/unity/toolbox/basic-level-manager/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Assets | The Guidebook</title>
+<title>A Basic Level Manager | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -173,7 +173,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle" checked />
+    <input type="checkbox" id="section-a3091d099fec882f5485ece4e6f64eb1" class="toggle"  />
     <label for="section-a3091d099fec882f5485ece4e6f64eb1" class="flex justify-between">
       <a role="button" class="">Fundamentals</a>
     </label>
@@ -215,7 +215,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" class=" active">Assets</a>
+    <a href="http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/" class="">Assets</a>
   
 
         </li>
@@ -543,7 +543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-4d55ff003c3945e025f9dcf7dab6d9fa" class="toggle"  />
+    <input type="checkbox" id="section-4d55ff003c3945e025f9dcf7dab6d9fa" class="toggle" checked />
     <label for="section-4d55ff003c3945e025f9dcf7dab6d9fa" class="flex justify-between">
       <a role="button" class="">Toolbox</a>
     </label>
@@ -559,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/unity/toolbox/basic-level-manager/" class="">A Basic Level Manager</a>
+    <a href="http://guidebook.hdyar.com/docs/unity/toolbox/basic-level-manager/" class=" active">A Basic Level Manager</a>
   
 
         </li>
@@ -1122,7 +1122,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Assets</strong>
+  <strong>A Basic Level Manager</strong>
 
   <label for="toc-control">
     
@@ -1138,12 +1138,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#common-asset-types">Common Asset Types</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#file-structure">File Structure</a></li>
+    <li><a href="#levelmanagercs">LevelManager.cs</a></li>
   </ul>
 </nav>
 
@@ -1156,51 +1151,58 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="what-are-assets">
-  What are Assets?
-  <a class="anchor" href="#what-are-assets">#</a>
+  <article class="markdown"><h1 id="a-basic-level-manager">
+  A Basic Level Manager
+  <a class="anchor" href="#a-basic-level-manager">#</a>
 </h1>
-<p>An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.</p>
-<p>When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.</p>
-<p>It&rsquo;s easier to explain assets if we consider their uses.</p>
-<h2 id="common-asset-types">
-  Common Asset Types
-  <a class="anchor" href="#common-asset-types">#</a>
+<p>For an explanation of this code, see <a href="http://guidebook.hdyar.com/docs/unity/unity-102/scene-switching/">this video</a> on scene switching, where the code is written and explained.</p>
+<h2 id="levelmanagercs">
+  LevelManager.cs
+  <a class="anchor" href="#levelmanagercs">#</a>
 </h2>
-<h4 id="image-files">
-  Image Files
-  <a class="anchor" href="#image-files">#</a>
-</h4>
-<p>Images, like BMP or Jpeg’s, and even Photoshop documents directly (I haven’t utilized this new feature and still export all my sprites as PNG’s with transparency).</p>
-<h4 id="3d-models">
-  3D Models
-  <a class="anchor" href="#3d-models">#</a>
-</h4>
-<p>Unity supports FBX files for your 3D models. It also supports saving your native file format into the asset folder (ie: .max, .blend, .mb, .ma), and Unity turns them into .fbx’s when it runs and builds the game. This is useful if you are going back and forth a lot, but it’s still generally wise to export as FBX, especially if you are sharing/collaborating with others. Keep things from getting too messy.</p>
-<p>See the unity manual for information on <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html">importing models</a>, <a href="https://docs.unity3d.com/Manual/3D-formats.html">Model File Formats.</a> Getting textures and animations to import with a model correctly (or to associate these things with models that have already been imported) can be tricky, and I won’t get into the details of this here.</p>
-<h4 id="audio-files">
-  Audio Files
-  <a class="anchor" href="#audio-files">#</a>
-</h4>
-<p>Unity supports a wide variety of audio, and will (by default) compress it to when it builds the game. Unity supports mp3, .ogg, .wac, .aif audio files, and<br>
-.mod, .it, .s3m, and .xm tracker modules files.</p>
-<p>If you don’t know what tracker modules are, don’t worry. Think midi, they are sequence data and short audio samples to build out tracks. This helps create long songs without large file sizes.</p>
-<h4 id="scripts">
-  Scripts
-  <a class="anchor" href="#scripts">#</a>
-</h4>
-<p>As we work in Unity, we will create lots of Scripts. These are C# or JavaScript files. You can make the files from within unity.</p>
-<blockquote class="book-hint info">
-  If you click the **Add Component **in the Inspector and create a **New Script **from here, it will put that script in the base assets folder. Before we open it up in our text editor, we should remember to move it to a Scripts folder, or wherever we want to move it. Unity will keep track of objects that we move around (from within Unity’s project window), but our IDE/text editors may not.
-</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">using</span> UnityEngine;
+<span style="color:#ff79c6">using</span> UnityEngine.SceneManagement;
 
-<h2 id="file-structure">
-  File Structure
-  <a class="anchor" href="#file-structure">#</a>
-</h2>
-<p>Unity technically doesn’t care where in your project you store your assets. Technically you can have them all just sitting in your assets folder. Don’t do this. Create folders that categorize your asset. Generally based on type. Almost all of my projects have the following folders: “Scripts”, “Materials”, “Models”, “Images”, “Scenes”. Your’s probably should soon.</p>
-<p>This organization isn’t just to keep things pretty. Unity projects can get complicated quickly, and finding assets is going to be important.</p>
-<p>You should adopt a standard naming convention for your files, as well. But i won’t yell at you about that. At the very least, keep things descriptive.</p>
+<span style="color:#ff79c6">public</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">LevelManager</span> : MonoBehaviour
+{
+    <span style="color:#ff79c6">public</span> <span style="color:#ff79c6">void</span> RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    <span style="color:#ff79c6">public</span> <span style="color:#ff79c6">void</span> GoToNextScene()
+    {
+        <span style="color:#6272a4">//Get the current level build Index
+</span><span style="color:#6272a4"></span>        <span style="color:#8be9fd">int</span> current = SceneManager.GetActiveScene().buildIndex;
+        
+        <span style="color:#6272a4">//increase it by one
+</span><span style="color:#6272a4"></span>        <span style="color:#8be9fd">int</span> next = current + <span style="color:#bd93f9">1</span>;
+        <span style="color:#8be9fd">int</span> total = SceneManager.sceneCountInBuildSettings;
+        
+        <span style="color:#6272a4">//If we are at the end of our list, just go back to the first level in the list.
+</span><span style="color:#6272a4"></span>        <span style="color:#ff79c6">if</span> (next &gt;= total)
+        {
+            next = <span style="color:#bd93f9">0</span>;
+        }
+
+        <span style="color:#6272a4">//go to build index
+</span><span style="color:#6272a4"></span>        SceneManager.LoadScene(next);
+    }
+    <span style="color:#ff79c6">void</span> Update()
+    {
+
+        <span style="color:#ff79c6">if</span> (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
+        }
+
+        <span style="color:#6272a4">//Cheat codes! Maybe delete this part?
+</span><span style="color:#6272a4"></span>        <span style="color:#ff79c6">if</span> (Input.GetKeyDown(KeyCode.N))
+        {
+            GoToNextScene();
+        }
+    }
+}</code></pre></div>
 </article>
  
       
@@ -1242,12 +1244,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#common-asset-types">Common Asset Types</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#file-structure">File Structure</a></li>
+    <li><a href="#levelmanagercs">LevelManager.cs</a></li>
   </ul>
 </nav>
 

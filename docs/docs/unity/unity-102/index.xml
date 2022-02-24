@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems &amp; Techniques on The Guidebook</title>
+    <link>http://guidebook.hdyar.com/docs/unity/unity-102/</link>
+    <description>Recent content in Systems &amp; Techniques on The Guidebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://guidebook.hdyar.com/docs/unity/unity-102/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scene Switching</title>
+      <link>http://guidebook.hdyar.com/docs/unity/unity-102/scene-switching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/unity/unity-102/scene-switching/</guid>
+      <description>Scene Switching and a Basic Level Manager#  The Level Manager Code#The code for just the level manager is here, and the entire project is available on Github here.</description>
+    </item>
+    
+  </channel>
+</rss>
