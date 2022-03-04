@@ -36,10 +36,10 @@ In Windows, you can choose an image as your desktop background. Windows needs to
 
 ![Fill Options in Windows 11 Personalization menu](/images/digital-media/windowsPersonalizationBackgroundFills.png)
 
-The options are Fill, Stretch, Tile, Center, and Span.
+The options are Fill, Stretch, Tile, Center, and Span. Digital digital media applications may call these techniques differently, but there are only so many approaches you can take.
 
 **Fill** Will scale up the image until it fits the display completely, not showing you the entirety of the image.  
 **Stretch** will stretch the image to fit the display.  
-**Tile** will repeat the image again.  
+**Tile** will repeat the image again. Also called '**repeat**'. You also might only **repeat horizontally** or **repeat vertically**, common approaches when working with UV maps and 3D software.
 **Center** will letterbox the image.  
 **Span** is used for multiple monitors, filling the image across all connected displays.  

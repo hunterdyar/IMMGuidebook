@@ -105,3 +105,16 @@ Mac creates a *.app* file. This single file is everything the game needs to run,
 For someone to run the game, and you aren't worrying about [code signing or notarization](https://docs.unity3d.com/2021.2/Documentation/Manual/macos-building.html), they may need to "Allow apps downloaded from anywhere" in their security and privacy settings.  Read more about apple's security practices from [apple support](https://support.apple.com/en-us/HT202491).
 
 {{< /details>}}
+
+{{< details title="webGL Information" open=false >}}
+When choosing WebGL, there are differences in performance between Unity versions, as Unity improves it's webGL build process over time.
+
+WebGL Builds give you an index.html file, plus some other files, that you can directly open in a web browser. The catch is that you need a web server to run, so opening the file on your computer or sending them to a friend won't run the game. The two options are to spin up a local webserver (Unity does this when you hit 'build & run' from Unity), or to upload the game to a hosting service that can provide a webserver. [Itch.io](https://itch.io/), [simmer.io](https://simmer.io/), and Unity's own [Unity Play](https://play.unity.com/) are three decent options. They have their own gotchas and catches.
+
+Sometimes, you get an error like "unable to decompress" or "unable to load" or it's just black, or just loads forever. This is usually caused by the web server not supporting the compression method you use.
+
+You may need to check **Decompression Fallback** (Project Settings > Player > Publishing Settings) depending on the service you upload the files to or the version of Unity you are using. I have also, in some cases, found success by switching from gzip to brotli compression. The details of this is well out of scope of this guide, but keep these player settings at the top of your mind as you trial-and-error troubleshoot.
+
+![The Unity Publishing Settings menu in Player Settings ](/images/unity/builds/webGLSettings.png)
+
+{{< /details>}}
