@@ -19,7 +19,7 @@ I will use the terms &lsquo;Build Target&rsquo; and &lsquo;Platform&rsquo; inter
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.3648d8adbaef0a3883e6cf8fe7fc70d94aa2652db2651bcb7e376700f0c649aa.js" integrity="sha256-NkjYrbrvCjiD5s&#43;P5/xw2UqiZS2yZRvLfjdnAPDGSao=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.b5a23b7c82093cc3b4982289da9655a2c7dfa9bfd2de4a4810f46fb8fb3a0de1.js" integrity="sha256-taI7fIIJPMO0mCKJ2pZVosffqb/S3kpIEPRvuPs6DeE=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -1239,6 +1239,17 @@ https://github.com/alex-shpak/hugo-book
     <p>On the build settings menu, there is an&quot;Architecture&quot; drop-down. Choose between Intel, Apple silicon, or &lsquo;both&rsquo;. If you don&rsquo;t know better, select both. This creates a much larger file size than just selecting one or the other, so if you do know the architecture is running (apple silicon includes apple &ldquo;M1&rdquo; devices), you should select it. You can also make multiple builds. If you are hosting your game online for someone to download, you can let them choose the appropriate version for them.</p>
 <p>Mac creates a <em>.app</em> file. This single file is everything the game needs to run, no extra folders to worry about including.</p>
 <p>For someone to run the game, and you aren&rsquo;t worrying about <a href="https://docs.unity3d.com/2021.2/Documentation/Manual/macos-building.html">code signing or notarization</a>, they may need to &ldquo;Allow apps downloaded from anywhere&rdquo; in their security and privacy settings.  Read more about apple&rsquo;s security practices from <a href="https://support.apple.com/en-us/HT202491">apple support</a>.</p>
+
+  </div>
+</details>
+
+<details ><summary>webGL Information</summary>
+  <div class="markdown-inner">
+    <p>When choosing WebGL, there are differences in performance between Unity versions, as Unity improves it&rsquo;s webGL build process over time.</p>
+<p>WebGL Builds give you an index.html file, plus some other files, that you can directly open in a web browser. The catch is that you need a web server to run, so opening the file on your computer or sending them to a friend won&rsquo;t run the game. The two options are to spin up a local webserver (Unity does this when you hit &lsquo;build &amp; run&rsquo; from Unity), or to upload the game to a hosting service that can provide a webserver. <a href="https://itch.io/">Itch.io</a>, <a href="https://simmer.io/">simmer.io</a>, and Unity&rsquo;s own <a href="https://play.unity.com/">Unity Play</a> are three decent options. They have their own gotchas and catches.</p>
+<p>Sometimes, you get an error like &ldquo;unable to decompress&rdquo; or &ldquo;unable to load&rdquo; or it&rsquo;s just black, or just loads forever. This is usually caused by the web server not supporting the compression method you use.</p>
+<p>You may need to check <strong>Decompression Fallback</strong> (Project Settings &gt; Player &gt; Publishing Settings) depending on the service you upload the files to or the version of Unity you are using. I have also, in some cases, found success by switching from gzip to brotli compression. The details of this is well out of scope of this guide, but keep these player settings at the top of your mind as you trial-and-error troubleshoot.</p>
+<p><img src="/images/unity/builds/webGLSettings.png" alt="The Unity Publishing Settings menu in Player Settings " /></p>
 
   </div>
 </details>
