@@ -20,3 +20,4 @@ These tips are generally about the Windows operating-system, or common conventio
 - View your file system visually, using software like WinDirStat, TreeSize, GrandPerspective, or others. I have been using WinDirStat for 15 years and won't switch now.
 - Ctrl+Shift+V or Cmd+Shift+V will paste text without formatting, usually.
 - Ctrl+L (cmd+l) will select and highlight an address bar or search bar in most software (like web browsers and file explorers)
+- Everything by Voidtools 

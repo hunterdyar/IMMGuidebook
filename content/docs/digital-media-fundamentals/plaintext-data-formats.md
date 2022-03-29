@@ -12,6 +12,7 @@ Imagine the pain of trying to edit a Powerpoint file on a computer that does not
 
 We can create a file in JSON by writing it by hand, and use it in a unity project. We could transfer the same program to a different computer, in a different operating system, and use it on a different project without having unity installed.
 
+- CSV
 - XML (on top of which HTML, the markup language that websites use, is based)
 - [JSON](https://www.json.org/json-en.html)
 - [TOML](https://toml.io/en/)
