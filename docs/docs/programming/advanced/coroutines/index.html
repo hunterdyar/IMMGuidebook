@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Types of Error Messages#Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
-As far as C# is concerned, there are two types of error messages: Compiler Errors and Runtime Errors.
-In terms of how you will encounter errors, I would like to add a third type: IDE Errors.">
+<meta name="description" content="Coroutines Overview Video#  Implementing Coroutines for grid movement in a project.#  Coroutine Syntax#void Start() { //whenever we want to start a coroutine, we call &#39;StartCoroutine&#39;  StartCoroutine(CoroutineName()); } //a normal function of return type &#34;IEnumerator&#34;. Can take arguments. IEnumerator CoroutineName() { //do something  yield return null;//wait for right after next update loop  yield return new WaitForSeconds(0.5f);//wait for half a second } Movement With Coroutines Example#public IEnumerator MoveTo(Vector3 destination, float timeToMove) { Vector3 start = transform.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Types of Error Messages" />
-<meta property="og:description" content="Types of Error Messages#Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
-As far as C# is concerned, there are two types of error messages: Compiler Errors and Runtime Errors.
-In terms of how you will encounter errors, I would like to add a third type: IDE Errors." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Coroutines" />
+<meta property="og:description" content="Coroutines Overview Video#  Implementing Coroutines for grid movement in a project.#  Coroutine Syntax#void Start() { //whenever we want to start a coroutine, we call &#39;StartCoroutine&#39;  StartCoroutine(CoroutineName()); } //a normal function of return type &#34;IEnumerator&#34;. Can take arguments. IEnumerator CoroutineName() { //do something  yield return null;//wait for right after next update loop  yield return new WaitForSeconds(0.5f);//wait for half a second } Movement With Coroutines Example#public IEnumerator MoveTo(Vector3 destination, float timeToMove) { Vector3 start = transform." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/programming/advanced/coroutines/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Types of Error Messages | The Guidebook</title>
+<title>Coroutines | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -652,7 +648,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle" checked />
+    <input type="checkbox" id="section-dddf50324cced418b45884f0b4af2983" class="toggle"  />
     <label for="section-dddf50324cced418b45884f0b4af2983" class="flex justify-between">
       <a role="button" class="">Fundamentals</a>
     </label>
@@ -759,7 +755,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" class=" active">Types of Error Messages</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/" class="">Types of Error Messages</a>
   
 
         </li>
@@ -777,7 +773,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle"  />
+    <input type="checkbox" id="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="toggle" checked />
     <label for="section-fa7c038392bbf42b1f21ecaf1ee8d1bd" class="flex justify-between">
       <a href="http://guidebook.hdyar.com/docs/programming/advanced/" class="">Advanced</a>
     </label>
@@ -793,7 +789,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/programming/advanced/coroutines/" class="">Coroutines</a>
+    <a href="http://guidebook.hdyar.com/docs/programming/advanced/coroutines/" class=" active">Coroutines</a>
   
 
         </li>
@@ -1163,7 +1159,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Types of Error Messages</strong>
+  <strong>Coroutines</strong>
 
   <label for="toc-control">
     
@@ -1179,13 +1175,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#compiler-errors">Compiler Errors</a></li>
-    <li><a href="#runtime-errors">Runtime Errors</a></li>
-    <li><a href="#clearing-errors">Clearing Errors</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#video-review">Video Review</a></li>
+    <li><a href="#coroutines-overview-video">Coroutines Overview Video</a></li>
+    <li><a href="#implementing-coroutines-for-grid-movement-in-a-project">Implementing Coroutines for grid movement in a project.</a></li>
+    <li><a href="#coroutine-syntax">Coroutine Syntax</a></li>
+    <li><a href="#movement-with-coroutines-example">Movement With Coroutines Example</a></li>
   </ul>
 </nav>
 
@@ -1198,72 +1191,58 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="types-of-error-messages">
-  Types of Error Messages
-  <a class="anchor" href="#types-of-error-messages">#</a>
-</h1>
-<p>Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.</p>
-<p>As far as C# is concerned, there are two types of error messages: <strong>Compiler</strong> Errors and <strong>Runtime</strong> Errors.</p>
-<p>In terms of how you will encounter errors, I would like to add a third type: <strong>IDE Errors</strong>.</p>
-<p>Lets go through them.</p>
-<h2 id="compiler-errors">
-  Compiler Errors
-  <a class="anchor" href="#compiler-errors">#</a>
-</h2>
-<p>When you compile code, it&rsquo;s the computers turn to try to read what you have written. It attempts to parse all of the symbols in all the files and turn them into machine code that it can deliver to the CPU. (This is a horrendously simplified summary).</p>
-<p>If it can&rsquo;t parse what you have written - it reaches a symbol it doesn&rsquo;t know what to do with, or it doesn&rsquo;t know what a keyword means, or <em>whatever</em>, it will throw a compiler error.</p>
-<p>Unity will not let you enter play mode when you have compiler errors. If you have been doing Unity development for any amount of time, you have probably seen this message before:</p>
-<p><img src="/images/programming/allCompilerErrorsMessage.png" alt="Unity: &amp;ldquo;All errors must be fixed before you can enter play mode&amp;rdquo;" /></p>
-<p>When this happens, head to the console:</p>
-<p><img src="/images/programming/errorsCompiler2.png" alt="Missing Semicolon" />
-The above errors are caused by a single missing semicolon. The compiler is smart enough to understand that a new expression began before the current one was terminated, so it gives us a fairly useful error message &ldquo;; expected&rdquo;. It&rsquo;s not going to fix it for us, C# makes no assumptions, it doesn&rsquo;t know what your code is on about. If you wrote the code wrong, it&rsquo;s just going to stop and tell you so you can fix it.</p>
-<p>The following errors are caused by removing the &ldquo;using UnityEngine;&rdquo; line at the top of the file. Suddenly all sorts of classes and functions that are defined in the UnityEngine library (like MonoBehaviour, Transform, Vector3) aren&rsquo;t defined anywhere, and the computer doesn&rsquo;t know what to do. 
-<img src="/images/programming/errorsCompiler1.png" alt="A Lot of errors from a single missing line of code" /></p>
-<h2 id="runtime-errors">
-  Runtime Errors
-  <a class="anchor" href="#runtime-errors">#</a>
-</h2>
-<p>Runtime errors don&rsquo;t happen when the code is compiled. They happen when the game is actually running. The most common are &ldquo;Out of Bounds&rdquo; error, when using lists or arrays, and a &ldquo;Null Reference Exception&rdquo;. Both happen when we ask the computer to go look in memory for some variable, and there is no instance for it to find.</p>
-<p>For example, in a script that moves an object via a Rigidbody, we often store a reference to the rigidbody component in a variable.</p>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">private</span> Rigidbody2D <span style="color:#bd93f9">_</span>rigidbody;
-<span style="color:#ff79c6">private</span> <span style="color:#ff79c6">void</span> Awake()
-{
-    <span style="color:#bd93f9">_</span>rigidbody = GetComponent&lt;Rigidbody2D&gt;();
-}</code></pre></div>
-If we forget to type this GetComponent line, we will get the following error the first time the _<em>rigidbody</em> variable is used. There is no problem with the code&rsquo;s ability to compile. It only hits this error when the game is executing.</p>
-<p><img src="/images/programming/errorNullReference.png" alt="Screenshot of the famous Null Reference Exception error" /></p>
-<p>Depending on the runtime error, Unity will pause execution right then and there.</p>
-<h2 id="clearing-errors">
-  Clearing Errors
-  <a class="anchor" href="#clearing-errors">#</a>
-</h2>
-<p>Runtime errors happen when the game is running, and they stick around in the console so you can review them, double click them to jump to the problematic line of code, and so on. If you fix the error - the compiler has no idea. This is a runtime error, we are only going to hit it because of some way the code is executing. The computer won&rsquo;t know it&rsquo;s fixed. Because of this, the error is just going to hang out in the console until we <strong>clear</strong> it.</p>
-<p>We clear errors by clicking &ldquo;clear&rdquo; in the console. This wipes the slate for us. By default, there is &ldquo;Clear On Play&rdquo; enabled, which will clear previous errors before entering play mode again. I recommend you leave this on.</p>
-<p>A <strong>really easy</strong> mistake to make is to spend time trying to fix an error message, but no matter what you do, <em>it just wont go away</em>. It might already be fixed - but is a runtime error. So the code re-compiles without error, and you&rsquo;re good&hellip; but you still see a red X in the console. If an unfixable error is driving you mad, try just clicking the <strong>clear</strong> button and see if it simply goes away.</p>
-<p>Now, that doesn&rsquo;t guarantee that the actual problem is fixed, but at least you can run your game, maybe hit the problem again, and get back on the right track with debugging.</p>
-<h1 id="ide-errors">
-  IDE Errors
-  <a class="anchor" href="#ide-errors">#</a>
-</h1>
-<p>The Unity Console just reports what the Compiler says. You can receive errors from another source: Your IDE (text editor) analyzing your code for you, in order to help out.</p>
-<p>Remember the missing semicolon error?</p>
-<p><img src="/images/programming/errorsCompiler2.png" alt="A Lot of errors from a single missing line of code" /></p>
-<p>This is what it looks like in the IDE:</p>
-<p><img src="/images/programming/errorsIDE1.png" alt="A Lot of errors from a single missing line of code" /></p>
-<p>It gives me a red squiggly line under my code, and the message &ldquo;Unexpected Token&rdquo;. It also gives me a warning that my name is incorrect. It&rsquo;s not how I name functions! Well, it&rsquo;s a variable, not a function (method). The IDE can&rsquo;t tell because of the missing semicolon. So that warning is irrelevant. Sorry IDE, you were trying to be helpful, but aren&rsquo;t as smart as you&rsquo;d like to be.</p>
-<p>I want to stress that &ldquo;; expected&rdquo; and &ldquo;Unexpected Token&rdquo; are different errors, and the compiler error is more useful in it&rsquo;s reporting, but the IDE error is more useful since it&rsquo;s right in context, and can often offer helpful suggestions and fixes. Or completely wrong suggestions and fixes.</p>
-<p>The compiler error is the <strong>real</strong> error. It&rsquo;s the actual problem your code has. The IDE is analyzing your code and - before we attempt to compile it - trying to alert your of potential issues and problems. Jetbrains Rider is pretty good at this! Microsoft Visual Studio is also pretty good at it, calling it&rsquo;s solution &ldquo;<a href="https://docs.microsoft.com/en-US/visualstudio/ide/visual-csharp-intellisense?view=vs-2022">Intellisense</a>&rdquo; and it&rsquo;s these same code-analysis tools that give us our helpful - or unhelpful - autocompletions.</p>
-<p>These are just tools of the IDE. They&rsquo;re useful! But they aren&rsquo;t always accurate. Rider, by default, is pretty picky about your code style conventions (which is, to be fair, important and a good thing to be picky about), but it means students learning have lots of errors that <em>super don&rsquo;t matter right now</em>. Just be aware of what is a warning and an error, and make sure you are using a color scheme where it&rsquo;s clear to tell the difference.</p>
-<p>Don&rsquo;t let your IDE get in your way. When you&rsquo;re in the middle of fixing lots of errors, it can be helpful to jump over to Unity, let it attempt to compile, and give you new error messages. Compiler error messages are consistent and usually very helpful.</p>
-<h2 id="video-review">
-  Video Review
-  <a class="anchor" href="#video-review">#</a>
+  <article class="markdown"><h2 id="coroutines-overview-video">
+  Coroutines Overview Video
+  <a class="anchor" href="#coroutines-overview-video">#</a>
 </h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/xISgtKeLWQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/8fIF5F3AvJo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<h2 id="implementing-coroutines-for-grid-movement-in-a-project">
+  Implementing Coroutines for grid movement in a project.
+  <a class="anchor" href="#implementing-coroutines-for-grid-movement-in-a-project">#</a>
+</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Rg2SsZ8yy8c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="coroutine-syntax">
+  Coroutine Syntax
+  <a class="anchor" href="#coroutine-syntax">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">void</span> Start()
+{
+    <span style="color:#6272a4">//whenever we want to start a coroutine, we call &#39;StartCoroutine&#39;
+</span><span style="color:#6272a4"></span>    StartCoroutine(CoroutineName());    
+}
+
+<span style="color:#6272a4">//a normal function of return type &#34;IEnumerator&#34;. Can take arguments.
+</span><span style="color:#6272a4"></span>IEnumerator CoroutineName()
+{
+    <span style="color:#6272a4">//do something
+</span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">yield</span> <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">null</span>;<span style="color:#6272a4">//wait for right after next update loop
+</span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">yield</span> <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">new</span> WaitForSeconds(<span style="color:#bd93f9">0.5f</span>);<span style="color:#6272a4">//wait for half a second
+</span><span style="color:#6272a4"></span>}</code></pre></div>
+<h2 id="movement-with-coroutines-example">
+  Movement With Coroutines Example
+  <a class="anchor" href="#movement-with-coroutines-example">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#ff79c6">public</span> IEnumerator MoveTo(Vector3 destination, <span style="color:#8be9fd">float</span> timeToMove)
+{
+    Vector3 start = transform.position;
+    <span style="color:#8be9fd">float</span> t = <span style="color:#bd93f9">0</span>;
+    <span style="color:#ff79c6">while</span> (t &lt; <span style="color:#bd93f9">1</span>)
+    {
+        t = t + Time.deltaTime/timeToMove;<span style="color:#6272a4">//it will take t timeToMove seconds to get from 0 to 1.
+</span><span style="color:#6272a4"></span>        transform.position = Vector3.Lerp(start, destination,t);
+        <span style="color:#ff79c6">yield</span> <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">null</span>;
+    }
+    <span style="color:#6272a4">//Snap to exactly the destination position
+</span><span style="color:#6272a4"></span>    transform.position = destination;
+}</code></pre></div>
 </article>
  
       
@@ -1305,13 +1284,10 @@ If we forget to type this GetComponent line, we will get the following error the
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#compiler-errors">Compiler Errors</a></li>
-    <li><a href="#runtime-errors">Runtime Errors</a></li>
-    <li><a href="#clearing-errors">Clearing Errors</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#video-review">Video Review</a></li>
+    <li><a href="#coroutines-overview-video">Coroutines Overview Video</a></li>
+    <li><a href="#implementing-coroutines-for-grid-movement-in-a-project">Implementing Coroutines for grid movement in a project.</a></li>
+    <li><a href="#coroutine-syntax">Coroutine Syntax</a></li>
+    <li><a href="#movement-with-coroutines-example">Movement With Coroutines Example</a></li>
   </ul>
 </nav>
 

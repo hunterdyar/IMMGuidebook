@@ -254,6 +254,15 @@ When you are confused, stop and figure out what it is that is confusing you. &am
     </item>
     
     <item>
+      <title>Coroutines</title>
+      <link>http://guidebook.hdyar.com/docs/programming/advanced/coroutines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/programming/advanced/coroutines/</guid>
+      <description>Coroutines Overview Video#  Implementing Coroutines for grid movement in a project.#  Coroutine Syntax#void Start() { //whenever we want to start a coroutine, we call &amp;#39;StartCoroutine&amp;#39;  StartCoroutine(CoroutineName()); } //a normal function of return type &amp;#34;IEnumerator&amp;#34;. Can take arguments. IEnumerator CoroutineName() { //do something  yield return null;//wait for right after next update loop  yield return new WaitForSeconds(0.5f);//wait for half a second } Movement With Coroutines Example#public IEnumerator MoveTo(Vector3 destination, float timeToMove) { Vector3 start = transform.</description>
+    </item>
+    
+    <item>
       <title>Creating Builds</title>
       <link>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/builds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
