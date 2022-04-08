@@ -12,8 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/unity-and-programming/collision-events/</guid>
-      <description>Unity Collision Events#Overview Video#A (slow) video walking through setup and common mistakes for using collision events.
-  Example#A really common pattern when using collision events is to check if the thing we hit has a certain tag, or has a certain component.
+      <description>Unity Collision Events #  Overview Video #  A (slow) video walking through setup and common mistakes for using collision events.
+  Example #  A really common pattern when using collision events is to check if the thing we hit has a certain tag, or has a certain component.
 GetComponent is slower than using CompareTag, so we prefer that - however, it can quickly become impractical.
 void OnCollisionEnter(Collision other) { if (other.</description>
     </item>
@@ -33,9 +33,9 @@ void OnCollisionEnter(Collision other) { if (other.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/</guid>
-      <description>Vectors#Vectors are a simple data structure that contain a set of floats - numbers. They are incredibly useful!
+      <description>Vectors #  Vectors are a simple data structure that contain a set of floats - numbers. They are incredibly useful!
 After looking through this high-level-overview page, I recommend reading this page on Vectors in the Unity manual.
-Vector Overview#  Types of Vectors in Unity#In Unity, we have a number of different &amp;lsquo;vector&amp;rsquo; data structures:
+Vector Overview #    Types of Vectors in Unity #  In Unity, we have a number of different &amp;lsquo;vector&amp;rsquo; data structures:
  Vector2 Vector3 Vector4  The number refers to the number of floats that the vector contains.</description>
     </item>
     

@@ -16,6 +16,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-interface/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/</loc>
@@ -42,9 +44,13 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/serialization-and-attributes/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/virtual-reality/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/</loc>
   </url><url>
@@ -108,6 +114,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/toolbox/instantiating/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/advanced/interfaces/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/namespaces/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/digital-media-fundamentals/notes-on-file-management/</loc>
@@ -137,6 +145,8 @@
     <loc>http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/tips-and-tricks/string-formatting/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/programming/unity/tips-and-tricks/string-formatting/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/tags/</loc>
   </url><url>
