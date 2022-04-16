@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/</guid>
-      <description>Basic Syntax: Variables and Functions #  Variables #  Declaring Variables #  The keywords to declare a variable are as follows:
+      <description>Basic Syntax: Variables and Functions#Variables#Declaring Variables#The keywords to declare a variable are as follows:
  [scope][space][type][space][variableName][semicolon]
 scope type variableName;
  When naming our variables, we use lowercaseCamelCase. Also called pascalCase.
@@ -26,8 +26,8 @@ C# requires that we declare the variable type. We can&amp;rsquo;t just say &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/conditionals/</guid>
-      <description>Conditionals #  A conditional is something that can be true or false.
-Boolean #  The simplest conditional is a &amp;ldquo;boolean&amp;rdquo; data type. A boolean is a variable that can be equal to either &amp;ldquo;True&amp;rdquo; or &amp;ldquo;False&amp;rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
+      <description>Conditionals#A conditional is something that can be true or false.
+Boolean#The simplest conditional is a &amp;ldquo;boolean&amp;rdquo; data type. A boolean is a variable that can be equal to either &amp;ldquo;True&amp;rdquo; or &amp;ldquo;False&amp;rdquo;, and Nothing else. They are stored as a single bit, a 1 or a 0, so they literally, can only be true or false.
 In C#, and in most programming languages, this data type is called &amp;ldquo;bool&amp;rdquo;.</description>
     </item>
     
@@ -37,7 +37,7 @@ In C#, and in most programming languages, this data type is called &amp;ldquo;bo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/</guid>
-      <description>Code Flow #  Inside of functions, there are a number of different ways to change how code executes. Without messing with code flow, and just having a bunch of statements, code will execute top to bottom, left to right. Code flow is how we get more complicated.
+      <description>Code Flow#Inside of functions, there are a number of different ways to change how code executes. Without messing with code flow, and just having a bunch of statements, code will execute top to bottom, left to right. Code flow is how we get more complicated.
 There are 2 main ways to manipulate code flow: Branches and Loops.
 Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdquo; again, are a way of executing functions only in some situations.</description>
     </item>
@@ -48,7 +48,7 @@ Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/arrays/</guid>
-      <description>Arrays #    </description>
+      <description>Arrays#  </description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/</guid>
-      <description>Classes and Components #  Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &amp;hellip; do everything with.
+      <description>Classes and Components#Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &amp;hellip; do everything with.
 Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let Unity handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component.</description>
     </item>
     
@@ -67,7 +67,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/a-few-metaphors/</guid>
-      <description>A Few Metaphors #  I generally do not like teaching with metaphors. They can provide quick high-level insight, but I find they can get in the way when we wish to expand on the high-level concept in lower-level ways. It&amp;rsquo;s like learning a mental trick to do multiplication - you might be presented with a problem that you know the answer to, having memorized it, but instead of simply having it, you find yourself walking through the steps of your &amp;ldquo;trick&amp;rdquo; in your head.</description>
+      <description>A Few Metaphors#I generally do not like teaching with metaphors. They can provide quick high-level insight, but I find they can get in the way when we wish to expand on the high-level concept in lower-level ways. It&amp;rsquo;s like learning a mental trick to do multiplication - you might be presented with a problem that you know the answer to, having memorized it, but instead of simply having it, you find yourself walking through the steps of your &amp;ldquo;trick&amp;rdquo; in your head.</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/collapsing-code/</guid>
-      <description>Collapsing Code #  A basic exercise to help you think about code execution.
+      <description>Collapsing Code#A basic exercise to help you think about code execution.
   </description>
     </item>
     
@@ -86,7 +86,7 @@ Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/</guid>
-      <description>Types of Error Messages #  Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
+      <description>Types of Error Messages#Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.
 As far as C# is concerned, there are two types of error messages: Compiler Errors and Runtime Errors.
 In terms of how you will encounter errors, I would like to add a third type: IDE Errors.</description>
     </item>

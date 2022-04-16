@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/the-intro-lectures/</guid>
-      <description>The Intro Lectures #  These are recordings of in-class lectures I give about Unity. I hope most of this website will get to the point where Unity information is not hidden in these hour-long videos to reference, but It is still important for me to have the lectures proper recorded and online. They are not about a &amp;ldquo;easy win&amp;rdquo; or first &amp;ldquo;fun&amp;rdquo; project, and you won&amp;rsquo;t necessarily have the confidence to do much afterwards, but I am working on building out a solid foundation of knowledge to build on top of, so to speak.</description>
+      <description>The Intro Lectures#These are recordings of in-class lectures I give about Unity. I hope most of this website will get to the point where Unity information is not hidden in these hour-long videos to reference, but It is still important for me to have the lectures proper recorded and online. They are not about a &amp;ldquo;easy win&amp;rdquo; or first &amp;ldquo;fun&amp;rdquo; project, and you won&amp;rsquo;t necessarily have the confidence to do much afterwards, but I am working on building out a solid foundation of knowledge to build on top of, so to speak.</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/project-basics/</guid>
-      <description>Unity Project Basics #    </description>
+      <description>Unity Project Basics#  </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/</guid>
-      <description>What are Assets? #  An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
+      <description>What are Assets?#An asset is an actual file on your computer. We store Assets in the “Assets” folder inside of our unity project folder. Assets are any item in Unity that we may want to use.
 When we select an asset in the project window, the Inspector will show us it’s import properties. These are often very important, they tell Unity how to handle the file. For example: fixing scale issues with 3D models.</description>
     </item>
     
@@ -40,7 +40,7 @@ When we select an asset in the project window, the Inspector will show us it’s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/</guid>
-      <description>What are Components? #  Components are where the real functionality of GameObjects gets implemented.
+      <description>What are Components?#Components are where the real functionality of GameObjects gets implemented.
 The Transform component is part of every single GameObject in Unity. You can’t delete it, because every gameObject has to have one. An Empty game object still has a position in the scene. It gives objects positions, rotations, and scales. It also handles how objects can be “children” or “parents” of each other.
 The Default Main Camera in new scenes have three components: Transform, Camera, and Audio Listener.</description>
     </item>
@@ -51,7 +51,7 @@ The Default Main Camera in new scenes have three components: Transform, Camera, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/builds/</guid>
-      <description>Unity Builds #  Scene Information #  Unity supports a number of &amp;lsquo;Build Targets&amp;rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
+      <description>Unity Builds#Scene Information#Unity supports a number of &amp;lsquo;Build Targets&amp;rsquo;, or platforms that it can create executable files for. Desktop software for Windows, Mac, and Linux - of course, but also mobile platforms like Android and iOS, WebGL targets for playing games in the web browser on sites like itch.io, and game consoles like the Xbox or the Playstation .
 I will use the terms &amp;lsquo;Build Target&amp;rsquo; and &amp;lsquo;Platform&amp;rsquo; interchangeably on this page.</description>
     </item>
     
@@ -61,7 +61,7 @@ I will use the terms &amp;lsquo;Build Target&amp;rsquo; and &amp;lsquo;Platform&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/parent-child-relationships/</guid>
-      <description>Parent-Child relationships #  One core concept to understand is that of &amp;lsquo;parenting&amp;rsquo;. Parent/Child relationships are edited in the hierarchy window.
+      <description>Parent-Child relationships#One core concept to understand is that of &amp;lsquo;parenting&amp;rsquo;. Parent/Child relationships are edited in the hierarchy window.
 If we remember that scenes are cartesian coordinate systems, we can define any point as a point on the number line. It can be thought of as the distance away from the scene origin on each axis. We will use the words scene and world interchangeably when talking about parenting.</description>
     </item>
     
@@ -71,7 +71,7 @@ If we remember that scenes are cartesian coordinate systems, we can define any p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/prefabs/</guid>
-      <description>Prefabs #    </description>
+      <description>Prefabs#  </description>
     </item>
     
   </channel>
