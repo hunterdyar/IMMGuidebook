@@ -23,6 +23,8 @@ Second, the manual is a **great** place to find out a specific piece of informat
 Installing blender isn't really the first step. The first step is understanding the basics of 3D models - what they are, how computers represent and work with 3D data, and (abstractly) how computers render graphics. This prerequisite knowledge will be more useful than any follow-along blender tutorial, and allow you to not get lost in the weeds.
 
 - [Blender Manual: Structure](https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html)
+- My own video: [What's a 3D Model Anyway?](https://youtu.be/I3ndKKrazoA)
+
 
 ### The Interface
 The next step is understanding the interface. This, of course, makes following other tutorials easier. We want to be comfortable in the software, and not forced to go exact-step by exact-step through a sequence of memorized processes. We need to know what operations will affect our model, and what operations won't. We need to be able to return to a comfortable starting place if we get lost. A lot of this, yes, will simply come with practice. I want to emphasize spending time learning how to get around Blender before doing follow-along tutorials.
