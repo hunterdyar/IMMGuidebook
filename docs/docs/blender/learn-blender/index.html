@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Here are the settings that I prefer to change for Blender. Open the preferences by going to Edit &gt; Preferences.
-Interface #  Interface &gt; Menus &gt; Open on Mouse Over. I find this feature helpful during mouse-only operation.
-Viewport #  Display &gt; 3D Viewport Axis Size. I set mine axis size to be easier to see, easier to check my orientation at a glance. Although I use 1440 and 4k monitors.">
+<meta name="description" content="Blender Learning Path #  This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is twofold: First: Learn enough to get past the initial difficulty curve into the space where you can hack and learn easily through external resources. Second: Learn the skills for Immersive Media development.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Preferences Setup" />
-<meta property="og:description" content="Here are the settings that I prefer to change for Blender. Open the preferences by going to Edit &gt; Preferences.
-Interface #  Interface &gt; Menus &gt; Open on Mouse Over. I find this feature helpful during mouse-only operation.
-Viewport #  Display &gt; 3D Viewport Axis Size. I set mine axis size to be easier to see, easier to check my orientation at a glance. Although I use 1440 and 4k monitors." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Learn Blender" />
+<meta property="og:description" content="Blender Learning Path #  This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is twofold: First: Learn enough to get past the initial difficulty curve into the space where you can hack and learn easily through external resources. Second: Learn the skills for Immersive Media development." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://guidebook.hdyar.com/docs/blender/toolbox/preferences/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://guidebook.hdyar.com/docs/blender/learn-blender/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Preferences Setup | The Guidebook</title>
+<title>Learn Blender | The Guidebook</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -665,7 +661,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/blender/toolbox/preferences/" class=" active">Preferences Setup</a>
+    <a href="http://guidebook.hdyar.com/docs/blender/toolbox/preferences/" class="">Preferences Setup</a>
   
 
         </li>
@@ -722,7 +718,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="http://guidebook.hdyar.com/docs/blender/learn-blender/" class="">Learn Blender</a>
+    <a href="http://guidebook.hdyar.com/docs/blender/learn-blender/" class=" active">Learn Blender</a>
   
 
         </li>
@@ -1348,7 +1344,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Preferences Setup</strong>
+  <strong>Learn Blender</strong>
 
   <label for="toc-control">
     
@@ -1364,11 +1360,31 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#interface">Interface</a></li>
-    <li><a href="#viewport">Viewport</a></li>
-    <li><a href="#keymap">Keymap</a></li>
-    <li><a href="#tab-for-pie-menu">Tab For Pie Menu</a></li>
-    <li><a href="#performance">Performance</a></li>
+    <li><a href="#the-first-steps">The First Steps</a>
+      <ul>
+        <li><a href="#the-blender-manual">The Blender Manual</a></li>
+        <li><a href="#3d-models">3D Models</a></li>
+        <li><a href="#the-interface">The Interface</a></li>
+        <li><a href="#jargon">Jargon</a></li>
+        <li><a href="#blender-projects--the-outliner">Blender Projects &amp; The Outliner</a></li>
+      </ul>
+    </li>
+    <li><a href="#modeling">Modeling</a>
+      <ul>
+        <li><a href="#selecting-and-moving-objects-basics">Selecting and Moving Objects Basics</a></li>
+        <li><a href="#modeling-basics">Modeling Basics</a></li>
+        <li><a href="#blender-daily-sketch-assignment">Blender Daily Sketch Assignment</a></li>
+        <li><a href="#modifiers">Modifiers</a></li>
+      </ul>
+    </li>
+    <li><a href="#materials--texturing">Materials &amp; Texturing</a>
+      <ul>
+        <li><a href="#models--material-slots">Models &amp; Material Slots</a></li>
+        <li><a href="#uv-maps">UV Maps</a></li>
+        <li><a href="#materials-vs-shaders">Materials vs. Shaders</a></li>
+        <li><a href="#materials-and-other-rendering-engines">Materials and Other Rendering Engines</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1381,46 +1397,181 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><p>Here are the settings that I prefer to change for Blender. Open the preferences by going to <strong>Edit &gt; Preferences</strong>.</p>
-<h2 id="interface">
-  Interface
-  <a class="anchor" href="#interface">#</a>
+  <article class="markdown"><h1 id="blender-learning-path">
+  Blender Learning Path
+  <a class="anchor" href="#blender-learning-path">#</a>
+</h1>
+<p>This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is twofold: First: Learn enough to get past the initial difficulty curve into the space where you can hack and learn easily through external resources. Second: Learn the skills for Immersive Media development.</p>
+<p>This webpage avoids any single &lsquo;full tutorial&rsquo;, and encourages you to jump between guides. If you want to ignore all of that, then the infamous (but now updated and improved for 3.0) <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">Donut Tutorial</a> from Blender Guru is how many blender users first learned the software. I don&rsquo;t recommend this tutorial simply because it is long, and covers a very wide breadth of Blender features, most of which my students do not need. It absolutely will not hurt you to follow along through it - the more Blender features you learn, the easier it is to pick up other Blender features, as Blender&rsquo;s features have consistent design paradigms and patterns.</p>
+<h2 id="the-first-steps">
+  The First Steps
+  <a class="anchor" href="#the-first-steps">#</a>
 </h2>
-<p><strong>Interface &gt; Menus &gt; Open on Mouse Over.</strong> I find this feature helpful during mouse-only operation.</p>
-<h2 id="viewport">
-  Viewport
-  <a class="anchor" href="#viewport">#</a>
-</h2>
-<p>Display &gt; 3D Viewport Axis Size. I set mine axis size to be easier to see, easier to check my orientation at a glance. Although I use 1440 and 4k monitors.</p>
-<h2 id="keymap">
-  Keymap
-  <a class="anchor" href="#keymap">#</a>
-</h2>
-<p>The F3 button opens a menu-search popup in Blender, which is a life-saver. If you don&rsquo;t have a f-row (or, as with many laptops, your f-row is media keys by default, requiring you to hold the &lsquo;fn&rsquo; button down to use), <strong>and</strong> you aren&rsquo;t doing animation in Blender, then it can be very helpful to have the spacebar open search.</p>
-<p><img src="/images/blender/toolbox/searchmenu.png" alt="The search button popup" /></p>
-<h2 id="tab-for-pie-menu">
-  Tab For Pie Menu
-  <a class="anchor" href="#tab-for-pie-menu">#</a>
-</h2>
-<p>In the Keymap section of preferences, I recommend checking &ldquo;Tab For Pie Menu&rdquo;.
-Instead of the tab key switching between Object and Edit mode, tab will open a pie menu of various modes.</p>
-<p><img src="/images/blender/toolbox/tabForPieMenu.png" alt="The Tab for Pie Menu popup" /></p>
-<p>This forces you to be aware of the mode you are switching to. It&rsquo;s much harder to forget which mode you are in, and you never do the little dance where you tap tab repeatedly trying to reset yourself. It&rsquo;s also nice when working with workflows like rigging or sculpting.</p>
-<h2 id="performance">
-  Performance
-  <a class="anchor" href="#performance">#</a>
-</h2>
-<p>Blender runs great on most machines, but if your machine is more powerful or has more memory, you can give yourself some extra freedom. Depending on your machine, you may want to:</p>
-<p>In the <strong>System</strong> section</p>
+<p>First, of course, <a href="http://guidebook.hdyar.com/docs/blender/install-blender/">Install Blender</a>.</p>
+<p>Next, keep your eye on the version of blender mentioned in tutorials/guides. Blender made a significant change to it&rsquo;s user interface in version 2.8. Versions for 2.7 and previous are out of date, but versions for 2.8 and newer should be fine.</p>
+<h3 id="the-blender-manual">
+  The Blender Manual
+  <a class="anchor" href="#the-blender-manual">#</a>
+</h3>
+<p>One of your best resources is one of the most obvious but least used: <a href="https://docs.blender.org/manual/en/latest/index.html#">The Blender Manual</a>. It is unused because it contains so <em>much</em> information, and makes no note of which pieces of information are important or are unimportant. It doesn&rsquo;t help you prioritize knowledge, which is challenging because blender has <em>so many things</em> in it, and a lot of it&rsquo;s features we can safely ignore.</p>
+<p>First, the introductory pages of the manual are helpful, and written with a way that does not assume you already know everything else.</p>
+<p>Second, the manual is a <strong>great</strong> place to find out a specific piece of information, or learn how a specific tool works. Most of it&rsquo;s sections begin with an &ldquo;Introduction&rdquo; page that is almost always extremely helpful to read.</p>
+<h3 id="3d-models">
+  3D Models
+  <a class="anchor" href="#3d-models">#</a>
+</h3>
+<p>Installing blender isn&rsquo;t really the first step. The first step is understanding the basics of 3D models - what they are, how computers represent and work with 3D data, and (abstractly) how computers render graphics. This prerequisite knowledge will be more useful than any follow-along blender tutorial, and allow you to not get lost in the weeds.</p>
 <ul>
-<li>Increase the Undo Steps (I set mine to 124)</li>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html">Blender Manual: Structure</a></li>
 </ul>
-<p>In the <strong>Save and Load</strong> section</p>
+<h3 id="the-interface">
+  The Interface
+  <a class="anchor" href="#the-interface">#</a>
+</h3>
+<p>The next step is understanding the interface. This, of course, makes following other tutorials easier. We want to be comfortable in the software, and not forced to go exact-step by exact-step through a sequence of memorized processes. We need to know what operations will affect our model, and what operations won&rsquo;t. We need to be able to return to a comfortable starting place if we get lost. A lot of this, yes, will simply come with practice. I want to emphasize spending time learning how to get around Blender before doing follow-along tutorials.</p>
 <ul>
-<li>Increase the &ldquo;Save Versions&rdquo;. When manually saving, it won&rsquo;t overwrite the previous file, but keep a recent history of files. With extensions &ldquo;.blend1&rdquo; and &ldquo;.blend2&rdquo;, they&rsquo;re easily enough to ignore and delete to save space. But when you need it, they&rsquo;re there. I keep 3 around.</li>
-<li>Increase the number of recent files to show in the &ldquo;File &gt; Open Recent&rdquo; menu.</li>
-<li>Turn on Auto-Save. Every x minutes, this will save another version of your project to the Temp directory. If Blender crashes, you can <a href="https://docs.blender.org/manual/en/latest/troubleshooting/recover.html">recover</a> your project.</li>
+<li>Read through the <a href="https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html">Blenders manual</a> section on User Interface, while identifying the same elements in the software.</li>
+<li>Blender official tutorial <a href="https://www.youtube.com/watch?v=8XyIYRW_2xk">Interface Overview</a></li>
+<li>Another Blender <a href="https://www.youtube.com/watch?v=tV1ajY2059g">interface overview video</a>, recorded on a mac.</li>
 </ul>
+<h4 id="the-viewport">
+  The Viewport
+  <a class="anchor" href="#the-viewport">#</a>
+</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ILqOWe3zAbk">Viewport Navigation Video</a></li>
+<li>Learn about the difference between <a href="https://impr.hdyar.com/notes/perspectiveAndProjections.html">Orthographic and Perspective</a> projections.</li>
+<li><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/projections.html">Blender Manual: Perspective/Orthographic</a></li>
+<li><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html">Blender Manual: Navigating Viewport</a></li>
+<li><a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/walk_fly.html">Blender Manual: Fly/Walk Navigation</a></li>
+</ul>
+<h4 id="the-number-pad">
+  The Number Pad
+  <a class="anchor" href="#the-number-pad">#</a>
+</h4>
+<p>The Number Pad (numpad) is the set of 9 number keys laid out in a grid, usually on the right-hand side of a keyboard.
+Some tutorials assume you have a numpad and will make no mention of what to do if you don&rsquo;t.</p>
+<p>If you don&rsquo;t, I recommend picking up an external one. This Bluetooth one from <a href="https://www.amazon.com/Microsoft-Number-Pad-Matte-Black/dp/B08J88QBR8/">Microsoft</a> isn&rsquo;t the cheapest out there, but it&rsquo;s from a reputable brand.</p>
+<p>Some guides will tell you to enable the &ldquo;Emulate Numpad&rdquo; setting in Blender. I don&rsquo;t recommend this, it can mess with other keyboard shortcuts, which is particularly frustrating when trying to follow a tutorial that may use those shortcuts. Instead, I suggest just pressing the <strong>~</strong> (Tilde) key to bring up a pie-menu that allows you to quickly switch between different views.</p>
+<h3 id="jargon">
+  Jargon
+  <a class="anchor" href="#jargon">#</a>
+</h3>
+<p>A lot of 3D Modeling vocabulary will be strange and particular. Computer Scientists, in general, have a bad habit of borrowing terms that sort-of-kind-of mean what they want from all sorts of other disciplines like mathematics. Listening to 3D modeler and animators talk can sound like gibberish. It&rsquo;s more like the gibberish of a modern English speaker reading <a href="https://en.wikipedia.org/wiki/Old_English">Beowulf</a>, not the gibberish of a modern English speaker reading Latin - you can recognize a lot of the words being said, but what they mean by them doesn&rsquo;t make any sense.</p>
+<p>My largest pet peeve is that a lot of explanations tend to briefly, and slightly incorrectly, half-define the various terms they are using. A lot of instructional youtubers may say things that are nominally correct but are lacking in specificity or even wrong by technicality. This should bother you. My advice is to, at least, never trust any one individual&rsquo;s word on the matter. Eventually, pick up a book that had an editor read over it, or find other more academic sources. Or just head to the <a href="https://docs.blender.org/manual/en/latest/glossary/index.html">glossary</a> page in the Blender manual.</p>
+<p>A lot of &ldquo;helpful&rdquo; guides will also try to tell you what you <em>don&rsquo;t</em> need to know. The goal is to be less overwhelming and less intimidating. But 3D modeling is hard! It is overwhelming, and can be intimidating. It takes time to learn, that&rsquo;s okay. Keep a notes document and fill it with questions or vocab that seemed like it was skipped, so you can remember to go back to it later.</p>
+<p>These guides sell themselves as aimed at getting started quickly and easily, without having to bother learning &ldquo;all the hard stuff&rdquo;. Avoid this line of thinking. Pedagogically, I suggest you attack the subject from three sides.</p>
+<ol>
+<li>A bottom-up foundational approach (learn all the jargon)</li>
+<li>A top-down pragmatic approach (follow-along videos to learn various sequence of steps)</li>
+<li>A practice/project based approach (trial and error)</li>
+</ol>
+<p>Do all of it. Learn everything. No knowledge is bad knowledge, no one approach is best.</p>
+<h3 id="blender-projects--the-outliner">
+  Blender Projects &amp; The Outliner
+  <a class="anchor" href="#blender-projects--the-outliner">#</a>
+</h3>
+<p>Blender projects are primarily interfaced with via the Outliner.</p>
+<ul>
+<li>Blender Manual: <a href="https://docs.blender.org/manual/en/latest/scene_layout/scene/introduction.html">Scenes</a> and <a href="https://docs.blender.org/manual/en/latest/scene_layout/object/introduction.html">Objects</a></li>
+<li>Learn about <a href="https://www.youtube.com/watch?v=u_yIGGhubZs">Collections</a></li>
+<li><a href="https://www.youtube.com/watch?v=u918WfK3oac">Outliner overview</a></li>
+</ul>
+<h2 id="modeling">
+  Modeling
+  <a class="anchor" href="#modeling">#</a>
+</h2>
+<h3 id="selecting-and-moving-objects-basics">
+  Selecting and Moving Objects Basics
+  <a class="anchor" href="#selecting-and-moving-objects-basics">#</a>
+</h3>
+<p>Learning goals: Selection, Object/Edit modes</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hTL6AKR8YDs">Selecting Objects &amp; Transform</a></li>
+<li><a href="https://www.youtube.com/watch?v=34FBeC9mktE">Object and Edit mode</a></li>
+<li><a href="https://www.youtube.com/watch?v=BOcKMcaPhpY">Box, Circle, or Lasso?</a></li>
+</ul>
+<h4 id="lazy-tutorials">
+  Lazy Tutorials
+  <a class="anchor" href="#lazy-tutorials">#</a>
+</h4>
+<p>The <a href="https://www.youtube.com/watch?v=U1f6NDCttUY&amp;list=PL4Dq5VyfewIxxjzS34k2NES_PuDUIjRcY">Lazy Tutorials</a> series by Ian Hubert may not, exactly, teach you blender. It will more likely inspire you to create things with Blender, and to not worry too much about all the little details, or doing things some &lsquo;correct&rsquo; way. Especially when just getting started.</p>
+<p>I particularly enjoy <a href="https://www.youtube.com/watch?v=t_c58ryJ-Sw">Creating Custom Buildings</a>, <a href="https://www.youtube.com/watch?v=JjnyapZ_P-g">Make Cities with Blender</a>, and <a href="https://www.youtube.com/watch?v=imkSdlbXB_U">Animate Moths in Blender</a>.</p>
+<p>While you are at it, Ian Hubert&rsquo;s talk from Blender Conference 2019, &lsquo;<a href="https://www.youtube.com/watch?v=whPWKecazgM">World Building in Blender</a>&rsquo; is worth watching. Particularly, <a href="https://youtu.be/whPWKecazgM?t=1682">his comments at 28:03</a> on reference and mental models.</p>
+<h3 id="modeling-basics">
+  Modeling Basics
+  <a class="anchor" href="#modeling-basics">#</a>
+</h3>
+<h4 id="2d-to-3d-workflow">
+  2D to 3D Workflow
+  <a class="anchor" href="#2d-to-3d-workflow">#</a>
+</h4>
+<ul>
+<li>Helpful video tutorial modeling <a href="https://www.youtube.com/watch?v=6mT4XFJYq-4">low-poly animals</a></li>
+<li>Well paced step-by-step <a href="https://www.youtube.com/watch?v=AlPPYkZg9D4">2D Drawing to 3D Model</a> aimed at character creation.</li>
+</ul>
+<h4 id="extrude-to-detail-workflow">
+  Extrude to Detail Workflow
+  <a class="anchor" href="#extrude-to-detail-workflow">#</a>
+</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=2qD_tcPMhOs">Extrude</a></li>
+<li><a href="https://www.youtube.com/watch?v=elUJCEC06r8">Blender 2.8 Beginner 3D Modeling Tutorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=V4PG30MjVwM">Common problems with extrude in Blender</a></li>
+<li><a href="https://www.youtube.com/watch?v=5EsCR1sF-d0">Loop Cut and Loop Select</a></li>
+</ul>
+<h4 id="follow-along">
+  Follow-Along
+  <a class="anchor" href="#follow-along">#</a>
+</h4>
+<p>At this point in your Blender journey, it&rsquo;s past time to actually make something. If you haven&rsquo;t followed along with some videos yet, please do follow one. They won&rsquo;t explain <em>why</em> they are doing the various steps, or choosing various methods (you don&rsquo;t want to <em>only</em> do follow-alongs), but going through the process can, nonetheless, reveal techniques and approaches. Just remember that there is no one correct way to do anything in Blender.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=yCHT23A6aJA">Create a 3D Isometric Bedroom</a></li>
+<li>My own follow-along video about making mistakes and just trying things: <a href="https://youtu.be/cz1uuflzJUM">Modeling a Mug in Blender (poorly)</a></li>
+</ul>
+<h3 id="blender-daily-sketch-assignment">
+  Blender Daily Sketch Assignment
+  <a class="anchor" href="#blender-daily-sketch-assignment">#</a>
+</h3>
+<p>In your Blender Projects folder (that you probably have by now?) create a new folder called &ldquo;Dailies&rdquo;. In that, create a new folder with the days date in YYYY-MM-DD format (so when sorted alphabetically, it sorts chronologically). In that, save a new blender project.</p>
+<p>Using one of the follow-along&rsquo;s as a workflow, close all of your YouTube browser tabs, open a new blender project, and model something. Grab a post-it note and sketch the shape of some object, like a mug, then just try to model it. You will probably mess something up. That&rsquo;s okay! Try to get yourself somewhere useful, and see how far you can get. When you get stuck, don&rsquo;t know how to do something, or mess something up, make note of it.</p>
+<p>Try to spend 30 minutes on it, and try <em>not</em> to spend more than an hour on it.</p>
+<p>When you&rsquo;re done, stuck, ready to give up, close the file and never open it again. Tomorrow, another folder, another project, another 30 minutes attempting a small simple model of some item.</p>
+<h4 id="other-workflows">
+  Other Workflows
+  <a class="anchor" href="#other-workflows">#</a>
+</h4>
+<p>Other approaches to modeling, like Curves, <a href="https://www.youtube.com/watch?v=g7EGSCo1YBI">Geometry Nodes</a>, or <a href="https://www.youtube.com/watch?v=Cmi0KoFtc-4">Sculpting</a> are not covered on this page. That doesn&rsquo;t mean they are not important (in fact, Geometry Nodes are my personal favorite).</p>
+<h3 id="modifiers">
+  Modifiers
+  <a class="anchor" href="#modifiers">#</a>
+</h3>
+<p>By this point, you should have seen some modifiers in use in some follow-along Tutorials.</p>
+<ul>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/modifiers/introduction.html">Blender Manual: Modifiers Introduction</a></li>
+<li><a href="https://www.youtube.com/watch?v=V6VHdSM5lMQ">All You Need to Know about Modifiers in General</a></li>
+<li><a href="https://www.youtube.com/watch?v=AeMz9aPXpa4">Subdivision Surface Modeling Tutorial</a></li>
+</ul>
+<h2 id="materials--texturing">
+  Materials &amp; Texturing
+  <a class="anchor" href="#materials--texturing">#</a>
+</h2>
+<h3 id="models--material-slots">
+  Models &amp; Material Slots
+  <a class="anchor" href="#models--material-slots">#</a>
+</h3>
+<h3 id="uv-maps">
+  UV Maps
+  <a class="anchor" href="#uv-maps">#</a>
+</h3>
+<h3 id="materials-vs-shaders">
+  Materials vs. Shaders
+  <a class="anchor" href="#materials-vs-shaders">#</a>
+</h3>
+<h3 id="materials-and-other-rendering-engines">
+  Materials and Other Rendering Engines
+  <a class="anchor" href="#materials-and-other-rendering-engines">#</a>
+</h3>
 </article>
  
       
@@ -1462,11 +1613,31 @@ Instead of the tab key switching between Object and Edit mode, tab will open a p
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#interface">Interface</a></li>
-    <li><a href="#viewport">Viewport</a></li>
-    <li><a href="#keymap">Keymap</a></li>
-    <li><a href="#tab-for-pie-menu">Tab For Pie Menu</a></li>
-    <li><a href="#performance">Performance</a></li>
+    <li><a href="#the-first-steps">The First Steps</a>
+      <ul>
+        <li><a href="#the-blender-manual">The Blender Manual</a></li>
+        <li><a href="#3d-models">3D Models</a></li>
+        <li><a href="#the-interface">The Interface</a></li>
+        <li><a href="#jargon">Jargon</a></li>
+        <li><a href="#blender-projects--the-outliner">Blender Projects &amp; The Outliner</a></li>
+      </ul>
+    </li>
+    <li><a href="#modeling">Modeling</a>
+      <ul>
+        <li><a href="#selecting-and-moving-objects-basics">Selecting and Moving Objects Basics</a></li>
+        <li><a href="#modeling-basics">Modeling Basics</a></li>
+        <li><a href="#blender-daily-sketch-assignment">Blender Daily Sketch Assignment</a></li>
+        <li><a href="#modifiers">Modifiers</a></li>
+      </ul>
+    </li>
+    <li><a href="#materials--texturing">Materials &amp; Texturing</a>
+      <ul>
+        <li><a href="#models--material-slots">Models &amp; Material Slots</a></li>
+        <li><a href="#uv-maps">UV Maps</a></li>
+        <li><a href="#materials-vs-shaders">Materials vs. Shaders</a></li>
+        <li><a href="#materials-and-other-rendering-engines">Materials and Other Rendering Engines</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

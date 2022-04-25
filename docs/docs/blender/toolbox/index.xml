@@ -13,8 +13,8 @@
       
       <guid>http://guidebook.hdyar.com/docs/blender/toolbox/preferences/</guid>
       <description>Here are the settings that I prefer to change for Blender. Open the preferences by going to Edit &amp;gt; Preferences.
-Interface#Interface &amp;gt; Menus &amp;gt; Open on Mouse Over. I find this feature helpful during mouse-only operation.
-Viewport#Display &amp;gt; 3D Viewport Axis Size. I set mine axis size to be easier to see, easier to check my orientation at a glance. Although I use 1440 and 4k monitors.</description>
+Interface #  Interface &amp;gt; Menus &amp;gt; Open on Mouse Over. I find this feature helpful during mouse-only operation.
+Viewport #  Display &amp;gt; 3D Viewport Axis Size. I set mine axis size to be easier to see, easier to check my orientation at a glance. Although I use 1440 and 4k monitors.</description>
     </item>
     
     <item>
@@ -23,8 +23,8 @@ Viewport#Display &amp;gt; 3D Viewport Axis Size. I set mine axis size to be e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/blender/toolbox/quicktips/</guid>
-      <description>Quick Tips.#Use The Tilde (~) Key for Camera Control#The ~ key gives you the camera control options that also live on the number pad. If you don&amp;rsquo;t have a numpad, don&amp;rsquo;t worry - ~ (usually to the left of the number 1 on a keyboard) will help you.
-F9 For Adjust Last Operation#Many operations give you a little menu to edit their specifics with, in the bottom left corner of the viewport.</description>
+      <description>Quick Tips. #  Use The Tilde (~) Key for Camera Control #  The ~ key gives you the camera control options that also live on the number pad. If you don&amp;rsquo;t have a numpad, don&amp;rsquo;t worry - ~ (usually to the left of the number 1 on a keyboard) will help you.
+F9 For Adjust Last Operation #  Many operations give you a little menu to edit their specifics with, in the bottom left corner of the viewport.</description>
     </item>
     
     <item>
@@ -33,9 +33,9 @@ F9 For Adjust Last Operation#Many operations give you a little menu to edit t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</guid>
-      <description>Useful Add-Ons.#Blender ships with a lot of features that it keeps hidden, that can easily be activated by going into to File&amp;gt;Preferences&amp;gt;Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.
+      <description>Useful Add-Ons. #  Blender ships with a lot of features that it keeps hidden, that can easily be activated by going into to File&amp;gt;Preferences&amp;gt;Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.
 In no particular order
-Blender Add-Ons# Extra Objects in the add menu. A.N.T. Landscape can generate terrains. LoopTools contains many useful features, like circular-izing a selection of vertices.</description>
+Blender Add-Ons #   Extra Objects in the add menu. A.N.T. Landscape can generate terrains. LoopTools contains many useful features, like circular-izing a selection of vertices.</description>
     </item>
     
   </channel>

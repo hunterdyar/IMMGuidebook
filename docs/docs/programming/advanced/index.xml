@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/coroutines/</guid>
-      <description>Coroutines Overview Video#  Implementing Coroutines for grid movement in a project.#  Coroutine Syntax#void Start() { //whenever we want to start a coroutine, we call &amp;#39;StartCoroutine&amp;#39;  StartCoroutine(CoroutineName()); } //a normal function of return type &amp;#34;IEnumerator&amp;#34;. Can take arguments. IEnumerator CoroutineName() { //do something  yield return null;//wait for right after next update loop  yield return new WaitForSeconds(0.5f);//wait for half a second } Movement With Coroutines Example#public IEnumerator MoveTo(Vector3 destination, float timeToMove) { Vector3 start = transform.</description>
+      <description>Coroutines Overview Video #    Implementing Coroutines for grid movement in a project. #    Coroutine Syntax #  void Start() { //whenever we want to start a coroutine, we call &amp;#39;StartCoroutine&amp;#39;  StartCoroutine(CoroutineName()); } //a normal function of return type &amp;#34;IEnumerator&amp;#34;. Can take arguments. IEnumerator CoroutineName() { //do something  yield return null;//wait for right after next update loop  yield return new WaitForSeconds(0.5f);//wait for half a second } Movement With Coroutines Example #  public IEnumerator MoveTo(Vector3 destination, float timeToMove) { Vector3 start = transform.</description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/interfaces/</guid>
-      <description>Interfaces#Introduction Video#  Further Resources on Interfaces# MSDN Documentation Page Infallible Code Video on Interfaces  </description>
+      <description>Interfaces #  Introduction Video #    Further Resources on Interfaces #   MSDN Documentation Page Infallible Code Video on Interfaces  </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/</guid>
-      <description>Object Oriented Programming#Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C++, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
+      <description>Object Oriented Programming #  Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C++, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
 Object oriented programming is programming around data structures that contain variables and functions.
 There are three main &amp;ldquo;pillars&amp;rdquo; of object oriented programming: Encapsulation, Inheritance, and Polymorphism. Depending on who you ask, there is a fourth pillar: Abstraction.</description>
     </item>
@@ -41,7 +41,7 @@ There are three main &amp;ldquo;pillars&amp;rdquo; of object oriented programmin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/</guid>
-      <description>Object-Oriented Syntax#Declaring Classes#The syntax for declaring a class is as demonstrated:
+      <description>Object-Oriented Syntax #  Declaring Classes #  The syntax for declaring a class is as demonstrated:
 public class ClassName { } public class ChildClassName : ParentClassName { } We almost always write one class per file. We tend to keep sibling classes as sibling files in our file structure, although this is not necessary. C# does not care where your files are located, so you have the freedom to organize them in a way that makes sense to you, your project, your team, and your source control system.</description>
     </item>
     
@@ -51,7 +51,7 @@ public class ClassName { } public class ChildClassName : ParentClassName { } We 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/static-objects-and-unity/</guid>
-      <description>Static Objects#  </description>
+      <description>Static Objects #    </description>
     </item>
     
   </channel>
