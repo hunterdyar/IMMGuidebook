@@ -131,3 +131,11 @@ By this point, you should have seen some modifiers in use in some follow-along T
 ### Materials vs. Shaders
 
 ### Materials and Other Rendering Engines
+
+## Complete Guides, Tutorials, and other resources
+
+- Blender's [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6)
+- Blender Guru's [Donut Tutorial](https://www.youtube.com/watch?v=nIoXOplUvAw&list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)
+- [3DBestie.com](https://www.3dbestie.com/)
+- [Blender Daily](https://www.youtube.com/c/BlenderDaily), particularly [Blender Traps For Beginners](https://www.youtube.com/playlist?list=PLSlMI4YOEdKcYzDPgE8vF2Fq_dkgWS6NP)
+- [Blender Secrets](https://www.blendersecrets.org/) [(youtube)](https://www.youtube.com/channel/UCp7EwodJcppc6GqiRcnCpOw)
