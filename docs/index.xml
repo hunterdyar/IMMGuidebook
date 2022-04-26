@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://guidebook.hdyar.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Installing Blender</title>
+      <link>http://guidebook.hdyar.com/docs/blender/install-blender/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/blender/install-blender/</guid>
+      <description>Installing Blender #  You can always download and install the latest stable release of Blender at blender.org.
+Blender Launcher #  Only if you want to use brand new or experimental features (at the time of writing, new Geometry Nodes), you may want to explore different development branches of Blender. Dealing with multiple versions of Blender on one machine can be annoying. The best way to do this is with a piece the open source software Blender Launcher.</description>
+    </item>
+    
+    <item>
       <title>Syntax of Variables and Functions</title>
       <link>http://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -60,6 +70,15 @@ In C#, and in most programming languages, this data type is called &amp;ldquo;bo
     </item>
     
     <item>
+      <title>Learn Blender</title>
+      <link>http://guidebook.hdyar.com/docs/blender/learn-blender/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/blender/learn-blender/</guid>
+      <description>Blender Learning Path #  This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is twofold: First: Learn enough to get past the initial difficulty curve into the space where you can hack and learn easily through external resources. Second: Learn the skills for Immersive Media development.</description>
+    </item>
+    
+    <item>
       <title>Syntax of Code Flow</title>
       <link>http://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,6 +106,17 @@ Branches, which will likely never be referred to as &amp;ldquo;branches&amp;rdqu
       <guid>http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/</guid>
       <description>Classes and Components #  Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we &amp;hellip; do everything with.
 Oddly enough, in Unity programming, we don&amp;rsquo;t use classes that often. This is a lie. We use them in every single script we right, but we let Unity handle the creation and destruction of our classes for us. This is because most of our classes will be a unity component.</description>
+    </item>
+    
+    <item>
+      <title>Useful Add-Ons</title>
+      <link>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</guid>
+      <description>Useful Add-Ons. #  Blender ships with a lot of features that it keeps hidden, that can easily be activated by going into to File&amp;gt;Preferences&amp;gt;Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.
+In no particular order
+Blender Add-Ons #   Extra Objects in the add menu. A.N.T. Landscape can generate terrains. LoopTools contains many useful features, like circular-izing a selection of vertices.</description>
     </item>
     
     <item>
@@ -341,16 +371,6 @@ Part 1 #    This part we think of our game, make a todo list, use Unity&amp;rsqu
     </item>
     
     <item>
-      <title>Installing Blender</title>
-      <link>http://guidebook.hdyar.com/docs/blender/install-blender/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://guidebook.hdyar.com/docs/blender/install-blender/</guid>
-      <description>Installing Blender #  You can always download and install the latest stable release of Blender at blender.org.
-Blender Launcher #  Only if you want to use brand new or experimental features (at the time of writing, new Geometry Nodes), you may want to explore different development branches of Blender. Dealing with multiple versions of Blender on one machine can be annoying. The best way to do this is with a piece the open source software Blender Launcher.</description>
-    </item>
-    
-    <item>
       <title>Installing Unity and an IDE</title>
       <link>http://guidebook.hdyar.com/docs/unity/setup/installing-unity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -379,15 +399,6 @@ Creating Objects from Scratch. #  To do that, one way is to simply create a new 
       
       <guid>http://guidebook.hdyar.com/docs/programming/advanced/interfaces/</guid>
       <description>Interfaces #  Introduction Video #    Further Resources on Interfaces #   MSDN Documentation Page Infallible Code Video on Interfaces  </description>
-    </item>
-    
-    <item>
-      <title>Learn Blender</title>
-      <link>http://guidebook.hdyar.com/docs/blender/learn-blender/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://guidebook.hdyar.com/docs/blender/learn-blender/</guid>
-      <description>Blender Learning Path #  This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is twofold: First: Learn enough to get past the initial difficulty curve into the space where you can hack and learn easily through external resources. Second: Learn the skills for Immersive Media development.</description>
     </item>
     
     <item>
@@ -613,17 +624,6 @@ In terms of how you will encounter errors, I would like to add a third type: IDE
       
       <guid>http://guidebook.hdyar.com/docs/unity/user-interface/ugui-basics/</guid>
       <description>Unity UI Basics Overview #    Resources #   Comparison Page Unity UGUI Manual  </description>
-    </item>
-    
-    <item>
-      <title>Useful Add-Ons</title>
-      <link>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</guid>
-      <description>Useful Add-Ons. #  Blender ships with a lot of features that it keeps hidden, that can easily be activated by going into to File&amp;gt;Preferences&amp;gt;Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.
-In no particular order
-Blender Add-Ons #   Extra Objects in the add menu. A.N.T. Landscape can generate terrains. LoopTools contains many useful features, like circular-izing a selection of vertices.</description>
     </item>
     
     <item>

@@ -8,6 +8,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/unity-fundamentals/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/blender/install-blender/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/the-architecture-lecture/</loc>
@@ -24,6 +26,8 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/conditionals/</loc>
   </url><url>
+    <loc>http://guidebook.hdyar.com/docs/blender/learn-blender/</loc>
+  </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/user-interface/</loc>
@@ -39,6 +43,8 @@
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/</loc>
+  </url><url>
+    <loc>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/3d-models/</loc>
   </url><url>
@@ -114,15 +120,11 @@
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/input-system/</loc>
   </url><url>
-    <loc>http://guidebook.hdyar.com/docs/blender/install-blender/</loc>
-  </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/setup/installing-unity/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/toolbox/instantiating/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/advanced/interfaces/</loc>
-  </url><url>
-    <loc>http://guidebook.hdyar.com/docs/blender/learn-blender/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/architecture/namespaces/</loc>
   </url><url>
@@ -173,8 +175,6 @@
     <loc>http://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/unity/user-interface/ugui-basics/</loc>
-  </url><url>
-    <loc>http://guidebook.hdyar.com/docs/blender/toolbox/addons/</loc>
   </url><url>
     <loc>http://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/</loc>
   </url>
