@@ -1,5 +1,6 @@
 ---
 title: Installing Blender
+weight: 1
 ---
 
 # Installing Blender

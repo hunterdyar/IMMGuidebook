@@ -1,5 +1,6 @@
 ---
 title: Learn Blender
+weight: 2
 ---
 
 # Blender Learning Path
