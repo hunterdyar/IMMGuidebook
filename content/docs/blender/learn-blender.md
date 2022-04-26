@@ -25,6 +25,7 @@ Installing blender isn't really the first step. The first step is understanding 
 - [Blender Manual: Structure](https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html)
 - My own video: [What's a 3D Model Anyway?](https://youtu.be/I3ndKKrazoA)
 
+{{< youtube I3ndKKrazoA >}}
 
 ### The Interface
 The next step is understanding the interface. This, of course, makes following other tutorials easier. We want to be comfortable in the software, and not forced to go exact-step by exact-step through a sequence of memorized processes. We need to know what operations will affect our model, and what operations won't. We need to be able to return to a comfortable starting place if we get lost. A lot of this, yes, will simply come with practice. I want to emphasize spending time learning how to get around Blender before doing follow-along tutorials.
@@ -40,6 +41,8 @@ The next step is understanding the interface. This, of course, makes following o
 - [Blender Manual: Navigating Viewport](https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html)
 - [Blender Manual: Fly/Walk Navigation](https://docs.blender.org/manual/en/latest/editors/3dview/navigate/walk_fly.html)
 
+{{< youtube ILqOWe3zAbk >}}
+
 #### The Number Pad
 The Number Pad (numpad) is the set of 9 number keys laid out in a grid, usually on the right-hand side of a keyboard.
 Some tutorials assume you have a numpad and will make no mention of what to do if you don't.
@@ -48,7 +51,7 @@ If you don't, I recommend picking up an external one. This Bluetooth one from [M
 
 Some guides will tell you to enable the "Emulate Numpad" setting in Blender. I don't recommend this, it can mess with other keyboard shortcuts, which is particularly frustrating when trying to follow a tutorial that may use those shortcuts. Instead, I suggest just pressing the **~** (Tilde) key to bring up a pie-menu that allows you to quickly switch between different views.
 
-### Jargon
+### Vocabulary and Jargon
 A lot of 3D Modeling vocabulary will be strange and particular. Computer Scientists, in general, have a bad habit of borrowing terms that sort-of-kind-of mean what they want from all sorts of other disciplines like mathematics. Listening to 3D modeler and animators talk can sound like gibberish. It's more like the gibberish of a modern English speaker reading [Beowulf](https://en.wikipedia.org/wiki/Old_English), not the gibberish of a modern English speaker reading Latin - you can recognize a lot of the words being said, but what they mean by them doesn't make any sense.
 
 My largest pet peeve is that a lot of explanations tend to briefly, and slightly incorrectly, half-define the various terms they are using. A lot of instructional youtubers may say things that are nominally correct but are lacking in specificity or even wrong by technicality. This should bother you. My advice is to, at least, never trust any one individual's word on the matter. Eventually, pick up a book that had an editor read over it, or find other more academic sources. Or just head to the [glossary](https://docs.blender.org/manual/en/latest/glossary/index.html) page in the Blender manual.
@@ -70,11 +73,17 @@ Blender projects are primarily interfaced with via the Outliner.
 - Learn about [Collections](https://www.youtube.com/watch?v=u_yIGGhubZs)
 - [Outliner overview](https://www.youtube.com/watch?v=u918WfK3oac)
 
+### The Properties Window
+- [Blender Properties Window Overview](https://youtu.be/tt-Ggohc6Ls)
+
+{{< youtube tt-Ggohc6Ls >}}
+
 ## Modeling
 
 ### Selecting and Moving Objects Basics
 Learning goals: Selection, Object/Edit modes
 
+- [Blender Manual: Selections and Active Object](https://docs.blender.org/manual/en/latest/scene_layout/object/selecting.html)
 - [Selecting Objects & Transform](https://www.youtube.com/watch?v=hTL6AKR8YDs)
 - [Object and Edit mode](https://www.youtube.com/watch?v=34FBeC9mktE)
 - [Box, Circle, or Lasso?](https://www.youtube.com/watch?v=BOcKMcaPhpY)
@@ -86,11 +95,15 @@ I particularly enjoy [Creating Custom Buildings](https://www.youtube.com/watch?v
 
 While you are at it, Ian Hubert's talk from Blender Conference 2019, '[World Building in Blender](https://www.youtube.com/watch?v=whPWKecazgM)' is worth watching. Particularly, [his comments at 28:03](https://youtu.be/whPWKecazgM?t=1682) on reference and mental models.
 
+{{< youtube imkSdlbXB_U >}}
+
 ### Modeling Basics
 
 #### 2D to 3D Workflow
 - Helpful video tutorial modeling [low-poly animals](https://www.youtube.com/watch?v=6mT4XFJYq-4)
 - Well paced step-by-step [2D Drawing to 3D Model](https://www.youtube.com/watch?v=AlPPYkZg9D4) aimed at character creation.
+
+{{< youtube 6mT4XFJYq-4 >}}
 
 #### Extrude to Detail Workflow
 
@@ -137,7 +150,9 @@ By this point, you should have seen some modifiers in use in some follow-along T
 ## Complete Guides, Tutorials, and other resources
 
 - Blender's [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6)
-- Blender Guru's [Donut Tutorial](https://www.youtube.com/watch?v=nIoXOplUvAw&list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)
+- Blender Guru: [Donut Tutorial](https://www.youtube.com/watch?v=nIoXOplUvAw&list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)
+- Grant Abbitt: [Complete Beginner Guide](https://www.youtube.com/playlist?list=PLn3ukorJv4vs_eSJUQPxBRaDS8PrVmIri) [Learn Sculpting in Blender 2.8](https://www.youtube.com/playlist?list=PLn3ukorJv4vvJM7tvjet4PP-LVjJx13oB)
+- Grant Abbitt: [Get Good At Blender](https://www.youtube.com/playlist?list=PLn3ukorJv4vvv3ZpWJYvV5Tmvo7ISO-NN) (I recommend this practice-based approach)
 - [3DBestie.com](https://www.3dbestie.com/)
 - [Blender Daily](https://www.youtube.com/c/BlenderDaily), particularly [Blender Traps For Beginners](https://www.youtube.com/playlist?list=PLSlMI4YOEdKcYzDPgE8vF2Fq_dkgWS6NP)
 - [Blender Secrets](https://www.blendersecrets.org/) [(youtube)](https://www.youtube.com/channel/UCp7EwodJcppc6GqiRcnCpOw)
