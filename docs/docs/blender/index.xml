@@ -25,5 +25,14 @@ Blender Launcher #  Only if you want to use brand new or experimental features (
       <description>Blender Learning Path #  This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is twofold: First: Learn enough to get past the initial difficulty curve into the space where you can hack and learn easily through external resources. Second: Learn the skills for Immersive Media development.</description>
     </item>
     
+    <item>
+      <title>How 3D Models Work</title>
+      <link>http://guidebook.hdyar.com/docs/blender/3d-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://guidebook.hdyar.com/docs/blender/3d-models/</guid>
+      <description>How 3D Models Work #  What is a 3D Model Anyway? #    Face Orientaion and Back-Face Culling #    </description>
+    </item>
+    
   </channel>
 </rss>
