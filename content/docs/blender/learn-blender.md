@@ -148,6 +148,11 @@ By this point, you should have seen some modifiers in use in some follow-along T
 
 ### Materials and Other Rendering Engines
 
+## On How 3D Models Work
+Full page on topics of 3D models, independent of software, on [this page]({{< ref "docs/blender/3d-models.md">}}).
+
+- [Face Orientation and Back-Face Culling](https://youtu.be/GcUrysHVgIc)
+
 ## Complete Guides, Tutorials, and other resources
 
 - Blender's [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6)
