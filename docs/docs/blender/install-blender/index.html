@@ -19,7 +19,7 @@ Blender Launcher #  Only if you want to use brand new or experimental features (
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.8bb30703dedae3fedfda9c769762b42547d36e29eafdafe47081c08a1d1a3815.js" integrity="sha256-i7MHA97a4/7f2px2l2K0JUfTbinq/a/kcIHAih0aOBU=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.75a4635b844746e54505868c4e585c6c5ab80900fc4bbc8ac9e3a63d2b26157a.js" integrity="sha256-daRjW4RHRuVFBYaMTlhcbFq4CQD8S7yKyeOmPSsmFXo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -1376,6 +1376,7 @@ https://github.com/alex-shpak/hugo-book
 <nav id="TableOfContents">
   <ul>
     <li><a href="#blender-launcher">Blender Launcher</a></li>
+    <li><a href="#meshlab">MeshLab</a></li>
   </ul>
 </nav>
 
@@ -1399,6 +1400,19 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>Only if you want to use brand new or experimental features (at the time of writing, new Geometry Nodes), you may want to explore different development branches of Blender. Dealing with multiple versions of Blender on one machine can be annoying. The best way to do this is with a piece the open source software <a href="https://github.com/DotBow/Blender-Launcher">Blender Launcher</a>.</p>
 <p>Blender launcher will download and manage different blender versions, and easily let you change shortcuts/file associations for them.</p>
+<h2 id="meshlab">
+  MeshLab
+  <a class="anchor" href="#meshlab">#</a>
+</h2>
+<p>I also recommend installing <a href="https://www.meshlab.net/">MeshLab</a>. MeshLab is open source software for working with models. It&rsquo;s not modeling software, itself, it&rsquo;s more like a set of processes and utilities.</p>
+<p>In it&rsquo;s own words, MeshLab is a</p>
+<blockquote>
+<p>&hellip;system for processing and editing 3D triangular meshes.
+It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes. It offers features for processing raw data produced by 3D digitization tools/devices and for preparing models for 3D printing.</p>
+</blockquote>
+<p>The first reason I recommend MeshLab is because it can import many different file types, and convert  them to new file types. It can also more-robustly attempt to read and understand a corrupted 3D model. If you get a 3D model in some esoteric format that Blender cannot support, of it is corrupt, or just incredibly large - try bringing into MeshLab to convert it into a model that Blender can understand.</p>
+<p>It&rsquo;s also great for <a href="https://en.wikipedia.org/wiki/Downsampling_%28signal_processing%29">decimating</a> giant (multi-gigabyte) 3D models into smaller ones - reducing the polycount. Particularly useful when working with 3D Scan data.</p>
+<p>You may not need it for most day-to-day modeling, but if you do you will be glad you have it.</p>
 </article>
  
       
@@ -1441,6 +1455,7 @@ https://github.com/alex-shpak/hugo-book
 <nav id="TableOfContents">
   <ul>
     <li><a href="#blender-launcher">Blender Launcher</a></li>
+    <li><a href="#meshlab">MeshLab</a></li>
   </ul>
 </nav>
 
