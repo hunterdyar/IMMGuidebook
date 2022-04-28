@@ -24,16 +24,28 @@ Second, the manual is a **great** place to find out a specific piece of informat
 Installing blender isn't really the first step. The first step is understanding the basics of 3D models - what they are, how computers represent and work with 3D data, and (abstractly) how computers render graphics. This prerequisite knowledge will be more useful than any follow-along blender tutorial, and allow you to not get lost in the weeds.
 
 - [Blender Manual: Structure](https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html)
-- My own video: [What's a 3D Model Anyway?](https://youtu.be/I3ndKKrazoA)
+- [What's a 3D Model Anyway?](I3ndKKrazoA)
+- [Elements of a 3D Model & How Mesh Data Works](https://youtu.be/-HygudufNfU)
 
+*Sorry for the poor audio on this one.*
 {{< youtube I3ndKKrazoA >}}
 
-### The Interface
-The next step is understanding the interface. This, of course, makes following other tutorials easier. We want to be comfortable in the software, and not forced to go exact-step by exact-step through a sequence of memorized processes. We need to know what operations will affect our model, and what operations won't. We need to be able to return to a comfortable starting place if we get lost. A lot of this, yes, will simply come with practice. I want to emphasize spending time learning how to get around Blender before doing follow-along tutorials.
+I encourage you to dig deeper into how 3D models work, but you may feel like jumping ahead and finally digging into making something with blender. That's okay. If so, be sure to circle back on these fundamental concepts, such as learning about how mesh data works.
 
- - Read through the [Blenders manual](https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html) section on User Interface, while identifying the same elements in the software.
- - Blender official tutorial [Interface Overview](https://www.youtube.com/watch?v=8XyIYRW_2xk)
- - Another Blender [interface overview video](https://www.youtube.com/watch?v=tV1ajY2059g), recorded on a mac.
+{{< youtube -HygudufNfU >}}
+
+
+
+### The Interface
+The next step is understanding the interface. This, of course, makes following other tutorials easier. We want to be comfortable in the software, and not forced to go exact-step by exact-step through a sequence of memorized processes. We need to know what operations will affect our model, and what operations won't. **You should be able to return to a comfortable starting place if we get tripped up.** A lot of this, yes, will simply come with practice. I want to emphasize spending time learning how to get around Blender before doing follow-along tutorials.
+
+When you're following along with a tutorial, you want to follow the higher-level operations, not focus on some specific sequence of button presses (unless you're learning a keyboard shortcut, I suppose). In other words, do your best to think in terms of "switch to edit mode" and not "now press tab".
+
+ - Read through the [Blenders manual](https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html) section on User Interface, while navigating through and identifying the same elements in the software.
+ - Blender official tutorial is very good: [Interface Overview](https://www.youtube.com/watch?v=8XyIYRW_2xk)
+ - Another Blender [interface overview video](https://www.youtube.com/watch?v=tV1ajY2059g), this one recorded on a mac.
+
+{{< youtube 8XyIYRW_2xk >}}
 
 #### The Viewport
 - [Viewport Navigation Video](https://www.youtube.com/watch?v=ILqOWe3zAbk)
