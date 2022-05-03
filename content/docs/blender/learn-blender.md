@@ -150,7 +150,8 @@ By this point, you should have seen some modifiers in use in some follow-along T
 - [All You Need to Know about Modifiers in General](https://www.youtube.com/watch?v=V6VHdSM5lMQ)
 - [Subdivision Surface Modeling Tutorial](https://www.youtube.com/watch?v=AeMz9aPXpa4)
 
-## Materials & Texturing
+## Shading, Materials, Texturing
+ - [About Vertex Normals](https://youtu.be/JGqOCdJ0DDg)
 
 ### Models & Material Slots
 
@@ -174,3 +175,4 @@ Full page on topics of 3D models, independent of software, on [this page]({{< re
 - [3DBestie.com](https://www.3dbestie.com/)
 - [Blender Daily](https://www.youtube.com/c/BlenderDaily), particularly [Blender Traps For Beginners](https://www.youtube.com/playlist?list=PLSlMI4YOEdKcYzDPgE8vF2Fq_dkgWS6NP)
 - [Blender Secrets](https://www.blendersecrets.org/) [(youtube)](https://www.youtube.com/channel/UCp7EwodJcppc6GqiRcnCpOw)
+- [Ksenia Starkova](https://www.youtube.com/c/KseniaStarkova/featured) - No voice over or narration on videos, just slow but clear presentation. Nice approach to watch a process come together, and pick up some strategies.
