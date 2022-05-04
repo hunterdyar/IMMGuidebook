@@ -130,6 +130,7 @@ At this point in your Blender journey, it's past time to actually make something
 
 - [Create a 3D Isometric Bedroom](https://www.youtube.com/watch?v=yCHT23A6aJA)
 - My own follow-along video about making mistakes and just trying things: [Modeling a Mug in Blender (poorly)](https://youtu.be/cz1uuflzJUM)
+- [Modeling a Hot Air Balloon](https://youtu.be/c_OpgHi1jic)
 
 ### Blender Daily Sketch Assignment
 In your Blender Projects folder (that you probably have by now?) create a new folder called "Dailies". In that, create a new folder with the days date in YYYY-MM-DD format (so when sorted alphabetically, it sorts chronologically). In that, save a new blender project.
