@@ -83,7 +83,7 @@ Unity switched from 3 tech releases to 2 in 2020, so 2019.4 (LTS) exists. They a
 *Timeline Image from the [Unity Blog](https://blog.unity.com/news/introducing-unity-2021-lts).*
 
 ### Which Version of Unity Do I Install?
-Unity recommends it's LTS release, which is currently 2021.3. I agree, this is almost always the version you want to install.
+Unity recommends it's LTS release, which is currently 2021.3. I agree, the current LTS version is probably the one you want to install.
 
 Currently, you will also be fine to switch to the latest 2021 tech channel (.1 or .2). Unity 2021.1 Introduces some minor changes to the UI, so I will be switching to at-least-this-version to help future-proof screen captures and videos. If you want your version to look like how mine _currently_ looks, then do that. The UI changes aren't that significant, it's not a big deal.
 
