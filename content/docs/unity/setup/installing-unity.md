@@ -1,5 +1,5 @@
 ---
-title: Installing Unity and an IDE 
+title: Installing Unity and an IDE
 ---
 # Installing Unity - A Thorough Guide
 
@@ -13,19 +13,19 @@ To develop games in Unity, you need to do the following:
 4. Install an **IDE** (A fancy text editor)
 5. Tell Unity to use your IDE
 
-The Unity Hub manages installing other versions of Unity for us. We install Unity via the Unity Hub. We do this because it's likely that you will have multiple projects that are in different versions of Unity, as it's considered bad practice to upgrade Unity during a projects development. 
+The Unity Hub manages installing other versions of Unity for us. We install Unity via the Unity Hub. We do this because it's likely that you will have multiple projects that are in different versions of Unity, as it's considered bad practice to upgrade Unity during a projects development.
 
 ![A screenshot of the Installs page of Unity Hub](/images/unity/setup/unity-hub-installs.png)
 *Unity Hub with 4 versions of Unity installed.*
 
 ## Create a Unity Account
-First, create a Unity account at [https://unity.com/](https://unity.com/). 
+First, create a Unity account at [https://unity.com/](https://unity.com/).
 
 {{< hint info >}}
 
 Students do not need to use their school account, you may make purchases with the account that you want to keep after you lose access to the school email. That said, you can change it later.
 
-Students should, however, sign up for [Unity Student](https://unity.com/products/unity-student), which will give them access to some professional tools like Cloud Build, more storage space on Collab, free assets, and more. You can do this even if you do *not* use a school email address, being verified as a student is a separate process. 
+Students should, however, sign up for [Unity Student](https://unity.com/products/unity-student), which will give them access to some professional tools like Cloud Build, more storage space on Collab, free assets, and more. You can do this even if you do *not* use a school email address, being verified as a student is a separate process.
 
 {{</hint>}}
 
@@ -44,7 +44,7 @@ Next, you need to log into your account *inside of Unity Hub*.
 
 ## Activating A License
 
-Because Unity has paid, professional, versions, it has a license system that must be active in order to use it. Unity is free to use - to use it, we need to activate the free license to use unity. This gives us all of the features of the unity editor (even the dark theme), only features related to unity cloud services are "behind the paywall". 
+Because Unity has paid, professional, versions, it has a license system that must be active in order to use it. Unity is free to use - to use it, we need to activate the free license to use unity. This gives us all of the features of the unity editor (even the dark theme), only features related to unity cloud services are "behind the paywall".
 
 To activate a license, click on the gear icon on the top right, click license management, then Activate new license.
 ![Activating a new license.](/images/unity/setup/hub-license-steps.gif)
@@ -56,14 +56,14 @@ In the license screen, you can choose "Unity Personal" and "I don't use Unity in
 Leave the preferences page with the arrow icon in the top left.
 
 ## Installing Unity
-Click on the Installs button, then click Add. A pop-up appears asking you which version you want to add. Choose a version (read below for info), then click next. Choose the modules (again, detailed below), and click done. Unity will start installing. 
+Click on the Installs button, then click Add. A pop-up appears asking you which version you want to add. Choose a version (read below for info), then click next. Choose the modules (again, detailed below), and click done. Unity will start installing.
 
 ### How Unity Versions Work
 Unity has many engineers working on different features and systems all at the same time. You can read about many different goals that the Unity team has on their [product roadmap](https://unity.com/roadmap/unity-platform). Many of then rely on other systems to work, and Unity is prone to bugs where on part of it updates when another doesn't. Because of this, Unity has a fairly complex versioning system to make sure everything runs smoothly. Understanding at least a high-level overview of this is important.
 
 It has two ways to have it's internals updated: The official Unity version, and packages, which can be installed and updated independently. We will cover packages later, let's just focus on the official unity version - the core unity software.
 
-For any version of Unity, it goes through 4 different stages of being publicly released: 
+For any version of Unity, it goes through 4 different stages of being publicly released:
 1. Alpha
 2. Beta
 3. Official
@@ -71,16 +71,19 @@ For any version of Unity, it goes through 4 different stages of being publicly r
 
 First as an **alpha**, then  **beta**, where the public is invited to try out new features and report bugs. We won't be using these versions.
 
-Next, there are 3 official releases every year. They are released on a calendar cycle, so the releases are named in YYYY.N format. 2020.1, 2020.2, 2020.3. 
+Next, there are 3 official releases every year. They are released on a calendar cycle, so the releases are named in YYYY.N format. 2020.1, 2020.2, 2020.3.
 
 The first two releases (.1 and .2) are called "tech" releases. They introduce new features. The last release (.3) is called the **Long-Term Stable** (LTS) release. It introduces no new features. It is supported with bug fixes for two years. If you are using a tech release, it is assumed you will eventually switch to the LTS version of those tech releases in the future.
 
 {{< hint warning >}}
-Unity switched from 3 tech releases to 2 in 2020, so 2019.4 (LTS) exists. They also switched from a traditional numbering scheme around 2017, so if you see unity version "5.6", or similar, that's basically the 2016/2017 version of Unity. 
+Unity switched from 3 tech releases to 2 in 2020, so 2019.4 (LTS) exists. They also switched from a traditional numbering scheme around 2017, so if you see unity version "5.6", or similar, that's basically the 2016/2017 version of Unity.
 {{</hint>}}
 
+![Image from Unity diagraming release cycle](/images/unity/setup/release-timeline.jpg)
+*Timeline Image from the [Unity Blog](https://blog.unity.com/news/introducing-unity-2021-lts).*
+
 ### Which Version of Unity Do I Install?
-Unity recommends it's LTS release, which is currently 2020.3. I agree, this is almost always the version you want to install.
+Unity recommends it's LTS release, which is currently 2021.3. I agree, this is almost always the version you want to install.
 
 Currently, you will also be fine to switch to the latest 2021 tech channel (.1 or .2). Unity 2021.1 Introduces some minor changes to the UI, so I will be switching to at-least-this-version to help future-proof screen captures and videos. If you want your version to look like how mine _currently_ looks, then do that. The UI changes aren't that significant, it's not a big deal.
 
@@ -112,7 +115,7 @@ Always leave the checkbox for documentation checked.
 Once Unity is installed, we can install an IDE.
 
 ## Integrated Development Environment (IDE)
-IDE's are very fancy text-editors. When we write code in Unity, all Unity really cares about is the text files that will make up our scripts. We can use even the most basic text-editor to write our code - notepad.exe or TextMate. This is a terrible idea. There are tons of features that IDE's provide, like line numbers, syntax highlighting, error highlighting, autocompletion, and more. In order for these advanced features to exist, the text editor needs to know about your code, and about the language you are programming in. That's where the "integrated" part of IDE comes in. 
+IDE's are very fancy text-editors. When we write code in Unity, all Unity really cares about is the text files that will make up our scripts. We can use even the most basic text-editor to write our code - notepad.exe or TextMate. This is a terrible idea. There are tons of features that IDE's provide, like line numbers, syntax highlighting, error highlighting, autocompletion, and more. In order for these advanced features to exist, the text editor needs to know about your code, and about the language you are programming in. That's where the "integrated" part of IDE comes in.
 
 ## Choosing an IDE
 You can use any IDE you want. Some of the most popular IDE's for Unity are:
@@ -146,10 +149,4 @@ Once you are in Unity - after you create your first project, and so on, you will
 It's important to set this option, as it installs some internal features to Unity that makes sure that the project (the 'solution') is correctly opened in the IDE when you double-click on a file, and that when you click on an error message, it can open the IDE and put your cursor directly on the line of code causing the error.
 
 ## Done
-That's it. Most of these steps do _not_ need to be repeated when installing other versions of Unity. Your IDE, Unity Hub, and your Unity License are all good-to-go for the computer you got set up on. 
-
-
-
-
-
-
+That's it. Most of these steps do _not_ need to be repeated when installing other versions of Unity. Your IDE, Unity Hub, and your Unity License are all good-to-go for the computer you got set up on.
