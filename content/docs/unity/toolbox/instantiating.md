@@ -26,7 +26,7 @@ somethingSpriteRenderer.sprite = someSprite;
 This will work, certainly. But it becomes pretty clear that this is a **terrible** solution. Setting up GameObjects via code is a pain in the butt, _especially_ when Unity already has a great way to add and set up GameObjects: the unity editor.
 
 ## Cloning Objects
-To clone an object, instead of creating one from scratch, we can use the [Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) function. 
+To clone an object, instead of creating one from scratch, we can use the [Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) function.
 
 Any script component can call it. We can give it a GameObject as a property, and it will clone that GameObject.
 
@@ -63,11 +63,11 @@ It's easy to think of an object as not having a rotation, because we use the wor
 
 If it confusing, just remember we can have both "orientations" and "rotations" and they are stored with the same data type, but are semantically different.
 
-Remember that even if its "not rotated", we still have to tell it the appropriate orientation to spawn the object with. This is the Quaternion value. 
+Remember that even if its "not rotated", we still have to tell it the appropriate orientation to spawn the object with. This is the Quaternion value.
 
 The "default" orientation - 0 degrees around each axis - can be easily accessed with "**Quaternion.identity**".
 {{< hint warning >}}
-The 'identity' of addition is 0, because anything plus 0 is itself. The identity of multiplication is 1, as anything times 1 is itself. The rotation identity is... whatever it is, and similarly rotating something by the rotation identity will leave it's orientation untouched. 
+The 'identity' of addition is 0, because anything plus 0 is itself. The identity of multiplication is 1, as anything times 1 is itself. The rotation identity is... whatever it is, and similarly rotating something by the rotation identity will leave it's orientation untouched.
 
 {{< /hint >}}
 
@@ -116,7 +116,7 @@ I am rotating the bullet with the assumption that it's default rotation is visua
 
 ![Screenshot of the Weapon Handler script](/images/unity/toolbox/playerWeaponHandler.png)
 
-*This script uses [Attributes]({{< ref "docs\programming\unity-and-programming\tips-and-tricks\serialization-and-attributes.md">}}) to pretty up the inspector.*
+*This script uses [Attributes]({{< ref "/docs/programming/unity-and-programming/tips-and-tricks/serialization-and-attributes.md">}}) to pretty up the inspector.*
 
 {{< highlight csharp "linenos=true">}}
 public class PlayerWeaponHandler : MonoBehaviour
@@ -129,7 +129,7 @@ public class PlayerWeaponHandler : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     [Min(0)]
     [SerializeField] private float maxFireFrequency;
-    
+
     private float fireTimer;
 
     private void Start()
