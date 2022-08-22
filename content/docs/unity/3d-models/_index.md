@@ -1,5 +1,5 @@
 ---
-title: 3D Models
+title: 3D Models & Environments
 bookCollapseSection: true
 weight: 20
 ---
