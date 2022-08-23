@@ -5,10 +5,10 @@ title: Object Oriented Programming
 
 Object oriented programming is not unique to C# programming. The concepts introduced here are utilized by an incredible number of programming languages. Java, C++, Python, R, Ruby, Swift, and Perl are some other languages that use an object-oriented paradigm.
 
-Object oriented programming is programming around data structures that contain variables and functions. 
+Object oriented programming is programming around data structures that contain variables and functions.
 
 {{< hint info >}}
-There are three main "pillars" of object oriented programming: Encapsulation, Inheritance, and Polymorphism. 
+There are three main "pillars" of object oriented programming: Encapsulation, Inheritance, and Polymorphism.
 _Depending on who you ask, there is a fourth pillar: Abstraction._
 
 We will be introducing and discussing [inheritance](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance) here, but leaving [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)) and [polymorphism](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism) to the side for now.
@@ -17,19 +17,20 @@ We will be introducing and discussing [inheritance](https://docs.microsoft.com/e
 This lesson is really about two main concepts: **Classes & Objects**, and **Object Inheritance**.
 
 ### Classes & Objects
-**Classes** are definitions of data structures and available functions (operations, methods) that one can do with the data. 
+**Classes** are definitions of data structures and available functions (operations, methods) that one can do with the data.
 **Objects** are instances of the class.
 
 ### Inheritance
-Inheritance is the primary tool that allows for code flexibilty and code reuse. It allows data structures to share properties of one another, by having one class _inherit_ or copy the various setup of another class as a starting point. 
+Inheritance is the primary tool that allows for code flexibilty and code reuse. It allows data structures to share properties of one another, by having one class _inherit_ or copy the various setup of another class as a starting point.
 
-All of the scripts we have been writing in Unity, so far, have been inheriting their properties from "MonoBehaviour", which is the UnityEngine term for "component". This inheritance is what has allowed us to drag and drop these behaviors onto GameObjects, and allowed Unity to find and execute their event functions like Start and Update. 
+All of the scripts we have been writing in Unity, so far, have been inheriting their properties from "MonoBehaviour", which is the UnityEngine term for "component". This inheritance is what has allowed us to drag and drop these behaviors onto GameObjects, and allowed Unity to find and execute their event functions like Start and Update.
 
 ## Introduction
 {{< youtube bHvjTkvd_vY >}}
 
 ## Prerequisite Concepts Review
 First, be sure you have a strong grasp of [Classes and Components]({{< ref "docs/programming/fundamentals/classes-and-components.md">}}).
+
 ### Data Structures
 A data structure is an organization of data. When we have a collection of information that is related, we can put it in a structure that allows easy access, use, comparison, and manipulation of that data. The [List of Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures) on Wikipedia is overwhelming but interesting. For a more fundamental introduction, check out this [Crash Course](https://www.youtube.com/watch?v=DuDz6B4cqVc) video.
 
@@ -37,6 +38,8 @@ A data structure is an organization of data. When we have a collection of inform
 Hierarchy. Hierarchical relationships is a way of organizing things that places things on different related levels. Things can be related to each other as above an other thing, below an other thing, or at the same level as an other thing. Hierarchies are sometimes called "tree structures".
 
 We will call the higher level things parents, the lower level things children, and things at the same level siblings. In programming, we also use the terms "base" to refer to an objects parent, and "extending" to the process of creating a child.
+
+Also see this page on [Hierarchail Data structures]({{< ref "/docs/programming/fundamentals/hierarchial-data-structures.md">}}).
 
 ### Taxonomy
 Taxonomy is not a programming concept, but knowing about taxonomies will be helpful. Taxonomy is a system of classification, and most taxonomies you have likely heard of are structured as hierarchies. In other words, Taxonomies are practical examples of hierarchies. Creating taxonomies - somebody has to decide how to organize the library (thanks Dewey). It is interesting (one might say 'productive procrastination' to browse through lists of example taxonomy on [wikipedia](https://en.wikipedia.org/wiki/Taxonomy).)
