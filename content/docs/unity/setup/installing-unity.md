@@ -32,34 +32,33 @@ Students should, however, sign up for [Unity Student](https://unity.com/products
 ## Installing Unity Hub
 
 Next, download and install the Unity Hub from the unity [Downloads](https://unity.com/download) page. You do not need to be logged in on the website.
-{{< hint warning >}}
-
-At the time of writing, Unity Hub v3 is in beta. I have had some issues with it, so I'll be sticking with the not-v3 version of hub for now.
-
-{{</hint>}}
 
 Next, you need to log into your account *inside of Unity Hub*.
 
-![Log into Unity via the user icon menu in the top right.](/images/unity/setup/login-to-hub.gif)
+![Log into Unity via the user icon menu in the top left.](/images/unity/setup/login-dropdown.png)
 
 ## Activating A License
 
-Because Unity has paid, professional, versions, it has a license system that must be active in order to use it. Unity is free to use - to use it, we need to activate the free license to use unity. This gives us all of the features of the unity editor (even the dark theme), only features related to unity cloud services are "behind the paywall".
+Because Unity has paid features, it has a license system that must be active in order to use it. Unity is still free to use! But we need a free ("personal use") license to use it. We need to activate a new free license for the machine. This gives us all of the features of the unity editor (even the dark theme). Don't worry, you aren't missing out on the Unity experience: most of the paid features are related to unity cloud services or targeted towards large studios. They generally don't affect the workflow of a single user.
 
-To activate a license, click on the gear icon on the top right, click license management, then Activate new license.
-![Activating a new license.](/images/unity/setup/hub-license-steps.gif)
+To activate a license, click on the user icon on the top left, click manage licenses, then "Add" or "Activate new license".
 
-In the license screen, you can choose "Unity Personal" and "I don't use Unity in a professional capacity."
+In the "Add New License" screen, you can choose "Get a free personal license" or "Unity Personal". If you don't know, you do not use Unity in a professional capacity.
 
-![Log into Unity via the user icon menu in the top right.](/images/unity/setup/hub-activate-license.png)
+![Activating a new license.](/images/unity/setup/adding-a-license2.gif)
+<!-- ![Log into Unity via the user icon menu in the top right.](/images/unity/setup/hub-activate-license.png) -->
 
 Leave the preferences page with the arrow icon in the top left.
 
 ## Installing Unity
 Click on the Installs button, then click Add. A pop-up appears asking you which version you want to add. Choose a version (read below for info), then click next. Choose the modules (again, detailed below), and click done. Unity will start installing.
 
+![Activating a new license.](/images/unity/setup/choosing-editor-version.gif)
+
 ### How Unity Versions Work
 Unity has many engineers working on different features and systems all at the same time. You can read about many different goals that the Unity team has on their [product roadmap](https://unity.com/roadmap/unity-platform). Many of then rely on other systems to work, and Unity is prone to bugs where on part of it updates when another doesn't. Because of this, Unity has a fairly complex versioning system to make sure everything runs smoothly. Understanding at least a high-level overview of this is important.
+
+Externally, Unity releases new features in beta versions of the editor that allow the public to test, and ~~complain~~ give feedback about the software, and Unity can get a lot of bugs and UX issues fixed before the feature is added to the version most people are using.
 
 It has two ways to have it's internals updated: The official Unity version, and packages, which can be installed and updated independently. We will cover packages later, let's just focus on the official unity version - the core unity software.
 
@@ -83,9 +82,9 @@ Unity switched from 3 tech releases to 2 in 2020, so 2019.4 (LTS) exists. They a
 *Timeline Image from the [Unity Blog](https://blog.unity.com/news/introducing-unity-2021-lts).*
 
 ### Which Version of Unity Do I Install?
-Unity recommends it's LTS release, which is currently 2021.3. I agree, the current LTS version is probably the one you want to install.
+Unity recommends it's LTS release, (At the time of updating, it is currently 2021.3). I agree, the current LTS version is probably the one you want to install.
 
-Currently, you will also be fine to switch to the latest 2021 tech channel (.1 or .2). Unity 2021.1 Introduces some minor changes to the UI, so I will be switching to at-least-this-version to help future-proof screen captures and videos. If you want your version to look like how mine _currently_ looks, then do that. The UI changes aren't that significant, it's not a big deal.
+This guide alternates between recommending tech releases or not. Because we are focused on VR development, we are often eager for new features and support. At the time of writing, I think the LTS version is the way to go, but don't be afraid to switch to another version. Unity often posts about interesting new features on it's [blog](https://blog.unity.com/).
 
 ### Platform Modules
 After you choose the version, click **next**, and you will be asked when modules you want to install.
@@ -98,10 +97,14 @@ In the Unity Hub, you can always go back to the installs page, click the three v
 #### Microsoft Visual Studio
 Unity lets you install an IDE right from this window, and leaves it checked by default so that people who don't know what they are doing won't be confused when they just click through and try to get started.
 
-I recommend Jetbrains Rider over Microsoft Visual Studio, and ask my students to use Rider. If you are one of my students, please uncheck this box to save yourself some file space on your computer. Otherwise, read [below](#integrated-development-environment-ide) to learn about some of the differences between IDE's.
+I recommend JetBrains Rider over Microsoft Visual Studio, and ask my students to use Rider. If you are one of my students, please uncheck this box to save yourself some file space on your computer. Otherwise, read [below](#integrated-development-environment-ide) to learn about some of the differences between IDE's.
+
+*If you have the file space, Microsoft Visual Studio won't hurt to have around. At the very least, it can help setup development environments.*
 
 #### Oculus Quest
-For Oculus Quest development, be sure to select **Android Build Support** (and both sub checkboxes: SDK & NDK, and OpenJDK, unless you know what those are and know you already have them somewhere)
+For Oculus Quest development, be sure to select **Android Build Support** (and both sub checkboxes: SDK & NDK, and OpenJDK, unless you know what those are and know you already have them somewhere).
+
+Android build support takes up a lot of space, and you can always install them alter, so you may wish to wait.
 
 #### Mono or IL2CPP?
 The short answer is Mono. IL2CPP stands for "Intermediate Language to C++", and it's an alternative scripting backend. The non-technical difference is that IL2CPP can improve performance, but has larger build times and file sizes. I recommend you default to Mono, and the curious can [read more](https://docs.unity3d.com/Manual/IL2CPP.html).
@@ -113,6 +116,8 @@ I love WebGL development. It's like the old days of Flash games. It allows you t
 Always leave the checkbox for documentation checked.
 
 Once Unity is installed, we can install an IDE.
+
+*If you are not planning on programming in C# with Unity, you can stop here - but I still recommend reading the rest of this guide.*
 
 ## Integrated Development Environment (IDE)
 IDE's are very fancy text-editors. When we write code in Unity, all Unity really cares about is the text files that will make up our scripts. We can use even the most basic text-editor to write our code - notepad.exe or TextMate. This is a terrible idea. There are tons of features that IDE's provide, like line numbers, syntax highlighting, error highlighting, autocompletion, and more. In order for these advanced features to exist, the text editor needs to know about your code, and about the language you are programming in. That's where the "integrated" part of IDE comes in.
@@ -130,18 +135,24 @@ I **highly** recommend Jetbrains Rider. It's paid, but free for students. It's U
 Unity gave you the option to install Microsoft Visual Studio Community, which is a perfectly fine IDE. It's a fully-featured and professional level IDE that has been used in the industry for years. It's a fine option - it's free to use, but you have to log in with a Microsoft account. You can install it via the Unity modules, or you can download it [here](https://visualstudio.microsoft.com/)
 
 ### VSCode
-The VS in VS Code stands for Visual Studio, and it's made by Microsoft. It's Microsoft's visual studio code. But it's not Microsoft Visual Studio. Confused? We always say "visual studio" for the big software, and "VSCode" for the lightweight, open source, plugin-friendly software. VSCode comes from a line of lightweight-but-plugin-rich text editors like [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/), both of which are also perfectly fine for Unity development.
+The VS in VS Code stands for Visual Studio, and it's made by Microsoft. It's Microsoft's visual studio code. But it's not Microsoft Visual Studio. Confused? We always say "visual studio" for the big software, and "Vee Ess Code" for the lightweight, open source, plugin-friendly software. VSCode is part of a modern emergence of lightweight-but-plugin-rich text editors like [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/). *Note: I just learned when updating this guide for Fall 2022 that [GitHub is sunsetting Atom](https://github.blog/2022-06-08-sunsetting-atom/), so don't choose that one.*
+
+{{< hint warning >}}
+Avoid arguments about the best text editor, in general. VSCode vs. Atom vs. Notepad++ vs. Sublime text? Who cares, use whatever you like. But since you are on my website, here is my take: all of the above. I find it convenient to compartmentalize different tasks to different software, so I don't have to deal with configuration as much. I have VSCode set up for C development, Atom nicely configured for Markdown (I'm writing this in it right now), and notepad++ for poking around at things. I tend to prefer the larger "heavyweight" software like visual studio or JetBrains products. I *could* configure VSCode to have almost all the quality-of-life features I like about JetBrains Rider, but who has the time?
+
+
+{{</hint>}}
 
 Read about setting up [VSCode](https://code.visualstudio.com/) with Unity here: [https://code.visualstudio.com/docs/other/unity](https://code.visualstudio.com/docs/other/unity).
 
-Please re-read that above page. Countless times students skipped over that they had to install the .NET framework when using VSCode.The frameworks get installed automatically when using Rider or Microsoft Visual Studio.
+If you do install VSCode, please follow that page carefully. Countless times students skipped over the step where they had to install the .NET framework before using VSCode. Frameworks get installed automatically when using Rider or Microsoft Visual Studio, but not for VSCode.
 
 ### JetBrains Rider
-Jetbrains makes a number of powerful IDEs for different languages, and Rider is their IDE for .NET (C#) development. It has an incredible amount of Unity-specific features built into it, and has the best out-of-the-box support for code generation and auto-complete for Unity, in my opinion. One of the biggest features is that it knows about Unity's documentation, and you can select some unity function and open the documentation for it directly from Rider. I could keep gushing over how much I love it, but you can just read about it's Unity features [here](https://www.jetbrains.com/lp/dotnet-unity/) and compare it [here](https://www.jetbrains.com/rider/compare/unity-rider-vs-visual-studio/).
+JetBrains makes a number of powerful IDEs for different languages, and Rider is their IDE for .NET (C#) development. It has an incredible amount of Unity-specific features built into it, and has the best out-of-the-box support for code generation and auto-complete for Unity, in my opinion. One of the biggest features is that it knows about Unity's documentation, and you can select some unity function and open the documentation for it directly from Rider. I could keep gushing over how much I love it, but you can just read about it's Unity features [here](https://www.jetbrains.com/lp/dotnet-unity/) and read a biased comparison [here](https://www.jetbrains.com/rider/compare/unity-rider-vs-visual-studio/).
 
-The biggest downside is that Rider is paid. Luckily, it has a free educational license. Sign up for an account, and apply for the educational license [here](https://www.jetbrains.com/community/education/#students). When you launch Rider, you will be asked to use a trail or activate a license. Once you have the educational license, choose to activate by account, and you simply log in.
+There is a catch. The biggest downside is that Rider is paid software. Luckily, it has a free educational license. Sign up for an account, and apply for the educational license [here](https://www.jetbrains.com/community/education/#students). When you launch Rider, you will be asked to use a trial or activate a license. Once you have the educational license, choose to activate by account, and log in.
 
-If you are a student in one of my classes, I politely request that you choose the "IntelliJ" keymap when installing. This is so that your keyboard shortcuts match my keyboard shortcuts, and life is just that much easier when I am explaining how to use the software.
+If you are a student in one of my classes, I politely request that you **choose the "IntelliJ" keymap** when installing. This is so that your keyboard shortcuts match my keyboard shortcuts, and life is just that much easier when I am explaining how to use the software.
 
 ## Telling Unity what your IDE is
 Once you are in Unity - after you create your first project, and so on, you will want to go to the Preferences (Edit>Preferences...) and go to the "External Tools" menu. In the drop-down next to "External Script Editor" you should see an option to select your editor of choice (i.e.: Rider).
