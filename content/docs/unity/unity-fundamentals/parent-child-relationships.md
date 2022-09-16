@@ -2,19 +2,19 @@
 title: Parent-Child Relationships
 ---
 # Parent-Child relationships
-One core concept to understand is that of 'parenting'. Parent/Child relationships are edited in the [hierarchy window]({{< ref "docs/unity/unity-interface/hierarchy.md" >}}). 
+One core concept to understand is that of 'parenting'. Parent/Child relationships are edited in the [hierarchy window]({{< ref "docs/unity/unity-interface/hierarchy.md" >}}).
 
 If we remember that scenes are cartesian coordinate systems, we can define any point as a point on the number line. It can be thought of as the distance away from the scene origin on each axis. We will use the words **scene** and **world** interchangeably when talking about parenting. Scene is a unity-specific term and world is generic term, in this context.
 
 Rotation and scale can be thought of the same way. My orientation is defined as a rotation from a default orientation. The number of degrees around each axis. 0 degrees around every axis means the object has the same orientation as the world - up is up, right is right, etc.
 
-Making an object a **child** of another object makes that object relative to the **parent** object, instead of the world. 
+Making an object a **child** of another object makes that object relative to the **parent** object, instead of the world.
 
-This means the child's position is not defined as distance away from the world origin, but distance along each axis away from the parent. So if the parent moves, the child moves with it - it's distance away from it's parent is not changing, but it's position in 'world space' is. It's moving with the parent. 
+This means the child's position is not defined as distance away from the world origin, but distance along each axis away from the parent. So if the parent moves, the child moves with it - it's distance away from it's parent is not changing, but it's position in 'world space' is. It's moving with the parent.
 
 Same with rotation and scale. We scale a parent object up, all it's children should scale up with it.
 
-When we talk about **local** and **world** space, we are talking about how the object relates itself to the Unity scene. 
+When we talk about **local** and **world** space, we are talking about how the object relates itself to the Unity scene.
 
 ## Creating Parent/Child relationships in Unity
 You create parent/child relationships by dragging and dropping GameObjects on each other in the Hierarchy window.
@@ -22,7 +22,7 @@ You create parent/child relationships by dragging and dropping GameObjects on ea
 ![Parenting objects in Unity by dragging/dropping them](/images/unity/fundamentals/parenting.gif)
 
 ## Make An Object Rotate around a point
-To make an object rotate _around_ something, make an empty gameObject at the position we want the object to rotate around. Let's call it "parent". Make the object we care about a child of this parent object, and position it how we want. Now simply rotate the parent object.
+To make an object rotate around something, make an empty gameObject at the position we want the object to rotate around. Let's call it "parent". Make the object we care about a child of this parent object, and position it how we want. Now simply rotate the parent object.
 
 ## Video Overview
 {{< youtube rTFM__TzQsc >}}
