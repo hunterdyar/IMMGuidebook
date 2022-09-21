@@ -1,5 +1,5 @@
 ---
-title: Lighting In Unity Overview
+title: A Quick Overview of Lighting in Unity
 ---
 # An Overview of Lighting In Unity
 ## Realtime vs. Baked
@@ -85,9 +85,8 @@ Compare it this cube, which is in the same scene after lighting has been baked. 
 
 ![Screenshot of a cube with baked lighting](/images/unity/3dmodels/lighting/yesLightingBaked.png)
 
-
-### Conclusion
-That's the basics. You may have noticed that this guide includes a lot of links to the unity manual. That's no coincidence. Now that you know the various things you need to do, check out the manual when you need to dig deeper or figure out how something is working in more detail.
+## Next
+Next, I recommend you review and learn more in the [Lighting Fundamentals]({{< ref lighting.md >}})] section.
 
 ## Further Resources
 - [Tutorial on Lighting and Rendering on Unity Learn](https://learn.unity.com/tutorial/intermediate-lighting-rendering)
