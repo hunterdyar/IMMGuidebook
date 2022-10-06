@@ -65,7 +65,7 @@ If you don't, I recommend picking up an external one. This Bluetooth one from [M
 Some guides will tell you to enable the "**Emulate Numpad**" setting in Blender. I don't recommend this, it can mess with other keyboard shortcuts, which is particularly frustrating when trying to follow a tutorial that may use those shortcuts. Instead, I suggest just pressing the **~** (Tilde) key to bring up a pie-menu that allows you to quickly switch between different views.
 {{</hint>}}
 
-## How To Get The Most out of Follow-Along Videos
+## <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.2em"/>How To Get The Most out of Follow-Along Videos
 A lot of 3D Modeling vocabulary will be strange and particular. Computer Scientists, in general, have a bad habit of borrowing terms that sort-of-kind-of mean what they want from all sorts of other disciplines like mathematics. Listening to 3D modeler and animators talk during a tutorial can sound like gibberish.
 
 Additionally, a lot of explanations tend to briefly, and slightly incorrectly, half-define the various terms they are using. My advice is to, at least, never trust any one individual's word on the matter (even mine). Our source of jargon truth is the [glossary](https://docs.blender.org/manual/en/latest/glossary/index.html) page in the Blender manual.
@@ -94,7 +94,7 @@ Blender projects are primarily interfaced with via the Outliner.
 
 {{< youtube tt-Ggohc6Ls >}}
 
-## Modeling
+## <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.2em"/>Modeling
 
 ### Selecting and Moving Objects Basics
 Be warned: selection is more complex in Blender than in other pieces of software. It may not behave like you expect it to from other software. For example, the order you multi-select objects can be important.
@@ -161,7 +161,7 @@ By this point, you should have seen some modifiers in use in some follow-along T
 - [All You Need to Know about Modifiers in General](https://www.youtube.com/watch?v=V6VHdSM5lMQ)
 - [Subdivision Surface Modeling Tutorial](https://www.youtube.com/watch?v=AeMz9aPXpa4)
 
-## Shading, Materials, Texturing
+## <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.2em"/> Shading, Materials, Texturing
  - [About Vertex Normals](https://youtu.be/JGqOCdJ0DDg)
 
 ### Models & Material Slots
