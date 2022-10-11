@@ -167,6 +167,7 @@ By this point, you should have seen some modifiers in use in some follow-along T
 ### Models & Material Slots
 
 ### UV Maps
+- <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.2em"/> [What Are UV Maps?](https://explainers.hdyar.com/uvmaps/index.html) article
 - <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.2em"/> [How To make Hibiscus flower in Blender](https://www.youtube.com/watch?v=wRcL0CPljMA)
 
 First just watch this 'lazy tutorial' on UV Maps.
