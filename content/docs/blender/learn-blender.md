@@ -182,6 +182,8 @@ This flower tutorial covers, among other things, UV Mapping.
 
 ### Rendering & Exporting
 
+- My own follow-along video: [Making a Render in Blender](https://youtu.be/HLjwbgiy-i4)
+
 ## <img src="/images/blender/learn/bookmark.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.2em"/> Complete Guides, Tutorials, and other resources
 
 - Blender's [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6)
