@@ -13,6 +13,8 @@ In no particular order
 - **LoopTools** contains many useful features, like circular-izing a selection of vertices.
 - **Node Wrangler** everyone who uses nodes uses node wrangler.
 
+![Node Wrangler Addon](/images/blender/learn/nodeWrangler.png)
+
 ## Third-Party Free Add-Ons
 - [Noodler](https://blenderartists.org/t/noodler-py/1297740) for managing nodes.
 - [Camera Shakify](https://github.com/cessen/camera_shakify) for adding realistic camera shake.
