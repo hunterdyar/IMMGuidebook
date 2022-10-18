@@ -54,11 +54,11 @@ Either way, it comes out
 * Like
 + This
 
-Blockquotes are used with > and >> to nest them.
+Blockquotes are used with > and > > to nest them.
 
 > hey ( "> hey" )
 > 
-> > hello ( ">> hello" )
+> > hello ( "> > hello" )
 
 Links are written with brackets around the title [Google], aka the clickable part, where the link will be inserted. Inside the parenthesis goes the link ([https://google.com](https://google.com)). 
 
