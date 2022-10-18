@@ -22,5 +22,7 @@ Every Blender user knows that it goes away a little too easily - clicking off th
 ## Create a Loop Cut on any object
 
 Hit K to bring out knife tool then select desired point
+
 Click z (for z axis, can do any desired direction) + c
+
 Click outside of object in both directions to make cut
