@@ -54,7 +54,9 @@ Either way, it comes out
 * Like
 + This
 
-Blockquotes are used with > and >\> to nest them.
+```
+Blockquotes are used with > and >> to nest them:
+```
 
 > hey ( "> hey" )
 > 
