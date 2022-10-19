@@ -30,6 +30,6 @@ draft: True
  - [The RIGHT Way to Cut Holes in Surfaces in Blender] (https://www.youtube.com/watch?v=Ci1jBOm_5NY&t=586s)
  - Cutting holes in objects without ruining the topology.
  
- ##
+ 
  
  
