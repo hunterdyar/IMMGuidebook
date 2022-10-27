@@ -43,6 +43,37 @@ Alternatively, if your material has a flat metallic value, you can preview a val
 ![Emit Bake Type](/images/blender/toolbox/emit-bake-type.png)  
 3. Bake as usual. (Remember to have your desired image texture node selected!)  
 
-### Importing into Unity
+## Importing into Unity
+![Import to Unity](/images/blender/toolbox/import-to-unity.png)
+
+### How to Set up Textures in Unity Materials
+
+1. Unity and Blender have slightly different names for each map. 
+
+| Blender      | Unity     | Definition |
+|--------------|-----------|------------|
+| Diffuse      | Albedo    | RGB Base Color of Material|
+| Glossy       | Metallic***| BW/A How much Material looks like metal (kinda)|
+|Roughness     | Smoothness***| BW/A How light scatters across a surface|
+|Normal        | Normal| RGB values that determine how light bounces per pixel|
+|Height        | Height | BW how much each pixel displaces the mesh|
+|Ambient Occlusion| Occlusion| BW contains lighting data for soft/ambient shadows|  
+2. You can simply import your baked textures and drag and drop them into the corresponding texture slots. Some texture maps, like Normal maps, require their type to be set to the correct value.  
+![Normal Map in Task Bar](/images/blender/toolbox/normal-inspector.png)
+
+- **Important Note:** Unity combines the Metallic and Roughness maps from Blender into one map. The alpha channel of the Metallic Map determines *Smoothness*. Generally, it is okay to use Blender’s Roughness for Unity’s Metallic Map but **INVERT THE VALUES OF BLENDER’S BAKED ROUGHNESS MAP** or the Metallic/Smoothness will be inverted.  
+
+### Combined Roughness and Metallic
+
+This compositing setup can be used to prepare a Roughness + Metallic Map for Unity:  
+![Composting Node Setup](/images/blender/toolbox/compositing-node-setup.png)  
+
+After compositing, set your render size to the preferred texture size and complete your render.  
+![Setting Texture Size](/images/blender/toolbox/setting-texture-size.png)
 
 
+		
+		
+		
+		
+	 	
