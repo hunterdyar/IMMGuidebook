@@ -4,7 +4,13 @@ title: Zero to Quest - Ultimate XR
 
  ## Installing Ultimate XR into Your Unity Project
 
- 0. Make sure Android is added as a build target for the appropriate version of Unity. You can do this in the Unity Hub. Go to Installs, click the gear icon next to the appropraite version of Unity, and choose "Add Modules". Add Android Build Support, and the JDK, SDK, and NDK tools.
+### Walkthrough Video
+
+{{< youtube 4kRyh-uJAy4 >}}
+
+### Overview
+
+ 0. Make sure Android is added as a build target for the appropriate version of Unity. You can do this in the Unity Hub. Go to Installs, click the gear icon next to the appropriate version of Unity, and choose "Add Modules". Add Android Build Support, and the JDK, SDK, and NDK tools.
 
  1. Go to [UltimateXR](https://www.ultimatexr.io/) and click on the download link below the "Watch Teaser" button.  
 
