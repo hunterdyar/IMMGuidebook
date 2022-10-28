@@ -5,11 +5,12 @@ title: Zero to Quest - Ultimate XR
  ## Installing Ultimate XR into Your Unity Project
 
 ### Initial Accounts Setup
-This video is from 2020, but it's still mostly accurate. Changes include Oculus now requiring 2-factor-authentication for developers, and meta's branding change from oculus accounts to meta accounts. Despite the name change, old links still do seem to work or redirect appropriately.
+This video is from 2020, but it's still mostly accurate. Changes include Oculus now requiring 2-factor-authentication for developers, and meta's branding change from oculus accounts to meta accounts. Despite the name change, old links still do seem to work or redirect appropriately. The section on Unity/android build support, I demonstrate again in the walkthrough video below that is up to date.
 
 {{< youtube aRjNTpM06qc >}}
 
 ### Walkthrough Video
+Recorded Fall of 2022
 
 {{< youtube 4kRyh-uJAy4 >}}
 
