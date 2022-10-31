@@ -1,7 +1,7 @@
 ---
 title: How to Bake Procedural Materials into PBR Maps
 
-draft: True
+draft: false
 
 ---
 
