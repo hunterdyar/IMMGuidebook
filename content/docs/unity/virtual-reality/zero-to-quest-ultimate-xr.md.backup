@@ -4,7 +4,19 @@ title: Zero to Quest - Ultimate XR
 
  ## Installing Ultimate XR into Your Unity Project
 
- 0. Make sure Android is added as a build target for the appropriate version of Unity. You can do this in the Unity Hub. Go to Installs, click the gear icon next to the appropraite version of Unity, and choose "Add Modules". Add Android Build Support, and the JDK, SDK, and NDK tools.
+### Initial Accounts Setup
+This video is from 2020, but it's still mostly accurate. Changes include Oculus now requiring 2-factor-authentication for developers, and meta's branding change from oculus accounts to meta accounts. Despite the name change, old links still do seem to work or redirect appropriately. The section on Unity/android build support, I demonstrate again in the walkthrough video below that is up to date.
+
+{{< youtube aRjNTpM06qc >}}
+
+### Walkthrough Video
+Recorded Fall of 2022
+
+{{< youtube 4kRyh-uJAy4 >}}
+
+### Overview
+
+ 0. Make sure Android is added as a build target for the appropriate version of Unity. You can do this in the Unity Hub. Go to Installs, click the gear icon next to the appropriate version of Unity, and choose "Add Modules". Add Android Build Support, and the JDK, SDK, and NDK tools.
 
  1. Go to [UltimateXR](https://www.ultimatexr.io/) and click on the download link below the "Watch Teaser" button.  
 
