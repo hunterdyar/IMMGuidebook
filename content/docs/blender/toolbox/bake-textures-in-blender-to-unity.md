@@ -1,7 +1,7 @@
 ---
 title: How to Bake Procedural Materials into PBR Maps
 
-draft: false
+draft: true
 
 ---
 
@@ -48,7 +48,7 @@ Alternatively, if your material has a flat metallic value, you can preview a val
 
 ### How to Set up Textures in Unity Materials
 
-1. Unity and Blender have slightly different names for each map. 
+1. Unity and Blender have slightly different names for each map.
 
 | Blender      | Unity     | Definition |
 |--------------|-----------|------------|
@@ -70,10 +70,3 @@ This compositing setup can be used to prepare a Roughness + Metallic Map for Uni
 
 After compositing, set your render size to the preferred texture size and complete your render.  
 ![Setting Texture Size](/images/blender/toolbox/setting-texture-size.png)
-
-
-		
-		
-		
-		
-	 	
