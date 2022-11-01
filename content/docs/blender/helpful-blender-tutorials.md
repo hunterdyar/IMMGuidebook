@@ -1,8 +1,8 @@
 ---
-title: YouTube Blender Creators
+title: Blender Tutorials
 ---
 
-## YouTube Blender Creators
+# Youtube Channels
 
 
 - [Polyfjord](https://www.youtube.com/c/Polyfjord)
