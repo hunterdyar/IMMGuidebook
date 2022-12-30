@@ -51,7 +51,7 @@ So draw, or select “Graphic” and use the sliders, some drops in the curve at
 *(This is probably too aggressive as an example, especially In the highs)*
 ## Step 9 – Fade in/out 
 Select the very edges of our clip – this can even be fractions of fractions of a second – and fade them in/out appropriately. This will prevent a click noise when the audio starts and stops, which is important for us.
-A longer fade can also help make noise less jarring when it suddenly appears. Noise fading in while someone starts talking can go almost entirely unnoticed.
+A longer fade can also help make noise less jarring when i t suddenly appears. Noise fading in while someone starts talking can go almost entirely unnoticed.
 ## Step 10 – Review
 Use headphones and give the audio file a good listen. Good? Very good? You sure? Sleep on it.
 ## Step 11 – Export
