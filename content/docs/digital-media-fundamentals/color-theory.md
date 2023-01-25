@@ -55,14 +55,14 @@ These are modern terms.
 - Originated with photography, 1860
 - Then with CRT (Cathode-ray tube) displays, 1938
 
-[RGB Explained YouTube Video](https://www.youtube.com/watch?v=lL0pxSslCzo)
+[RGB Explained (YouTube Video)](https://www.youtube.com/watch?v=lL0pxSslCzo)
 
 ### CMYK
 - Subtractive, printing
 - Started as four-color wet process inks by The Eagle Printing Ink Company, 1906
 
 
-[CMYK Explained YouTube Video](https://www.youtube.com/watch?v=ygUchcpRNyk)
+[CMYK Explained (YouTube Video)](https://www.youtube.com/watch?v=ygUchcpRNyk)
 
 ## Variations of Hues
 *The term “warm blue” or a “cool red” sounds like an oxymoron, but it’s not. The terminology can be confusing, but once you see the application, things become a lot clearer.*
@@ -73,6 +73,7 @@ A hue means something different from tints, tones, and shades.
 
 ### What is a hue?
 The pure color that we start with. Hues are the primary and secondary colors and anything in between. A hue plus a hue is still a hue.
+
 ![Wheel of hues](/images/digital-media/color-theory/CT-Hue.jpg)
 
 ![Tints, shades and tones](/images/digital-media/color-theory/CT-TintsTones.jpg)
@@ -116,12 +117,12 @@ With the addition of its neighboring color, the color changes from neutral.
 ![Warm vs cool red](/images/digital-media/color-theory/CT-WCRed.png)
 ![Warm vs cool green](/images/digital-media/color-theory/CT-WCGreen.png)
 ![Warm vs cool blue](/images/digital-media/color-theory/CT-WCBlue.png)
-
+(*The warm hues are on the left, and the cool hues are on the right of the neutral center circles*)
 
 ## Application
 
 ### Minimalism
-Brands are becoming more minimalist, sleek, black and white. Simplifying everything from logos to architecture has been the trend. Color becomes even more important when edges are cleaner, lines are simpler, and more things are grayscale.
+Brands are becoming more minimalist, sleek, black and white. Simplifying everything from logos to architecture has been the trend. Color becomes even more important when edges are cleaner, lines are simpler, and more things are gray scale.
 
 ![Minimalist Brands](/images/digital-media/color-theory/CT-Minimalism.jpg)
 
@@ -129,13 +130,15 @@ Brands are becoming more minimalist, sleek, black and white. Simplifying everyth
 ![Tesla Car](/images/digital-media/color-theory/CT-Tesla.jpg)
 ![Building](/images/digital-media/color-theory/CT-House.jpg)
 
+### Maximalism
 
 At the same time, with every push, there is a pull. Maximalism uses colors and patterns to convey a sense of playfulness.
 ![Maximalist Interior Design](/images/digital-media/color-theory/CT-MaxInt.png)
 ![Maximalist Fashion](/images/digital-media/color-theory/CT-MaxFash.png)
 
+### The Feelings Colors Invoke
 
-It's also important to note that colors can invoke and emphasize different meanings. This doesn't mean that a luxury brand's logo has to be all gold, or a children's toy doesn't need to be yellow for them to feel happy. It's best to keep in mind more as a suggestion or inspiration. For example, you may not want to paint a nursing home or preschool red, but pastels, greens or yellow would be better. 
+It's also important to note that colors can invoke and emphasize different meanings. This doesn't mean that a luxury brand's logo has to be all gold, or that a children's toy needs to be yellow for them to feel happy. It's best to keep in mind more as a suggestion or inspiration. For example, you may not want to paint a nursing home or preschool red, but pastels, greens or yellow would be better. 
 
 These are not steadfast rules and are subjective, but it is important to keep in mind that colors have the power to influence mood.
 
