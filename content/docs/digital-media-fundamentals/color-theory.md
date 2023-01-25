@@ -40,7 +40,7 @@ He brought the theory of having three primary colors but connected them to the e
 
 This is the most basic idea of a color wheel. The primary colors mix with one another to create the secondary colors. While there are other versions of how colors “mix” this way predates digital color concepts.
 
-![Color Wheel](/images/digital-media/color-theory/color-theory/CT-ColorWheelLabeled.jpg)
+![Color Wheel](/images/digital-media/color-theory/CT-ColorWheelLabeled.jpg)
 
 Concepts like the ones shown in this picture can help us to create a color palette. Do we want a simple or complex design? Is this supposed to be something that stands out, or will it be easy on the eyes?
 
