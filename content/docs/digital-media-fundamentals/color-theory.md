@@ -42,7 +42,6 @@ This is the most basic idea of a color wheel. The primary colors mix with one an
 
 ![Color Wheel](/images/digital-media/color-theory/color-theory/CT-ColorWheelLabeled.jpg)
 
-
 Concepts like the ones shown in this picture can help us to create a color palette. Do we want a simple or complex design? Is this supposed to be something that stands out, or will it be easy on the eyes?
 
 ![Color Relationships](/images/digital-media/color-theory/CT-ColorRelationships.jpg)
@@ -76,7 +75,7 @@ A hue means something different from tints, tones, and shades.
 The pure color that we start with. Hues are the primary and secondary colors and anything in between. A hue plus a hue is still a hue.
 ![Wheel of hues](/images/digital-media/color-theory/CT-Hue.jpg)
 
-![Tints, shades and tones](images/digital-media/color-theory/CT-TintsTones.jpg)
+![Tints, shades and tones](/images/digital-media/color-theory/CT-TintsTones.jpg)
 
 ### Tint
 - White + Hue = Tint
@@ -100,7 +99,7 @@ This model is (likely) what we think of when we think of warm vs cool colors.
 
 However, it’s not as simple.
 
-![Warm vs Cool color wheel](images/digital-media/color-theory/CT-WarmCoolWheel.jpg)
+![Warm vs Cool color wheel](/images/digital-media/color-theory/CT-WarmCoolWheel.jpg)
 
 
 We can think of colors being warm or cool based on their associations, the feelings they invoke, what they mean to us based on what we know.
@@ -114,9 +113,9 @@ With this logic, a primary color, or a perfectly proportioned secondary color is
 With the addition of its neighboring color, the color changes from neutral.
 ![Gradient Wheel of Hues](/images/digital-media/color-theory/CT-WheelGradient.jpg)
 
-![Warm vs cool red](images/digital-media/color-theory/CT-WCRed.png)
-![Warm vs cool green](images/digital-media/color-theory/CT-WCGreen.png)
-![Warm vs cool blue](images/digital-media/color-theory/CT-WCBlue.png)
+![Warm vs cool red](/images/digital-media/color-theory/CT-WCRed.png)
+![Warm vs cool green](/images/digital-media/color-theory/CT-WCGreen.png)
+![Warm vs cool blue](/images/digital-media/color-theory/CT-WCBlue.png)
 
 
 ## Application
