@@ -18,7 +18,7 @@ Alberti was a Renaissance man but now is remembered mainly for his art and archi
 “Through the mixing of colours infinite other colours are born, but there are only four true colours – as there are four elements. – Red is the colour of fire, blue of the air, green of the water, and of the earth grey and ash.”  
 He did not consider white and black to be actual colors, just modifiers for other colors.
 
-![Leon Battisa Alberti Architecture](/images\digital-media\color-theory\CT-LBA.jpg)
+![Leon Battisa Alberti Architecture](/images/digital-media/color-theory/CT-LBA.jpg)
 
 
 ### Leonardo Da Vinci (1452-1519)
@@ -30,8 +30,8 @@ Da Vinci was also a renaissance man best known for his art, like the Mona Lisa. 
 He brought the theory of having three primary colors but connected them to the elements as before. White represented light, and black being darkness. He used these theories to create balanced compositions.
 
 
-![Da Vinci Last supper](/images\digital-media\color-theory\CT-LDV.jpg)
-![Da Vinci Color Wheel](/images\digital-media\color-theory\CT-LDV2.jpg)
+![Da Vinci Last supper](/images/digital-media/color-theory/CT-LDV.jpg)
+![Da Vinci Color Wheel](/images/digital-media/color-theory/CT-LDV2.jpg)
 
 
 ## Color Wheel
@@ -40,12 +40,12 @@ He brought the theory of having three primary colors but connected them to the e
 
 This is the most basic idea of a color wheel. The primary colors mix with one another to create the secondary colors. While there are other versions of how colors “mix” this way predates digital color concepts.
 
-![Color Wheel](/images\digital-media\color-theory\color-theory\CT-ColorWheelLabeled.jpg)
+![Color Wheel](/images/digital-media/color-theory/color-theory/CT-ColorWheelLabeled.jpg)
 
 
 Concepts like the ones shown in this picture can help us to create a color palette. Do we want a simple or complex design? Is this supposed to be something that stands out, or will it be easy on the eyes?
 
-![Color Relationships](/images\digital-media\color-theory\CT-ColorRelationships.jpg)
+![Color Relationships](/images/digital-media/color-theory/CT-ColorRelationships.jpg)
 
 
 ### What about RGB? CMYK?
@@ -70,7 +70,7 @@ These are modern terms.
 
 A hue means something different from tints, tones, and shades. 
 
-![Hues vs other colors](/images\digital-media\color-theory\CT-HueTintsEtcWheel.jpg)
+![Hues vs other colors](/images/digital-media/color-theory/CT-HueTintsEtcWheel.jpg)
 
 ### What is a hue?
 The pure color that we start with. Hues are the primary and secondary colors and anything in between. A hue plus a hue is still a hue.
