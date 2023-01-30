@@ -1,5 +1,6 @@
 ---
 title: Git & Unity Quick Setup 
+weight: 10
 ---
 
 # Setting up Git & Unity
