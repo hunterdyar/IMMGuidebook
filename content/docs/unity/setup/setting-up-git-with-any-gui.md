@@ -27,3 +27,9 @@ title: Git & Unity Quick Setup
 3. Copy the URL (the one that ends in .git) from that Quick Setup box on the empty repository page.
 4. In our Git client, add the repository url as a remote.
 5. Push our initial changes, double checking we are not committing anything in the Library folder or auto-generated IDE-config folders (like .idea or .vscode).
+
+## Add Collaborators
+
+In GitHub, go to the project page, go to settings, collaborators, and Invite all of your teammates. They will need to accept the invitation, which is easily done through the auto-sent email.
+
+Collaborators need only Clone the repo, like normal. Once cloned, choose the "Open" option from Unity Hub, and select the projects root folder that you just downloaded. 
