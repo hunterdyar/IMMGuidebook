@@ -1,6 +1,6 @@
 ---
 title: Setting up Git & Unity with GitHub Desktop
-draft: true
+draft: false
 ---
 # Setting up Git & Unity with GitHub Desktop
 ## Keep In Mind Before Getting Started
