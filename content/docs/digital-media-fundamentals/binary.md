@@ -17,3 +17,7 @@ The youtube channel 'Computerphile' has a number of good videos on the topic:
 
 ### Floating Point Numbers
 {{< youtube PZRI1IfStY0 >}}
+
+### Also See
+
+The [Binary Cheatsheet](https://timseverien.github.io/binary-cheatsheet/), a concise overview which also discusses operators.
