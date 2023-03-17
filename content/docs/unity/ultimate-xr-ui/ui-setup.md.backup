@@ -1,6 +1,6 @@
 ---
 title: UltimateXR UI Options
-draft: true
+draft: false
 ---
 
 There are two options available when interacting with UI options in UXR. That is the *UXRFingerTip* and *UXRLaserPointer*. 
@@ -25,3 +25,7 @@ The UXR Avatar automatically comes with both laser's and fingerstip UI manipulat
 ![Laser Location](/images/unity/ultimate-xr/laser-location.png)  
 
 ## Custom Avatar
+### Fingertip
+In order to enable the fingertip interaction, you need to add the component **UXRFingertip** to the index finger of each hand (standard placement). You can also use a game object (empty game object) that is attached to the finger tip. 
+
+### Laser
