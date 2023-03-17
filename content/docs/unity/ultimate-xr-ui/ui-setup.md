@@ -2,8 +2,9 @@
 title: UltimateXR UI Options
 draft: false
 ---
-
+{{< hint info >}}
 *This is a general overview of the UXR related UI menu, input, and setup. For more in-depth information about the components or questions go the [UXR Website UI Interaction Page](https://www.ultimatexr.io/guides/ui-interaction) for reference.*
+{{< /hint >}}
 
 There are two options available when interacting with UI options in UXR. That is the **UXRFingerTip** and **UXRLaserPointer**. 
 
@@ -42,4 +43,6 @@ This option allows for easy haptic feedback configurations when it comes to inte
 
 ![UXR Control Input Menu](/images/unity/ultimate-xr/uxr-control-input.png)  
 
+{{< hint info >}}
 *For more in-depth information about the components or questions go the [UXR Website UI Interaction Page](https://www.ultimatexr.io/guides/ui-interaction) for reference.*
+{{< /hint >}}
