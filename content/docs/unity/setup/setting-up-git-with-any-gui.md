@@ -12,7 +12,7 @@ weight: 10
 3. Users could work in different versions of Unity, but it's heavily discouraged, and can lead to unpredictable consequences.
 4. If you use Unity's support for proprietary-files-auto-converted-into-assets, such as using ".blend", ".maya", or ".psd" imports (for Blender, Maya, and Photoshop, respectively), then that software needs to be installed on all the machines using the project. See this [manual](https://docs.unity3d.com/Manual/3D-formats.html) for details, but for this reason it's recommended to export to FBX when in production.
 5. You should probably configure [Git LFS](https://www.atlassian.com/git/tutorials/git-lfs) for images, models, and other large file types.
-6. Unity has a tool (called "UnityYAMLMerge") that can merge scene and prefab files much better than the default git merge behavior. See the [Smart Marge](https://docs.unity3d.com/Manual/SmartMerge.html) manual page for info how to set it up.
+6. Unity has a tool (called "UnityYAMLMerge") that can merge scene and prefab files much better than the default git merge behavior. See the [Smart Merge](https://docs.unity3d.com/Manual/SmartMerge.html) manual page for info how to set it up.
 
 ## Setup The Local Repository
 

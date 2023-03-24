@@ -1,6 +1,6 @@
 ---
 title: Getting Started With p5.js
-draft: false
+draft: true
 ---
 ## Download Application
 For this walk through I will be using Processing which can be found on [Processing](https://processing.org/). All you need to do is download the application and extract it into a separate folder. Once you finish downloading the application, you can start learning how to do processing through the extensive amount of tutorial videos available to you which can be found on [Processing Tutorials](https://processing.org/tutorials).

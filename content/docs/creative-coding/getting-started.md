@@ -3,7 +3,7 @@ title: Getting Started With p5.js
 draft: true
 ---
 ## Download Application
-For this walk through I will be using Processing which can be found on [Processing](https://processing.org/). All you need to do is download the application and extract it into a separate folder. Once you finish downloading the application, you can start learning how to do processing through the extensive amount of tutorial videos available to you which can be found on [Processing Tutorials](https://processing.org/tutorials).
+For this walk through I will be using Processing which can be found on [Processing](https://processing.org/). All you need to do is download the application and extrfile:///D:/Repos/korbinportfolifile:///D:/Repos/korbinportfolio/content/prose.mdo/content/prose.mdact it into a separate folder. Once you finish downloading the application, you can start learning how to do processing through the extensive amount of tutorial videos available to you which can be found on [Processing Tutorials](https://processing.org/tutorials).
 ## Tutorials
 - A good tutorial to start learning processing with is the Coding Train, [Coding Train](https://thecodingtrain.com/guides/getting-started#start-learning-and-coding).
 - The coding train is very beginner friendly and will teach you without expecting youn to know anything. You are presented the very basics and work your way up. 
