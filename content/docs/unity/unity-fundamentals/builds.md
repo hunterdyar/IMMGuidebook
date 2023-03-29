@@ -113,7 +113,7 @@ WebGL Builds give you an index.html file, plus some other files, that you can di
 
 Sometimes, you get an error like "unable to decompress" or "unable to load" or it's just black, or just loads forever. This is usually caused by the web server not supporting the compression method you use.
 
-You may need to check **Decompression Fallback** (Project Settings > Player > Publishing Settings) depending on the service you upload the files to or the version of Unity you are using. I have also, in some cases, found success by switching from gzip to brotli compression. The details of this is well out of scope of this guide, but keep these player settings at the top of your mind as you trial-and-error troubleshoot.
+You may need to check **Decompression Fallback** (Project Settings > Player > Publishing Settings) depending on the service you upload the files to or the version of Unity you are using. I have also, in some cases, found success by switching from **brotli** to **gzip** to compression, or vise-versa. The details of this is well out of scope of this guide, but keep these player settings at the top of your mind as you trial-and-error troubleshoot.
 
 ![The Unity Publishing Settings menu in Player Settings ](/images/unity/builds/webGLSettings.png)
 
