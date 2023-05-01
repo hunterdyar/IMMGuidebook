@@ -113,6 +113,13 @@ In the pop-up, add all of your teammates. You can enter the emails they used to 
 
 Each person will receive an invitation that they have to accept. Tell them to check their emails, where github sent them a link to click that will accept the invitation.
 
+They will get an email that looks like this:
+![An email from Github](/images/unity/setup/github/gitinvite1.png)
+
+The link will send them to an accept invite page. Once they 'Accept Invitation', they will have permission to push their changes back to the repository.
+![Github accept invitation page](/images/unity/setup/github/gitinvite2.png)
+
+
 ## Teammate Access
 The creator of the project is now good to go. Next, each other member will need to do these steps to clone the repository to their local machine.
 
