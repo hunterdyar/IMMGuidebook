@@ -20,6 +20,12 @@ Once you have your event system added to the scene, add the UXR Pointer Input Mo
 
 Otherwise, you will manually add the UXRCanvas component. 
 
+{{< hint info >}}
+**Make sure that in the event system, you select whether or not you want fingertip or laser pointer interaction.**
+{{< /hint >}}
+
+![Component Canvas Adding](/images/unity/ultimate-xr/ui-interact-option.png)  
+
 # Avatar Setup
 
 ## UXR Avatar
