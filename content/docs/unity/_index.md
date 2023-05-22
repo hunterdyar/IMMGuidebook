@@ -15,3 +15,5 @@ This section covers non-programming related Unity content.
 - [Tough Nut To Crack](https://www.youtube.com/channel/UCTR740iIPwfu7Pz_BoCEJ-g) - Unity Youtube Channel, solving interesting challenges and devlogs.
 - [Catlike Coding](https://catlikecoding.com/unity/tutorials/) - Excellent Unity tutorials
 - [Mix and Jam](https://www.youtube.com/channel/UCLyVUwlB_Hahir_VsKkGPIA) - Recreates game mechanics in Unity, explaining the process.
+- [Infallible Code](https://www.youtube.com/@InfallibleCode) - Does a good job getting into mode advanced topics.
+- [Jason Storey](https://www.youtube.com/@JasonStorey) - Covers architecture and 'big picture' concepts in Unity/C#. 
