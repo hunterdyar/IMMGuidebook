@@ -2,7 +2,11 @@
 title: Binary
 ---
 # Binary
-'binary' Refers either to [binary numbers](https://en.wikipedia.org/wiki/Binary_number) or [binary code](https://en.wikipedia.org/wiki/Binary_code), both of which are base 2 representations of information. We can do math with binary numbers, and store data (inclding numbers) with binary code, also called binary encoding.
+'binary' Refers either to [binary numbers](https://en.wikipedia.org/wiki/Binary_number) or [binary code](https://en.wikipedia.org/wiki/Binary_code), both of which are base 2 representations of information. We can do math with binary numbers, and store data (including numbers) with binary code, also called binary encoding.
+
+### See [this interactive explainer page](https://explainers.hdyar.com/binary/index.html) on Binary.
+
+It's basically my lecture on Binary in text form, with interactive widgets, and detailed explanations.
 
 ## Binary Numbers Basics
 
