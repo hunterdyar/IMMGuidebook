@@ -1,5 +1,5 @@
 ---
-title: Blender Tutorials
+title: Blender YouTube Creators
 ---
 
 # Youtube Channels

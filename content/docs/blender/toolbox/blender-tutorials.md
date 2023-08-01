@@ -1,7 +1,7 @@
 ---
 title: Blender Tutorials
 
-draft: True
+draft: False
 
 ---
 
@@ -29,8 +29,23 @@ draft: True
  
  - [The RIGHT Way to Cut Holes in Surfaces in Blender](https://www.youtube.com/watch?v=Ci1jBOm_5NY&t=586s)
  - Cutting holes in objects without ruining the topology.
- 
 
+## Weight Painting in Blender (5-Minutes) by Royal Skies
+- [Weight Painting in 5 Minutes](https://www.youtube.com/watch?v=4fICQmBEt4Y&list=PLnxBZAbcOs1XqpFdjkapZktH0wUgafsNx&index=76&t=70s)
+- Beginner friendly
+- Short
+
+## Introduction to the Compositor by Grant Abbitt
+- [Make Your Renders Pop - Introduction to The Framework](https://www.youtube.com/watch?v=jhTPI6QJQNg&list=PLnxBZAbcOs1XqpFdjkapZktH0wUgafsNx&index=73&t=2s) 
+- Beginner
+- Learn about the compositor 
+- Not helpful for a 3D model to unity workflow but good to know for renders
+
+## Voxel and Quad Remeshing
+- [Blender Secrets - Voxel and Quad Remesh in Sculpt Mode](https://www.youtube.com/watch?v=UIJRSyJ7cSg&list=PLnxBZAbcOs1XqpFdjkapZktH0wUgafsNx&index=66)
+- Modeling
+- Intermediate
+- Topology
  
  
  

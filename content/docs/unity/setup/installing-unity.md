@@ -1,5 +1,6 @@
 ---
 title: Installing Unity and an IDE
+weight: 1
 ---
 # Installing Unity - A Thorough Guide
 
