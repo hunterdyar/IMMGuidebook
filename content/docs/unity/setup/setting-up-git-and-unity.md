@@ -5,7 +5,7 @@ weight: 12
 ---
 # Setting up Git & Unity with GitHub Desktop
 ## Keep In Mind Before Getting Started
-1. **Never** put your "Libary" folder into Git, or in any of your commits. We always want to tell git to [ignore](https://github.com/github/gitignore/blob/main/Unity.gitignore) it. 
+1. **Never** put your "Library" folder into Git, or in any of your commits. We always want to tell git to [ignore](https://github.com/github/gitignore/blob/main/Unity.gitignore) it. 
 2. We **do** want to put ".meta" files in our commits.
 3. We can always destroy and restart the git side of things without losing any of our actual project work, or actual files. We should never have to give up work or re-do any work because of a git mistake. 
 4. Using GitHub as a repository means publishing our projects, for free, on the internet. That's awesome - but it means we can't use assets if we don't have a license to *just give it away on the internet*. We would, at least, need to make our github repository *private*.
