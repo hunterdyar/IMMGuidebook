@@ -2,7 +2,7 @@
 weight: 5
 bookFlatSection: false
 bookCollapseSection: true
-title: "Creative Coding"
+title: "Creative Coding & Python"
 ---
 # Creative coding
 Express with code.
@@ -17,4 +17,4 @@ For students, creative coding is far more accessible than a traditional engineer
 
 All in all, Creative coding is an excellent introduction to programming and graphics, and complementary to learning real-time 3D engines.
 
-You can do creative coding with all sorts of tools, although a few stand out. See [Libraries and Software]({{< ref "/docs/creative-coding/libraries-and-software.md">}}).
+You can do creative coding with all sorts of tools, although a few stand out. See [Libraries and Software]({{< ref "/docs/creative-coding-python/libraries-and-software.md">}}).
