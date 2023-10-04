@@ -14,7 +14,8 @@ I recommend bringing images into a photo editing software like Photoshop to crop
 
 ## Screen Gifs
 - [LiceCap](https://www.cockos.com/licecap/) (Open Source, Windows+Mac)
-- [Screen-To-Gif](https://www.screentogif.com) (open source, Windows/Mac/Linux)
+- [Screen-To-Gif](https://www.screentogif.com) (Open source, Windows/Mac/Linux)
+- [Gifcap](https://gifcap.dev/) (Open source, Web-based on modern browsers)
 
 ## Video Capture with OBS
 For capturing video from the desktop, the best piece of software to learn is [OBS](https://obsproject.com/). It's more powerful than we may need, but it remains easy to use and an indespensible tool in the digital media field.
