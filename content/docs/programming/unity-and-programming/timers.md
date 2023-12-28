@@ -6,7 +6,7 @@ title: Timers
 First, I will discuss the thought process for deciding how to implement timers. If you just want the example code, scroll down.
 
 ## Considerations for Timers
-The rules of thumb are to keep the timer implementation as simple as possible - and no simpler; and to keep the
+The rules of thumb are to keep the timer implementation as simple as possible - and no simpler; and to keep the logic as "close" to the action as possible. In other words, let gameObjects be responsible for themselve
 
 ### Ownership
 Timers are a tricky subjet in Unity development, but can be tricky to get right. The hardest part of timers isn't implementing the logic of them, but - in my experience - determining which object should be responsible for the timer.
@@ -138,3 +138,68 @@ void DoAction()
     
 }
 {{< /highlight >}}
+
+### Coroutines For Timers
+
+A coroutine is a way to have functions run outside of the regular Unity Game Loop. They are a way to have a function that can pause it's execution while waiting for something else. We call this pausing 'yielding', and the something else is usually controlled by Unity's ggame loop. Often we talk about coroutines as if they are like a separate thread, but they are in the same thread as everything else.
+
+> Coroutines will get stopped if the GameObject that started them is destroyed or disabled, but they *won't* get stopped if the MonoBehaviour that started them is only disabled. This can be a cause of bugs when using coroutines. GameObjects are disabled with the gameObject.SetActive(false); function, while MonoBehaviours use the .enabled = false; variable.
+
+Coroutines have a unique syntax, so they can feel confusing and unfamiliar. See [the page on coroutines]({{< ref "../advanced/coroutines.md" >}}) for a deeper dive and videos on the topic.
+
+Here is the simplest setup, a function that starts a coroutine using the StartCoroutine function provided by Unity.
+The "yield return new WaitForSeconds" is the secret sauce. The yield command returns to the game loop an object that tells it when to resume execution of the coroutine. We can take an educated guess at what "WaitForSeconds" waits for, but the other yield commands are not as obvious.
+
+#### Simple Time Delay Coroutine
+
+{{< highlight csharp >}}
+//inside a MonoBehaviour.
+
+void BeginTrigger()
+{
+    StartCoroutine(DelayThenActionRoutine(2));
+}
+
+IEnumerator DelayThenActionRoutine(float secondsToWait)
+{
+    yield return new WaitForSeconds(secondsToWait);
+    Debug.Log("Action!");
+}
+{{< /highlight >}}
+
+#### Coroutine For Repetition
+
+{{< highlight csharp >}}
+//inside a MonoBehaviour.
+
+private Coroutine _repeatingRoutine;
+
+void BeginRepetition()
+{
+    _repeatingRoutine = StartCoroutine(RepeatActionRoutine(2));
+}
+
+void StopRepetition()
+{
+    if(_repeatingRoutine != null)
+    {
+        StopCoroutine(_repeatingRoutine);
+    }
+}
+
+IEnumerator RepeatActionRoutine(float secondsToWait)
+{
+    bool repeat = true;
+    while(repeat)
+    {
+        yield return new WaitForSeconds(secondsToWait);
+        Debug.Log("Action!");//presumably you would replace this with your important code.
+    }
+}
+{{< /highlight >}}
+
+For this example, the coroutine will last forever... Well, until this GameObject is destroyed or deactivated. a while(true) loop is usually a recipe for disaster. One way to be able to stop the coroutine is to move the repeat variable out to the monoBehaviour, and set it to false. This is easy enough, but I find changing a boolean to be an unsatisfying way to say "stop". Will it last go more time before actually stopping? (in the above example, it likely will! We could move the yield code to after the action as a fix).
+
+> If it gets deactivated and reactivated, the routine may need to be restarted in OnEnable()
+
+The solution is to store a Coroutine object, which can reference a coroutine. We can use this in Unity's StopCoroutine function, which is clear, readable, and immedeate. The only gotcha is to do a null-check, if we stop the routine before assigning that variable (ie: before starting it), that will throw an error.
