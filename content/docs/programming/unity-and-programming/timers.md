@@ -3,7 +3,7 @@ title: Timers
 ---
 # Considerations and Strategies for Timers
 
-First, I will discuss the thought process for deciding how to implement timers. If you just want the example code, scroll down.
+First, we will discuss the thought process for deciding how to implement timers. If you just want the example code, scroll down.
 
 ## Considerations for Timers
 The rules of thumb are to keep the timer implementation as simple as possible - and no simpler; and to keep the logic as "close" to the action as possible. In other words, let gameObjects be responsible for themselve
@@ -81,7 +81,7 @@ void DoAction()
 The biggest gotcha is resetting the timer. Since many different functions in a MonoBehaviour can change the timer, we want to be very careful about when we set and reset it.
 
 ### A Timer Float: Refactored
-Some improvements I might choose to implement:
+Some improvements we might choose to implement:
 - Wrapping this "timer = startTime;" logic in a "ResetTimer()" function can make debugging easier.
 - Wrapping the timer in a timerTick function also makes debugging easier, and keeps the Update loop clean, as there is likely other complex logic going on in Update. I use the word 'Tick' to refer to functions I expect to be called by Update.
 - Trivially, we can use a bool as a local pause without changing the timers value. 
