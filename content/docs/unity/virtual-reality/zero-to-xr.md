@@ -10,7 +10,9 @@ Welcome to the immersive world of Virtual Reality (VR) on the Oculus Quest heads
 
 ### Preface: Creating the game
 1. Upon opening the Unity Hub click new project.
+
 2. Select 3d and name your project.
+
 3. Click Create Project.
 
 ### Section 1: Setting Up Your Development Environment
@@ -31,10 +33,9 @@ Download XR Interaction Toolkit:
 
  1. Visit the Unity Package Manager (Window > Package Manager).
  
- 
  2. In the top left corner switch from Packages: in project to Packages in Unity registry. 
  
- ![Installing XR Plugin Management](/images/unity/Zero-XR/packagemanager.png)
+ ![Installing XR Plugin Management](/images/unity/Zero-XR/Packagemanager.png)
 
  3. Search for "XR Interaction Toolkit" and click "Install."
 
@@ -77,7 +78,7 @@ Your scene should look like this now:
  ![XR Grab Interactable](/images/unity/Zero-XR/XRGrab.png)
  
  ### Section 3: Configuring Locomotion
- YOUTUBE LINK NEEDED
+[idk](https://www.youtube.com/watch?v=SfQS9lfRRm0&t=64s)
  
 Now, let's configure how users will interact with the VR environment:
  
