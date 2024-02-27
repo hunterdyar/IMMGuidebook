@@ -78,7 +78,7 @@ Your scene should look like this now:
  ![XR Grab Interactable](/images/unity/Zero-XR/XRGrab.png)
  
  ### Section 3: Configuring Locomotion
-[![Unity VR XR Interaction Toolkit -Locomotion Move & Snap Turn Video](/images/unity/Zero-XR/Thumbnail.png)](https://www.youtube.com/watch?v=SfQS9lfRRm0&t=64s)
+ [![Unity VR XR Interaction Toolkit -Locomotion Move & Snap Turn Video](/images/unity/Zero-XR/Thumbnail.png)](https://www.youtube.com/watch?v=SfQS9lfRRm0&t=64s)
  
 Now, let's configure how users will interact with the VR environment:
  
