@@ -32,12 +32,15 @@ Download XR Interaction Toolkit:
  1. Visit the Unity Package Manager (Window > Package Manager).
  
  
- 2. In the top left corner switch from Packages: in project to Packages in Unity registry.
+ 2. In the top left corner switch from Packages: in project to Packages in Unity registry. 
+ 
  ![Installing XR Plugin Management](/images/unity/Zero-XR/packagemanager.png)
 
  3. Search for "XR Interaction Toolkit" and click "Install."
 
- 4. Under samples install sample assets.
+ 4. Under samples install sample assets. 
+ 
+
  ![XR Sample Assets](/images/unity/Zero-XR/SampleAssets.png)
 
 #### Set Up Scene:
@@ -68,7 +71,9 @@ Your scene should look like this now:
 
 4. Select the options: smooth position on and smooth rotation on.
 
-5. Switch the movement type to kinematic.
+5. Switch the movement type to kinematic.  
+
+
  ![XR Grab Interactable](/images/unity/Zero-XR/XRGrab.png)
  
  ### Section 3: Configuring Locomotion
@@ -94,9 +99,7 @@ Movement provider: Continuous movement provider (action-based) or a Teleportatio
 
 Note: If using a teleportation provider you must make a cube, disable the mesh renderer, and apply the component teleportation area to it, the size of the cube is the area your player can move through.
 
- ![Locomotion1](/images/unity/Zero-XR/Locomotion1.png)
- 
-  ![Locomotion2](/images/unity/Zero-XR/Locomotion2.png)
+ ![Locomotion1](/images/unity/Zero-XR/Locomotion1.png) ![Locomotion2](/images/unity/Zero-XR/Locomotion2.png)
 
 
 ### Section 4: Testing Your VR Experience
