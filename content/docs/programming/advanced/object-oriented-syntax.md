@@ -118,7 +118,7 @@ While this is more syntax than simply typing "new", this forces me - when progra
 {{< highlight csharp >}}
 public class ParentClassName : MonoBehaviour
 {
-    protected override void Start()
+    protected virtual void Start()
     {
         //stuff
     }
