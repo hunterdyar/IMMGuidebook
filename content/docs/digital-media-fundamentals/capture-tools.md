@@ -18,7 +18,7 @@ I recommend bringing images into a photo editing software like Photoshop to crop
 - [Gifcap](https://gifcap.dev/) (Open source, Web-based on modern browsers)
 
 ## Video Capture with OBS
-For capturing video from the desktop, the best piece of software to learn is [OBS](https://obsproject.com/). It's more powerful than we may need, but it remains easy to use and an indespensible tool in the digital media field.
+For capturing video from the desktop, the best piece of software to learn is [OBS](https://obsproject.com/). It's more powerful than we may need, but it remains easy to use and an indispensible tool in the digital media field.
 
 #### Create a new Scene.
 The Scenes panel is in the bottom left of the interface. Click this plus button to add a new scene. Scenes are saved, so you don't have to add your scenes every time you launch OBS.
