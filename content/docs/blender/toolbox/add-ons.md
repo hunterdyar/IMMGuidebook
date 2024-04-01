@@ -3,7 +3,7 @@ title: Useful Add-Ons
 weight: 10
 ---
 # Useful Add-Ons.
-Blender ships with a lot of features that it keeps hidden, that can easily be activated by going into to File>Preferences>Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.
+Blender ships with a lot of features that it keeps hidden, which can easily be activated by going into to File>Preferences>Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.
 
 In no particular order
 

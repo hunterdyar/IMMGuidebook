@@ -17,7 +17,7 @@ draft: false
 ### Diffuse Map Example (Base Color)
 
 1. Use cycles (can only bake materials in cycles), set **Bake Type** to **Diffuse**  
-![Bake Type to Defuse](/images/blender/toolbox/bake-type-diffuse.png)
+![Bake Type to Diffuse](/images/blender/toolbox/bake-type-diffuse.png)
 2. Disable **Direct** and **Indirect** contributions under **Influence**  
 ![Disable Direct and Indirect Contributions](/images/blender/toolbox/disable-direct-indirect-contr.png)
 3. Set **Margin --> Size** to zero pixels  
@@ -66,7 +66,7 @@ Alternatively, if your material has a flat metallic value, you can preview a val
 ### Combined Roughness and Metallic
 
 This compositing setup can be used to prepare a Roughness + Metallic Map for Unity:  
-![Composting Node Setup](/images/blender/toolbox/compositing-node-setup.png)  
+![Compositing Node Setup](/images/blender/toolbox/compositing-node-setup.png)  
 
 After compositing, set your render size to the preferred texture size and complete your render.  
 ![Setting Texture Size](/images/blender/toolbox/setting-texture-size.png)
