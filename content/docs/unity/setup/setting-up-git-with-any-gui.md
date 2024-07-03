@@ -58,3 +58,9 @@ Some Git GUI software packages will keep their own copy of the *actual* "git" co
 - [GitKraken](https://www.gitkraken.com/) (One of my students swears by this one)
 
 See here for a [larger list](https://git-scm.com/downloads/guis).
+
+---
+
+## Video Walkthrough
+
+{{< youtube aOLrUizV7ng >}}
