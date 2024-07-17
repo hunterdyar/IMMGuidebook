@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ partial "navbar" }}
+{{ partial "navbar" . }}
 
  <article class="fn fl-ns w-80-ns mw8">
   <div class="mw9 center ph3-ns">
@@ -7,7 +7,7 @@
 
     {{ range .Site.Sections.ByWeight }}
     <div class="fl-ns w-100">
-     <h1>{{ .Title }}</h1>
+     <h1 id="{{ .LinkTitle }}">{{ .Title }}</h1>
      <p>{{ .Content }}</p>
     </div>
 

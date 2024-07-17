@@ -5,7 +5,7 @@
     <nav>
         <ul>
             {{ range .Site.Sections }}
-                <li><a href="#">{{ .Title}}</a></li>
+                <li><a href="#{{ .LinkTitle }}">{{ .LinkTitle}}</a></li>
             {{ end }}
         </ul>
     </nav>
