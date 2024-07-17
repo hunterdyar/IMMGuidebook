@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    {{ partial "title" }}
+    <style>
+        .bt {
+            border-top-style: solid;
+            border-top-width: 1px;
+        }
+
+        .bb {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+
+        .bw2 {
+            border-width: .25rem;
+        }
+
+        .cf:before, .cf:after {
+            content: " ";
+            display: table;
+        }
+        @media screen and (min-width: 30em) {
+            header {
+                position: sticky;
+                top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<main class=" bg-white black-80 cf ph3 ph5-ns pv5">
+    {{ block "main" . }}
+
+    {{- .Content -}}
+
+    {{ end }}
+</main>
+</body>
+</html>
+

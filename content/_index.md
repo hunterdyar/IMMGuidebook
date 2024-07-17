@@ -1,7 +1,6 @@
 ---
 title: The Guidebook
-type: docs
-bookToC: false
+layout: home
 ---
 
 # The Guidebook

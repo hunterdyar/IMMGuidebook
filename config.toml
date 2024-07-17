@@ -1,7 +1,7 @@
 baseURL = 'http://guidebook.hdyar.com/'
 languageCode = 'en-us'
 title = 'The Guidebook'
-theme = 'book'
+theme = 'guidebook'
 BookComments = false
 publishDir = 'docs'
 [markup]
