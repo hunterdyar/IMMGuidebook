@@ -11,10 +11,10 @@ Students in IMM103, the <img src="/images/blender/learn/important-green.svg" sty
 # Blender Learning Path
 This page is a learning path for learning Blender. Assuming you know nothing, you can follow through from top to bottom and learn enough Blender that you can continue teaching yourself. The goal is to learn enough to get past the initial difficulty curve, and get into the space where you can hack and learn easily through external resources.
 
-This webpage avoids any single 'full tutorial', and encourages you to jump between guides. If you want to ignore all of that, then the popular [Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD) from Blender Guru is how many blender users first learned the software. This long tutorial provides a broad overview of almost everything you can do in Blender, and will leave you confident in the user interface. I would explore shorter resources and more experimentation-based approaches first, and consider going through it later to "round out" your knowledge of the interface.
+This webpage avoids any sifngle 'full tutorial', and encourages you to jump between guides. If you want to ignore all of that, then the popular [Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD) from Blender Guru is how many blender users first learned the software. This long tutorial provides a broad overview of almost everything you can do in Blender, and will leave you confident in the user interface. I would explore shorter resources and more experimentation-based approaches first, and consider going through it later to "round out" your knowledge of the interface.
 
 ## <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block" /> The First Steps
-First, of course, [Install Blender]({{< ref "blender/install-blender.md">}}).
+First, of course, [Install Blender]({{< ref "blender/learning-blender/install-blender.md">}}).
 
 Next, keep your eye on the version of blender mentioned in tutorials/guides. Blender made a significant change to its user interface in version 2.8. Versions 2.7 and older are out of date, but versions 2.8 and newer should be fine.
 
