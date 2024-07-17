@@ -1,4 +1,12 @@
 {{ define "main" }}
-{{ partial "navbar" . }}
-{{ .Content }}
+{{ partial "pagebar" . }}
+<article class=" fn fl-ns w-80-ns mw8 pl2">
+    <div class="mw9 center ph3-ns">
+        <div class="cf ph2-ns">
+
+            {{ .Content }}
+
+        </div>
+    </div>
+</article>
 {{ end }}

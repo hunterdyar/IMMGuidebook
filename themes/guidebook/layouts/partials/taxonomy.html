@@ -1,0 +1,17 @@
+<ul>
+{{ range $term, $_ := .Site.Taxonomies }}
+  {{ with $.Site.GetPage (printf "/%s" $term | urlize) }}
+  <li class="">
+    <strong>{{ .Title | title }}</strong>
+    <ul>
+    {{ range .Pages }}
+      <li class="fl">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span>{{ len .Pages }}</span>
+      </li>
+    {{ end }}
+    </ul>
+  </li>
+  {{ end }}
+{{ end }}
+</ul>

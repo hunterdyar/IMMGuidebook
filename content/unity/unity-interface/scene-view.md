@@ -15,7 +15,7 @@ Read the page in the [Unity Manual](https://docs.unity3d.com/Manual/SceneViewNav
 ## Common Scene View Trouble 
 There are a few features in the scene view that can really mess you up if you are not aware of them. 
 
-#### The 2D Mode Toggle
+### The 2D Mode Toggle
 ![Scene View 2D Toggle](/images/unity/scene-view/sceneView2DToggle.PNG)
 
 The 2D mode toggle will switch your scene view to 2D mode, the camera will become orthographic and you won't be able to rotate the camera.
