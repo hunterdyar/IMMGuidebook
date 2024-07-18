@@ -1,8 +1,8 @@
 {{ $url := .Site.BaseURL }}
-<a href="/" class="link dim black">
+<a href="/" class="link black hover-link-bg">
 
 <div class="mw5">
-<svg viewBox="0 0 120 30">
+<svg viewBox="0 0 120 35">
     <style>
         text{
             font-weight: bold;
@@ -11,9 +11,12 @@
         .the{
             font-size: .5rem;
         }
+        svg:hover{
+            background-color: var(--link-hover-color);
+        }
     </style>
-    <text x="0" y="15" class="the bold">The</text>
-    <text x="0" y="30" class="f5 bold">Guidebook</text>
+    <text x="2" y="15" class="the bold">The</text>
+    <text x="2" y="30" class="f5 bold">Guidebook</text>
 </svg>
 </div>
 </a>
