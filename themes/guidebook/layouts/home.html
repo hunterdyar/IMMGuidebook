@@ -26,7 +26,7 @@
        <p>{{ .Content }}</p>
        <ol class="list pl0">
         {{ range $index, $element := .Pages.ByWeight }}
-        <li><span>{{add $index 1}}: </span><a href="{{ .RelPermalink }}" class="link dark-gray black hover-bg-light-yellow">{{ .Title }}</a></li>
+        <li><span>{{add $index 1}}: </span><a href="{{ .RelPermalink }}" class="link dark-gray black hover-link-bg">{{ .Title }}</a></li>
         {{ end }}
        </ol>
       </div>
