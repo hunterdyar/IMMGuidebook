@@ -4,6 +4,8 @@ title = 'The Guidebook'
 theme = 'guidebook'
 BookComments = false
 publishDir = 'docs'
+disableKinds = ['taxonomy', 'term']
+
 [markup]
   [markup.highlight]
     anchorLineNos = false
@@ -20,3 +22,4 @@ publishDir = 'docs'
 
 [markup.goldmark.renderer]
   unsafe= true
+
