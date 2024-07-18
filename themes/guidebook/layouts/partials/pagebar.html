@@ -7,13 +7,13 @@
         <ul class="list pl0">
         {{ range .Fragments.HeadingsMap }}
             {{if eq .Level 1}}
-                <li class="pb0 pl0"><a href="#{{ .ID }}" class="link black  hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
+                <li class="pb0 pl0"><a href="#{{ .ID }}" class="f5 link black hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
             {{range .Headings }}
                 {{if eq .Level 2}}
-                <li class="pb1 pl2"><a href="#{{ .ID }}" class="link black  hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
+                <li class="pb1 pl2"><a href="#{{ .ID }}" class="f5 link black hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
                     {{range .Headings }}
                     {{if eq .Level 3}}
-                        <li class="pl3"><a href="#{{ .ID }}" class="link black  hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
+                        <li class="pl3"><a href="#{{ .ID }}" class="f6 lh-copy link black hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
                     {{end}}
 
 
@@ -23,9 +23,9 @@
             {{if eq .Level 0}}
                 {{range .Headings }}
                     {{if eq .Level 2}}
-                        <li class="pl2"><a href="#{{ .ID }}" class="link black  hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
+                        <li class="pl2"><a href="#{{ .ID }}" class="f5 link black  hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
                     {{else if eq .Level 3}}
-                        <li class="pl3"><a href="#{{ .ID }}" class="link black  hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
+                        <li class="pl3"><a href="#{{ .ID }}" class="f6 lh-copy link black hover-link-bg"><span>{{ safeHTML .Title }}</span></a></li>
                     {{end}}
                 {{end}}
             {{end}}
