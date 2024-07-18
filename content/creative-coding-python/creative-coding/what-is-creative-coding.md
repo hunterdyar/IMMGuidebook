@@ -15,4 +15,4 @@ For students, creative coding is far more accessible than a traditional engineer
 
 All in all, Creative coding is an excellent introduction to programming and graphics, and complementary to learning real-time 3D engines.
 
-You can do creative coding with all sorts of tools, although a few stand out. See [Libraries and Software]({{< ref "/libraries-and-software.md">}}).
+You can do creative coding with all sorts of tools, although a few stand out. See [Libraries and Software]({{< ref "libraries-and-software.md">}}).
