@@ -3,11 +3,15 @@ title: Installing Blender
 weight: 1
 ---
 
+[![Blender Logo](blender.png)](http://blender.org)
+
 # Installing Blender
 You can always download and install the latest stable release of Blender at [blender.org](https://www.blender.org/).
 
+This is the recommended way to install Blender.
+
 ## Blender Launcher
-Only if you want to use brand new or experimental features (at the time of writing, new Geometry Nodes), you may want to explore different development branches of Blender. Dealing with multiple versions of Blender on one machine can be annoying. The best way to do this is with a piece of open source software called [Blender Launcher](https://github.com/DotBow/Blender-Launcher).
+Only if you want to use brand new or experimental features (at the time of writing, new Geometry Nodes), you may want to explore different development branches of Blender. Dealing with multiple versions of Blender on one machine can be annoying. The best way to do this is with a piece of open source software called [Blender Launcher](https://github.com/Victor-IX/Blender-Launcher-V2).
 
 Blender Launcher will download and manage different blender versions, and let you easily change shortcuts/file associations for them.
 
