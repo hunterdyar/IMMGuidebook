@@ -145,7 +145,7 @@ A coroutine is a way to have functions run outside of the regular Unity Game Loo
 
 > Coroutines will get stopped if the GameObject that started them is destroyed or disabled, but they *won't* get stopped if the MonoBehaviour that started them is only disabled. This can be a cause of bugs when using coroutines. GameObjects are disabled with the gameObject.SetActive(false); function, while MonoBehaviours use the .enabled = false; variable.
 
-Coroutines have a unique syntax, so they can feel confusing and unfamiliar. See [the page on coroutines]({{< ref "../advanced/coroutines.md" >}}) for a deeper dive and videos on the topic.
+Coroutines have a unique syntax, so they can feel confusing and unfamiliar. See [the page on coroutines]({{< ref "/csharp/advanced/coroutines.md" >}}) for a deeper dive and videos on the topic.
 
 Here is the simplest setup, a function that starts a coroutine using the StartCoroutine function provided by Unity.
 The "yield return new WaitForSeconds" is the secret sauce. The yield command returns to the game loop an object that tells it when to resume execution of the coroutine. We can take an educated guess at what "WaitForSeconds" waits for, but the other yield commands are not as obvious.

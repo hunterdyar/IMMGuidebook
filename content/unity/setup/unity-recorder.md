@@ -2,9 +2,10 @@
 title: Using Unity Recorder for Video Capture
 weight: 10
 ---
+
 # Video Capture with Unity *Recorder* 
 
-Unity Recorder is a unity-built feature for exporting videos from the game view in Unity. It's a great utility for assembling video documentation, and serves as an alternative to other [capture tools]({{< ref "/digital-media-fundamentals/capture-tools.md" >}}).
+Unity Recorder is a unity-built feature for exporting videos from the game view in Unity. It's a great utility for assembling video documentation, and serves as an alternative to other [capture tools]({{< ref "/digital-media-fundamentals/media-tools/capture-tools.md" >}}).
 
 ## Installing Unity Recorder
 

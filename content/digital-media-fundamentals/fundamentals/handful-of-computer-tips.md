@@ -1,7 +1,7 @@
 ---
 title: A Handful of Computer Tips
-draft: true
 ---
+
 # A Handful of Computer Tips
 These tips are generally about the Windows operating-system, or common conventions that many pieces of software use.
 
@@ -22,7 +22,7 @@ These tips are generally about the Windows operating-system, or common conventio
 - Lets practice navigating explorer or finder window from a keyboard (open: win+e. mac: alt-tab to finder is the selected software, then cmd+n)
 - Lets take a look at properties and details of the file menu.
 - Win+P to open external connected display options on windows
-- View your file system visually, using software like WinDirStat, TreeSize, GrandPerspective, DaisyDisk, or others. *I have been using WinDirStat for 15 years and won't switch now.*
+- View your file system visually, using software like WinDirStat, TreeSize, GrandPerspective, DaisyDisk, or others. *I have been using WinDirStat for 15 years and won't switch now, even though WizTree is way faster.*
 - Ctrl+Shift+V or Cmd+Shift+V will paste text without all the formatting, usually.
 - Ctrl+L (Cmd+l) will select and highlight an address bar or search bar in most software (like web browsers and file explorers)
 - Windows users, check out the software 'Everything' by Voidtools

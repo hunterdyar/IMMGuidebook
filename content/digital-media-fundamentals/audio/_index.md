@@ -1,6 +1,5 @@
 ---
 title: Audio
-weight: 500
-bookCollapseSection: true
+weight: 6
 ---
 Working with audio.

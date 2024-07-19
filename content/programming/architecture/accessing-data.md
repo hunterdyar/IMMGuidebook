@@ -109,7 +109,7 @@ Making the data we care about static takes it outside of the need for a dependen
 
 Instead of having static data, one could have static instances... and now we are using a [singleton pattern]({{< ref "/programming/architecture/singleton-pattern.md" >}}).
 
-See more about [static]({{< ref "/programming/advanced/static-objects-and-unity.md" >}}) members.
+See more about [static]({{< ref "/csharp/advanced/static-objects-and-unity.md" >}}) members.
 
 {{< highlight csharp >}}
 public class Player : MonoBehaviour

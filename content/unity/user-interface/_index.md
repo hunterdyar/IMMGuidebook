@@ -1,6 +1,5 @@
 ---
-title: The UI System
+title: Unity UI Systems
 weight: 2
-bookCollapseSection: true
 ---
-This section is creating UI in Unity, the other UI section is the user interface of Unity.
+Flat, screen-space UI in Unity.
