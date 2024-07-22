@@ -1,8 +1,5 @@
 ---
-title: How to Bake Procedural Materials into PBR Maps
-
-draft: false
-
+title: How to Bake Procedural Materials (Blender to Unity)
 ---
 
 ## How to Bake Procedural Materials into PBR Maps

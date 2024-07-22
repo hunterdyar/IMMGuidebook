@@ -116,7 +116,7 @@ I am rotating the bullet with the assumption that it's default rotation is visua
 
 ![Screenshot of the Weapon Handler script](/images/unity/toolbox/playerWeaponHandler.png)
 
-*This script uses [Attributes]({{< ref "/programming/unity-and-programming/serialization-and-attributes.md">}}) to pretty up the inspector.*
+*This script uses [Attributes]({{< ref "../unity-and-programming/serialization-and-attributes.md">}}) to pretty up the inspector.*
 
 {{< highlight csharp "linenos=true">}}
 public class PlayerWeaponHandler : MonoBehaviour

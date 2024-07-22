@@ -8,7 +8,7 @@ title: Hand Tracking in Quest 3
 This can be done in a new or existing Unity project. The render pipeline (URP or Standard) does not matter.
 
 2. Make sure you're running a modern version of Unity (2021-2024).
-3. [Install]({{< ref "../setup/packages-assets-modules.md" >}}) the [Meta XR All in One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657) from the Unity Asset Store.
+3. [Install]({{< ref "/unity-starting/setup/packages-assets-modules.md" >}}) the [Meta XR All in One SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657) from the Unity Asset Store.
 
 [![meta SDK Screenshot](/images/unity/hand-tracking/MetaSDKAll.png)](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657)
 
@@ -16,7 +16,7 @@ This can be done in a new or existing Unity project. The render pipeline (URP or
 
 ## Configure XR Plugin Management:
 
-1. Install the [XR Plugin Management](https://docs.unity3d.com/Packages/com.unity.xr.management@4.4/manual/index.html) package. (For package installation instructions, see '[Packages, Assets, Modules]({{< ref "../setup/packages-assets-modules.md" >}})')
+1. Install the [XR Plugin Management](https://docs.unity3d.com/Packages/com.unity.xr.management@4.4/manual/index.html) package. (For package installation instructions, see '[Packages, Assets, Modules]({{< ref "/unity-starting/setup/packages-assets-modules.md" >}})')
 2. Go to `Edit -> Project Settings`.
 3. Select XR Plugin Management.
 4. Enable Android Build Support.
@@ -25,7 +25,7 @@ This can be done in a new or existing Unity project. The render pipeline (URP or
 
 4. Click on the Oculus tab under XR Plugin Management.
 5. Enable the Oculus integration for the target device you're building to.
-6. Change to Android in the Built Settings, if you have not already done so.
+6. Change to Android in the Build Settings, if you have not already done so.
 
 ## Access Oculus Tools:
 
@@ -45,4 +45,4 @@ This can be done in a new or existing Unity project. The render pipeline (URP or
 
 1. Open Meta Developer Hub on your computer.
 2. Connect and configure your Quest headset within the Developer Hub.
-3. Configure [Build Settings]({{< ref "../unity-fundamentals/builds.md">}}) in Unity, ensuring you're on Android Build Mode.
+3. Configure [Build Settings]({{< ref "unity-starting/unity-fundamentals/builds.md">}}) in Unity, ensuring you're on Android Build Mode.

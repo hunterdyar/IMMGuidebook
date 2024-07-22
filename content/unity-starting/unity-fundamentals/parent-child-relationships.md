@@ -2,7 +2,7 @@
 title: Parent-Child Relationships
 ---
 # Parent-Child relationships
-One core concept to understand is that of 'parenting'. Parent/Child relationships are edited in the [hierarchy window]({{< ref "/unity/unity-interface/hierarchy.md" >}}).
+One core concept to understand is that of 'parenting'. Parent/Child relationships are edited in the [hierarchy window]({{< ref "../unity-interface/hierarchy.md" >}}).
 
 If we remember that scenes are cartesian coordinate systems, we can define any point as a point on the number line. It can be thought of as the distance away from the scene origin on each axis. We will use the words **scene** and **world** interchangeably when talking about parenting. Scene is a unity-specific term and world is generic term, in this context.
 
@@ -55,3 +55,4 @@ foreach (Transform child in transform)
     Debug.Log(child.gameObject.name+" is "+child.localPosition.magnitude + " units away from parent position.");
 }
 {{< /highlight>}}
+

@@ -1,5 +1,6 @@
 ---
 title: Zero to Quest - Ultimate XR
+weight: 2
 ---
 
  ## Installing Ultimate XR into Your Unity Project

@@ -1,5 +1,5 @@
 ---
-Title: Bringing In Textures
+Title: Bringing Textures into Unity
 ---
 
 # Bringing Textures into Unity

@@ -26,7 +26,7 @@ The next step is to step away from long videos, and just poke around in Unity. H
 Practice creating and moving GameObjects, manipulating the scene view, and creating assets (materials). Enter play mode and try rolling the ball through the level, then go back and change things. Try changing the balls mass, angular drag, or other physics settings.
 
 ## Parent-Child Relationships
-Next, read [this page]({{< ref "/unity/unity-fundamentals/parent-child-relationships.md" >}}) on Parent/Child relationships in Unity.
+Next, read [this page]({{< ref "parent-child-relationships.md" >}}) on Parent/Child relationships in Unity.
 
 Before continuing, I also recommend reading overviews of some of the Unity windows the Unity Interface section.
 
@@ -40,7 +40,7 @@ Programming and Game Design can be thought of as being two discreet roles. When 
 Now we have created a nice, compartmentalized little script that we can use in many places that adds a simple behavior to whatever our GameObjects we want. A lot of Unity development is doing this. We create systems that exist without us having to go in and edit it. For example: Physics. You don't have to extend Unity classes to use the physics system. You just use the components, and use public functions (like "AddForce"). We should aim to create our systems with the same independent philosophy.
 
 ## Prefabs
-Next, head over to [this page]({{< ref "/unity/unity-fundamentals/prefabs.md" >}}) on Prefabs and watch the video there.
+Next, head over to [this page]({{< ref "prefabs.md" >}}) on Prefabs and watch the video there.
 
 ## Part 4
 Part 4: GameObject properties, Instantiating Objects, The Unity Event System, Collision Events, Basic Loops, and some other miscellaneous things.
