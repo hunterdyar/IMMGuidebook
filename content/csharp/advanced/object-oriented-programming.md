@@ -57,7 +57,7 @@ A member is all of the things that make an object what it is. An objects variabl
 > _Classes and structs have members that represent their data and behavior. A class's members include all the members declared in the class, along with all members (except constructors and finalizers) declared in all classes in its inheritance hierarchy._
 
 ## Component Systems
-Component-based architecture is discussed in the [Architecture Lecture]({{< ref "/programming/architecture/the-architecture-lecture.md" >}}), and you can review the pattern on its own in the excellent [Game Programming Patterns Book](https://gameprogrammingpatterns.com/component.html) (free, online).
+Component-based architecture is discussed in the [Architecture Lecture]({{< ref "/code-architecture/architecture/the-architecture-lecture.md" >}}), and you can review the pattern on its own in the excellent [Game Programming Patterns Book](https://gameprogrammingpatterns.com/component.html) (free, online).
 
 ## The Lesson
 

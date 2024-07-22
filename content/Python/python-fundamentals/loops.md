@@ -10,5 +10,5 @@ weight: 4
 ## Loop Examples
 {{< pyscript >}}
 for i in range(0,10,1):
-    print(i)
+print(i)
 {{< /pyscript >}}

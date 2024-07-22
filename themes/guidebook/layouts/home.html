@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "navbar" . }}
 
- <article class="fn fl-ns w-80-ns mw8 pl2 pl1-m">
+ <article class="debug fn fl-ns w-80-ns mw8 pl2 pl1-m">
   <div class="mw9 center ph3-ns">
    <div class="cf ph2-ns">
 
@@ -10,9 +10,9 @@
     {{ $i = add $i 1 }}
 
     {{ if modBool $i 2 }}
-    <div class="fl bb sep">
+    <div class="fl bb sep w-100">
      {{else}}
-     <div class="fl bb sep">
+     <div class="fl bb sep w-100">
       {{ end }}
       <div class="fl-ns w-100">
      <h1 id="{{ .LinkTitle }}">{{ .Title }}</h1>

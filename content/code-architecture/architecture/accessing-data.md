@@ -6,9 +6,9 @@ title: Accessing Data (from elsewhere)
 
 To access data that an object has, we need a reference to the appropriate instance of the object. The real challenge is, for the most part, getting the appropriate reference ("resolving" a "dependency"), and not actually accessing the data.
 
-Also see: [Data-oriented design]({{< ref "/programming/architecture/data-oriented-design-scriptable-objects.md" >}}).
+Also see: [Data-oriented design]({{< ref "./data-oriented-design-scriptable-objects.md" >}}).
 
-Also see: [Event Systems]({{< ref "/programming/architecture/event-systems.md" >}}).
+Also see: [Event Systems]({{< ref "event-systems.md" >}}).
 
 ## Public and Serialized Fields
 
@@ -74,12 +74,12 @@ public class ScoreManager : MonoBehaviour
 {{< /highlight >}}
 
 ## Event Systems
-Another clever way to resolve dependencies is to change how we think about them. Instead of being dependent on _objects_, we could be dependent on _the event we care about_. See [Event Systems]({{< ref "/programming/architecture/event-systems.md" >}}) for more about this pattern.
+Another clever way to resolve dependencies is to change how we think about them. Instead of being dependent on _objects_, we could be dependent on _the event we care about_. See [Event Systems]({{< ref "event-systems.md" >}}) for more about this pattern.
 
 Often our dependency problems are caused by "[race conditions](https://en.wikipedia.org/wiki/Race_condition)" when we are loading scenes, especially when working with multiple scenes. One unexpected benefit of event systems can move a some of our trouble outside of the race, to when the data actually starts getting used. 
 
 ## ScriptableObjects
-We can take the data we care about and move it outside of the entire scene loading game loop, and make it always exist in memory, and as an easily editable object in our file system that represents _data_. Sounds magical? We do this with a [data-oriented design]({{< ref "/programming/architecture/data-oriented-design-scriptable-objects.md" >}}) approach. See that page for more.
+We can take the data we care about and move it outside of the entire scene loading game loop, and make it always exist in memory, and as an easily editable object in our file system that represents _data_. Sounds magical? We do this with a [data-oriented design]({{< ref "data-oriented-design-scriptable-objects.md" >}}) approach. See that page for more.
 
 {{< highlight csharp >}}
 public class FloatData : ScriptableObject
@@ -107,7 +107,7 @@ Instead of one object being dependent on another, both objects are dependent on 
 ## Static Properties
 Making the data we care about static takes it outside of the need for a dependency on a specific instance. This can be great, but it tends to become a pain in the butt once projects get more complex. It leads to taking shortcuts that are difficult to refactor, as well as not having the flexibility such that the refactoring is likely necessary.
 
-Instead of having static data, one could have static instances... and now we are using a [singleton pattern]({{< ref "/programming/architecture/singleton-pattern.md" >}}).
+Instead of having static data, one could have static instances... and now we are using a [singleton pattern]({{< ref "singleton-pattern.md" >}}).
 
 See more about [static]({{< ref "/csharp/advanced/static-objects-and-unity.md" >}}) members.
 
