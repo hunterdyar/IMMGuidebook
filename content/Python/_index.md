@@ -2,4 +2,4 @@
 title: "Python"
 weight: 5
 ---
-Creative Coding with Python
+Learning programming with one of the most popular and most accessible programming languages

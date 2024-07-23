@@ -9,6 +9,11 @@ weight: 4
 
 ## Loop Examples
 {{< pyscript >}}
-for i in range(0,10,1):
-print(i)
+for i in range(10):
+    print(i)
+{{< /pyscript >}}
+
+{{< pyscript >}}
+for i in range(0,100,10):
+    print(i)
 {{< /pyscript >}}
