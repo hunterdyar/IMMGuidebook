@@ -1,0 +1,11 @@
+name = "Guidebook Theme"
+license = "MIT"
+licenselink = ""
+description = "Theme Created for Hunter Dyar's Guidebook"
+homepage = "guidebook.hdyar.com"
+tags = ["book", "simple"]
+
+# If the theme has a single author
+[author]
+name = "Hunter Dyar"
+homepage = "http://hdyar.com"

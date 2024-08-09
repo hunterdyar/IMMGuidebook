@@ -1,0 +1,22 @@
+
+<header class="fn fl-ns w-20-ns pr4-ns tracked-ns">
+    {{ partial "header" }}
+    <h2 class="f4 mid-gray lh-title">A digital media resource for students</h2>
+    <nav class="sep bb">
+        <ul class="list pl0">
+            {{ range .Site.Sections }}
+                <li class="pb1"><a href="#{{ .LinkTitle }}" class="link black hover-link-bg">{{ .LinkTitle}}</a></li>
+            {{ end }}
+        </ul>
+<!--        <form>-->
+<!--        <input placeholder="Search..."></input>-->
+<!--            <button>Search</button>-->
+<!--        </form>-->
+
+    </nav>
+    {{ partial "searchbar" .}}
+    <article>
+        <p class="text-center mid-gray lh-title"><a href="https://hdyar.com" class="link dark-gray black hover-link-bg" target="_blank">A project by <span class="underline">Hunter Dyar</span></a>.</p><p>With support from Student Workers and the <a href="https://chatham.edu/academics/undergraduate/immersive-media/" class="link dark-gray black hover-link-bg underline" target="_blank">Immersive Media</a> department at Chatham University.</p>
+        <p><a href="https://github.com/hunterdyar/IMMGuidebook/" target="_blank" class="link dark-gray black  hover-link-bg">Submit feedback and suggestions via issues on GitHub</a></p>
+    </article>
+</header>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ partial "navbar" . }}
+
+<article class="fn fl-ns w-80-ns mw8 pl2 pl1-m">
+    <div class="mw9 center ph3-ns">
+        <div class="cf ph2-ns">
+
+            <div class="fl bb sep">
+
+                    <div class="fl w-100 pv2 pl0 pr2">
+                        <h1 class="f4 mv0 pv2 pr2 pl0"><span class="bb bw2">{{ .Title}}</span></h1>
+                        <div class="pa2 pl0">
+                            <p>{{ .Content }}</p>
+                            <ol class="list pl0">
+                                {{ range $index, $element := .Pages.ByWeight }}
+                                <li><span>{{add $index 1}}: </span><a href="{{ .RelPermalink }}" class="link dark-gray black hover-link-bg">{{ .Title }}</a></li>
+                                {{ end }}
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+</article>
+{{ end }}
