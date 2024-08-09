@@ -11,7 +11,8 @@
                         <h1 id="{{ .LinkTitle }}">Page Not Found</h1>
                         <p>Sorry. We are unable to find that page.</p>
 
-                        <p>The Guidebook was reorganized in the summer of 2024, perhaps the page you are looking for has simply moved.</p>
+                        <p>The Guidebook was reorganized in the summer of 2024, perhaps the page you are looking for has simply moved to a new URL.</p>
+                        <p id="consider">Consider <a id="searching" href="/search/">searching</a> for the missing page.</p>
                     </div>
 
                 </div>
@@ -21,4 +22,20 @@
             </div>
         </div>
 </article>
+{{ end }}
+
+{{ define "footerfiles" }}
+<script type="text/javascript">
+    var data = window.location.pathname;
+    if(data !== ""){
+        var searching = document.getElementById("searching")
+
+
+        data = data.replaceAll("/"," ").replaceAll("-"," ");
+        data = data.replace("docs ","");
+        let u = "/search/?s="+data;
+        console.log(u);
+        searching.setAttribute("href",encodeURI(u));
+    }
+</script>
 {{ end }}
