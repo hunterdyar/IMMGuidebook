@@ -6,6 +6,9 @@ BookComments = false
 publishDir = 'docs'
 disableKinds = ['taxonomy', 'term']
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 [markup]
   [markup.highlight]
     anchorLineNos = false
