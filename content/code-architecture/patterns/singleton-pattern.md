@@ -1,5 +1,6 @@
 ---
-title: Singletons
+title: The Singleton Pattern
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/singleton-pattern/
 ---
 
 # Singletons

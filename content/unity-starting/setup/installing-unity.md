@@ -1,6 +1,7 @@
 ---
 title: Installing Unity and an IDE
 weight: 1
+oldlink: https://guidebook.hdyar.com/docs/unity/setup/installing-unity/
 ---
 # Installing Unity - A Thorough Guide
 

@@ -1,5 +1,6 @@
 ---
 title: Recording A Voice-Over in Audacity
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/audio/recording_a_voice_over/
 ---
 
 ## Notes on Saving

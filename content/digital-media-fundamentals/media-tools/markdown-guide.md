@@ -1,5 +1,6 @@
 ﻿---
 title: Markdown
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/markdown-guide/
 ---
 
 # What is Markdown?

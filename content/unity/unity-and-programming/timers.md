@@ -1,8 +1,8 @@
 ---
 title: Timers
+oldlink: https://guidebook.hdyar.com/docs/programming/unity-and-programming/timers/
 ---
 # Considerations and Strategies for Timers
-
 First, we will discuss the thought process for deciding how to implement timers. If you just want the example code, scroll down.
 
 ## Considerations for Timers

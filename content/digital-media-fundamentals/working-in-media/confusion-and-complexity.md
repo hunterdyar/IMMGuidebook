@@ -1,5 +1,6 @@
 ---
 title: Confusion vs. Complexity
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/confusion-and-complexity/
 ---
 # Confusion vs. Complexity.
 

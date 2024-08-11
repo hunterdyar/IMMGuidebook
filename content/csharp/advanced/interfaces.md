@@ -1,5 +1,6 @@
 ---
 title: Interfaces
+oldlink: https://guidebook.hdyar.com/docs/programming/advanced/interfaces/
 ---
 
 # Interfaces

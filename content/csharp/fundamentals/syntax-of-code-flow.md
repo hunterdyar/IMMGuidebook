@@ -2,7 +2,7 @@
 title: Syntax of Code Flow
 type: docs
 weight: 2
-
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/syntax-of-code-flow/
 ---
 
 # Code Flow

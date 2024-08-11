@@ -1,6 +1,7 @@
 ---
 title: Useful Add-Ons
 weight: 10
+oldlink: https://guidebook.hdyar.com/docs/blender/toolbox/add-ons/
 ---
 # Useful Add-Ons.
 Blender ships with a lot of features that it keeps hidden, which can easily be activated by going into to File>Preferences>Add-Ons menu. Third party developers can create their own add-ons, and there is a marketplace of individuals writing such software.

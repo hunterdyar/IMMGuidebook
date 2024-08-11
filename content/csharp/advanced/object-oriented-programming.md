@@ -1,5 +1,6 @@
 ---
 title: Object Oriented Programming
+oldlink: https://guidebook.hdyar.com/docs/programming/advanced/object-oriented-programming/
 ---
 # Object Oriented Programming
 

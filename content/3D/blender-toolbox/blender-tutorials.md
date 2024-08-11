@@ -1,8 +1,7 @@
 ---
 title: Blender Tutorials
-
+oldlink: https://guidebook.hdyar.com/docs/blender/toolbox/blender-tutorials/
 draft: False
-
 ---
 
 # Tutorials

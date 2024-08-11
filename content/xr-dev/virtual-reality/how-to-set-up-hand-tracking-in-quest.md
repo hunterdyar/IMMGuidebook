@@ -1,5 +1,6 @@
 ---
 title: Hand Tracking in Quest 3
+oldlink: https://guidebook.hdyar.com/docs/unity/virtual-reality/how-to-set-up-hand-tracking-in-quest/
 ---
 
 # How to Set Up Hand Tracking in Quest 3 Using Unity and the "Meta XR All in One SDK"

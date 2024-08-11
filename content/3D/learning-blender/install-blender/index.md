@@ -1,6 +1,7 @@
 ---
 title: Installing Blender
 weight: 1
+oldlink: https://guidebook.hdyar.com/docs/blender/install-blender/
 ---
 
 [![Blender Logo](blender.png)](http://blender.org)

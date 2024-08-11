@@ -1,5 +1,6 @@
 ---
 title: The Hierarchy Window
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-interface/hierarchy/
 ---
 # The Hierarchy
 The hierarchy window shows us a list of all of our GameObjects in a scene. It's a one-dimensional view of the scene, represented as a list.

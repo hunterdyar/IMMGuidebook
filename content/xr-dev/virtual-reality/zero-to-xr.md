@@ -1,6 +1,7 @@
 ---
 title: Zero to Quest - Interaction Toolkit
 weight: 1
+oldlink: https://guidebook.hdyar.com/docs/unity/virtual-reality/zero-to-xr/
 ---
 
  ## Unity Guide to Implementing XR Interaction Toolkit for Oculus Quest VR

@@ -1,5 +1,6 @@
 ---
 title: How to Bake Procedural Materials (Blender to Unity)
+oldlink: https://guidebook.hdyar.com/docs/blender/toolbox/bake-textures-in-blender-to-unity/
 ---
 
 ## How to Bake Procedural Materials into PBR Maps

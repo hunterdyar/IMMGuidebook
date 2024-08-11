@@ -1,6 +1,7 @@
 ---
 title: How To Use Ultimate XR
 draft: false
+oldlink: https://guidebook.hdyar.com/docs/unity/virtual-reality/how-to-use-ultimate-xr/
 ---
 ## How to Use Ultimate XR
 

@@ -1,6 +1,7 @@
 ---
 title: Learn Blender
 weight: 2
+oldlink: https://guidebook.hdyar.com/docs/blender/learn-blender/
 ---
 <!-- <img src="/images/blender/learn/important-green.svg" style="width:1em;height:1em;display:inline-block;margin-right:0.5em" /> -->
 

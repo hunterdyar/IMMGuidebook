@@ -1,5 +1,6 @@
 ---
 title: Input System
+oldlink: https://guidebook.hdyar.com/docs/programming/unity-and-programming/input-system/
 ---
 
 Unity has multiple Input Systems, which is confusing for beginners. Built into Unity by default is access to the "old" input system, which this page will detail. The "old" system is simpler and easier to use for beginners. Unity also has a "new" input system that you can switch to, which is far more advanced and capable, but requires a bit of setup before you can use, and utilizes more advanced c# features.

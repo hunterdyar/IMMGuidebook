@@ -1,7 +1,6 @@
 ---
 title: A Simple State Machine
-type: docs
-bookToc: false
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/simple-state-machine/
 ---
 
 # Creating a simple state machine in Unity

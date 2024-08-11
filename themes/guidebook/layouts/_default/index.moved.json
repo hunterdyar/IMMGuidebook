@@ -8,7 +8,6 @@
     {{ $old = replace $old "www." ""}}
     {{ $old = replace $old "http://" ""}}
     {{ $old = replace $old "https://" ""}}
-    {{ $old = replace $old "https://" ""}}
     {{ $old = strings.Trim $old "/"}}
 
     {{- $.Scratch.Add "moved" (dict "old" $old "relpermalink" $p.RelPermalink) -}}
@@ -16,3 +15,4 @@
 {{- end -}}
 
 {{- $.Scratch.Get "moved" | jsonify -}}
+

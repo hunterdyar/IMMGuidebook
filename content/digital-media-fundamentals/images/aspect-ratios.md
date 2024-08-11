@@ -1,5 +1,6 @@
 ---
 title: Aspect Ratios
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/aspect-ratios/
 ---
 # Aspect Ratios
 

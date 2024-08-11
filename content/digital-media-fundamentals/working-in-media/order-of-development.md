@@ -1,5 +1,6 @@
 ---
 title: Order Of Development
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/order-of-development/
 ---
 # Order Of Development
 

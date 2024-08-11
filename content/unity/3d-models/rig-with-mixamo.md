@@ -1,5 +1,6 @@
 ---
 title: Setting up a Rig with Mixamo
+oldlink: https://guidebook.hdyar.com/docs/unity/3d-models/rig-with-mixamo/
 ---
 # Setting up a Rig with Mixamo
 

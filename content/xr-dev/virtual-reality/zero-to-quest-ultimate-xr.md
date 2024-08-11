@@ -1,6 +1,7 @@
 ---
 title: Zero to Quest - Ultimate XR
 weight: 2
+oldlink: https://guidebook.hdyar.com/docs/unity/virtual-reality/zero-to-quest-ultimate-xr/
 ---
 
  ## Installing Ultimate XR into Your Unity Project

@@ -1,5 +1,6 @@
 ---
 title: Binary
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/binary/
 ---
 # Binary
 'binary' Refers either to [binary numbers](https://en.wikipedia.org/wiki/Binary_number) or [binary code](https://en.wikipedia.org/wiki/Binary_code), both of which are base 2 representations of information. We can do math with binary numbers, and store data (including numbers) with binary code, also called binary encoding.

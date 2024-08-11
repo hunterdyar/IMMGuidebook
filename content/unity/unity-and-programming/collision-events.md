@@ -1,5 +1,6 @@
 ---
 title: Collision Events
+oldlink: https://guidebook.hdyar.com/docs/programming/unity-and-programming/collision-events/
 ---
 # Unity Collision Events
 

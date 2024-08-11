@@ -1,5 +1,6 @@
 ---
 title: Types of Error Messages
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/types-of-error-messages/
 ---
 # Types of Error Messages
 Not all error messages are created equally, and understanding the differences is important to being able to hunt down and squash the bugs that are causing the messages.

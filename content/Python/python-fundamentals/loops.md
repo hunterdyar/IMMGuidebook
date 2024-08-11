@@ -2,6 +2,7 @@
 title: Loops
 draft: false
 weight: 4
+oldlink: https://guidebook.hdyar.com/docs/creative-coding-python/python-fundamentals/loops/
 ---
 
 ## Basic Loops in Processing

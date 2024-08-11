@@ -1,5 +1,6 @@
 ---
 title: Instantiating GameObjects
+oldlink: https://guidebook.hdyar.com/docs/unity/toolbox/instantiating/
 ---
 
 # Instantiating Objects

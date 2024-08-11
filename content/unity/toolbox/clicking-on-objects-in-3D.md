@@ -1,5 +1,6 @@
 ---
 title: Clicking On Objects in 3D
+oldlink: https://guidebook.hdyar.com/docs/unity/toolbox/clicking-on-objects-in-3d/
 
 ---
 # Clicking On Objects in 3D

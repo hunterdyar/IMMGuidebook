@@ -1,5 +1,6 @@
 ---
 title: Namespaces
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/namespaces/
 ---
 # Namespaces
 

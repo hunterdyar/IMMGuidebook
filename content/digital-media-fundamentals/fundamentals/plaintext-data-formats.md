@@ -8,7 +8,7 @@ Files are usually something that software interfaces with, not humans. We use so
 
 Generally, we are creating data structures, and using them for _whatever_. We coudln't open up the direct data that a JPEG file gives us, it looks like gibberish, a computer parses that gibberish into an image. 
 
-Imagine the pain of trying to edit a Powerpoint file on a computer that does not have Powerpoint installed. Developers hate that pain, and love to create a clean separation between software tools and data.
+Imagine the pain of trying to edit a PowerPoint file on a computer that does not have PowerPoint installed. Developers hate that pain, and love to create a clean separation between software tools and data.
 
 We can create a file in JSON by writing it by hand, and use it in a unity project. We could transfer the same program to a different computer, in a different operating system, and use it on a different project without having unity installed.
 

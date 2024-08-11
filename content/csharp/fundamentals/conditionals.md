@@ -2,7 +2,7 @@
 title: Conditionals
 type: docs
 weight: 2
-
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/conditionals/
 ---
 
 # Conditionals

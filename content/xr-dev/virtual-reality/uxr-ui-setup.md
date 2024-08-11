@@ -1,6 +1,7 @@
 ---
 title: UltimateXR UI Options
 draft: false
+oldlink: https://guidebook.hdyar.com/docs/unity/ultimate-xr-ui/ui-setup/
 ---
 {{< hint info >}}
 *This is a general overview of the UXR related UI menu, input, and setup. For more in-depth information about the components or questions go the [UXR Website UI Interaction Page](https://www.ultimatexr.io/guides/ui-interaction) for reference.*

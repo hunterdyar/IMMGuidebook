@@ -1,18 +1,19 @@
 ---
-title: Hierarchial Data Structures
+title: Hierarchical Data Structures
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/hierarchial-data-structures/
 ---
-# Hierarchial Data Structures
+# Hierarchical Data Structures
 
 ### Introduction
-Hierarchial data refers to a structure of data. Data - whatever it may be - is linked to other data in parent/child relationships. Understanding Hierarchial data structures is important to operating computers, and learning programming in general.
+Hierarchical data refers to a structure of data. Data - whatever it may be - is linked to other data in parent/child relationships. Understanding Hierarchial data structures is important to operating computers, and learning programming in general.
 
 The good news is: It's fairly simple! The grammar for describing this is as complex as the concept itself. That's one of the *problems* with programming - it's complicated and challenging to talk about some programming concepts (like describing a data structure) with language. A lot of learning programming is going to start with learning jargon and vocabulary. By the time you have that sorted out, you're probably 90% the way there with understanding the concept. In other words, the concept isn't usually, fundamentally, the hard part - it's learning how we communicate and parse it.
 
 ---
 
-### Understanding Hierarchial Data Structures
+### Understanding Hierarchical Data Structures
 
-Before we start programming or working with Unity, it is nice to have a broad understanding of hierarchial data structures.
+Before we start programming or working with Unity, it is nice to have a broad understanding of Hierarchical data structures.
 
 The idea is simple. Things can be made up of other things.
 
@@ -70,7 +71,7 @@ And we can move all the way from language to programming "dot-access" syntax:
 
 I can refer to the information at any point on the hierarchy. (model or material or color or r). What I am referring to will include the collection of all of the data pieces contained within it. Many computer languages use dots as the grammar that says "the right side of this dot is a property of the thing on the left side of this dot".
 
-It's data all the way down! That's hierarchial data structures!
+It's data all the way down! That's Hierarchical data structures!
 
 ### It can't actually just contain other things all the way down, eventually it has to be something.
 

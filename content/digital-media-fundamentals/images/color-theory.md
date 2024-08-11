@@ -1,10 +1,9 @@
 ---
 title: Color Theory
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/color-theory/****
 ---
 
-
 # Color Theory
-
 
 ## History
 *Color theory has been around since the Greeks, through the Renaissance, and is evolving today as we kick off the digital age.*
@@ -28,7 +27,6 @@ Da Vinci was also a renaissance man best known for his art, like the Mona Lisa. 
 **His thoughts on color theory?**
 
 He brought the theory of having three primary colors but connected them to the elements as before. White represented light, and black being darkness. He used these theories to create balanced compositions.
-
 
 ![Da Vinci Last supper](/images/digital-media/color-theory/CT-LDV.jpg)
 ![Da Vinci Color Wheel](/images/digital-media/color-theory/CT-LDV2.jpg)

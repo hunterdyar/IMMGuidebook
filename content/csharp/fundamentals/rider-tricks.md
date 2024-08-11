@@ -1,7 +1,8 @@
 ---
 title: Jetbrains Rider Features & Plugins
 type: docs
-weight: 10  
+weight: 10
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/rider-tricks/
 ---
 # My Favorite Rider Plugins, Settings, and Features for Unity Development
 

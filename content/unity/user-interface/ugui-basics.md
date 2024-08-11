@@ -1,5 +1,6 @@
 ---
 title: UI System Basics
+oldlink: https://guidebook.hdyar.com/docs/unity/user-interface/ugui-basics/
 ---
 
 # Unity UI Basics Overview

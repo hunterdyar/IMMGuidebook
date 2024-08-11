@@ -1,5 +1,6 @@
 ---
 title: The Scene View
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-interface/scene-view/
 ---
 # The Scene View
 The Scene View, or Scene Window, is where we will spend the majority of our time in Unity. It allows us to see our scene, and edit and select objects.

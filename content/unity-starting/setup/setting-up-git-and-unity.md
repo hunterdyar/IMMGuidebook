@@ -2,6 +2,7 @@
 title: Setting up Git & Unity with GitHub Desktop
 draft: false
 weight: 12
+oldlink: https://guidebook.hdyar.com/docs/unity/setup/setting-up-git-and-unity/
 ---
 # Setting up Git & Unity with GitHub Desktop
 ## Keep In Mind Before Getting Started

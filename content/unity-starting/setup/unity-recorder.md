@@ -1,6 +1,7 @@
 ---
 title: Using Unity Recorder for Video Capture
 weight: 10
+oldlink: https://guidebook.hdyar.com/docs/unity/setup/unity-recorder/
 ---
 
 # Video Capture with Unity *Recorder* 

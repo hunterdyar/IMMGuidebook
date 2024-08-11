@@ -1,5 +1,6 @@
 ---
 title: From Sketchfab To Unity
+oldlink: https://guidebook.hdyar.com/docs/unity/3d-models/from-sketchfab-to-unity/
 ---
 
 # From Sketchfab To Unity

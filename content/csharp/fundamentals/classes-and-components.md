@@ -1,6 +1,7 @@
 ---
 title: Classes and Components
 weight: 5
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/classes-and-components/
 ---
 # Classes and Components
 Classes are the fundamental building blocks of programming. A class allows us to create instances of the class, called objects, which we ... do everything with.

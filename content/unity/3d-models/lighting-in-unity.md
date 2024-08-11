@@ -1,5 +1,6 @@
 ---
 title: A Quick Overview of Lighting in Unity
+oldlink: https://guidebook.hdyar.com/docs/unity/3d-models/lighting-in-unity/
 ---
 # An Overview of Lighting In Unity
 ## Realtime vs. Baked

@@ -2,7 +2,7 @@
 title: Syntax of Variables and Functions
 type: docs
 weight: 1
-
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/basic-syntax/
 ---
 # Basic Syntax: Variables and Functions
 

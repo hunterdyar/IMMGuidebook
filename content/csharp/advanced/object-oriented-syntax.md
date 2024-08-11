@@ -1,5 +1,6 @@
 ---
-title: Object Oriented Syntax
+title: Object Oriented Syntax Reference
+oldlink: https://guidebook.hdyar.com/docs/programming/advanced/object-oriented-syntax/
 ---
 # Object-Oriented Syntax
 

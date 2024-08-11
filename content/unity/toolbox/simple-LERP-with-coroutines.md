@@ -1,5 +1,6 @@
 ---
 title: Simple LERP with Coroutines
+oldlink: https://guidebook.hdyar.com/docs/unity/toolbox/simple-lerp-with-coroutines/
 ---
 
 # Simple Linear Interpolation with Coroutines

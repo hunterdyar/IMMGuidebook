@@ -1,5 +1,6 @@
 ---
-title: Quick Tips
+title: Blender Quick Tips
+oldlink: https://guidebook.hdyar.com/docs/blender/toolbox/quick-tips/
 ---
 
 # Quick Tips.

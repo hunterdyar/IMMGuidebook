@@ -1,5 +1,6 @@
 ---
-title: C# Actions
+title: C# Actions & Event Syntax
+oldlink: https://guidebook.hdyar.com/docs/programming/advanced/event-action-syntax/
 ---
 # Event Syntax
 

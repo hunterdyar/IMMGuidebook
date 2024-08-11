@@ -1,5 +1,6 @@
 ---
-title: Accessing Data (from elsewhere)
+title: Accessing Data Across Scripts and Objects
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/accessing-data/
 ---
 
 # How to Access Data From Another Script in Unity

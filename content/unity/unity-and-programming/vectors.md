@@ -1,5 +1,6 @@
 ---
 title: Vectors
+oldlink: https://guidebook.hdyar.com/docs/programming/unity-and-programming/vectors/
 ---
 
 # Vectors

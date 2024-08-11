@@ -1,5 +1,6 @@
 ---
 title: Preferences Setup
+oldlink: https://guidebook.hdyar.com/docs/blender/toolbox/preferences/
 ---
 
 Here are the settings that I prefer to change for Blender. Open the preferences by going to **Edit > Preferences**.

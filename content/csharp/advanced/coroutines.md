@@ -1,5 +1,6 @@
 ---
 title: Coroutines
+oldlink: https://guidebook.hdyar.com/docs/programming/advanced/coroutines/
 ---
 ## Coroutines Overview Video
 {{< youtube 8fIF5F3AvJo >}}

@@ -1,5 +1,6 @@
 ---
 title: Command Pattern 
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/patterns/command-pattern/
 ---
 # The Command Pattern
 If the question is "How do I add an **undo** feature?", then the command pattern is your answer.

@@ -1,5 +1,6 @@
 ---
 title: A Basic Level Manager
+oldlink: https://guidebook.hdyar.com/docs/unity/toolbox/basic-level-manager/
 ---
 # A Basic Level Manager
 For an explanation of this code, see [this video]({{< ref "scene-switching.md" >}}) on scene switching, where the code is written and explained.

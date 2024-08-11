@@ -1,6 +1,7 @@
 ---
 title: Components
 type: docs
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/
 ---
 # What are Components?
 Components are where the real functionality of GameObjects gets implemented.

@@ -1,5 +1,6 @@
 ---
 title: A Few Metaphors
+oldlink: https://guidebook.hdyar.com/docs/programming/fundamentals/a-few-metaphors/
 ---
 # A Few Metaphors
 I  generally do not like teaching with metaphors. They can provide quick high-level insight, but I find they can get in the way when we wish to expand on the high-level concept in lower-level ways. It's like learning a mental trick to do multiplication - you might be presented with a problem that you _know_ the answer to, having memorized it, but instead of simply having it, you find yourself walking through the steps of your "trick" in your head. The shortcut has become an impedance.

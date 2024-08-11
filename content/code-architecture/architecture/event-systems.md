@@ -1,5 +1,6 @@
 ---
 title: Event Systems
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/event-systems/
 ---
 # Event Systems
 {{< youtube CdguzXPdneA >}}

@@ -1,5 +1,6 @@
 ---
 title: Follow-Along Project
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/follow-along-project/
 ---
 
 The following project is for students to follow along with and create a project with me, one that focuses on actually making an entire thing that has multiple levels and a game state.

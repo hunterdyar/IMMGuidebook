@@ -1,5 +1,6 @@
 ---
 title: Data-Oriented Design with Scriptable Objects
+oldlink: https://guidebook.hdyar.com/docs/programming/architecture/data-oriented-design-scriptable-objects/
 ---
 
 # Data-oriented Design

@@ -1,5 +1,6 @@
 ---
 title: Scene Switching
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-102/scene-switching/
 ---
 
 # Scene Switching and a Basic Level Manager

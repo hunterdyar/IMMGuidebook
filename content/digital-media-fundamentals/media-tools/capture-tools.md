@@ -1,5 +1,6 @@
 ---
 Title: Capture Tools
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/capture-tools/
 ---
 # Capture & Documentation Tools
 

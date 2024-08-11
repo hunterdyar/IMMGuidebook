@@ -1,5 +1,6 @@
 ---
 title: The Game View
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-interface/game-view/
 ---
 # The Game View
 The game view is where we run our games. See the unity manual on the [Game View](https://docs.unity3d.com/Manual/GameView.html).

@@ -1,5 +1,6 @@
 ---
 title: Creativity vs. Execution
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/creative-vs-execution/
 ---
 # Creative Level Work vs. Execution Level Work
 Let us identify different ways working, which might also call "styles of problem solving", "types of work", or "methods of creative engagement".

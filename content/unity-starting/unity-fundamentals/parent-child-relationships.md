@@ -1,5 +1,6 @@
 ---
 title: Parent-Child Relationships
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/parent-child-relationships/
 ---
 # Parent-Child relationships
 One core concept to understand is that of 'parenting'. Parent/Child relationships are edited in the [hierarchy window]({{< ref "../unity-interface/hierarchy.md" >}}).

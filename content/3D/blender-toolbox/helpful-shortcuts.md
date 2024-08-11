@@ -1,6 +1,6 @@
 ---
-
 title: Helpful Blender Shortcuts
+oldlink: https://guidebook.hdyar.com/docs/blender/toolbox/helpful-shortcuts/
 ---
 
 # Helpful Blender Shortcuts

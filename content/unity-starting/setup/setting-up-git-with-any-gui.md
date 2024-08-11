@@ -1,6 +1,7 @@
 ---
 title: Git & Unity Quick Setup 
 weight: 10
+oldlink: https://guidebook.hdyar.com/docs/unity/setup/setting-up-git-with-any-gui/
 ---
 
 # Setting up Git & Unity

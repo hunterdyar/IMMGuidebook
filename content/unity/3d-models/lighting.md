@@ -1,5 +1,6 @@
 ---
 Title: Lighting Fundamentals
+oldlink: https://guidebook.hdyar.com/docs/unity/3d-models/lighting/
 ---
 
 # Lighting Basics

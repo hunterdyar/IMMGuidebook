@@ -1,6 +1,7 @@
 ---
 title: Perspective Distortion and Projections
 draft: false
+oldlink: https://guidebook.hdyar.com/docs/digital-media-fundamentals/perspective-distortion-and-projections/
 ---
 # Notes on Perspective Distortion and Projections
 

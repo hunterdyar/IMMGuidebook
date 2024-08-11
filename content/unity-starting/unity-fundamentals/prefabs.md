@@ -1,5 +1,6 @@
 ---
 title: Prefabs
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/prefabs/
 ---
 
 # Prefabs
