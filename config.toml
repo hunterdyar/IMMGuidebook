@@ -6,8 +6,15 @@ BookComments = false
 publishDir = 'docs'
 disableKinds = ['taxonomy', 'term']
 
+[outputFormats.Moved]
+MediaType = "application/json"
+BaseName = "moved"
+IsHTML = false
+IsPlainText = true
+notAlternative = true
+
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "moved"]
 
 [markup]
   [markup.highlight]

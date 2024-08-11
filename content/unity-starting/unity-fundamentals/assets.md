@@ -1,6 +1,7 @@
 ---
 title: Assets
 type: docs
+oldlink: guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/
 ---
 # What are Assets?
 An asset is an actual file on your computer. We store Assets in the &#8220;Assets&#8221; folder inside of our unity project folder. Assets are any item in Unity that we may want to use.

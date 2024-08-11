@@ -1,0 +1,18 @@
+{{- $.Scratch.Add "moved" slice -}}
+{{- range .Site.RegularPages -}}
+{{ $p := .}}
+  {{ $old := .Page.Params.oldlink }}
+  {{ with $old }}
+    {{ $old = replace $old "https://guidebook.hdyar.com/" ""}}
+    {{ $old = replace $old "guidebook.hdyar.com/" ""}}
+    {{ $old = replace $old "www." ""}}
+    {{ $old = replace $old "http://" ""}}
+    {{ $old = replace $old "https://" ""}}
+    {{ $old = replace $old "https://" ""}}
+    {{ $old = strings.Trim $old "/"}}
+
+    {{- $.Scratch.Add "moved" (dict "old" $old "relpermalink" $p.RelPermalink) -}}
+{{ end }}
+{{- end -}}
+
+{{- $.Scratch.Get "moved" | jsonify -}}

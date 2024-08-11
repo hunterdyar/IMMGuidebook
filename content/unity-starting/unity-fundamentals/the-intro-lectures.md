@@ -1,6 +1,7 @@
 ---
 title: The Intro Lectures
 weight: 1
+oldlink: docs/unity/unity-fundamentals/the-intro-lectures
 ---
 # The Intro Lectures
 
