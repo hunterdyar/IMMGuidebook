@@ -1,5 +1,5 @@
 ---
-title: Git & Unity Quick Setup 
+title: "Configuring Git with a Unity Project: Setup Checklist and Walkthrough"
 weight: 10
 oldlink: https://guidebook.hdyar.com/docs/unity/setup/setting-up-git-with-any-gui/
 ---
