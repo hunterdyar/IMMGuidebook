@@ -1,9 +1,21 @@
 baseURL = 'http://guidebook.hdyar.com/'
 languageCode = 'en-us'
 title = 'The Guidebook'
-theme = 'book'
+theme = 'guidebook'
 BookComments = false
 publishDir = 'docs'
+disableKinds = ['taxonomy', 'term']
+
+[outputFormats.Moved]
+MediaType = "application/json"
+BaseName = "moved"
+IsHTML = false
+IsPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON", "moved"]
+
 [markup]
   [markup.highlight]
     anchorLineNos = false
@@ -20,3 +32,4 @@ publishDir = 'docs'
 
 [markup.goldmark.renderer]
   unsafe= true
+

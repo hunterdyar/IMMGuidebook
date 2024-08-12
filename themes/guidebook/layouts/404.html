@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{ partial "navbar" . }}
+
+<article class="fn fl-ns w-80-ns mw8 pl2 pl1-m">
+    <div class="mw9 center ph3-ns">
+        <div class="cf ph2-ns">
+
+                <div class="fl bb sep w-100">
+                    <div class="fl-ns w-100">
+
+                        <div id ="page-nf">
+
+                        <h1>Page Not Found</h1>
+                        <p>Sorry. We are unable to find that page.</p>
+
+                        <p>The Guidebook was reorganized in the summer of 2024, perhaps the page you are looking for has simply moved to a new URL.</p>
+                        <p id="consider">Consider <a id="searching" href="/search/">searching</a> for the missing page.</p>
+                        </div>
+                        <div id="page-moved" hidden="hidden">
+                            <a id="here-a" href="#"><h1>Page Moved</h1></a>
+                            <p id="moved-to">This page is now located <a id="here-b" href="#">here</a>. Please update your links.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+</article>
+{{ end }}
+
+{{ define "footerfiles" }}
+<script type="text/javascript">
+    var data = window.location.pathname;
+    if(data !== ""){
+        //moved slug
+        var move = data.trim()
+        if(move.startsWith("/")){
+            move = move.replace("/","");
+        }
+        if(move.endsWith("/")){
+            move = move = move.substring(0,move.length-1);
+        }
+        var renderMoved = false;
+        if(move !== ""){
+           renderMoved = movedPage(move);
+        }
+
+        if(!renderMoved) {
+            //Search Slug
+            var searching = document.getElementById("searching")
+
+            let s = data.replaceAll("/", " ").replaceAll("-", " ");
+            s = s.replace("docs ", "");
+            let u = "/search/?s=" + s;
+            searching.setAttribute("href", encodeURI(u));
+
+        }
+    }
+
+    async function movedPage(moved){
+        var response = await fetch("/moved.json");
+        if(!response.ok){
+            throw new Error("unable to grab page move data. "+response.statusText);
+        }
+        var movedPages = await response.json();
+        var newPage = movedPages.find(e=> e['old'] === moved);
+        if(newPage) {
+            document.getElementById("page-nf").hidden = true;
+            var pm = document.getElementById("page-moved")
+            pm.hidden = false;
+            document.getElementById("here-a").href = newPage["relpermalink"]
+            document.getElementById("here-b").href = newPage["relpermalink"]
+            return true;
+        }
+        return false;
+    }
+</script>
+{{ end }}

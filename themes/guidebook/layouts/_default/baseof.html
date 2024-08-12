@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tachyons.min.css"/>
+    {{ partial "title" . }}
+    {{ partial "pyscripthead" . }}
+    <style>
+        @property --link-hover-color {
+            syntax: "<color>";
+            inherits: false;
+            initial-value: #ffdfdf;
+        }
+
+        .bt {
+            border-top-style: solid;
+            border-top-width: 1px;
+        }
+
+        .bb {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+
+        .bw2 {
+            border-width: .25rem;
+        }
+        .sep{
+            border-width: .1rem;
+            border-color: lightgray;
+        }
+
+
+        .cf:before, .cf:after {
+            content: " ";
+            display: table;
+        }
+
+        a{
+            transition: color .15s ease-in;
+            color: #333;
+            text-decoration: underline;
+            color: rgba(0,0,0,.8);
+            background-color: transparent;
+
+        }
+
+         a:hover{
+            transition: color .15s ease-in;
+            background-color: var(--link-hover-color);
+        }
+
+        @media screen and (min-width: 30em) {
+            header {
+                position: sticky;
+                top: 5rem;
+            }
+        }
+
+        .hover-link-bg:hover{
+            transition: color .15s ease-in;
+            background-color: var(--link-hover-color);
+        }
+        nav a{
+            letter-spacing: .05em;
+        }
+        .highlight pre{
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+<main class="bg-white black-80 cf ph3 ph5-l ph3-m ph3-s pv5 mw9 align-center-center center">
+    {{ block "main" . }}
+
+    {{- .Content -}}
+
+    {{ end }}
+    {{ partial "footer" }}
+</main>
+
+    {{ block "footerfiles" . }} {{ end }}
+<script data-goatcounter="https://immguidebook.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
+
