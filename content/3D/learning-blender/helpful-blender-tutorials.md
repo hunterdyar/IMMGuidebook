@@ -18,7 +18,7 @@ title: Blender YouTube Creators
 
 - [Erindale](https://www.youtube.com/c/Erindale)
 	- Geometry Nodes
-	- Bob Ross of geometry nodes
+	- Bob Ross of Geometry Nodes
 	- Beginner Friendly —> Advanced
 
 

@@ -1,5 +1,6 @@
 ---
 Title: Bringing Textures into Unity
+oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/textures-into-unity/
 ---
 
 # Bringing Textures into Unity
