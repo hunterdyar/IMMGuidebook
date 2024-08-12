@@ -1,5 +1,6 @@
 ---
 title: Parent-Child Relationships
+weight: 6
 oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/parent-child-relationships/
 ---
 # Parent-Child relationships

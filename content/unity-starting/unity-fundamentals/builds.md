@@ -1,5 +1,6 @@
 ---
 title: Creating Builds
+weight: 20
 oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/builds/
 ---
 

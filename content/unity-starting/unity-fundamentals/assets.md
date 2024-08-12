@@ -1,6 +1,6 @@
 ---
 title: Assets
-type: docs
+weight: 4
 oldlink: guidebook.hdyar.com/docs/unity/unity-fundamentals/assets/
 ---
 # What are Assets?

@@ -1,5 +1,6 @@
 ---
 title: Prefabs
+weight: 7
 oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/prefabs/
 ---
 

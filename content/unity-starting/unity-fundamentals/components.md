@@ -1,6 +1,6 @@
 ---
 title: Components
-type: docs
+weight: 5
 oldlink: https://guidebook.hdyar.com/docs/unity/unity-fundamentals/components/
 ---
 # What are Components?
