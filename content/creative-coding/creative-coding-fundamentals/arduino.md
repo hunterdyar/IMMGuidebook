@@ -1,12 +1,14 @@
-# Arduino to Unity  
+---
+title: Communicating from Arduino Devices into Unity
+weight: 10
+---
 
-  
+# Communicating from Arduino Devices into Unity
 
 ## Overview 
 
 Arduino is a great group of microcontrollers that allow users to collect several data inputs. They can be used to make controllers, art, immersive experiences, and more! In this post I will demonstrate a few ways to get Arduino serial-data or keyboard inputs into the Unity game engine.   
 
-  
 
 Note: Some microcontrollers can act as HID (Human Interface Device) and can use the keyboard library to emulate a keyboard. If you want to use keyboard inputs here is a list of [Compatible Microcontrollers.](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/ ) 
 

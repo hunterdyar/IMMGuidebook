@@ -1,3 +1,7 @@
+---
+title: Introduction to Computer Vision in Unity
+---
+
 # Introduction to Computer Vision in Unity
 
 ## Overview

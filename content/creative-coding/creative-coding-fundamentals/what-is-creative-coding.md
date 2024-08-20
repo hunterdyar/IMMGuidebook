@@ -1,5 +1,6 @@
 ---
 title: What is Creative Coding?
+weight: 1
 ---
 
 # Creative coding
