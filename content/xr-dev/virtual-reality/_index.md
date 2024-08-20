@@ -1,4 +1,4 @@
 ---
 title: Virtual Reality Project Setup
-weight: 30
+weight: 20
 ---
