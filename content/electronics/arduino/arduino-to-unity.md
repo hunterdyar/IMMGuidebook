@@ -9,35 +9,25 @@ weight: 10
 
 Arduino is a great group of microcontrollers that allow users to collect several data inputs. They can be used to make controllers, art, immersive experiences, and more! This post will demonstrate a few ways to get Arduino serial-data or keyboard inputs into the Unity game engine.   
 
+Note: Some microcontrollers can act as HID (Human Interface Device) and can use the keyboard library to emulate a keyboard. 
 
-Note: Some microcontrollers can act as HID (Human Interface Device) and can use the keyboard library to emulate a keyboard. ###If you want to use keyboard inputs here is a list of [Compatible Microcontrollers.](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/ ) 
+The two strategies are *Keyboard Emulation* and direct *Serial* communication. Keyboard emulation is easier to setup from thee receiving end (e.g. Unity), and Serial is easier to setup on the Arduino end. 
 
-  
+## Keyboard Emulation Controller  
+One simple way to communicate to Unity is for the Arduino to pretend to be a USB keyboard (HID Device).
+This requires no additional setup on the Unity (or whatever tool/game engine) side of things, which is the primary advantage.
 
-If your Arduino is not on the list for Keyboard Library, you must use serial data to communicate to the Unity game engine. The methods are similar overall, but if you are using an Arduino Uno for example, you will not be able to send keyboard inputs.  
+If your Arduino is not on the list for Keyboard Library, you can instead use serial data to communicate directly.
 
-  
+The Arduino Uno, one of the most popular arduino models, does **not** support acting as a keyboard.
 
-## Method one: 
+> If you want to use keyboard inputs here is a list of [Compatible Microcontrollers.](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/ )
 
-### Keyboard Emulation Controller  
+#### The Plan
+- Connect buttons or other input devices to the Arduino, read the data from the world. This guide will not cover this part.
+- Use the [Keyboard library](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/) to send keystrokes to the computer.  
 
-  
-
-- Connect buttons or other input devices to the Arduino.  
-
-  
-
-- Use the Keyboard library to send keystrokes to the computer.  
-
-  
-
-![Circuit](/images/unity/advanced_tools/MicroButton.png)
-
-
-  
-
-  
+![Circuit Diagram of single button setup](/images/unity/advanced_tools/MicroButton.png) 
 
 #### Arduino Code:  
 
@@ -52,11 +42,12 @@ void setup() {
   Keyboard.begin(); }  
 
 void loop() {  
-
-  Keyboard.write('W'); 
+  if(weWantToSendAKeystroke){
     // Send 'W' key to the computer  
-
-    delay(100);
+    Keyboard.write('W'); 
+  }
+  
+  delay(100);
 }  
 
 ``` 
@@ -85,15 +76,15 @@ public class Movement : MonoBehaviour
 
 ``` 
 
-  
 
-## Method Two:  
+## Serial Data Controller 
+Another option is to directly communicate between the microcontroller and the game engine. This can be done through a number of protocols:
 
-### Serial Data Controller 
+- Serial
+- TCP/UDP
+- OSC
 
-  
-
-In the case that you are using a microcontroller without HID compatibility, you can use this method to send serial data instead of keyboard outputs. 
+We will use serial, as it is the easiest to setup on the Unity side.
 
 ![Circuit](/images/unity/advanced_tools/UnoButton.png)
 
@@ -132,11 +123,13 @@ void loop() {
 
 #### 2) Add .NET SerialPort Library: 
 
-Unity does not include the System.IO.Ports library by default. You need to add it manually. 
+Unity does not include the System.IO.Ports library by default. It needs to be added manually. 
 
-Download the System.IO.Ports library. You can find it as part of the .NET Framework or as a separate NuGet package. For Unity, the easiest way is to use the System.IO.Ports.dll from the .NET Framework. 
+Download the [System.IO.Ports library](https://www.nuget.org/packages/System.IO.Ports/). You can find it as part of the .NET Framework or as a separate NuGet package.
+For Unity, the easiest way is to use the System.IO.Ports.dll from the .NET Framework. 
 
-Once you have the System.IO.Ports.dll, place it in the Assets/Plugins folder of your Unity project. If the Plugins folder does not exist, create it. If using JetBrains Rider, navigate to settings, and make sure NuGet is installed, it should work automatically when installed in rider. 
+Once you have the System.IO.Ports.dll, place it in the Assets/Plugins folder of your Unity project. If the Plugins folder does not exist, create it. 
+If using JetBrains Rider, you can install it via the NuGet manager window with the project open.
 
 ```csharp 
 
@@ -181,31 +174,20 @@ public class SerialMovement : MonoBehaviour
 Note, it is important to ensure your port is correct or the data will not be sent, the port can change so keep an awareness, it is easy to find what port you are connected to by looking via the Arduino IDE. 
 
  
-## Joystick Compatibility: 
-
-  
-
-- If you want to make a controller with joysticks and buttons, here is an example of how to achieve that. 
-
-- Use this GitHub repo, [Joystick Library](https://github.com/gamelaster/ArduinoGamepad/tree/master/examples), which will allow your computer to interpret your Arduino as a joystick 
-
-  
+## Joystick Example
+- This project uses the [Joystick Library](https://github.com/gamelaster/ArduinoGamepad/tree/master/examples), which will allow your computer to interpret your Arduino as a joystick 
 
 Note: Your Arduino must be HID compatible. 
-
-  
+ 
 ![Joystcik Pinout](/images/unity/advanced_tools/Controller.png)
-  
 
-#### Arduino Code: 
+#### Arduino Code for Joystick Project 
 
-This example code is a good base to create button inputs as well as joystick controls. You would need to change the key binds as well as pin assignments. 
+Working Joystick code provided for reference, observe and adjust as needed. In particular, PIN's often differ between models of arduino.
 
 ```cpp 
 #include <Gamepad.h>
 #include <Keyboard.h>
-
-
 
 const int buttonxPin = 9;
 const int buttonupPin = 8;
