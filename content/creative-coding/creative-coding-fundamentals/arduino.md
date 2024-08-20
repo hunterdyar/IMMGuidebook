@@ -7,10 +7,10 @@ weight: 10
 
 ## Overview 
 
-Arduino is a great group of microcontrollers that allow users to collect several data inputs. They can be used to make controllers, art, immersive experiences, and more! In this post I will demonstrate a few ways to get Arduino serial-data or keyboard inputs into the Unity game engine.   
+Arduino is a great group of microcontrollers that allow users to collect several data inputs. They can be used to make controllers, art, immersive experiences, and more! This post will demonstrate a few ways to get Arduino serial-data or keyboard inputs into the Unity game engine.   
 
 
-Note: Some microcontrollers can act as HID (Human Interface Device) and can use the keyboard library to emulate a keyboard. If you want to use keyboard inputs here is a list of [Compatible Microcontrollers.](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/ ) 
+Note: Some microcontrollers can act as HID (Human Interface Device) and can use the keyboard library to emulate a keyboard. ###If you want to use keyboard inputs here is a list of [Compatible Microcontrollers.](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/ ) 
 
   
 
@@ -44,26 +44,19 @@ If your Arduino is not on the list for Keyboard Library, you must use serial dat
 ```cpp 
 
 #include <Keyboard.h>  
-const int buttonPin = 2; 
-// Simple example of having a button press send string output   
 
-void setup() {  
+// Simple example a string output   
 
-  pinMode(buttonPin, INPUT_PULLUP);     
+void setup() {   
 
   Keyboard.begin(); }  
 
 void loop() {  
 
-  if (digitalRead(buttonPin) == LOW) { 
-  // Check if example button is pressed  
-
-    Keyboard.write('W'); 
+  Keyboard.write('W'); 
     // Send 'W' key to the computer  
 
     delay(100);
-
-  }  
 }  
 
 ``` 
@@ -112,20 +105,14 @@ void setup() {
 
   Serial.begin(9600);  
 
-  pinMode(2, INPUT_PULLUP); 
-  // basic button example again 
 } 
 
 void loop() { 
 
-  if (digitalRead(2) == LOW) { 
-  // Check if button is pressed 
+  Serial.println("MOVE_RIGHT"); 
 
-    Serial.println("MOVE_RIGHT"); 
-    // Send data to the serial port 
-
-    delay(100);  
-  } 
+  delay(100);  
+  
 } 
 
 ``` 
@@ -139,11 +126,7 @@ void loop() {
 
 #### 1) Change API Compatibility Level: 
 
-- Open your Unity project. 
-
-- Go to Edit > Project Settings. 
-
-- Select Player. 
+- In player settings (edit > project settings > player)
 
 - In the Other Settings section, find Configuration and change the Api Compatibility Level to .NET Framework.
 
