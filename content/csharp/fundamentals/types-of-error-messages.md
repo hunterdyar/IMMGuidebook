@@ -22,10 +22,14 @@ Unity will not let you enter play mode when you have compiler errors. If you hav
 
 When this happens, head to the console:
 
+*Click 'Clear'. Non-compiler errors will vanish, but **compiler** errors will not be cleared.*
+
 ![Missing Semicolon](/images/programming/errorsCompiler2.png)
-The above errors are caused by a single missing semicolon. The compiler is smart enough to understand that a new expression began before the current one was terminated, so it gives us a fairly useful error message "; expected". It's not going to fix it for us, C# makes no assumptions, it doesn't know what your code is on about. If you wrote the code wrong, it's just going to stop and tell you so you can fix it.
+
+The above error is caused by a single missing semicolon. The compiler is smart enough to understand that a new expression began before the current one was terminated, so it gives us a fairly useful error message "; expected". It's not going to fix it for us, C# makes no assumptions, it doesn't know what your code is on about. If you wrote the code wrong, it's just going to stop and tell you so you can fix it.
 
 The following errors are caused by removing the "using UnityEngine;" line at the top of the file. Suddenly all sorts of classes and functions that are defined in the UnityEngine library (like MonoBehaviour, Transform, Vector3) aren't defined anywhere, and the computer doesn't know what to do. 
+
 ![A Lot of errors from a single missing line of code](/images/programming/errorsCompiler1.png)
 
 ## Runtime Errors
@@ -68,7 +72,7 @@ This is what it looks like in the IDE:
 
 It gives me a red squiggly line under my code, and the message "Unexpected Token". It also gives me a warning that my name is incorrect. It's not how I name functions! Well, it's a variable, not a function (method). The IDE can't tell because of the missing semicolon. So that warning is irrelevant. Sorry IDE, you were trying to be helpful, but aren't as smart as you'd like to be.
 
-I want to stress that "; expected" and "Unexpected Token" are different errors, and the compiler error is more useful in it's reporting, but the IDE error is more useful since it's right in context, and can often offer helpful suggestions and fixes. Or completely wrong suggestions and fixes.
+> I want to stress that "; expected" and "Unexpected Token" are different errors, and the compiler error is more useful in it's reporting, but the IDE error is more useful since it's right in context, and can often offer helpful suggestions and fixes. Or completely wrong suggestions and fixes.
 
 The compiler error is the **real** error. It's the actual problem your code has. The IDE is analyzing your code and - before we attempt to compile it - trying to alert your of potential issues and problems. Jetbrains Rider is pretty good at this! Microsoft Visual Studio is also pretty good at it, calling it's solution "[Intellisense](https://docs.microsoft.com/en-US/visualstudio/ide/visual-csharp-intellisense?view=vs-2022)" and it's these same code-analysis tools that give us our helpful - or unhelpful - autocompletions.
 
