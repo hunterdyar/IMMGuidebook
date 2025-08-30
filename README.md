@@ -1,5 +1,5 @@
 # The Guidebook
-This is the source for '[The Guidebook](http://guidebook.hdyar.com'), a project by [Hunter Dyar](http://hdyar.com).
+This is the source for '[The Guidebook](http://guidebook.hdyar.com)', a project by [Hunter Dyar](http://hdyar.com).
 
 ## Educators
 If you are interested in linking to or including the guidebook for your students, go for it! It's free and there for you to use. 
