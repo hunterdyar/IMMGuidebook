@@ -25,10 +25,24 @@ Instead of the tab key switching between Object and Edit mode, tab will open a p
 This forces you to be aware of the mode you are switching to. It's much harder to forget which mode you are in, and you never do the little dance where you tap tab repeatedly trying to reset yourself. It's also nice when working with workflows like rigging or sculpting.
 
 ## Performance
-Blender runs great on most machines, but if your machine is more powerful or has more memory, you can give yourself some extra freedom. Depending on your machine, you may want to:
+Blender generally runs great on most machines, but when rendering high-quality images, we want to make sure we are telling Blender to use the hardware that we have.
+
+In the **System** section, check that we have enabled which graphics driver/API you have access to. CUDA, OptiX, HIP, or Metal. 
+
+- CUDA requires an NVIDIA card for Windows/Linux
+- OptiX is also NVIDIA, and can be used with 'RTX' series cards. Prefer this over CUDA if you have both.
+- HIP is used by AMD, and AMD cards (RDNA1 architecture) support it.
+- oneAPI is Intel, if you have an Intel ARC graphics card, choose this one.
+- Metal is Apple, use if you have an apple M-series chips.
+
+You probably only have access to one or none of these, depending on your hardware. If you don't have any of them, then you have a computer without a graphics card - the CPU ('Integrated Graphics') is doing the processing instead of a separate chip.
+That's fine. Blender will work the same! (Just slower for Rendering fancy things).
+
+![GPU Settings Screenshot. Optix Tab, NVIDIA card, is checked.](/images/blender/toolbox/gpu-settings.png)
+## Undo/Redo
 
 In the **System** section
-- Increase the Undo Steps (I set mine to 124)
+- Increase the Undo Steps (I set mine to 256)
 
 In the **Save and Load** section
 - Increase the "Save Versions". When manually saving, it won't overwrite the previous file, but keep a recent history of files. With extensions ".blend1" and ".blend2", they're easily enough to ignore and delete to save space. But when you need it, they're there. I keep 3 around.
