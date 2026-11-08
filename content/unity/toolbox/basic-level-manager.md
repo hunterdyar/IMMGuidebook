@@ -37,14 +37,16 @@ public class LevelManager : MonoBehaviour
     }
     void Update()
     {
+        //for the older input system, you would use Input.GeyKey. 
+        //if (Input.GetKeyDown(KeyCode.R)) instead of the waspressedthisframe lines.
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Keyboard.current.rKey.wasPressedThisFrame)
         {
             RestartLevel();
         }
 
         //Cheat codes! Maybe delete this part?
-        if (Input.GetKeyDown(KeyCode.N))
+        if (Keyboard.current.nKey.wasPressedThisFrame)
         {
             GoToNextScene();
         }
